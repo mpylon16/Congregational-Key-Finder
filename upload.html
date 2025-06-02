@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congregational Key Finder</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; line-height: 1.6; }
+        h1, h2 { color: #333; }
+        form { border: 1px solid #ccc; padding: 1.5em; border-radius: 8px; max-width: 500px; margin-bottom: 2em; }
+        input[type="file"], input[type="submit"] { margin-top: 0.5em; }
+        .checkbox-group { margin-top: 1em; }
+        .results-container { border: 1px solid #ddd; padding: 1.5em; border-radius: 8px; background-color: #f9f9f9; max-width: 600px; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        pre { background-color: #eee; padding: 1em; border-radius: 4px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Congregational Key Finder</h1>
+    <form method="post" enctype="multipart/form-data">
+        <p>Upload PDF: <input type="file" name="file" accept=".pdf"></p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="transpose_keys" name="transpose_keys">
+            <label for="transpose_keys">Prefer Transposing Instrument Keys (Bb, Eb, Ab)</label>
+        </div>
+        <p><input type="submit" value="Upload and Analyze"></p>
+    </form>
+</body>
+
+</html>

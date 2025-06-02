@@ -1,0 +1,122 @@
+{% if skipped %}
+  <div style="color: orange; font-weight: bold; margin-bottom: 1em;">
+    ⚠️ The following movement(s) could not be analyzed and were skipped:
+    {{ skipped | join(', ') }}. Pitch/key results may be incomplete.
+  </div>
+{% endif %}
+
+<!-- 🎵 Original Key Block -->
+<div style="margin-bottom: 1em;">
+	<strong>Original key:</strong> {{ original_key }}<br>
+
+	<strong>Pitch range (original):</strong>
+	{% if original_low_out %}
+	<span style="color: red;">{{ pitch_range[0] }} ({{ original_low_out }}♭)</span>
+	{% else %}
+	{{ pitch_range[0] }}
+	{% endif %}
+	–
+	{% if original_high_out %}
+	<span style="color: red;">{{ pitch_range[1] }} (+{{ original_high_out }})</span>
+	{% else %}
+	{{ pitch_range[1] }}
+	{% endif %}
+	{% if not original_key_is_singable %}
+	  <p style="color: red; margin: 0.5em 0 0 0;">
+	    ⚠️ The original key is not ideal for congregational singing.<br>
+	    {{ original_key_comment }}
+	  </p>
+	{% else %}
+	  <p style="color: green; margin: 0.5em 0 0 0;">✅ The original key is considered singable.</p>
+	{% endif %}
+</div>
+
+{% if recommended %}
+  <div style="border: 2px solid green; padding: 1em 1em 1em 1em; margin-bottom: 1em;">
+    <h3 style="margin-top: 0;">🗝️ Key Recommendation</h3>
+
+    <strong>Recommended key:</strong>
+    {{ recommended.key.tonic.name }} {% if recommended.key.mode != 'major' %} {{ recommended.key.mode }}{% endif %}<br>
+
+    <strong>Shift:</strong>
+    {{ '%+d'|format(recommended.shift) }} semitone{{ 's' if recommended.shift != 1 else '' }}<br>
+
+    <strong>Pitch range (recommended):</strong>
+    {% if recommended.low_out %}
+      <span style="color: red;">{{ recommended.range_low }} (Best fit still {{ recommended.low_out }} semitones lower than comfortable)</span>
+    {% else %}
+      {{ recommended.range_low }}
+    {% endif %}
+    –
+    {% if recommended.high_out %}
+      <span style="color: red;">{{ recommended.range_high }} (Best fit still {{ recommended.high_out }} semitones higher than comfortable)</span>
+    {% else %}
+      {{ recommended.range_high }}
+    {% endif %}
+
+    <br>
+    <strong>Comfort Score:</strong> {{ recommended.comfort_score }}<br>
+
+    <br>
+    <a class="btn btn-primary" href="/generate_pdf/{{ pdf_hash }}?key={{ recommended.shift }}">
+      Download Lead Sheet (PDF)
+    </a>
+  </div>
+{% else %}
+  <p style="color: red;">⚠️ No suitable key could be determined from the uploaded score.</p>
+{% endif %}
+
+
+{% if other_singable %}
+  <h3>🎵 Other Singable Keys</h3>
+  <ul>
+    {% for key in other_singable %}
+      <li>
+        {{ key.key.tonic.name }} {% if key.key.mode != 'major' %} {{ key.key.mode }}{% endif %} ({{ '%+d'|format(key.shift) }}):
+        Comfort Score: {{ key.comfort_score }}
+        <a href="/generate_pdf/{{ pdf_hash }}?key={{ key.shift }}">[PDF]</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+
+<details style="margin-top: 2em;">
+  <summary>🎚 Show Comfort Scores for All Keys</summary>
+  <ul>
+    {% for key in all_keys %}
+      <li>
+        {{ key.key.tonic.name | replace('-', '♭')}} {% if key.key.mode != 'major' %} {{ key.key.mode }}{% endif %} ({{ '%+d'|format(key.shift) }}):
+        Comfort Score: {{ key.comfort_score }}
+        <a href="/generate_pdf/{{ pdf_hash }}?key={{ key.shift }}">[PDF]</a>
+        <a href="/download/{{ pdf_hash }}/{{ pdf_hash }}_transposed_{{ key.key.tonic.name|replace('#','s') }}_{% if key.key.mode != 'major' %} {{ key.key.mode }}{% endif %}.mxl">[MXL]</a>
+      </li>
+    {% endfor %}
+  </ul>
+</details>
+
+
+<hr>
+
+<h3>📥 Custom Download Options</h3>
+<form action="/preview_chords" method="get" style="margin-top: 1em;">
+  <input type="hidden" name="hash" value="{{ pdf_hash }}">
+
+  <label for="format"><strong>Choose format:</strong></label>
+  <select name="format" id="format">
+    <option value="lead">Lead Sheet (PDF)</option>
+    <option value="lyrics">Chords & Lyrics Only</option>
+    <option value="mxl">Raw MusicXML</option>
+  </select>
+
+  <label for="key"><strong>Choose key (in descending order of comfort):</strong></label>
+  <select name="key">
+    {% for key in all_keys %}
+      <option value="{{ key.shift }}">
+        {{ key.key.tonic.name | replace('-', '♭')}} {% if key.key.mode != 'major' %} {{ key.key.mode }}{% endif %} ({{ '%+d'|format(key.shift) }})
+      </option>
+    {% endfor %}
+  </select>
+
+  <button type="submit" class="btn btn-success">Continue</button>
+</form>

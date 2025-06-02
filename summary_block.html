@@ -1,0 +1,36 @@
+<div class="summary">
+  {% if skipped %}
+    <div class="alert alert-warning">
+      ⚠️ Some movements could not be analyzed and were skipped:
+      <strong>{{ skipped | join(', ') }}</strong>.
+      This may affect pitch range or key accuracy.
+    </div>
+  {% endif %}
+
+  {% if warnings %}
+    <div class="alert alert-warning">
+      <strong>Warnings:</strong>
+      <ul>
+        {% for warning in warnings %}
+          <li>{{ warning }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <div class="analysis-block">
+    <h2>🎼 Analysis Summary</h2>
+
+    <p><strong>Original Key:</strong> {{ original_key }}</p>
+    <p><strong>Pitch Range:</strong> {{ pitch_range[0] }} – {{ pitch_range[1] }}</p>
+
+    {% if recommended %}
+      <p><strong>✅ Recommended Key:</strong> 
+        {{ recommended.key.tonic.name }} {{ recommended.key.mode }}
+        (Shift: {{ '%+d'|format(recommended.shift) }})
+      </p>
+    {% else %}
+      <p><strong>⚠️ No suitable key could be confidently recommended.</strong></p>
+    {% endif %}
+  </div>
+</div>
