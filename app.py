@@ -109,51 +109,63 @@ def is_singable(low_midi, high_midi):
     """
     return COMFORTABLE_RANGE[0] <= low_midi and high_midi <= COMFORTABLE_RANGE[1]
 
-def calculate_comfort_score(notes_info, comfortable_range, sweet_spot_range):
+#--------Calculate comfort score----------
+
+# Define MIDI boundaries
+G3 = pitch.Pitch('G3').midi  # 55
+A3 = pitch.Pitch('A3').midi  # 57
+B3 = pitch.Pitch('B3').midi  # 59
+C4 = pitch.Pitch('C4').midi  # 60
+C5 = pitch.Pitch('C5').midi  # 72
+D5 = pitch.Pitch('D5').midi  # 74
+E5 = pitch.Pitch('E5').midi  # 76
+
+def calculate_comfort_score(notes_info):
     """
-    Calculates a comfort score for a given set of notes (with durations).
-    Lower score is better (more comfortable).
-    Penalizes notes outside the comfortable range, rewards notes in the sweet spot,
-    and weights penalties by duration.
+    Calculates comfort score based on note durations and pitch zones.
+    Lower is better. 0 = ideal tessitura only.
     """
     if not notes_info:
         print("⚠️ Empty note list in calculate_comfort_score")
         return float('inf')
 
-    for note in notes_info:
-        if note['duration'] == 0:
-            print(f"⚠️ Found zero-duration note: {note}")
-            
     score = 0
-    
     for note in notes_info:
-        p_midi = note['midi']
-        duration = note['duration']
-        
-        # Check if the note is within the comfortable range
-        if comfortable_range[0] <= p_midi <= comfortable_range[1]:
-            # If it's also in the sweet spot, apply a bonus (reduce score)
-            if sweet_spot_range[0] <= p_midi <= sweet_spot_range[1]:
-                score -= SWEET_SPOT_BONUS_PER_SEMITONE * duration
-            # No penalty for notes comfortably within the main range but outside sweet spot
+        midi = note['midi']
+        dur = note['duration']
+        if C4 <= midi <= C5:
+            continue  # ideal tessitura
+        elif A3 <= midi <= B3 or C5 < midi <= D5:
+            score += 1 * dur  # slightly outside ideal
+        elif G3 <= midi < A3 or D5 < midi <= E5:
+            score += 3 * dur  # edge of range
         else:
-            # Note is outside the comfortable range, calculate distance out
-            distance_out = 0
-            if p_midi < comfortable_range[0]:
-                distance_out = comfortable_range[0] - p_midi
-            elif p_midi > comfortable_range[1]:
-                distance_out = p_midi - comfortable_range[1]
-            
-            # Apply base penalty: further out, longer duration = higher penalty
-            penalty = OUT_OF_RANGE_PENALTY_PER_SEMITONE * distance_out * duration
-            
-            # Add an extra harsh penalty for notes very far outside the range
-            if distance_out > HARSH_OUTLIER_THRESHOLD:
-                penalty += (distance_out - HARSH_OUTLIER_THRESHOLD) * 10 * duration # Stronger penalty for extreme notes
+            score += 10 * dur  # well outside range
+    return round(score, 1)
 
-            score += penalty
-            
-    return score
+def comfort_category(score):
+    if score == 0:
+        return "✅ Perfect fit"
+    elif score <= 20:
+        return "🎵 Very singable"
+    elif score <= 80:
+        return "⚠️ Singable but may challenge some"
+    elif score <= 200:
+        return "❌ Uncomfortable for most"
+    else:
+        return "🚫 Not suitable for congregational singing"
+
+def comfort_category_slug(score):
+    if score == 0:
+        return "perfect"
+    elif score <= 20:
+        return "very-singable"
+    elif score <= 80:
+        return "challenging"
+    elif score <= 200:
+        return "uncomfortable"
+    else:
+        return "unsuitable"
 
 def get_suitable_keys(original_key, all_notes_info, prefer_transpose_keys=False):
     """
@@ -176,7 +188,7 @@ def get_suitable_keys(original_key, all_notes_info, prefer_transpose_keys=False)
                 print(f"⚠️ Skipping shift {i}: no valid notes after filtering")
                 continue
 
-            comfort_score = calculate_comfort_score(shifted_notes_info, COMFORTABLE_RANGE, SWEET_SPOT_RANGE)
+            comfort_score = calculate_comfort_score(shifted_notes_info)
             transposed_key = original_key.transpose(i)
             key_tonic_name = transposed_key.tonic.name
 
@@ -194,20 +206,21 @@ def get_suitable_keys(original_key, all_notes_info, prefer_transpose_keys=False)
 
             final_score = comfort_score + (accidental_penalty * 2) + key_preference_penalty + abs(i)
 
-            # ✅ Now it's safe to call min/max
             lowest = min(n['midi'] for n in shifted_notes_info)
             highest = max(n['midi'] for n in shifted_notes_info)
 
             suitable_options.append({
                 'shift': i,
                 'key': transposed_key,
-                'comfort_score': comfort_score,
-                'final_score': final_score,
+                'comfort_score': round(comfort_score, 1),
+                'final_score': round(final_score, 1),
                 'low': lowest,
                 'high': highest,
+                'range_low': pitch.Pitch(lowest).nameWithOctave,
+                'range_high': pitch.Pitch(highest).nameWithOctave,
+                'comfort_label': comfort_category(comfort_score),
+                'comfort_slug': comfort_category_slug(comfort_score),
             })
-
-            #print(f"✅ Shift {i}: score={final_score:.2f}, comfort={comfort_score}, range={lowest}-{highest}")
 
         except ZeroDivisionError:
             print(f"❌ ZeroDivisionError on shift {i}")
@@ -215,13 +228,12 @@ def get_suitable_keys(original_key, all_notes_info, prefer_transpose_keys=False)
         except Exception as e:
             print(f"❌ Unexpected error on shift {i}: {e}")
             continue
-
-    
+ 
     # Sort all candidates by their final_score (lowest score is best)
-    suitable_options.sort(key=lambda x: x['final_score'])
+    suitable_options.sort(key=lambda k: k['final_score'])
 
-    # Filter for "truly singable" options: those with a perfect comfort_score (no notes outside comfortable range)
-    truly_singable_options = [opt for opt in suitable_options if opt['comfort_score'] == 0]
+    # Filter singable options (if needed)
+    truly_singable = [k for k in suitable_options if k['comfort_score'] <= 80]
 
     return suitable_options, truly_singable_options
 
