@@ -36,14 +36,14 @@
     <h3 style="margin-top: 0;">🗝️ Key Recommendation</h3>
 
     <strong>Recommended key:</strong>
-    {{ recommended.key.tonic.name }} {% if recommended.key.mode != 'major' %} {{ recommended.key.mode }}{% endif %}<br>
+    {{ recommended.key.tonic.name | replace('-', '♭') }} {% if recommended.key.mode != 'major' %} {{ recommended.key.mode }}{% endif %}<br>
 
     <strong>Shift:</strong>
     {{ '%+d'|format(recommended.shift) }} semitone{{ 's' if recommended.shift != 1 else '' }}<br>
 
     <strong>Pitch range (recommended):</strong>
     {% if recommended.low_out %}
-      <span style="color: red;">{{ recommended.range_low }} (Best fit still {{ recommended.low_out }} semitones lower than comfortable)</span>
+      <span style="color: red;">{{ recommended.range_low | replace('-', '♭')}} (Best fit still {{ recommended.low_out }} semitones lower than comfortable)</span>
     {% else %}
       {{ recommended.range_low }}
     {% endif %}
@@ -55,7 +55,7 @@
     {% endif %}
 
     <br>
-    <strong>Comfort Score:</strong> {{ recommended.comfort_score }}<br>
+    <strong>Comfort Score:</strong> {{ recommended.comfort_score }} {{ recommended.comfort_label }}<br>
 
     <br>
     <a class="btn btn-primary" href="/generate_pdf/{{ pdf_hash }}?key={{ recommended.shift }}">
@@ -120,3 +120,44 @@
 
   <button type="submit" class="btn btn-success">Continue</button>
 </form>
+
+<details style="margin-top: 2em;">
+  <summary style="font-weight: bold; font-size: 1.1em;">ℹ️ About the analysis</summary>
+  <div style="padding-left: 1em; margin-top: 1em; font-size: 0.95em; line-height: 1.5;">
+    <p>This tool analyzes your uploaded melody to recommend the best key for <strong>congregational singing</strong>. It uses research-informed vocal ranges to assess how singable the melody is for a typical group of untrained voices.</p>
+
+    <h4 style="margin-top: 1em;">🎶 What’s considered comfortable?</h4>
+    <ul>
+      <li><strong>🎯 Ideal Tessitura:</strong> <code>C4–C5</code> — where most voices can sing easily for long periods</li>
+      <li><strong>✅ Comfortable Range:</strong> <code>A3–D5</code> — safe for nearly all adults in mixed groups</li>
+      <li><strong>⚠️ Stretch Zone:</strong> <code>G3–A3</code> or <code>D5–E5</code> — singable, but may strain some voices</li>
+      <li><strong>❌ Out of Range:</strong> below <code>G3</code> or above <code>E5</code> — difficult or unreachable for most</li>
+    </ul>
+
+    <h4 style="margin-top: 1em;">🎯 How the Comfort Score works</h4>
+    <p>Each note is scored based on its pitch and duration. Notes outside the ideal range increase the score:</p>
+    <ul>
+      <li><strong>0 penalty:</strong> Notes between <code>C4–C5</code></li>
+      <li><strong>+1 per beat:</strong> Slightly outside (e.g., <code>A3–B3</code>, <code>C5–D5</code>)</li>
+      <li><strong>+3 per beat:</strong> Edge of range (e.g., <code>G3</code>, <code>D#5–E5</code>)</li>
+      <li><strong>+10 per beat:</strong> Far out of range (e.g., <code>F3</code> or <code>F5+</code>)</li>
+    </ul>
+
+    <h4 style="margin-top: 1em;">📊 Interpreting the Score</h4>
+    <table style="border-collapse: collapse; font-size: 0.95em;">
+      <tr><th style="text-align: left; padding-right: 1em;">Score</th><th style="text-align: left;">Interpretation</th></tr>
+      <tr><td>0</td><td>✅ Perfect fit (in ideal tessitura)</td></tr>
+      <tr><td>1–20</td><td>🎵 Very singable</td></tr>
+      <tr><td>21–80</td><td>⚠️ May challenge some voices</td></tr>
+      <tr><td>81–200</td><td>❌ Uncomfortable for most</td></tr>
+      <tr><td>200+</td><td>🚫 Not suitable for congregational singing</td></tr>
+    </table>
+
+    <h4 style="margin-top: 1em;">📝 Notes</h4>
+    <ul>
+      <li>Only <strong>notes with lyrics</strong> are analyzed — instrumental intros/outros are ignored.</li>
+      <li>Accidentals and key signatures do <strong>not affect</strong> comfort score — only pitch and duration matter.</li>
+      <li>Key recommendations aim to bring the melody into the most comfortable range with the fewest awkward leaps.</li>
+    </ul>
+  </div>
+</details>
