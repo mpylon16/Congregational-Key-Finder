@@ -14,6 +14,20 @@ import io
 import zipfile
 from xml.etree import ElementTree as ET
 import time
+import logging
+from collections import defaultdict
+
+# --- NEW LOGGING SETUP START ---
+# Define the path for your log file. It will be in the same directory as app.py
+log_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'app_errors.log')
+
+# Configure basic logging to write to the file
+logging.basicConfig(
+    filename=log_file_path,
+    level=logging.ERROR, # Log messages with severity ERROR and higher
+    format='%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
+)
+# --- NEW LOGGING SETUP END ---
 
 AUDIVERIS_CMD_FAST = r"C:\audiveris_fast_install\bin\audiveris.bat"
 AUDIVERIS_CMD_FULL = r"C:\audiveris_full_install\bin\audiveris.bat"
@@ -167,13 +181,13 @@ def comfort_category_slug(score):
     else:
         return "unsuitable"
 
-def get_suitable_keys(original_key, all_notes_info, prefer_transpose_keys=False):
+def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=False):
     """
     Finds and scores potential transposed keys based on comfort, key complexity,
     and preference for instrument keys.
     Returns a sorted list of all candidates and a filtered list of truly singable options.
     """
-    suitable_options = []
+    key_analysis_info = []
     
     # Iterate through possible transpositions (e.g., -12 to +12 semitones = full octave up/down)
     for i in range(-12, 13):
@@ -209,7 +223,7 @@ def get_suitable_keys(original_key, all_notes_info, prefer_transpose_keys=False)
             lowest = min(n['midi'] for n in shifted_notes_info)
             highest = max(n['midi'] for n in shifted_notes_info)
 
-            suitable_options.append({
+            key_analysis_info.append({
                 'shift': i,
                 'key': transposed_key,
                 'comfort_score': round(comfort_score, 1),
@@ -230,12 +244,9 @@ def get_suitable_keys(original_key, all_notes_info, prefer_transpose_keys=False)
             continue
  
     # Sort all candidates by their final_score (lowest score is best)
-    suitable_options.sort(key=lambda k: k['final_score'])
+    key_analysis_info.sort(key=lambda k: k['final_score'])
 
-    # Filter singable options (if needed)
-    truly_singable = [k for k in suitable_options if k['comfort_score'] <= 80]
-
-    return suitable_options, truly_singable_options
+    return key_analysis_info
 
 # --- Flask Routes ---
 
@@ -315,10 +326,8 @@ def generate_pdf_for_download(hash):
 
     return send_file(output_pdf_path, as_attachment=True)
 
-
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
-    recommended = None  # placeholder to avoid NameError
     if request.method == 'POST':
         file = request.files['file']
         prefer_transpose_keys = 'transpose_keys' in request.form
@@ -334,7 +343,6 @@ def upload_file():
             cached_output_dir = os.path.join(app.config['OUTPUT_FOLDER'], pdf_hash)
             os.makedirs(cached_output_dir, exist_ok=True)
 
-            # Run Audiveris only if MXL files aren't already cached
             if not any(fname.endswith('.mxl') for fname in os.listdir(cached_output_dir)):
                 try:
                     print(f"⏱️ Starting Audiveris for hash: {pdf_hash}")
@@ -372,13 +380,15 @@ def upload_file():
                     name=name,
                     prefer_transpose_keys=prefer_transpose_keys
                 )
-                print("✅ Recommended key object:", recommended)
+
+                recommended=summary["recommended"]
+                print(f"recommended is {recommended}")
+#                print(f"{recommended.key}")
 
                 return render_template("analysis_results.html",
                     pdf_hash=pdf_hash,
                     recommended=summary["recommended"],
-                    other_singable=summary["other_singable"],
-                    all_keys=summary["all_keys"],
+                    other_keys=["other_keys"],
                     skipped=summary["skipped"],
                     warnings=summary["warnings"],
                     pitch_range=summary["pitch_range"],
@@ -388,13 +398,22 @@ def upload_file():
                 )
 
             except Exception as e:
+                logging.error("--- FATAL ERROR DURING MUSICXML ANALYSIS ---")
+                logging.error(f"Exception Type: {type(e)}")
+                logging.error(f"Exception Message: {e}")
+                logging.exception("Full Traceback Details:")
+                logging.error("--- END FATAL ERROR ---")
+
+                print("Error:", e)
+                if cached_output_dir in locals() and os.path.exists(cached_output_dir):
+                    import shutil
+                    shutil.rmtree(cached_output_dir)
+
                 return f"<p>MusicXML analysis failed: {e}</p>", 500
 
         return "<p>Please upload a valid PDF file.</p><p><a href='/'>Try Again</a></p>"
 
     return render_template('upload.html')
-
-
 
 def inject_time_signature_from_previous(mxl_path, fallback_time_signature):
     with zipfile.ZipFile(mxl_path, 'r') as zip_ref:
@@ -464,11 +483,9 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
             warnings.append(f"{os.path.basename(path)} failed: {e}")
             continue
 
-    if not all_notes_info:
-        return {
+    if not all_notes_info: #i.e. if all_notes_info is empty
+        return { #return valid values so the app doesn't crash
             "recommended": None,
-            "other_singable": [],
-            "all_keys": [],
             "original_key": "Unknown",
             "pitch_range": ("?", "?"),
             "skipped": skipped,
@@ -494,22 +511,38 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
         warnings.append(f"Key analysis failed: {e}")
 
     # Evaluate all keys
-    all_keys, truly_singable = get_suitable_keys(key_estimate, all_notes_info, prefer_transpose_keys)
-    recommended = all_keys[0] if all_keys else None
-    other_singable = [k for k in truly_singable if k != recommended]
+    all_keys_analysis = get_key_analysis_info(key_estimate, all_notes_info, prefer_transpose_keys)
+    bad_entries = [k for k in all_keys_analysis
+               if not isinstance(k, dict) or 'key' not in k]
+    print("🛠  Number of malformed entries:", len(bad_entries))
+    if bad_entries:
+        print("🛠  First bad entry example:", bad_entries[0], type(bad_entries[0]))
 
-    # Pitch range of original (untransposed)
-    midi_values = [n['midi'] for n in all_notes_info]
-    original_low = min(midi_values)
-    original_high = max(midi_values)
-    low = pitch.Pitch(original_low).nameWithOctave
-    high = pitch.Pitch(original_high).nameWithOctave
-
+    # Find the original key object (shift == 0)
+    original_key_info = next((k for k in all_keys_analysis if k['shift'] == 0), None)
+    # Pitch range of original (untransposed) - Using values from original_key_info
+    if original_key_info:
+        original_low = original_key_info["low"]  # MIDI value
+        original_high = original_key_info["high"] # MIDI value
+        low = original_key_info["range_low"]              # Pitch name (e.g., 'C4')
+        high = original_key_info["range_high"]            # Pitch name (e.g., 'G5')
+    else:
+        # Fallback to direct calculation if original_key_info is unexpectedly None
+        # This part should ideally not be hit if all_notes_info was not empty
+        midi_values = [n['midi'] for n in all_notes_info]
+        original_low = min(midi_values)
+        original_high = max(midi_values)
+        low = pitch.Pitch(original_low).nameWithOctave
+        high = pitch.Pitch(original_high).nameWithOctave
+        
     original_low_out = max(0, COMFORTABLE_RANGE[0] - original_low)
     original_high_out = max(0, original_high - COMFORTABLE_RANGE[1])
 
-    # Find the original key object (shift == 0) for singability check
-    original_key_info = next((k for k in all_keys if k['shift'] == 0), None)
+
+##    # Convert MIDI values to human-readable pitch names for the final return
+##    low = pitch.Pitch(original_low).nameWithOctave
+##    high = pitch.Pitch(original_high).nameWithOctave
+    
     if original_key_info:
         original_key_is_singable = is_singable(original_key_info["low"], original_key_info["high"])
         delta_low = max(0, COMFORTABLE_RANGE[0] - original_key_info["low"])
@@ -526,40 +559,45 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
         original_key_is_singable = False
         range_comment = ""
 
-    # Recommended pitch out-of-range info and display names
-    if recommended:
+    # Deduplicate keys by comfort (removes octave duplicates, etc)
+    deduped_keys = deduplicate_by_key(all_keys_analysis)
 
-        # 2. Add the string representations of the range to the 'recommended' dict
-        recommended['range_low'] = pitch.Pitch(recommended['low']).nameWithOctave
-        recommended['range_high'] = pitch.Pitch(recommended['high']).nameWithOctave
+    # Pick the recommended key from deduplicated list
+    recommended = deduped_keys[0] if deduped_keys else None
 
-        # 3. Calculate out-of-range values and add them to the 'recommended' dict
-        #    If value is 0 (in range), set to None so {% if %} condition is false in template
-        recommended_low_out = max(0, COMFORTABLE_RANGE[0] - recommended['low'])
-        recommended['low_out'] = recommended_low_out if recommended_low_out > 0 else None
+#    print(f"recommended = {recommended}")
 
-        recommended_high_out = max(0, recommended['high'] - COMFORTABLE_RANGE[1])
-        recommended['high_out'] = recommended_high_out if recommended_high_out > 0 else None
+    # All other keys except the recommended one
+    other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]
+
+    # 3. Calculate out-of-range values and add them to the 'recommended' dict
+    #    If value is 0 (in range), set to None so {% if %} condition is false in template
+    recommended_low_out = max(0, COMFORTABLE_RANGE[0] - recommended['low'])
+    recommended['low_out'] = recommended_low_out if recommended_low_out > 0 else None
+
+    recommended_high_out = max(0, recommended['high'] - COMFORTABLE_RANGE[1])
+    recommended['high_out'] = recommended_high_out if recommended_high_out > 0 else None
+
+    print(f"recommended = {recommended}")
 
     # If 'recommended' is None (no suitable keys found), the template's {% if recommended %}
     # will handle it, so no 'else' block needed here for setting these keys.
 
-    return {
-        "recommended": recommended, # This 'recommended' dict now contains range_low, range_high, low_out, high_out
-        "other_singable": other_singable,
-        "all_keys": all_keys,
-        "original_key": original_key_name,
-        "pitch_range": (low, high), # This is for the ORIGINAL range
-        "skipped": skipped,
-        "warnings": warnings,
-        "original_key_is_singable": original_key_is_singable,
-        "original_key_comment": range_comment,
-        "original_low_out": original_low_out, # This is for the ORIGINAL range
-        "original_high_out": original_high_out, # This is for the ORIGINAL range
-        # Removed recommended_low_out and recommended_high_out from the top level
-        # because they are now part of the 'recommended' dictionary itself.
-    }
+    summary = {}
 
+    summary["all_keys_analysis"] = all_keys_analysis
+    summary["recommended"] = recommended
+    summary["other_keys"] = other_keys
+    summary["original_key"] = original_key_name
+    summary["pitch_range"] = (low, high)
+    summary["original_key_is_singable"] = original_key_is_singable
+    summary["original_key_comment"] = range_comment
+    summary["original_low_out"] = original_low_out
+    summary["original_high_out"] = original_high_out
+    summary["skipped"] = skipped
+    summary["warnings"] = warnings
+
+    return summary
 
 def extract_vocal_note_info(score, fallback_time_signature='4/4', source_name='unknown.mxl'):
     from music21 import stream, meter, expressions
@@ -651,6 +689,22 @@ def extract_vocal_note_info(score, fallback_time_signature='4/4', source_name='u
                 filtered_vocal_part.append(element)
 
     return all_notes_info, filtered_vocal_part, warnings
+
+def deduplicate_by_key(all_keys_analysis):
+    print("🔍 Type of all_keys_analysis:", type(all_keys_analysis))
+    print("🔍 First few entries:", all_keys_analysis[:3])
+
+    best_versions = {}
+    for k in all_keys_analysis:
+        if not isinstance(k, dict):
+            print(f"⚠️ Skipping invalid item: {k} (type: {type(k)})")
+            continue
+
+        key_id = (k['key'].tonic.name, k['key'].mode)
+        if key_id not in best_versions or k['comfort_score'] < best_versions[key_id]['comfort_score']:
+            best_versions[key_id] = k
+    return list(best_versions.values())
+
 
 @app.route('/download/<folder>/<filename>')
 def download_file(folder, filename):
