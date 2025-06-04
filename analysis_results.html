@@ -32,18 +32,20 @@
 </div>
 
 {% if recommended %}
-  <div style="border: 2px solid green; padding: 1em 1em 1em 1em; margin-bottom: 1em;">
+  <div style="border: 2px solid green; padding: 1em; margin-bottom: 1em;">
     <h3 style="margin-top: 0;">🗝️ Key Recommendation</h3>
 
     <strong>Recommended key:</strong>
-    {{ recommended.key.tonic.name | replace('-', '♭') }} {% if recommended.key.mode != 'major' %} {{ recommended.key.mode }}{% endif %}<br>
+    {{ recommended['key'].tonic.name | replace('-', '♭') }}{% if recommended['key'].mode != 'major' %} {{ recommended['key'].mode }}{% endif %}
+    <span style="color: green; font-weight: bold;">(✅ Best overall fit)</span>
+    <br>
 
     <strong>Shift:</strong>
     {{ '%+d'|format(recommended.shift) }} semitone{{ 's' if recommended.shift != 1 else '' }}<br>
 
     <strong>Pitch range (recommended):</strong>
     {% if recommended.low_out %}
-      <span style="color: red;">{{ recommended.range_low | replace('-', '♭')}} (Best fit still {{ recommended.low_out }} semitones lower than comfortable)</span>
+      <span style="color: red;">{{ recommended.range_low | replace('-', '♭') }} (Best fit still {{ recommended.low_out }} semitones lower than comfortable)</span>
     {% else %}
       {{ recommended.range_low }}
     {% endif %}
@@ -66,35 +68,42 @@
   <p style="color: red;">⚠️ No suitable key could be determined from the uploaded score.</p>
 {% endif %}
 
+<h3>🎵 Other Options by Comfort Score</h3>
+{% set grouped = {} %}
+{% for k in other_keys if recommended and k.shift != recommended.shift %}
+  {% set cat = k.comfort_label %}
+  {% if cat not in grouped %}
+    {% set _ = grouped.update({cat: []}) %}
+  {% endif %}
+  {% set _ = grouped[cat].append(k) %}
+{% endfor %}
 
-{% if other_singable %}
-  <h3>🎵 Other Singable Keys</h3>
-  <ul>
-    {% for key in other_singable %}
-      <li>
-        {{ key.key.tonic.name }} {% if key.key.mode != 'major' %} {{ key.key.mode }}{% endif %} ({{ '%+d'|format(key.shift) }}):
-        Comfort Score: {{ key.comfort_score }}
-        <a href="/generate_pdf/{{ pdf_hash }}?key={{ key.shift }}">[PDF]</a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
-
-
-<details style="margin-top: 2em;">
-  <summary>🎚 Show Comfort Scores for All Keys</summary>
-  <ul>
-    {% for key in all_keys %}
-      <li>
-        {{ key.key.tonic.name | replace('-', '♭')}} {% if key.key.mode != 'major' %} {{ key.key.mode }}{% endif %} ({{ '%+d'|format(key.shift) }}):
-        Comfort Score: {{ key.comfort_score }}
-        <a href="/generate_pdf/{{ pdf_hash }}?key={{ key.shift }}">[PDF]</a>
-        <a href="/download/{{ pdf_hash }}/{{ pdf_hash }}_transposed_{{ key.key.tonic.name|replace('#','s') }}_{% if key.key.mode != 'major' %} {{ key.key.mode }}{% endif %}.mxl">[MXL]</a>
-      </li>
-    {% endfor %}
-  </ul>
-</details>
-
+<div class="comfort-options">
+  {% for category, slug in [
+      ("✅ Perfect fit", "perfect"),
+      ("🎵 Very singable", "very-singable"),
+      ("⚠️ Singable but may challenge some", "challenging"),
+      ("❌ Uncomfortable for most", "uncomfortable"),
+      ("🚫 Not suitable for congregational singing", "unsuitable")
+  ] %}
+    {% if grouped[category] %}
+      <details class="comfort-group {{ slug }}">
+        <summary>{{ category }} ({{ grouped[category]|length }} option{{ 's' if grouped[category]|length > 1 else '' }})</summary>
+        <ul>
+          {% for k in grouped[category]|sort(attribute='comfort_score') %}
+            <li>
+              {{ k['key'].tonic.name | replace('-', '♭') }}
+              {% if k['key'].mode != 'major' %} {{ k['key'].mode }}{% endif %}
+              ({{ '%+d'|format(k.shift) }}):
+              Score {{ k.comfort_score }}
+              <a href="/generate_pdf/{{ pdf_hash }}?key={{ k.shift }}">[PDF]</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endif %}
+  {% endfor %}
+</div>
 
 <hr>
 
@@ -109,14 +118,26 @@
     <option value="mxl">Raw MusicXML</option>
   </select>
 
-  <label for="key"><strong>Choose key (in descending order of comfort):</strong></label>
-  <select name="key">
-    {% for key in all_keys %}
-      <option value="{{ key.shift }}">
-        {{ key.key.tonic.name | replace('-', '♭')}} {% if key.key.mode != 'major' %} {{ key.key.mode }}{% endif %} ({{ '%+d'|format(key.shift) }})
+<select name="key">
+
+  {% if recommended is mapping and 'key' in recommended %}
+    <option value="{{ recommended['shift'] }}">
+      {{ recommended['key'].tonic.name | replace('-', '♭') }}
+      {% if recommended['key'].mode != 'major' %} {{ recommended['key'].mode }}{% endif %}
+      ({{ '%+d'|format(recommended['shift']) }})
+    </option>
+  {% endif %}
+
+  {% for k in other_keys %}
+    {% if k is mapping and 'key' in k %}
+      <option value="{{ k['shift'] }}">
+        {{ k['key'].tonic.name | replace('-', '♭') }}
+        {% if k['key'].mode != 'major' %} {{ k['key'].mode }}{% endif %}
+        ({{ '%+d'|format(k['shift']) }})
       </option>
-    {% endfor %}
-  </select>
+    {% endif %}
+  {% endfor %}
+</select>
 
   <button type="submit" class="btn btn-success">Continue</button>
 </form>
