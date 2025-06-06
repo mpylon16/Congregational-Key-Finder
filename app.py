@@ -188,9 +188,10 @@ def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=Fa
     Returns a sorted list of all candidates and a filtered list of truly singable options.
     """
     key_analysis_info = []
+    print(f"all_notes_info={all_notes_info}")
     
     # Iterate through possible transpositions (e.g., -12 to +12 semitones = full octave up/down)
-    for i in range(-12, 13):
+    for i in range(-11, 12):
         try:
             shifted_notes_info = [
                 {'midi': n['midi'] + i, 'duration': n['duration']}
@@ -349,14 +350,14 @@ def upload_file():
                     start_time = time.time()
 
                     subprocess_args = [
-                        AUDIVERIS_CMD_FAST,
+                        AUDIVERIS_CMD_FULL,
                         '-batch',
                         '-transcribe',
                         '-export',
                         '-output', cached_output_dir,
                         '-option', 'org.audiveris.omr.sheet.Partitioner.smallHeads=true',
                         '-option', 'audiveris.log.level=WARNING',
-                        '-threads', '4',
+                        #'-threads', '4',
                         filepath
                     ]
                     print("Running Audiveris command:", ' '.join(subprocess_args))
@@ -383,18 +384,14 @@ def upload_file():
 
                 recommended=summary["recommended"]
                 print(f"recommended is {recommended}")
-#                print(f"{recommended.key}")
 
                 return render_template("analysis_results.html",
-                    pdf_hash=pdf_hash,
+                    pdf_hash=pdf_hash,                                       
+                    original_key=summary["original_key_info"],
                     recommended=summary["recommended"],
-                    other_keys=["other_keys"],
+                    other_keys=summary["other_keys"],
                     skipped=summary["skipped"],
-                    warnings=summary["warnings"],
-                    pitch_range=summary["pitch_range"],
-                    original_key=summary["original_key"],
-                    original_key_is_singable=summary["original_key_is_singable"],
-                    original_key_comment=summary["original_key_comment"]
+                    warnings=summary["warnings"]
                 )
 
             except Exception as e:
@@ -441,6 +438,7 @@ def inject_time_signature_from_previous(mxl_path, fallback_time_signature):
     return ET.tostring(root, encoding='utf-8') if xml_modified else None
 
 def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
+    print("🎬 Running analyse_musicxml_summary()")
     """
     Quickly analyzes MusicXML output to determine:
     - Original key
@@ -454,7 +452,7 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     from music21 import converter, pitch, stream, note
     import os, glob, tempfile
 
-    pattern = os.path.join(output_dir, f"{name}.mvt*.mxl")
+    pattern = os.path.join(output_dir, f"{name}*.mxl")
     mxl_files = sorted(glob.glob(pattern))
 
     all_notes_info = []
@@ -474,7 +472,16 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
                 parse_target = path
 
             score = converter.parse(parse_target)
+            print(f"🔍 Parsing MXL file: {os.path.basename(parse_target)}")
+            print(f"🔍 Score has {len(score.parts)} parts")
+            for part in score.parts:
+                print(f"🧩 Part: name='{part.partName}', id='{part.id}'")
+
             notes, _, part_warnings = extract_vocal_note_info(score, source_name=os.path.basename(path))
+            print(f"✅ {os.path.basename(path)}: extracted {len(notes)} vocal notes")
+            if part_warnings:
+                for w in part_warnings:
+                    print(f"⚠️ Warning in {os.path.basename(path)}: {w}")
             all_notes_info.extend(notes)
             warnings.extend([f"{os.path.basename(path)}: {w}" for w in part_warnings])
 
@@ -484,14 +491,21 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
             continue
 
     if not all_notes_info: #i.e. if all_notes_info is empty
-        return { #return valid values so the app doesn't crash
+        return {
             "recommended": None,
-            "original_key": "Unknown",
-            "pitch_range": ("?", "?"),
+            "other_keys": [],
+            "all_keys_analysis": [],
+            "original_key_info": {
+                "name": "Unknown",
+                "range_low": "?",
+                "range_high": "?",
+                "is_singable": False,
+                "range_comment": "No valid vocal notes found.",
+                "low_out": None,
+                "high_out": None
+            },
             "skipped": skipped,
-            "warnings": warnings,
-            "original_key_is_singable": False,
-            "original_key_comment": "No valid vocal notes found."
+            "warnings": warnings
         }
 
     # Build dummy stream for key analysis
@@ -512,11 +526,16 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
 
     # Evaluate all keys
     all_keys_analysis = get_key_analysis_info(key_estimate, all_notes_info, prefer_transpose_keys)
+##    print(f"all_keys_analysis = {all_keys_analysis}")
     bad_entries = [k for k in all_keys_analysis
                if not isinstance(k, dict) or 'key' not in k]
     print("🛠  Number of malformed entries:", len(bad_entries))
     if bad_entries:
         print("🛠  First bad entry example:", bad_entries[0], type(bad_entries[0]))
+    print("🔍 all_keys_analysis contains:")
+    for k in all_keys_analysis:
+        key = k['key']
+        print(f"  Shift {k['shift']:+}: {key.tonic.name} {key.mode}, Score={k['comfort_score']}, Range={k['range_low']}–{k['range_high']}")
 
     # Find the original key object (shift == 0)
     original_key_info = next((k for k in all_keys_analysis if k['shift'] == 0), None)
@@ -558,17 +577,22 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     else:
         original_key_is_singable = False
         range_comment = ""
-
     # Deduplicate keys by comfort (removes octave duplicates, etc)
     deduped_keys = deduplicate_by_key(all_keys_analysis)
+    print("🔍 deduped_keys contains:")
+    for k in deduped_keys:
+        key = k['key']
+        print(f"  Shift {k['shift']:+}: {key.tonic.name} {key.mode}, Score={k['comfort_score']}, Range={k['range_low']}–{k['range_high']}")
 
     # Pick the recommended key from deduplicated list
     recommended = deduped_keys[0] if deduped_keys else None
+    print(f"in analyse_musicxml_summary recommended is {recommended}")
 
 #    print(f"recommended = {recommended}")
 
     # All other keys except the recommended one
     other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]
+#    print(f"other keys include:{other_keys}")
 
     # 3. Calculate out-of-range values and add them to the 'recommended' dict
     #    If value is 0 (in range), set to None so {% if %} condition is false in template
@@ -588,12 +612,17 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     summary["all_keys_analysis"] = all_keys_analysis
     summary["recommended"] = recommended
     summary["other_keys"] = other_keys
-    summary["original_key"] = original_key_name
-    summary["pitch_range"] = (low, high)
-    summary["original_key_is_singable"] = original_key_is_singable
-    summary["original_key_comment"] = range_comment
-    summary["original_low_out"] = original_low_out
-    summary["original_high_out"] = original_high_out
+    summary["original_key_info"] = {
+        "name": original_key_name,
+        "range_low": low,
+        "range_high": high,
+        "is_singable": original_key_is_singable,
+        "range_comment": range_comment,
+        "low_out": original_low_out if original_low_out > 0 else None,
+        "high_out": original_high_out if original_high_out > 0 else None,
+        "comfort_score": original_key_info["comfort_score"],
+        "comfort_label": original_key_info["comfort_label"]
+    }
     summary["skipped"] = skipped
     summary["warnings"] = warnings
 
