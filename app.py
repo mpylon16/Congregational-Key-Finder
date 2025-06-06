@@ -16,6 +16,8 @@ from xml.etree import ElementTree as ET
 import time
 import logging
 from collections import defaultdict
+import re
+from pathlib import Path
 
 # --- NEW LOGGING SETUP START ---
 # Define the path for your log file. It will be in the same directory as app.py
@@ -43,6 +45,72 @@ def temporarily_set_cwd(path):
         os.chdir(prev)
 
 import hashlib
+
+
+def extract_metadata_from_musicxml(xml_text):
+    """
+    Extracts CCLI Song number and title from MusicXML text.
+    Looks in <rights>, <credit-words>, <work-title>, <movement-title>.
+    """
+    root = ET.fromstring(xml_text)
+
+    # Try to find CCLI Song number from <rights> or <credit-words>
+    ccli_number = None
+##    for tag in ['//rights', './/credit-words']:
+##        for el in root.findall(tag):
+##            print(f"Found element <{tag}>: {el.text}")
+##            if el.text:
+##                match = re.search(r"\bCCLI(?:\s+Song)?\s+(\d{5,8})\b", el.text, re.IGNORECASE)
+##                if match:
+##                    ccli_number = match.group(1)
+##                    break
+##        if ccli_number:
+##            break
+
+    for tag in ['rights', 'credit-words']:
+        for el in root.findall(f".//{tag}"):
+            if el.text:
+                text = el.text.strip()
+                print(f"Checking <{tag}>: {text}")
+
+                # Primary: look for "CCLI Song 1234567"
+                match = re.search(r"\bCCLI(?:\s+Song)?\s+(\d{5,8})\b", text, re.IGNORECASE)
+                if match:
+                    ccli_number = match.group(1)
+                    break
+
+                # Fallback: if text is short, just extract the first 5–8 digit number
+                lines = text.splitlines()
+                if len(lines) <= 3:
+                    fallback_match = re.search(r"\b(\d{5,8})\b", lines[0])
+                    if fallback_match:
+                        print("Using fallback CCLI extraction from line 1")
+                        ccli_number = fallback_match.group(1)
+                        break
+        if ccli_number:
+            break
+
+
+
+    # Try to find a title
+    title = None
+    title_tags = [
+        './/work-title',
+        './/movement-title',
+        './/credit-words',
+    ]
+    for tag in title_tags:
+        for el in root.findall(tag):
+            if el.text and len(el.text.strip()) > 3:
+                title = el.text.strip()
+                break
+        if title:
+            break
+
+    return {
+        'ccli_number': ccli_number,
+        'title': title
+    }
 
 def get_file_hash(pdf_path):
     with open(pdf_path, 'rb') as f:
@@ -251,82 +319,6 @@ def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=Fa
 
 # --- Flask Routes ---
 
-@app.route('/generate_pdf/<hash>', methods=['GET'])
-def generate_pdf_for_download(hash):
-    shift = request.args.get("key", type=int, default=0)
-
-    cache_dir = os.path.join(app.config['OUTPUT_FOLDER'], hash)
-    uploaded_pdf = glob.glob(os.path.join(app.config['UPLOAD_FOLDER'], f"{hash}*.pdf"))
-    if not uploaded_pdf:
-        return f"<p>Error: No original PDF found for hash {hash}</p>", 404
-    pdf_path = uploaded_pdf[0]
-
-    full_output_dir = os.path.join(cache_dir, "full_export")
-    os.makedirs(full_output_dir, exist_ok=True)
-
-    # Run full Audiveris export to get better quality MXL
-    subprocess_args = [
-        AUDIVERIS_CMD_FULL,
-        "-batch",
-        "-transcribe",
-        "-export",
-        "-output", full_output_dir,
-        "-option", "org.audiveris.omr.sheet.Partitioner.smallHeads=true",
-        pdf_path
-    ]
-
-    try:
-        result = subprocess.run(subprocess_args, capture_output=True, text=True, check=False)
-        if result.returncode != 0:
-            return f"<p>Audiveris full run failed. Logs below:</p><pre>{result.stderr}</pre>", 500
-    except Exception as e:
-        return f"<p>Unexpected error during Audiveris full run: {e}</p>", 500
-
-    mxl_files = glob.glob(os.path.join(full_output_dir, "*.mxl"))
-    if not mxl_files:
-        return f"<p>No MXL files found in {full_output_dir}</p>", 500
-
-    from music21 import converter, stream
-
-    combined_score = stream.Score()
-
-    for mxl in sorted(mxl_files):
-        try:
-            score = converter.parse(mxl)
-            if score.parts:
-                for part in score.parts:
-                    transposed = part.transpose(shift)
-                    if transposed is not None:
-                        combined_score.append(transposed)
-                    else:
-                        print(f"⚠️ Transpose returned None for a part in {mxl}")
-            else:
-                # No parts found — maybe a flat score
-                print(f"⚠️ No parts found in {mxl}, appending full score")
-                transposed_score = score.transpose(shift)
-                if transposed_score is not None:
-                    combined_score.append(transposed_score)
-                else:
-                    print(f"⚠️ Transpose returned None for full score in {mxl}")
-        except Exception as e:
-            print(f"⚠️ Error processing {mxl}: {e}")
-
-    # Try to infer a readable key name
-    from music21 import key
-    try:
-        inferred_key = combined_score.analyze('key')
-        key_label = f"{inferred_key.tonic.name.replace('#','s').replace('-','b')}_{inferred_key.mode}"
-    except Exception:
-        key_label = f"shift{shift}"
-
-    output_pdf_path = os.path.join(full_output_dir, f"lead_sheet_{key_label}.pdf")
-    try:
-        combined_score.write('lily.pdf', fp=output_pdf_path)
-    except Exception as e:
-        return f"<p>Error generating PDF with Lilypond: {e}</p>", 500
-
-    return send_file(output_pdf_path, as_attachment=True)
-
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
@@ -391,7 +383,10 @@ def upload_file():
                     recommended=summary["recommended"],
                     other_keys=summary["other_keys"],
                     skipped=summary["skipped"],
-                    warnings=summary["warnings"]
+                    warnings=summary["warnings"],
+                    ccli_link=summary.get("ccli_url"),
+                    title=summary.get("title"),
+                    ccli_no=summary["ccli_number"]
                 )
 
             except Exception as e:
@@ -412,30 +407,79 @@ def upload_file():
 
     return render_template('upload.html')
 
-def inject_time_signature_from_previous(mxl_path, fallback_time_signature):
-    with zipfile.ZipFile(mxl_path, 'r') as zip_ref:
-        xml_file_name = [n for n in zip_ref.namelist() if n.endswith('.xml')][0]
-        xml_bytes = zip_ref.read(xml_file_name)
+import zipfile
 
-    from xml.etree import ElementTree as ET
-    root = ET.fromstring(xml_bytes)
-    first_measure = root.find('.//part/measure')
-    xml_modified = False
+def extract_xml_from_mxl(path):
+    with zipfile.ZipFile(path, 'r') as z:
+        # Find the first .xml file inside the .mxl archive
+        for name in z.namelist():
+            if name.endswith('.xml'):
+                return z.read(name).decode("utf-8")
+    raise ValueError(f"No .xml file found inside {path}")
 
-    if first_measure is not None:
-        attributes = first_measure.find('attributes')
-        has_time = attributes.find('time') if attributes is not None else None
-        if attributes is not None and has_time is None:
-            time_elem = ET.Element('time')
-            if not isinstance(fallback_time_signature, meter.TimeSignature):
-                # Try to convert string fallback like "4/4" to Meter object
-                fallback_time_signature = meter.TimeSignature(fallback_time_signature)
-            ET.SubElement(time_elem, 'beats').text = str(fallback_time_signature.numerator)
-            ET.SubElement(time_elem, 'beat-type').text = str(fallback_time_signature.denominator)
-            attributes.insert(1, time_elem)
-            xml_modified = True
+def inject_divisions_and_time_from_previous(current_path, previous_path=None):
+    """
+    Patch MusicXML if it contains <divisions>0</divisions> or is missing <time>.
+    Tries to copy <divisions> and <time> from the previous movement if provided.
+    Falls back to divisions=1 and time=4/4.
+    Returns: patched XML as bytes if modified, else None.
+    """
+    xml = extract_xml_from_mxl(current_path)
 
-    return ET.tostring(root, encoding='utf-8') if xml_modified else None
+
+    needs_patch = (
+        "<divisions>0</divisions>" in xml
+        or "<divisions>" not in xml
+        or "<time>" not in xml
+    )
+
+    if not needs_patch:
+        return None  # No patch needed
+
+    # Try to extract divisions/time from previous movement
+    fallback_divisions = "<divisions>1</divisions>"
+    fallback_time = "<time><beats>4</beats><beat-type>4</beat-type></time>"
+
+    prior_divisions = None
+    prior_time = None
+
+    if previous_path and Path(previous_path).exists():
+        prev_xml = extract_xml_from_mxl(previous_path)
+
+        div_match = re.search(r"<divisions>(\d+)</divisions>", prev_xml)
+        if div_match and int(div_match.group(1)) > 0:
+            prior_divisions = f"<divisions>{div_match.group(1)}</divisions>"
+
+        time_match = re.search(r"<time>(.*?)</time>", prev_xml, re.DOTALL)
+        if time_match:
+            prior_time = f"<time>{time_match.group(1)}</time>"
+
+    # Use prior or fallback values
+    new_divisions = prior_divisions or fallback_divisions
+    new_time = prior_time or fallback_time
+
+    # Inject into first <attributes> tag
+    patched = re.sub(
+        r"<attributes>(.*?)</attributes>",
+        lambda m: inject_into_attributes(m.group(1), new_divisions, new_time),
+        xml,
+        count=1,
+        flags=re.DOTALL,
+    )
+
+    return patched.encode("utf-8")
+
+def inject_into_attributes(attrs_content, divisions_tag, time_tag):
+    # Only inject if the tags are missing or broken
+    if "<divisions>0</divisions>" in attrs_content or "<divisions>" not in attrs_content:
+        attrs_content = re.sub(r"<divisions>0</divisions>", "", attrs_content)
+        attrs_content = divisions_tag + attrs_content
+
+    if "<time>" not in attrs_content:
+        attrs_content += time_tag
+
+    return f"<attributes>{attrs_content}</attributes>"
+
 
 def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     print("🎬 Running analyse_musicxml_summary()")
@@ -459,17 +503,21 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     skipped = []
     warnings = []
 
+    previous_path = None
+    
     for path in mxl_files:
+        current_path = path
         try:
-            # Inject fallback time signature if needed
-            injected_bytes = inject_time_signature_from_previous(path, '4/4')
+            # Try to patch divisions + time from previous file
+            injected_bytes = inject_divisions_and_time_from_previous(current_path, previous_path)
+
             if injected_bytes:
-                patched_path = os.path.join(tempfile.gettempdir(), f"{os.path.basename(path)}_patched.xml")
-                with open(patched_path, 'wb') as f:
+                patched_path = os.path.join(tempfile.gettempdir(), f"{os.path.basename(current_path)}_patched.xml")
+                with open(patched_path, "wb") as f:
                     f.write(injected_bytes)
                 parse_target = patched_path
             else:
-                parse_target = path
+                parse_target = current_path
 
             score = converter.parse(parse_target)
             print(f"🔍 Parsing MXL file: {os.path.basename(parse_target)}")
@@ -488,7 +536,11 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
         except Exception as e:
             skipped.append(os.path.basename(path))
             warnings.append(f"{os.path.basename(path)} failed: {e}")
+            print(f"❌ Failed to analyze {os.path.basename(path)}: {e}")
+            traceback.print_exc()
             continue
+        previous_path = current_path
+
 
     if not all_notes_info: #i.e. if all_notes_info is empty
         return {
@@ -609,6 +661,25 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
 
     summary = {}
 
+    # Attempt to extract CCLI number from XML
+    if not summary.get("ccli_number") or not summary.get("title"):
+        try:
+            xml_content = extract_xml_from_mxl(path)
+            print("Extracting metadata")
+            metadata = extract_metadata_from_musicxml(xml_content)
+
+            summary["ccli_number"] = metadata.get("ccli_number") or "Not found"
+            summary["title"] = metadata.get("title") or "Not found"
+
+            print(f"Title: {summary['title']}")
+            print(f"CCLI: {summary['ccli_number']}")
+        except Exception as e:
+            print(f"⚠️ Failed to extract metadata from {path}: {e}")
+            traceback.print_exc()
+            summary["ccli_number"] = "Not found"
+            summary["title"] = "Not found"
+
+
     summary["all_keys_analysis"] = all_keys_analysis
     summary["recommended"] = recommended
     summary["other_keys"] = other_keys
@@ -625,6 +696,8 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     }
     summary["skipped"] = skipped
     summary["warnings"] = warnings
+    if "ccli_number" in summary:
+        summary["ccli_url"] = f"https://songselect.ccli.com/Songs/{summary['ccli_number']}"
 
     return summary
 
