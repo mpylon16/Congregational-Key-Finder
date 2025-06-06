@@ -4,26 +4,34 @@
     {{ skipped | join(', ') }}. Pitch/key results may be incomplete.
   </div>
 {% endif %}
+<div style="margin-bottom: 1em;">
+<h1 style="margin-top: 0;">{{ title }}</h1>
+<h3 style="margin-top: 0;"><strong>CCLI Number: </strong>{{ccli_no}}</h3>
+</div>
 
 <!-- 🎵 Original Key Block -->
 <div style="margin-bottom: 1em;">
-	<strong>Original key:</strong> {{ original_key }}<br>
+	
+	<strong>Original key:</strong> {{ original_key.name | replace('-', '♭')}}<br>
 
 	<strong>Pitch range (original):</strong>
-	{% if original_low_out %}
-	<span style="color: red;">{{ pitch_range[0] }} ({{ original_low_out }}♭)</span>
+	{% if original_key.low_out %}
+	<span style="color: red;">{{ original_key.range_low | replace('-', '♭')}} (-{{ original_key.low_out }})</span>
 	{% else %}
-	{{ pitch_range[0] }}
+	{{ original_key.range_low }}
 	{% endif %}
 	–
-	{% if original_high_out %}
-	<span style="color: red;">{{ pitch_range[1] }} (+{{ original_high_out }})</span>
+	{% if original_key.high_out %}
+	<span style="color: red;">{{ original_key.range_high | replace('-', '♭')}} (+{{ original_key.high_out }})</span>
 	{% else %}
-	{{ pitch_range[1] }}
+	{{ original_key.range_high }}
 	{% endif %}
-	{% if not original_key_is_singable %}
+	<br>
+    <strong>Comfort Score:</strong> -{{ original_key.comfort_score }} {{ original_key.comfort_label }}<br>
+	
+	<!--{% if not original_key_is_singable %}
 	  <p style="color: red; margin: 0.5em 0 0 0;">
-	    ⚠️ The original key is not ideal for congregational singing.<br>
+	    ⚠️ The original key is not ideal for congregational singing.<br>-->
 	    {{ original_key_comment }}
 	  </p>
 	{% else %}
@@ -33,7 +41,7 @@
 
 {% if recommended %}
   <div style="border: 2px solid green; padding: 1em; margin-bottom: 1em;">
-    <h3 style="margin-top: 0;">🗝️ Key Recommendation</h3>
+    <h3 style="margin-top: 0;">&#127908 Key Recommendation</h3>
 
     <strong>Recommended key:</strong>
     {{ recommended['key'].tonic.name | replace('-', '♭') }}{% if recommended['key'].mode != 'major' %} {{ recommended['key'].mode }}{% endif %}
@@ -47,23 +55,19 @@
     {% if recommended.low_out %}
       <span style="color: red;">{{ recommended.range_low | replace('-', '♭') }} (Best fit still {{ recommended.low_out }} semitones lower than comfortable)</span>
     {% else %}
-      {{ recommended.range_low }}
+      {{ recommended.range_low | replace('-', '♭')}}
     {% endif %}
     –
     {% if recommended.high_out %}
-      <span style="color: red;">{{ recommended.range_high }} (Best fit still {{ recommended.high_out }} semitones higher than comfortable)</span>
+      <span style="color: red;">{{ recommended.range_high | replace('-', '♭')}} (Best fit still {{ recommended.high_out }} semitones higher than comfortable)</span>
     {% else %}
-      {{ recommended.range_high }}
+      {{ recommended.range_high | replace('-', '♭')}}
     {% endif %}
 
     <br>
-    <strong>Comfort Score:</strong> {{ recommended.comfort_score }} {{ recommended.comfort_label }}<br>
+    <strong>Comfort Score:</strong> -{{ recommended.comfort_score }} {{ recommended.comfort_label }}<br>
 
-    <br>
-    <a class="btn btn-primary" href="/generate_pdf/{{ pdf_hash }}?key={{ recommended.shift }}">
-      Download Lead Sheet (PDF)
-    </a>
-  </div>
+ </div>
 {% else %}
   <p style="color: red;">⚠️ No suitable key could be determined from the uploaded score.</p>
 {% endif %}
@@ -95,7 +99,7 @@
               {{ k['key'].tonic.name | replace('-', '♭') }}
               {% if k['key'].mode != 'major' %} {{ k['key'].mode }}{% endif %}
               ({{ '%+d'|format(k.shift) }}):
-              Score {{ k.comfort_score }}
+              Score -{{ k.comfort_score }}
               <a href="/generate_pdf/{{ pdf_hash }}?key={{ k.shift }}">[PDF]</a>
             </li>
           {% endfor %}
@@ -107,40 +111,13 @@
 
 <hr>
 
-<h3>📥 Custom Download Options</h3>
-<form action="/preview_chords" method="get" style="margin-top: 1em;">
-  <input type="hidden" name="hash" value="{{ pdf_hash }}">
+{% if ccli_link %}
+    <p>
+        <strong>Download transposed lead sheet or chords and lyrics from SongSelect (login required):</strong>
+        <a href="{{ ccli_link }}" target="_blank">{{ ccli_link }}</a>
+    </p>
+{% endif %}
 
-  <label for="format"><strong>Choose format:</strong></label>
-  <select name="format" id="format">
-    <option value="lead">Lead Sheet (PDF)</option>
-    <option value="lyrics">Chords & Lyrics Only</option>
-    <option value="mxl">Raw MusicXML</option>
-  </select>
-
-<select name="key">
-
-  {% if recommended is mapping and 'key' in recommended %}
-    <option value="{{ recommended['shift'] }}">
-      {{ recommended['key'].tonic.name | replace('-', '♭') }}
-      {% if recommended['key'].mode != 'major' %} {{ recommended['key'].mode }}{% endif %}
-      ({{ '%+d'|format(recommended['shift']) }})
-    </option>
-  {% endif %}
-
-  {% for k in other_keys %}
-    {% if k is mapping and 'key' in k %}
-      <option value="{{ k['shift'] }}">
-        {{ k['key'].tonic.name | replace('-', '♭') }}
-        {% if k['key'].mode != 'major' %} {{ k['key'].mode }}{% endif %}
-        ({{ '%+d'|format(k['shift']) }})
-      </option>
-    {% endif %}
-  {% endfor %}
-</select>
-
-  <button type="submit" class="btn btn-success">Continue</button>
-</form>
 
 <details style="margin-top: 2em;">
   <summary style="font-weight: bold; font-size: 1.1em;">ℹ️ About the analysis</summary>
