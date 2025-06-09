@@ -54,43 +54,67 @@ def extract_metadata_from_musicxml(xml_text):
     """
     root = ET.fromstring(xml_text)
 
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError as e:
+        print(f"Error parsing XML content string: {e}")
+        return {"ccli_number": None, "title": "Error Parsing XML"} # Return an error state
+    
+    print(f"The root element of your XML content is: {root.tag}") # Corrected print statement
+
     # Try to find CCLI Song number from <rights> or <credit-words>
-    ccli_number = None
-##    for tag in ['//rights', './/credit-words']:
-##        for el in root.findall(tag):
-##            print(f"Found element <{tag}>: {el.text}")
-##            if el.text:
-##                match = re.search(r"\bCCLI(?:\s+Song)?\s+(\d{5,8})\b", el.text, re.IGNORECASE)
-##                if match:
-##                    ccli_number = match.group(1)
-##                    break
-##        if ccli_number:
-##            break
+    ccli_number = None    # Identify the default namespace from the root element
+    namespace_uri = None
+    if '}' in root.tag: # Checks if the root tag has a namespace (e.g., '{uri}tag_name')
+        namespace_uri = root.tag.split('}')[0].strip('{')
+    namespaces = {'mx': namespace_uri} if namespace_uri else {} # Use 'mx' as a prefix for XPath
 
     for tag in ['rights', 'credit-words']:
-        for el in root.findall(f".//{tag}"):
-            if el.text:
+        print(f"\n--- Searching for <{tag}> elements ---")
+        # Construct XPath query with namespace prefix if a namespace exists
+        xpath_query = f".//mx:{tag}" if namespace_uri else f".//{tag}"
+        
+        elements_found = root.findall(xpath_query, namespaces=namespaces)
+
+        if not elements_found:
+            print(f"No <{tag}> elements found.")
+            continue # Move to the next tag if none found
+
+        for i, el in enumerate(elements_found):
+            print(f"  Processing <{tag}> element #{i+1}:")
+            if el.text is not None:
                 text = el.text.strip()
-                print(f"Checking <{tag}>: {text}")
+                print(f"    Raw text from element: '{el.text}'") # Print raw text for debugging
+                print(f"    Stripped text being checked: '{text}'")
 
                 # Primary: look for "CCLI Song 1234567"
                 match = re.search(r"\bCCLI(?:\s+Song)?\s+(\d{5,8})\b", text, re.IGNORECASE)
                 if match:
                     ccli_number = match.group(1)
-                    break
+                    print(f"    SUCCESS: CCLI number found: {ccli_number}")
+                    break # Breaks out of the inner loop (over 'el' elements)
 
                 # Fallback: if text is short, just extract the first 5–8 digit number
                 lines = text.splitlines()
                 if len(lines) <= 3:
                     fallback_match = re.search(r"\b(\d{5,8})\b", lines[0])
                     if fallback_match:
-                        print("Using fallback CCLI extraction from line 1")
+                        print(f"    SUCCESS: Using fallback CCLI extraction from line 1: {fallback_match.group(1)}")
                         ccli_number = fallback_match.group(1)
-                        break
+                        break # Breaks out of the inner loop
+                else:
+                    print(f"    Text too long for fallback ({len(lines)} lines).")
+            else:
+                print(f"    Element has no text content (el.text is None).")
+
         if ccli_number:
-            break
+            print(f"Found CCLI number: {ccli_number}. Breaking outer loop.")
+            break # Breaks out of the outer loop (over 'tag')
 
-
+    if ccli_number:
+        print(f"Final CCLI: {ccli_number}")
+    else:
+        print("Final CCLI: Not found")
 
     # Try to find a title
     title = None
@@ -184,12 +208,25 @@ TRANSPOSE_INSTRUMENT_KEYS = {'Bb', 'Eb', 'Ab'}
 
 # --- Helper Functions for Music Analysis ---
 
-def is_singable(low_midi, high_midi):
-    """
-    Checks if an entire pitch range (lowest to highest MIDI) falls within the
-    defined COMFORTABLE_RANGE.
-    """
-    return COMFORTABLE_RANGE[0] <= low_midi and high_midi <= COMFORTABLE_RANGE[1]
+##def is_singable(low_midi, high_midi):
+##    """
+##    Checks if an entire pitch range (lowest to highest MIDI) falls within the
+##    defined COMFORTABLE_RANGE.
+##    """
+##    return COMFORTABLE_RANGE[0] <= low_midi and high_midi <= COMFORTABLE_RANGE[1]
+##
+##def range_singability(low_midi, high_midi):
+##    """
+##    Performs a singability check, providing detailed comfort feedback
+##    aligned with predefined categories and colors.
+##
+##    Args:
+##        song_midi_data: A list of (midi_note, duration) tuples for the song.
+##
+##    Returns:
+##        A dictionary containing singability feedback.
+##    """
+
 
 #--------Calculate comfort score----------
 
@@ -201,6 +238,44 @@ C4 = pitch.Pitch('C4').midi  # 60
 C5 = pitch.Pitch('C5').midi  # 72
 D5 = pitch.Pitch('D5').midi  # 74
 E5 = pitch.Pitch('E5').midi  # 76
+
+def get_note_comfort_category(midi_note):
+    """
+    Returns a color string based on the comfort of a single MIDI note,
+    matching your defined categories and colors.
+
+    MIDI values for reference:
+    C4 = 60, D4 = 62, E4 = 64, F4 = 65, G4 = 67, A4 = 69, B4 = 71
+    C5 = 72, D5 = 74, E5 = 76, F5 = 77, G5 = 79, A5 = 81, B5 = 83
+
+    C3 = 48, D3 = 50, E3 = 52, F3 = 53, G3 = 55, A3 = 57, B3 = 59
+    """
+    # 🎯 Ideal Tessitura: C4–C5
+    if C4 <= midi_note <= C5:
+        return "ideal"
+    # ✅ Comfortable Range: A3–D5 (excluding ideal tessitura which is handled above)
+    elif (A3 <= midi_note < C4) or (C5 < midi_note <= D5): 
+        return "comfortable for most"
+    # ⚠️ Stretch Zone: G3–E5 (excluding comfortable range which is handled above)
+    elif (G3 <= midi_note < A3) or (D5 < midi_note <= E5): 
+        return "a stretch for some"
+    # ❌ Out of Range: below G3 or above E5
+    else:
+        return "out of range"
+
+def get_note_comfort_color(midi_note):
+    """
+    Returns a color string based on the comfort category of a single MIDI note.
+    """
+    category = get_note_comfort_category(midi_note)
+    if category == "ideal":
+        return "green"
+    elif category == "comfortable for most":
+        return "#50C878"
+    elif category == "a stretch for some":
+        return "#FF8503"
+    else: # out_of_range
+        return "red"
 
 def calculate_comfort_score(notes_info):
     """
@@ -220,19 +295,27 @@ def calculate_comfort_score(notes_info):
         elif A3 <= midi <= B3 or C5 < midi <= D5:
             score += 1 * dur  # slightly outside ideal
         elif G3 <= midi < A3 or D5 < midi <= E5:
-            score += 3 * dur  # edge of range
+            base_penalty = 3
+            score += base_penalty * dur  # edge of range
+            # Add an extra penalty for sustained notes in the stretch zone
+            if dur >= 2: # If note is half-note or longer
+                score += base_penalty * 0.5 # Add half the base penalty again
         else:
-            score += 10 * dur  # well outside range
+            base_penalty = 10
+            score += base_penalty * dur
+            # Add a more significant extra penalty for sustained notes out of range
+            if dur >= 2: # If note is half-note or longer
+                score += base_penalty # Add full base penalty again
     return round(score, 1)
 
 def comfort_category(score):
     if score == 0:
         return "✅ Perfect fit"
-    elif score <= 20:
+    elif score <= 35:
         return "🎵 Very singable"
-    elif score <= 80:
+    elif score <= 120:
         return "⚠️ Singable but may challenge some"
-    elif score <= 200:
+    elif score <= 250:
         return "❌ Uncomfortable for most"
     else:
         return "🚫 Not suitable for congregational singing"
@@ -240,11 +323,11 @@ def comfort_category(score):
 def comfort_category_slug(score):
     if score == 0:
         return "perfect"
-    elif score <= 20:
+    elif score <= 35:
         return "very-singable"
-    elif score <= 80:
+    elif score <= 120:
         return "challenging"
-    elif score <= 200:
+    elif score <= 250:
         return "uncomfortable"
     else:
         return "unsuitable"
@@ -256,7 +339,7 @@ def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=Fa
     Returns a sorted list of all candidates and a filtered list of truly singable options.
     """
     key_analysis_info = []
-    print(f"all_notes_info={all_notes_info}")
+##    print(f"all_notes_info={all_notes_info}")
     
     # Iterate through possible transpositions (e.g., -12 to +12 semitones = full octave up/down)
     for i in range(-11, 12):
@@ -291,6 +374,10 @@ def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=Fa
 
             lowest = min(n['midi'] for n in shifted_notes_info)
             highest = max(n['midi'] for n in shifted_notes_info)
+            low_comfort = get_note_comfort_category(lowest)
+            high_comfort = get_note_comfort_category(highest)
+            low_color = get_note_comfort_color(lowest)
+            high_color = get_note_comfort_color(highest)
 
             key_analysis_info.append({
                 'shift': i,
@@ -299,6 +386,10 @@ def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=Fa
                 'final_score': round(final_score, 1),
                 'low': lowest,
                 'high': highest,
+                'low_comfort': low_comfort,
+                'high_comfort': high_comfort,
+                'low_color': low_color,
+                'high_color': high_color,
                 'range_low': pitch.Pitch(lowest).nameWithOctave,
                 'range_high': pitch.Pitch(highest).nameWithOctave,
                 'comfort_label': comfort_category(comfort_score),
@@ -373,9 +464,6 @@ def upload_file():
                     name=name,
                     prefer_transpose_keys=prefer_transpose_keys
                 )
-
-                recommended=summary["recommended"]
-                print(f"recommended is {recommended}")
 
                 return render_template("analysis_results.html",
                     pdf_hash=pdf_hash,                                       
@@ -504,6 +592,7 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     warnings = []
 
     previous_path = None
+    summary = {}
     
     for path in mxl_files:
         current_path = path
@@ -533,6 +622,24 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
             all_notes_info.extend(notes)
             warnings.extend([f"{os.path.basename(path)}: {w}" for w in part_warnings])
 
+            # Attempt to extract CCLI number from XML
+            if not summary.get("ccli_number") or not summary.get("title"):
+                try:
+                    xml_content = extract_xml_from_mxl(path)
+                    print("Extracting metadata")
+                    metadata = extract_metadata_from_musicxml(xml_content)
+
+                    summary["ccli_number"] = metadata.get("ccli_number") or "Not found"
+                    summary["title"] = metadata.get("title") or "Not found"
+
+                    print(f"Title: {summary['title']}")
+                    print(f"CCLI: {summary['ccli_number']}")
+                except Exception as e:
+                    print(f"⚠️ Failed to extract metadata from {path}: {e}")
+                    traceback.print_exc()
+                    summary["ccli_number"] = "Not found"
+                    summary["title"] = "Not found"
+
         except Exception as e:
             skipped.append(os.path.basename(path))
             warnings.append(f"{os.path.basename(path)} failed: {e}")
@@ -551,8 +658,8 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
                 "name": "Unknown",
                 "range_low": "?",
                 "range_high": "?",
-                "is_singable": False,
-                "range_comment": "No valid vocal notes found.",
+##                "is_singable": False,
+##                "range_comment": "No valid vocal notes found.",
                 "low_out": None,
                 "high_out": None
             },
@@ -578,16 +685,15 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
 
     # Evaluate all keys
     all_keys_analysis = get_key_analysis_info(key_estimate, all_notes_info, prefer_transpose_keys)
-##    print(f"all_keys_analysis = {all_keys_analysis}")
     bad_entries = [k for k in all_keys_analysis
                if not isinstance(k, dict) or 'key' not in k]
     print("🛠  Number of malformed entries:", len(bad_entries))
     if bad_entries:
         print("🛠  First bad entry example:", bad_entries[0], type(bad_entries[0]))
     print("🔍 all_keys_analysis contains:")
-    for k in all_keys_analysis:
-        key = k['key']
-        print(f"  Shift {k['shift']:+}: {key.tonic.name} {key.mode}, Score={k['comfort_score']}, Range={k['range_low']}–{k['range_high']}")
+##    for k in all_keys_analysis:
+##        key = k['key']
+##        print(f"  Shift {k['shift']:+}: {key.tonic.name} {key.mode}, Score={k['comfort_score']}, Range={k['range_low']}–{k['range_high']}")
 
     # Find the original key object (shift == 0)
     original_key_info = next((k for k in all_keys_analysis if k['shift'] == 0), None)
@@ -597,6 +703,10 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
         original_high = original_key_info["high"] # MIDI value
         low = original_key_info["range_low"]              # Pitch name (e.g., 'C4')
         high = original_key_info["range_high"]            # Pitch name (e.g., 'G5')
+        original_low_comfort = original_key_info["low_comfort"]
+        original_high_comfort = original_key_info["high_comfort"]
+        original_low_color = original_key_info["low_color"]
+        original_high_color = original_key_info["high_color"]
     else:
         # Fallback to direct calculation if original_key_info is unexpectedly None
         # This part should ideally not be hit if all_notes_info was not empty
@@ -605,80 +715,44 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
         original_high = max(midi_values)
         low = pitch.Pitch(original_low).nameWithOctave
         high = pitch.Pitch(original_high).nameWithOctave
+        original_low_comfort = get_note_comfort_category(low)
+        original_high_comfort = get_note_comfort_category(high)
+        original_low_color = get_note_comfort_color(low)
+        original_high_color = get_note_comfort_color(high)
         
-    original_low_out = max(0, COMFORTABLE_RANGE[0] - original_low)
-    original_high_out = max(0, original_high - COMFORTABLE_RANGE[1])
+##    original_low_out = max(0, COMFORTABLE_RANGE[0] - original_low)
+##    original_high_out = max(0, original_high - COMFORTABLE_RANGE[1])
 
-
-##    # Convert MIDI values to human-readable pitch names for the final return
-##    low = pitch.Pitch(original_low).nameWithOctave
-##    high = pitch.Pitch(original_high).nameWithOctave
-    
-    if original_key_info:
-        original_key_is_singable = is_singable(original_key_info["low"], original_key_info["high"])
-        delta_low = max(0, COMFORTABLE_RANGE[0] - original_key_info["low"])
-        delta_high = max(0, original_key_info["high"] - COMFORTABLE_RANGE[1])
-        range_comment = ""
-        if delta_low or delta_high:
-            parts = []
-            if delta_low > 0:
-                parts.append(f"Lowest note ({pitch.Pitch(original_low).nameWithOctave}) is {delta_low} semitone{'s' if delta_low > 1 else ''} lower than the comfortable range for a mixed congregation")
-            if delta_high > 0:
-                parts.append(f"Highest note ({pitch.Pitch(original_high).nameWithOctave}) is {delta_high} semitone{'s' if delta_high > 1 else ''} higher than the comfortable range for a mixed congregation")
-            range_comment = ", ".join(parts) + "."
-    else:
-        original_key_is_singable = False
-        range_comment = ""
     # Deduplicate keys by comfort (removes octave duplicates, etc)
     deduped_keys = deduplicate_by_key(all_keys_analysis)
-    print("🔍 deduped_keys contains:")
-    for k in deduped_keys:
-        key = k['key']
-        print(f"  Shift {k['shift']:+}: {key.tonic.name} {key.mode}, Score={k['comfort_score']}, Range={k['range_low']}–{k['range_high']}")
+##    print("🔍 deduped_keys contains:")
+##    for k in deduped_keys:
+##        key = k['key']
+##        print(f"  Shift {k['shift']:+}: {key.tonic.name} {key.mode}, Score={k['comfort_score']}, Range={k['range_low']}–{k['range_high']}")
 
     # Pick the recommended key from deduplicated list
     recommended = deduped_keys[0] if deduped_keys else None
-    print(f"in analyse_musicxml_summary recommended is {recommended}")
+##    print(f"in analyse_musicxml_summary recommended is {recommended}")
 
-#    print(f"recommended = {recommended}")
-
-    # All other keys except the recommended one
-    other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]
-#    print(f"other keys include:{other_keys}")
-
-    # 3. Calculate out-of-range values and add them to the 'recommended' dict
     #    If value is 0 (in range), set to None so {% if %} condition is false in template
-    recommended_low_out = max(0, COMFORTABLE_RANGE[0] - recommended['low'])
-    recommended['low_out'] = recommended_low_out if recommended_low_out > 0 else None
-
-    recommended_high_out = max(0, recommended['high'] - COMFORTABLE_RANGE[1])
-    recommended['high_out'] = recommended_high_out if recommended_high_out > 0 else None
+##    recommended_low_out = max(0, COMFORTABLE_RANGE[0] - recommended['low'])
+##    recommended['low_out'] = recommended_low_out if recommended_low_out > 0 else None
+##
+##    recommended_high_out = max(0, recommended['high'] - COMFORTABLE_RANGE[1])
+##    recommended['high_out'] = recommended_high_out if recommended_high_out > 0 else None
+    recommended['low_comfort'] = get_note_comfort_category(recommended['low'])
+    recommended['high_comfort'] = get_note_comfort_category(recommended['high'])
+    recommended['low_color'] = get_note_comfort_color(recommended['low'])
+    recommended['high_color'] = get_note_comfort_color(recommended['high'])
 
     print(f"recommended = {recommended}")
 
+        # All other keys except the recommended one
+    other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]
+#    print(f"other keys include:{other_keys}")
+
     # If 'recommended' is None (no suitable keys found), the template's {% if recommended %}
     # will handle it, so no 'else' block needed here for setting these keys.
-
-    summary = {}
-
-    # Attempt to extract CCLI number from XML
-    if not summary.get("ccli_number") or not summary.get("title"):
-        try:
-            xml_content = extract_xml_from_mxl(path)
-            print("Extracting metadata")
-            metadata = extract_metadata_from_musicxml(xml_content)
-
-            summary["ccli_number"] = metadata.get("ccli_number") or "Not found"
-            summary["title"] = metadata.get("title") or "Not found"
-
-            print(f"Title: {summary['title']}")
-            print(f"CCLI: {summary['ccli_number']}")
-        except Exception as e:
-            print(f"⚠️ Failed to extract metadata from {path}: {e}")
-            traceback.print_exc()
-            summary["ccli_number"] = "Not found"
-            summary["title"] = "Not found"
-
 
     summary["all_keys_analysis"] = all_keys_analysis
     summary["recommended"] = recommended
@@ -687,10 +761,14 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
         "name": original_key_name,
         "range_low": low,
         "range_high": high,
-        "is_singable": original_key_is_singable,
-        "range_comment": range_comment,
-        "low_out": original_low_out if original_low_out > 0 else None,
-        "high_out": original_high_out if original_high_out > 0 else None,
+##        "is_singable": original_key_is_singable,
+##        "range_comment": range_comment,
+##        "low_out": original_low_out if original_low_out > 0 else None,
+##        "high_out": original_high_out if original_high_out > 0 else None,
+        "low_comfort": original_low_comfort,
+        "high_comfort": original_high_comfort,
+        "low_color": original_low_color,
+        "high_color": original_high_color,
         "comfort_score": original_key_info["comfort_score"],
         "comfort_label": original_key_info["comfort_label"]
     }
@@ -793,8 +871,8 @@ def extract_vocal_note_info(score, fallback_time_signature='4/4', source_name='u
     return all_notes_info, filtered_vocal_part, warnings
 
 def deduplicate_by_key(all_keys_analysis):
-    print("🔍 Type of all_keys_analysis:", type(all_keys_analysis))
-    print("🔍 First few entries:", all_keys_analysis[:3])
+##    print("🔍 Type of all_keys_analysis:", type(all_keys_analysis))
+##    print("🔍 First few entries:", all_keys_analysis[:3])
 
     best_versions = {}
     for k in all_keys_analysis:
