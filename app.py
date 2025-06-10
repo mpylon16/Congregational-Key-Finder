@@ -2,7 +2,7 @@ import traceback
 import contextlib
 import hashlib
 import music21
-from music21 import converter, pitch, key as m21key, interval, stream, meter, expressions, environment, note
+from music21 import converter, pitch, key, interval, stream, meter, expressions, environment, note, chord, harmony
 import tempfile
 import os
 import subprocess
@@ -332,6 +332,36 @@ def comfort_category_slug(score):
     else:
         return "unsuitable"
 
+def ensure_music21_key(k):
+    """
+    Try to convert to a music21.key.Key object. Return None if not possible.
+    """
+    if isinstance(k, music21.key.Key):
+        return k
+
+    elif isinstance(k, music21.key.KeySignature):
+        try:
+            result = k.asKey()
+            print("Was KeySignature, converted to key")
+            return result
+        except Exception as e:
+            print(f"Exception during KeySignature conversion: {e}")
+            return None
+
+    elif isinstance(k, str):
+        print("Key object is string")
+        try:
+            result = music21.key.Key(k)
+            print("Converted string to music21 key")
+            return result
+        except Exception as e:
+            print(f"Exception during string-to-key conversion: {e}")
+            return None
+
+    print(f"Final return None — unknown type: {type(k)} = {k}")
+    return None
+
+
 def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=False):
     """
     Finds and scores potential transposed keys based on comfort, key complexity,
@@ -340,7 +370,7 @@ def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=Fa
     """
     key_analysis_info = []
 ##    print(f"all_notes_info={all_notes_info}")
-    
+    warnings = []
     # Iterate through possible transpositions (e.g., -12 to +12 semitones = full octave up/down)
     for i in range(-11, 12):
         try:
@@ -355,7 +385,16 @@ def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=Fa
                 continue
 
             comfort_score = calculate_comfort_score(shifted_notes_info)
-            transposed_key = original_key.transpose(i)
+            original_key = ensure_music21_key(original_key)
+            if not isinstance(original_key, music21.key.Key):
+                print(f"⚠️ Cannot transpose shift {i}: final_key is not a valid music21 Key object. Skipping.")
+                continue
+            try:
+                transposed_key = original_key.transpose(i)
+            except Exception as e:
+                print(f"❌ Transposition failed for shift {i}: {e}")
+                continue
+
             key_tonic_name = transposed_key.tonic.name
 
             accidental_penalty = abs(transposed_key.sharps)
@@ -422,6 +461,7 @@ def upload_file():
             file.save(filepath)
 
             name, _ = os.path.splitext(filename)
+
             pdf_hash = get_file_hash(filepath)
 
             cached_output_dir = os.path.join(app.config['OUTPUT_FOLDER'], pdf_hash)
@@ -568,6 +608,21 @@ def inject_into_attributes(attrs_content, divisions_tag, time_tag):
 
     return f"<attributes>{attrs_content}</attributes>"
 
+def simplify_enharmonic(key_obj):
+    """Return the enharmonic spelling with the fewest accidentals."""
+    enharmonic_tonic = key_obj.tonic.getEnharmonic()
+    enharmonic_key = key.Key(enharmonic_tonic.name, key_obj.mode)
+    options = [key_obj, enharmonic_key]
+    print(f"Original: {key_obj}")        # Db major
+    print(f"Enharmonic: {enharmonic_key}")    # C# major
+    return min(options, key=lambda k: abs(k.sharps))
+
+def extract_written_chords(score):
+    """Returns a list of ChordSymbol objects (written chord names)."""
+    try:
+        return [h for h in score.recurse().getElementsByClass(music21.harmony.ChordSymbol)]
+    except Exception:
+        return []
 
 def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     print("🎬 Running analyse_musicxml_summary()")
@@ -611,6 +666,7 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
             score = converter.parse(parse_target)
             print(f"🔍 Parsing MXL file: {os.path.basename(parse_target)}")
             print(f"🔍 Score has {len(score.parts)} parts")
+                        
             for part in score.parts:
                 print(f"🧩 Part: name='{part.partName}', id='{part.id}'")
 
@@ -675,22 +731,92 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
         n_obj.duration.quarterLength = n['duration']
         dummy_stream.append(n_obj)
 
+    chords = extract_written_chords(score)
+    first_chord = chords[0] if chords else None
+    print(f"First chord:{first_chord}")
+    last_chord = chords[-1] if chords else None
+    print(f"last chord:{last_chord}")
+    ks_objects = score.parts[0].recurse().getElementsByClass(key.KeySignature)
+    for ks in ks_objects:
+        print(f"Found KeySignature: {ks.sharps} sharps — {ks.asKey().name}")
     try:
-        key_estimate = dummy_stream.analyze('key')
-        original_key_name = f"{key_estimate.tonic.name} {key_estimate.mode}"
+        # 1. Get key from file title
+        songname, _ ,file_key = name.split("-")
+        file_key = ensure_music21_key(file_key) if file_key else None
+        print(f"songname is {songname}, file_key is {file_key}")
+        print(f"file_key key type: {type(file_key)} | Value: {file_key}")
+            
+        # 2. Get declared key signature from the score
+        
+        declared_key = ks_objects[0].asKey() if ks_objects else None
+        print(f"Declared key type: {type(declared_key)} | Value: {declared_key}")
+
+        # 3. Estimate key from the notes
+        estimated_key = dummy_stream.analyze('key')
+        print(f"Estimated key:{estimated_key}")
+
+        # 4. Start from file_key
+        key_warning = ""
+        if file_key:
+            final_key = file_key
+        elif declared_key:
+            final_key = declared_key
+            relative_minor = declared_key.relative
+            print(f"Relative minor:{relative_minor}")
+
+            # Case: estimated key is *exactly* the relative minor of declared key
+            if estimated_key == relative_minor:
+                if chords:
+                    first_chord = chords[0] if len(chords) > 0 else None
+                    last_chord = chords[-1] if len(chords) > 0 else None
+
+                    try:
+                        if (
+                            (first_chord and first_chord.root().name == relative_minor.tonic.name and first_chord.quality == 'minor') or
+                            (last_chord and last_chord.root().name == relative_minor.tonic.name and last_chord.quality == 'minor')
+                        ):
+                            final_key = relative_minor
+                            final_key = ensure_music21_key(final_key)
+                    except Exception as e:
+                        warnings.append(f"Chord comparison failed: {e}")
+
+            # Case: estimated key disagrees entirely
+            elif (
+                estimated_key.tonic.name != declared_key.tonic.name or 
+                estimated_key.mode != declared_key.mode
+            ):
+                key_warning = (
+                    f"⚠️ Estimated key from notes ({estimated_key.tonic.name} {estimated_key.mode}) disagrees with declared key signature ({declared_key.tonic.name} {declared_key.mode})."
+                )
+            print(f"final_key:{final_key}")
+            final_key = ensure_music21_key(final_key)
+        else:
+            final_key = estimated_key
+            final_key = ensure_music21_key(final_key)
+            key_warning = "⚠️ No key signature found on the stave; using estimated key."
+
+        # 4. Simplify enharmonic
+        if final_key:
+            final_key = simplify_enharmonic(final_key)
+
+        # 5. Format readable output
+        original_key_name = f"{final_key.tonic.name} {final_key.mode}" if final_key else "Unknown"
+
     except Exception as e:
-        key_estimate = None
+        final_key = None
         original_key_name = "Unknown"
-        warnings.append(f"Key analysis failed: {e}")
+        key_warning = f"⚠️ Key analysis failed: {e}"
+        warnings.append(key_warning)
 
     # Evaluate all keys
-    all_keys_analysis = get_key_analysis_info(key_estimate, all_notes_info, prefer_transpose_keys)
+    print(f"Just before all_keys_analysis, final _key: {type(final_key)} = {final_key}")
+    all_keys_analysis = get_key_analysis_info(final_key, all_notes_info, prefer_transpose_keys)
     bad_entries = [k for k in all_keys_analysis
                if not isinstance(k, dict) or 'key' not in k]
     print("🛠  Number of malformed entries:", len(bad_entries))
     if bad_entries:
         print("🛠  First bad entry example:", bad_entries[0], type(bad_entries[0]))
-    print("🔍 all_keys_analysis contains:")
+##    print("🔍 all_keys_analysis contains:")
 ##    for k in all_keys_analysis:
 ##        key = k['key']
 ##        print(f"  Shift {k['shift']:+}: {key.tonic.name} {key.mode}, Score={k['comfort_score']}, Range={k['range_low']}–{k['range_high']}")
@@ -720,9 +846,6 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
         original_low_color = get_note_comfort_color(low)
         original_high_color = get_note_comfort_color(high)
         
-##    original_low_out = max(0, COMFORTABLE_RANGE[0] - original_low)
-##    original_high_out = max(0, original_high - COMFORTABLE_RANGE[1])
-
     # Deduplicate keys by comfort (removes octave duplicates, etc)
     deduped_keys = deduplicate_by_key(all_keys_analysis)
 ##    print("🔍 deduped_keys contains:")
@@ -734,18 +857,12 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     recommended = deduped_keys[0] if deduped_keys else None
 ##    print(f"in analyse_musicxml_summary recommended is {recommended}")
 
-    #    If value is 0 (in range), set to None so {% if %} condition is false in template
-##    recommended_low_out = max(0, COMFORTABLE_RANGE[0] - recommended['low'])
-##    recommended['low_out'] = recommended_low_out if recommended_low_out > 0 else None
-##
-##    recommended_high_out = max(0, recommended['high'] - COMFORTABLE_RANGE[1])
-##    recommended['high_out'] = recommended_high_out if recommended_high_out > 0 else None
     recommended['low_comfort'] = get_note_comfort_category(recommended['low'])
     recommended['high_comfort'] = get_note_comfort_category(recommended['high'])
     recommended['low_color'] = get_note_comfort_color(recommended['low'])
     recommended['high_color'] = get_note_comfort_color(recommended['high'])
 
-    print(f"recommended = {recommended}")
+##    print(f"recommended = {recommended}")
 
         # All other keys except the recommended one
     other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]
@@ -761,10 +878,6 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
         "name": original_key_name,
         "range_low": low,
         "range_high": high,
-##        "is_singable": original_key_is_singable,
-##        "range_comment": range_comment,
-##        "low_out": original_low_out if original_low_out > 0 else None,
-##        "high_out": original_high_out if original_high_out > 0 else None,
         "low_comfort": original_low_comfort,
         "high_comfort": original_high_comfort,
         "low_color": original_low_color,
