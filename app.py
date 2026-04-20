@@ -32,7 +32,7 @@ logging.basicConfig(
 # --- NEW LOGGING SETUP END ---
 
 AUDIVERIS_CMD_FAST = r"C:\audiveris_fast_install\bin\audiveris.bat"
-AUDIVERIS_CMD_FULL = r"C:\audiveris_full_install\bin\audiveris.bat"
+AUDIVERIS_CMD_FULL = "/app/audiveris/bin/Audiveris"
 
 
 @contextlib.contextmanager

@@ -1,0 +1,50 @@
+# Stage 1: Build patched Audiveris
+FROM eclipse-temurin:21-jdk AS builder
+
+RUN apt-get update && apt-get install -y git curl unzip
+
+WORKDIR /audiveris
+COPY ./audiveris_source /audiveris
+
+RUN ./gradlew clean installDist -x test --no-daemon
+
+RUN cp -r /audiveris/app/res /audiveris/app/build/install/app/res
+
+# Stage 2: Runtime image
+FROM eclipse-temurin:21-jdk AS final
+
+# Install Python, Tesseract, and other dependencies
+RUN apt-get update && apt-get install -y \
+    python3 \
+    python3-pip \
+    python3-venv \
+    tesseract-ocr \
+    tesseract-ocr-eng \
+    poppler-utils \
+    && apt-get clean
+
+WORKDIR /app
+
+# Copy Audiveris build from stage 1
+COPY --from=builder /audiveris/app/build/install/app/lib/ ./audiveris/lib/
+COPY --from=builder /audiveris/app/build/install/app/res/ ./audiveris/res/
+COPY --from=builder /audiveris/app/build/install/app/bin/ ./audiveris/bin/
+
+# Copy Flask app
+COPY app.py .
+COPY requirements.txt .
+COPY templates/ ./templates/
+
+# Create necessary directories
+RUN mkdir -p uploads output
+
+# Install Python dependencies
+RUN pip3 install --break-system-packages -r requirements.txt
+
+# Environment variables
+ENV TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata
+ENV AUDIVERIS_CMD=/app/audiveris/bin/Audiveris
+
+EXPOSE 5000
+
+CMD ["python3", "app.py"]
