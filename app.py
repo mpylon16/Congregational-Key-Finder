@@ -46,7 +46,19 @@ def temporarily_set_cwd(path):
 
 import hashlib
 
-
+def extract_metadata_from_pdf(pdf_path):
+    try:
+        import pdfplumber
+        with pdfplumber.open(pdf_path) as pdf:
+            text = pdf.pages[0].extract_text() or ""
+            ccli_match = re.search(r'CCLI\s+Song\s+#?\s*(\d{5,8})', text, re.IGNORECASE)
+            ccli_number = ccli_match.group(1) if ccli_match else None
+            print(f"📄 PDF metadata — CCLI: {ccli_number}")
+            return {"ccli_number": ccli_number}
+    except Exception as e:
+        print(f"⚠️ pdfplumber extraction failed: {e}")
+        return {"ccli_number": None}
+       
 def extract_metadata_from_musicxml(xml_text):
     """
     Extracts CCLI Song number and title from MusicXML text.
@@ -459,7 +471,7 @@ def upload_file():
             filename = secure_filename(file.filename)
             filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(filepath)
-
+            pdf_metadata = extract_metadata_from_pdf(filepath)
             name, _ = os.path.splitext(filename)
 
             pdf_hash = get_file_hash(filepath)
@@ -478,7 +490,8 @@ def upload_file():
                         '-transcribe',
                         '-export',
                         '-output', cached_output_dir,
-                        '-option', 'org.audiveris.omr.sheet.Partitioner.smallHeads=true',
+                        '-option', 'org.audiveris.omr.sheet.ProcessingSwitches.smallHeads=true',
+                        '-option', 'org.audiveris.omr.sheet.stem.BeamLinker.allowSmallHeadOnStandardBeam=true',
                         '-option', 'audiveris.log.level=WARNING',
                         #'-threads', '4',
                         filepath
@@ -502,7 +515,8 @@ def upload_file():
                 summary = analyse_musicxml_summary(
                     output_dir=cached_output_dir,
                     name=name,
-                    prefer_transpose_keys=prefer_transpose_keys
+                    prefer_transpose_keys=prefer_transpose_keys,
+                    pdf_metadata=pdf_metadata
                 )
 
                 return render_template("analysis_results.html",
@@ -624,18 +638,8 @@ def extract_written_chords(score):
     except Exception:
         return []
 
-def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
+def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_metadata=None):
     print("🎬 Running analyse_musicxml_summary()")
-    """
-    Quickly analyzes MusicXML output to determine:
-    - Original key
-    - Pitch range
-    - Recommended key and other singable keys
-    - Comfort score
-    - Whether original key is singable
-    - If not, how far out of range it is
-    - Any skipped movements or warnings
-    """
     from music21 import converter, pitch, stream, note
     import os, glob, tempfile
 
@@ -648,11 +652,21 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
 
     previous_path = None
     summary = {}
+
+    # Pre-populate from PDF metadata (most reliable source for CCLI)
+    if pdf_metadata:
+        summary["ccli_number"] = pdf_metadata.get("ccli_number")
     
+    # Title defaults to filename immediately as baseline
+    try:
+        songname, _, _ = name.split("-")
+    except ValueError:
+        songname = name
+    summary["title"] = songname.replace('_', ' ')
+
     for path in mxl_files:
         current_path = path
         try:
-            # Try to patch divisions + time from previous file
             injected_bytes = inject_divisions_and_time_from_previous(current_path, previous_path)
 
             if injected_bytes:
@@ -678,23 +692,28 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
             all_notes_info.extend(notes)
             warnings.extend([f"{os.path.basename(path)}: {w}" for w in part_warnings])
 
-            # Attempt to extract CCLI number from XML
-            if not summary.get("ccli_number") or not summary.get("title"):
+            # Try to get title from XML metadata (overrides filename if found)
+            # Try to get CCLI from XML metadata only if not already found from PDF
+            needs_ccli = not summary.get("ccli_number")
+            needs_title = summary["title"] == songname.replace('_', ' ')  # still on filename fallback
+
+            if needs_ccli or needs_title:
                 try:
                     xml_content = extract_xml_from_mxl(path)
-                    print("Extracting metadata")
+                    print("Extracting metadata from XML")
                     metadata = extract_metadata_from_musicxml(xml_content)
 
-                    summary["ccli_number"] = metadata.get("ccli_number") or "Not found"
-                    summary["title"] = metadata.get("title") or "Not found"
+                    if needs_ccli and metadata.get("ccli_number"):
+                        summary["ccli_number"] = metadata.get("ccli_number")
+                        print(f"CCLI from XML: {summary['ccli_number']}")
 
-                    print(f"Title: {summary['title']}")
-                    print(f"CCLI: {summary['ccli_number']}")
+                    if needs_title and metadata.get("title"):
+                        summary["title"] = metadata.get("title")
+                        print(f"Title from XML: {summary['title']}")
+
                 except Exception as e:
                     print(f"⚠️ Failed to extract metadata from {path}: {e}")
                     traceback.print_exc()
-                    summary["ccli_number"] = "Not found"
-                    summary["title"] = "Not found"
 
         except Exception as e:
             skipped.append(os.path.basename(path))
@@ -704,8 +723,15 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
             continue
         previous_path = current_path
 
+    # Final fallbacks
+    if not summary.get("ccli_number"):
+        summary["ccli_number"] = "Not found"
+    # Title already has filename fallback set at top, so no further action needed
 
-    if not all_notes_info: #i.e. if all_notes_info is empty
+    print(f"Final title: {summary['title']}")
+    print(f"Final CCLI: {summary['ccli_number']}")
+
+    if not all_notes_info:
         return {
             "recommended": None,
             "other_keys": [],
@@ -714,13 +740,13 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
                 "name": "Unknown",
                 "range_low": "?",
                 "range_high": "?",
-##                "is_singable": False,
-##                "range_comment": "No valid vocal notes found.",
                 "low_out": None,
                 "high_out": None
             },
             "skipped": skipped,
-            "warnings": warnings
+            "warnings": warnings,
+            "title": summary["title"],
+            "ccli_number": summary["ccli_number"],
         }
 
     # Build dummy stream for key analysis
@@ -740,22 +766,17 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     for ks in ks_objects:
         print(f"Found KeySignature: {ks.sharps} sharps — {ks.asKey().name}")
     try:
-        # 1. Get key from file title
-        songname, _ ,file_key = name.split("-")
+        songname_part, _, file_key = name.split("-")
         file_key = ensure_music21_key(file_key) if file_key else None
-        print(f"songname is {songname}, file_key is {file_key}")
+        print(f"songname is {songname_part}, file_key is {file_key}")
         print(f"file_key key type: {type(file_key)} | Value: {file_key}")
             
-        # 2. Get declared key signature from the score
-        
         declared_key = ks_objects[0].asKey() if ks_objects else None
         print(f"Declared key type: {type(declared_key)} | Value: {declared_key}")
 
-        # 3. Estimate key from the notes
         estimated_key = dummy_stream.analyze('key')
         print(f"Estimated key:{estimated_key}")
 
-        # 4. Start from file_key
         key_warning = ""
         if file_key:
             final_key = file_key
@@ -764,7 +785,6 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
             relative_minor = declared_key.relative
             print(f"Relative minor:{relative_minor}")
 
-            # Case: estimated key is *exactly* the relative minor of declared key
             if estimated_key == relative_minor:
                 if chords:
                     first_chord = chords[0] if len(chords) > 0 else None
@@ -780,7 +800,6 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
                     except Exception as e:
                         warnings.append(f"Chord comparison failed: {e}")
 
-            # Case: estimated key disagrees entirely
             elif (
                 estimated_key.tonic.name != declared_key.tonic.name or 
                 estimated_key.mode != declared_key.mode
@@ -795,11 +814,9 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
             final_key = ensure_music21_key(final_key)
             key_warning = "⚠️ No key signature found on the stave; using estimated key."
 
-        # 4. Simplify enharmonic
         if final_key:
             final_key = simplify_enharmonic(final_key)
 
-        # 5. Format readable output
         original_key_name = f"{final_key.tonic.name} {final_key.mode}" if final_key else "Unknown"
 
     except Exception as e:
@@ -808,68 +825,41 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
         key_warning = f"⚠️ Key analysis failed: {e}"
         warnings.append(key_warning)
 
-    # Evaluate all keys
     print(f"Just before all_keys_analysis, final _key: {type(final_key)} = {final_key}")
     all_keys_analysis = get_key_analysis_info(final_key, all_notes_info, prefer_transpose_keys)
-    bad_entries = [k for k in all_keys_analysis
-               if not isinstance(k, dict) or 'key' not in k]
+    bad_entries = [k for k in all_keys_analysis if not isinstance(k, dict) or 'key' not in k]
     print("🛠  Number of malformed entries:", len(bad_entries))
-    if bad_entries:
-        print("🛠  First bad entry example:", bad_entries[0], type(bad_entries[0]))
-##    print("🔍 all_keys_analysis contains:")
-##    for k in all_keys_analysis:
-##        key = k['key']
-##        print(f"  Shift {k['shift']:+}: {key.tonic.name} {key.mode}, Score={k['comfort_score']}, Range={k['range_low']}–{k['range_high']}")
 
-    # Find the original key object (shift == 0)
     original_key_info = next((k for k in all_keys_analysis if k['shift'] == 0), None)
-    # Pitch range of original (untransposed) - Using values from original_key_info
     if original_key_info:
-        original_low = original_key_info["low"]  # MIDI value
-        original_high = original_key_info["high"] # MIDI value
-        low = original_key_info["range_low"]              # Pitch name (e.g., 'C4')
-        high = original_key_info["range_high"]            # Pitch name (e.g., 'G5')
+        original_low = original_key_info["low"]
+        original_high = original_key_info["high"]
+        low = original_key_info["range_low"]
+        high = original_key_info["range_high"]
         original_low_comfort = original_key_info["low_comfort"]
         original_high_comfort = original_key_info["high_comfort"]
         original_low_color = original_key_info["low_color"]
         original_high_color = original_key_info["high_color"]
     else:
-        # Fallback to direct calculation if original_key_info is unexpectedly None
-        # This part should ideally not be hit if all_notes_info was not empty
         midi_values = [n['midi'] for n in all_notes_info]
         original_low = min(midi_values)
         original_high = max(midi_values)
         low = pitch.Pitch(original_low).nameWithOctave
         high = pitch.Pitch(original_high).nameWithOctave
-        original_low_comfort = get_note_comfort_category(low)
-        original_high_comfort = get_note_comfort_category(high)
-        original_low_color = get_note_comfort_color(low)
-        original_high_color = get_note_comfort_color(high)
+        original_low_comfort = get_note_comfort_category(original_low)
+        original_high_comfort = get_note_comfort_category(original_high)
+        original_low_color = get_note_comfort_color(original_low)
+        original_high_color = get_note_comfort_color(original_high)
         
-    # Deduplicate keys by comfort (removes octave duplicates, etc)
     deduped_keys = deduplicate_by_key(all_keys_analysis)
-##    print("🔍 deduped_keys contains:")
-##    for k in deduped_keys:
-##        key = k['key']
-##        print(f"  Shift {k['shift']:+}: {key.tonic.name} {key.mode}, Score={k['comfort_score']}, Range={k['range_low']}–{k['range_high']}")
 
-    # Pick the recommended key from deduplicated list
     recommended = deduped_keys[0] if deduped_keys else None
-##    print(f"in analyse_musicxml_summary recommended is {recommended}")
-
     recommended['low_comfort'] = get_note_comfort_category(recommended['low'])
     recommended['high_comfort'] = get_note_comfort_category(recommended['high'])
     recommended['low_color'] = get_note_comfort_color(recommended['low'])
     recommended['high_color'] = get_note_comfort_color(recommended['high'])
 
-##    print(f"recommended = {recommended}")
-
-        # All other keys except the recommended one
     other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]
-#    print(f"other keys include:{other_keys}")
-
-    # If 'recommended' is None (no suitable keys found), the template's {% if recommended %}
-    # will handle it, so no 'else' block needed here for setting these keys.
 
     summary["all_keys_analysis"] = all_keys_analysis
     summary["recommended"] = recommended
@@ -887,7 +877,7 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False):
     }
     summary["skipped"] = skipped
     summary["warnings"] = warnings
-    if "ccli_number" in summary:
+    if summary.get("ccli_number") and summary["ccli_number"] != "Not found":
         summary["ccli_url"] = f"https://songselect.ccli.com/Songs/{summary['ccli_number']}"
 
     return summary
