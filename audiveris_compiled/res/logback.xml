@@ -1,0 +1,13 @@
+<configuration>
+    <include optional="true" resource="res/logback-elements.xml"/>
+    <include optional="true" file="res/logback-elements.xml"/>
+
+    <root level="WARN">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <logger name="org.audiveris.omr.sheet.rhythm.PageRhythm" level="DEBUG"/>
+    <logger name="org.audiveris.omr.sheet.rhythm.StackRhythm" level="DEBUG"/>
+    <logger name="org.audiveris.omr.sheet.MeasureFixer" level="DEBUG"/>
+    <logger name="org.audiveris.omr.sheet.MeasureStack" level="DEBUG"/>
+</configuration>
