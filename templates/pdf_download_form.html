@@ -1,0 +1,65 @@
+<div class="download-options mt-4">
+  <h2>🎵 Download Options</h2>
+
+  {% if recommended %}
+    <div class="recommended-key-box alert alert-success">
+      <h4>✅ Recommended Key: {{ recommended.key.tonic.name }} {{ recommended.key.mode }}</h4>
+      <p>Shift: {{ '%+d'|format(recommended.shift) }}</p>
+      <a class="btn btn-primary" href="/generate_pdf/{{ pdf_hash }}?key={{ recommended.shift }}">
+        Download Lead Sheet (PDF)
+      </a>
+    </div>
+  {% endif %}
+
+  {% if other_singable %}
+    <div class="other-keys mt-3">
+      <h5>🎶 Other Singable Keys</h5>
+      <ul class="list-unstyled">
+        {% for key in other_singable %}
+          <li>
+            {{ key.key.tonic.name }} {{ key.key.mode }} ({{ '%+d'|format(key.shift) }})
+            <a href="/generate_pdf/{{ pdf_hash }}?key={{ key.shift }}">[Download]</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <details class="mt-3">
+    <summary>🎚️ Show All Keys</summary>
+    <ul class="list-unstyled">
+      {% for key in all %}
+        <li>
+          {{ key.key.tonic.name }} {{ key.key.mode }} ({{ '%+d'|format(key.shift) }})
+          Comfort: {{ key.comfort_score }}
+          <a href="/generate_pdf/{{ pdf_hash }}?key={{ key.shift }}">[PDF]</a>
+          <a href="/download/{{ pdf_hash }}/{{ pdf_hash }}_transposed_{{ key.key.tonic.name|replace('#','s') }}_{{ key.key.mode }}.mxl">[MXL]</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </details>
+
+  <div class="mt-4 format-selector">
+    <h5>📥 More Download Options</h5>
+    <form action="/preview_chords" method="get">
+      <input type="hidden" name="hash" value="{{ pdf_hash }}">
+      <label for="key">Select key:</label>
+      <select name="key" id="key" class="form-control mb-2">
+        {% for key in all %}
+          <option value="{{ key.shift }}">
+            {{ key.key.tonic.name }} {{ key.key.mode }} ({{ '%+d'|format(key.shift) }})
+          </option>
+        {% endfor %}
+      </select>
+
+      <label for="format">Choose format:</label>
+      <select name="format" id="format" class="form-control mb-3">
+        <option value="lead">Lead Sheet (PDF)</option>
+        <option value="lyrics">Chords & Lyrics Only</option>
+        <option value="mxl">MusicXML</option>
+      </select>
+
+      <button type="submit" class="btn btn-secondary">Continue</button>
+    </form>
+  </div>
+</div>
