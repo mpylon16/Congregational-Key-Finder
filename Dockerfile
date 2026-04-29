@@ -19,14 +19,15 @@ RUN wget -O audiveris_source.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7
 RUN find . -name ".gradle" -type d -exec rm -rf {} + && \
     find . -name "build" -type d -exec rm -rf {} +
 
-# 3. DEBUG & BUILD
+# 3. BUILD Audiveris
 WORKDIR /app
-RUN GRADLE_PATH=$(find . -name gradlew) && \
-    GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
-    cd "$GRADLE_DIR" && \
+
+# Find the directory, move there, and RUN A FORCED CLEAN BUILD
+RUN GRADLE_PATH=$(find . -name gradlew | head -n 1) && \
+    cd $(dirname "$GRADLE_PATH") && \
     chmod +x gradlew && \
-    ls -R && \
-    ./gradlew clean build -x test --no-daemon --info
+    # We use --no-build-cache to stop it from using your Windows "up-to-date" files
+    ./gradlew clean build -x test --no-daemon --no-build-cache --stacktrace
     
 # 4. Set up your Python app as usual
 WORKDIR /app
