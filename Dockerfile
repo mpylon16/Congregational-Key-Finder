@@ -16,8 +16,9 @@ RUN wget -O audiveris_source.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7
     rm audiveris_source.zip
 
 # 3. BUILD Audiveris
-# If the zip has a folder inside it, make sure the WORKDIR matches
-WORKDIR /app/deploy-app/audiveris_source
+# Move into the folder and make sure the 'gradlew' file is allowed to run
+WORKDIR /app/audiveris_source
+RUN chmod +x gradlew
 RUN ./gradlew build -x test
 # -x test skips tests to save time/memory on Railway
 
