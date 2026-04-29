@@ -14,6 +14,9 @@ WORKDIR /app
 # Copy pre-compiled Audiveris
 COPY audiveris_compiled/ ./audiveris/
 
+# Make Audiveris executable
+RUN chmod +x ./audiveris/bin/Audiveris
+
 # Copy Flask app
 COPY app.py .
 COPY requirements.txt .
