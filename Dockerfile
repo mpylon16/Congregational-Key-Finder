@@ -16,11 +16,14 @@ RUN wget -O audiveris_source.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7
     rm audiveris_source.zip
 
 # 3. BUILD Audiveris
-# Move into the folder and make sure the 'gradlew' file is allowed to run
 WORKDIR /app/audiveris_source
 RUN chmod +x gradlew
-RUN ./gradlew build -x test
-# -x test skips tests to save time/memory on Railway
+
+# Create the folder where the build output is supposed to go
+RUN mkdir -p build/libs
+
+# Clean any old Windows leftovers, then build
+RUN ./gradlew clean build -x test --stacktrace
 
 # 4. Set up your Python app as usual
 WORKDIR /app
