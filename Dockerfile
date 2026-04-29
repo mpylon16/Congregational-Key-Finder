@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # 2. DOWNLOAD & CLEAN
-RUN wget -O audiveris_source.zip "https://www.dropbox.com/s/YOUR_LINK_HERE?dl=1" && \
+RUN wget -O audiveris_source.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=fi6sjjdc&dl=1" && \
     unzip audiveris_source.zip && \
     rm audiveris_source.zip
 
