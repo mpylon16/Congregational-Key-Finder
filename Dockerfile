@@ -36,6 +36,11 @@ RUN pip3 install --break-system-packages -r requirements.txt
 ENV TESSDATA_PREFIX=/usr/share/tesseract-ocr/tessdata
 ENV LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/local/lib
 
+# Create a dedicated home and temp directory in the app space
+RUN mkdir -p /app/audiveris_home /app/tmp
+ENV HOME=/app/audiveris_home
+ENV JAVA_OPTS="-Djava.io.tmpdir=/app/tmp"
+
 EXPOSE 5000
 
 CMD ["python3", "app.py"]
