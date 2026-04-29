@@ -6,9 +6,11 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     tesseract-ocr \
     tesseract-ocr-eng \
-    libleptonica-dev \
     libtesseract-dev \
+    libleptonica-dev \
+    libgomp1 \
     poppler-utils \
+    libgif-dev \
     && apt-get clean
 
 WORKDIR /app
@@ -31,7 +33,7 @@ RUN mkdir -p uploads output
 RUN pip3 install --break-system-packages -r requirements.txt
 
 # Environment variables
-ENV TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata
+ENV TESSDATA_PREFIX=/usr/share/tesseract-ocr/tessdata
 ENV LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/local/lib
 
 EXPOSE 5000
