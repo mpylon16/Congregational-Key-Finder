@@ -10,21 +10,24 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Simpler download for Dropbox
+# 2. DOWNLOAD & CLEAN
 RUN wget -O audiveris_source.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=pzt2jb81&dl=1" && \
     unzip audiveris_source.zip && \
     rm audiveris_source.zip
+    # Remove all hidden Gradle/Windows caches that might be in the zip
+    find . -name ".gradle" -type d -exec rm -rf {} + && \
+    find . -name "build" -type d -exec rm -rf {} +
 
-# 3. BUILD Audiveris
+# 3. DEBUG & BUILD
 WORKDIR /app
-
-# This command finds where 'gradlew' is, moves there, and runs the build
 RUN GRADLE_PATH=$(find . -name gradlew) && \
     GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
     cd "$GRADLE_DIR" && \
     chmod +x gradlew && \
-    ./gradlew clean build -x test --no-daemon
-
+    # This line prints the files so we can see the 'map' in the logs
+    ls -R && \
+    ./gradlew clean build -x test --no-daemon --info
+    
 # 4. Set up your Python app as usual
 WORKDIR /app
 COPY . .
