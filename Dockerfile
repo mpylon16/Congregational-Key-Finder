@@ -26,8 +26,7 @@ RUN ./gradlew build -x test
 
 # 4. Set up your Python app as usual
 WORKDIR /app
-COPY app.py requirements.txt ./
-COPY templates/ ./templates/
+COPY . .
 RUN pip3 install --break-system-packages -r requirements.txt
 
 # 5. Env Vars we fixed earlier
