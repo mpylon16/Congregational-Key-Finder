@@ -3,7 +3,9 @@ name: Build and Push Docker Image
 on:
   push:
     branches: [ main ]
-
+permissions:
+  contents: read
+  packages: write  # This is the line that fixes the "Denied" error
 jobs:
   build:
     runs-on: ubuntu-latest
