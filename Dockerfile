@@ -11,11 +11,12 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # 2. DOWNLOAD & CLEAN
-RUN wget -O audiveris_source.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=pzt2jb81&dl=1" && \
+RUN wget -O audiveris_source.zip "https://www.dropbox.com/s/YOUR_LINK_HERE?dl=1" && \
     unzip audiveris_source.zip && \
     rm audiveris_source.zip
-    # Remove all hidden Gradle/Windows caches that might be in the zip
-    find . -name ".gradle" -type d -exec rm -rf {} + && \
+
+# We use a separate RUN for the cleanup to keep it clean
+RUN find . -name ".gradle" -type d -exec rm -rf {} + && \
     find . -name "build" -type d -exec rm -rf {} +
 
 # 3. DEBUG & BUILD
@@ -24,7 +25,6 @@ RUN GRADLE_PATH=$(find . -name gradlew) && \
     GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
     cd "$GRADLE_DIR" && \
     chmod +x gradlew && \
-    # This line prints the files so we can see the 'map' in the logs
     ls -R && \
     ./gradlew clean build -x test --no-daemon --info
     
