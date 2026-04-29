@@ -22,12 +22,13 @@ RUN find . -name ".gradle" -type d -exec rm -rf {} + && \
 # 3. BUILD Audiveris
 WORKDIR /app
 
-# Find the directory, move there, and RUN A FORCED CLEAN BUILD
 RUN GRADLE_PATH=$(find . -name gradlew | head -n 1) && \
     cd $(dirname "$GRADLE_PATH") && \
+    # MANUAL PURGE: Delete any folders that Gradle or IDEs create
+    rm -rf .gradle .idea build out bin && \
     chmod +x gradlew && \
-    # We use --no-build-cache to stop it from using your Windows "up-to-date" files
-    ./gradlew clean build -x test --no-daemon --no-build-cache --stacktrace
+    # The --stacktrace is here, but we're adding --full-stacktrace for maximum detail
+    ./gradlew clean build -x test --no-daemon --no-build-cache --full-stacktrace
     
 # 4. Set up your Python app as usual
 WORKDIR /app
