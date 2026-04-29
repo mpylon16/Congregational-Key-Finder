@@ -16,14 +16,14 @@ RUN wget -O audiveris_source.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7
     rm audiveris_source.zip
 
 # 3. BUILD Audiveris
-WORKDIR /app/audiveris_source
-RUN chmod +x gradlew
+WORKDIR /app
 
-# Create the folder where the build output is supposed to go
-RUN mkdir -p build/libs
-
-# Clean any old Windows leftovers, then build
-RUN ./gradlew clean build -x test --stacktrace
+# This command finds where 'gradlew' is, moves there, and runs the build
+RUN GRADLE_PATH=$(find . -name gradlew) && \
+    GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
+    cd "$GRADLE_DIR" && \
+    chmod +x gradlew && \
+    ./gradlew clean build -x test --no-daemon
 
 # 4. Set up your Python app as usual
 WORKDIR /app
