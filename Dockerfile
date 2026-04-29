@@ -1,11 +1,11 @@
 FROM eclipse-temurin:21-jdk
 
-# 1. Install EVERYTHING needed for Java Native Interface & Tesseract
+# 1. Install EVERYTHING + Git (Crucial for the Audiveris version script)
 RUN apt-get update && apt-get install -y \
     python3 python3-pip tesseract-ocr tesseract-ocr-eng \
     libtesseract-dev libleptonica-dev libgomp1 poppler-utils \
     fontconfig libfreetype6 libxext6 libxrender1 libxtst6 \
-    wget unzip \
+    wget unzip git \
     && apt-get clean
 
 WORKDIR /app
@@ -21,14 +21,13 @@ RUN find . -name ".gradle" -type d -exec rm -rf {} + && \
 
 # 3. BUILD Audiveris
 WORKDIR /app
-
 RUN GRADLE_PATH=$(find . -name gradlew | head -n 1) && \
     cd $(dirname "$GRADLE_PATH") && \
-    # MANUAL PURGE: Delete any folders that Gradle or IDEs create
+    # We remove the local caches again just to be safe
     rm -rf .gradle .idea build out bin && \
     chmod +x gradlew && \
-    # The --stacktrace is here, but we're adding --full-stacktrace for maximum detail
-    ./gradlew clean build -x test --no-daemon --no-build-cache --full-stacktrace
+    # Now that git is installed, this task won't fail!
+    ./gradlew clean build -x test --no-daemon
     
 # 4. Set up your Python app as usual
 WORKDIR /app
