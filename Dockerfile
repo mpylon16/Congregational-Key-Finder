@@ -10,11 +10,8 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# 2. DOWNLOAD from Google Drive (Handles the large file warning)
-# Replace FILE_ID_HERE with your actual Google Drive File ID
-RUN FILE_ID="1BUi2iHrLju9XMg5hTqYa3OxiNQ4bKmK1" && \
-    wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id='$FILE_ID -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id="$FILE_ID -O audiveris_source.zip && \
-    rm -rf /tmp/cookies.txt && \
+# Simpler download for Dropbox
+RUN wget -O audiveris_source.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=pzt2jb81&dl=1" && \
     unzip audiveris_source.zip && \
     rm audiveris_source.zip
 
