@@ -26,11 +26,10 @@ RUN GRADLE_PATH=$(find . -name gradlew | head -n 1) && \
     cd "$GRADLE_DIR" && \
     rm -rf .gradle .idea build out bin && \
     chmod +x gradlew && \
-    # Added 'installDist' to ensure the 'bin' folder gets generated!
+    # Ensure we generate the distribution files
     ./gradlew clean build installDist -x test --no-daemon && \
-    # Create a link so Python finds it exactly where it expects to:
-    # (Assuming Gradle puts it in build/install/Audiveris)
-    ln -s "$PWD/build/install/Audiveris" /app/audiveris
+    # We use a CAPITAL 'A' to match your Python script's error: /app/Audiveris
+    ln -s "$PWD/build/install/Audiveris" /app/Audiveris
     
 # 4. Set up your Python app as usual
 WORKDIR /app
