@@ -26,13 +26,12 @@ RUN GRADLE_PATH=$(find . -name gradlew | head -n 1) && \
     cd "$GRADLE_DIR" && \
     rm -rf .gradle .idea build out bin && \
     chmod +x gradlew && \
-    ./gradlew clean build installDist -x test --no-daemon && \
-    # This line finds the ACTUAL bin folder created by Gradle
-    REAL_BIN_DIR=$(find "$PWD/build/install" -name "Audiveris" -type f | xargs dirname | xargs dirname) && \
-    # This creates the exact path Python wants: /app/Audiveris/bin/Audiveris
-    ln -s "$REAL_BIN_DIR" /app/Audiveris && \
-    # Debug: This will print the path to your logs so we can verify it
-    echo "Audiveris linked from $REAL_BIN_DIR to /app/Audiveris"
+    # Build the distribution
+    ./gradlew clean installDist -x test --no-daemon && \
+    # Step-by-step linking to avoid Exit Code 123
+    INSTALL_DIR=$(ls -d build/install/Audiveris* | head -n 1) && \
+    ln -s "$PWD/$INSTALL_DIR" /app/Audiveris && \
+    echo "Audiveris successfully linked from $INSTALL_DIR to /app/Audiveris"
     
 # 4. Set up your Python app as usual
 WORKDIR /app
