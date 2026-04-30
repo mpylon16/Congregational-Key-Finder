@@ -22,12 +22,15 @@ RUN find . -name ".gradle" -type d -exec rm -rf {} + && \
 # 3. BUILD Audiveris
 WORKDIR /app
 RUN GRADLE_PATH=$(find . -name gradlew | head -n 1) && \
-    cd $(dirname "$GRADLE_PATH") && \
-    # We remove the local caches again just to be safe
+    GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
+    cd "$GRADLE_DIR" && \
     rm -rf .gradle .idea build out bin && \
     chmod +x gradlew && \
-    # Now that git is installed, this task won't fail!
-    ./gradlew clean build -x test --no-daemon
+    # Added 'installDist' to ensure the 'bin' folder gets generated!
+    ./gradlew clean build installDist -x test --no-daemon && \
+    # Create a link so Python finds it exactly where it expects to:
+    # (Assuming Gradle puts it in build/install/Audiveris)
+    ln -s "$PWD/build/install/Audiveris" /app/audiveris
     
 # 4. Set up your Python app as usual
 WORKDIR /app
