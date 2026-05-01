@@ -26,15 +26,18 @@ RUN GRADLE_PATH=$(find . -name gradlew | head -n 1) && \
     cd "$GRADLE_DIR" && \
     rm -rf .gradle .idea build out bin && \
     chmod +x gradlew && \
+    # Build the distribution
     ./gradlew clean installDist -x test --no-daemon && \
-    # Find where it actually installed
+    # Locate the installation result
     REAL_BASE=$(ls -d build/install/Audiveris* | head -n 1) && \
-    # INSTEAD OF LINKING, WE MOVE: This makes Java happy
-    cp -r "$REAL_BASE"/* /app/Audiveris_Temp && \
+    # Create destination folders first to prevent "No such directory" errors
+    mkdir -p /app/Audiveris_Temp /app/audiveris_home/.config/AudiverisLtd/audiveris && \
+    # Copy the content
+    cp -rp "$REAL_BASE"/. /app/Audiveris_Temp/ && \
+    # Swap it into the final location
     rm -rf /app/Audiveris && \
     mv /app/Audiveris_Temp /app/Audiveris && \
-    # Create the home directory it was looking for in the logs
-    mkdir -p /app/audiveris_home/.config/AudiverisLtd/audiveris && \
+    # Set permissions
     chmod -R 777 /app/Audiveris /app/audiveris_home
     
 # 4. Set up your Python app as usual
