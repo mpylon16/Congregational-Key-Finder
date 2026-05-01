@@ -26,12 +26,18 @@ RUN GRADLE_PATH=$(find . -name gradlew | head -n 1) && \
     cd "$GRADLE_DIR" && \
     rm -rf .gradle .idea build out bin && \
     chmod +x gradlew && \
-    # Build the distribution
     ./gradlew clean installDist -x test --no-daemon && \
-    # Step-by-step linking to avoid Exit Code 123
-    INSTALL_DIR=$(ls -d build/install/Audiveris* | head -n 1) && \
-    ln -s "$PWD/$INSTALL_DIR" /app/Audiveris && \
-    echo "Audiveris successfully linked from $INSTALL_DIR to /app/Audiveris"
+    # --- NEW ROBUST LINKING LOGIC ---
+    # 1. Find the actual executable file anywhere in the build folder
+    REAL_EXE=$(find /app -name Audiveris -type f -path "*/bin/*" | head -n 1) && \
+    # 2. Get the folder that contains the 'bin' folder
+    REAL_BASE=$(dirname $(dirname "$REAL_EXE")) && \
+    # 3. Create the /app/Audiveris link so that /app/Audiveris/bin/Audiveris exists
+    ln -s "$REAL_BASE" /app/Audiveris && \
+    # 4. Verification (This will show in your GitHub logs)
+    echo "Python wants: /app/Audiveris/bin/Audiveris" && \
+    echo "Found actual exe at: $REAL_EXE" && \
+    ls -l /app/Audiveris/bin/Audiveris
     
 # 4. Set up your Python app as usual
 WORKDIR /app
