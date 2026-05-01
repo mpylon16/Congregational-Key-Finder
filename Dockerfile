@@ -27,17 +27,15 @@ RUN GRADLE_PATH=$(find . -name gradlew | head -n 1) && \
     rm -rf .gradle .idea build out bin && \
     chmod +x gradlew && \
     ./gradlew clean installDist -x test --no-daemon && \
-    # --- NEW ROBUST LINKING LOGIC ---
-    # 1. Find the actual executable file anywhere in the build folder
-    REAL_EXE=$(find /app -name Audiveris -type f -path "*/bin/*" | head -n 1) && \
-    # 2. Get the folder that contains the 'bin' folder
-    REAL_BASE=$(dirname $(dirname "$REAL_EXE")) && \
-    # 3. Create the /app/Audiveris link so that /app/Audiveris/bin/Audiveris exists
-    ln -s "$REAL_BASE" /app/Audiveris && \
-    # 4. Verification (This will show in your GitHub logs)
-    echo "Python wants: /app/Audiveris/bin/Audiveris" && \
-    echo "Found actual exe at: $REAL_EXE" && \
-    ls -l /app/Audiveris/bin/Audiveris
+    # Find where it actually installed
+    REAL_BASE=$(ls -d build/install/Audiveris* | head -n 1) && \
+    # INSTEAD OF LINKING, WE MOVE: This makes Java happy
+    cp -r "$REAL_BASE"/* /app/Audiveris_Temp && \
+    rm -rf /app/Audiveris && \
+    mv /app/Audiveris_Temp /app/Audiveris && \
+    # Create the home directory it was looking for in the logs
+    mkdir -p /app/audiveris_home/.config/AudiverisLtd/audiveris && \
+    chmod -R 777 /app/Audiveris /app/audiveris_home
     
 # 4. Set up your Python app as usual
 WORKDIR /app
