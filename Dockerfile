@@ -1,8 +1,16 @@
 # --- STAGE 1: BUILDER ---
 FROM eclipse-temurin:21-jdk AS builder
 WORKDIR /app
-COPY --from=0 /app/audiveris_source /app/audiveris_source
 
+# Install tools needed to download and extract
+RUN apt-get update && apt-get install -y wget unzip && rm -rf /var/lib/apt/lists/*
+
+# Download and extract the source
+RUN wget -q -O audiveris.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=3h8bdw36&dl=1" && \
+    unzip -q audiveris.zip -d /app/audiveris_source && \
+    rm audiveris.zip
+
+# Build the application
 RUN GRADLE_PATH=$(find /app/audiveris_source -name gradlew | head -n 1) && \
     GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
     cd "$GRADLE_DIR" && \
@@ -10,22 +18,19 @@ RUN GRADLE_PATH=$(find /app/audiveris_source -name gradlew | head -n 1) && \
     ./gradlew clean installDist -x test -q --no-daemon
 
 # --- STAGE 2: RUNNER ---
-# Use the official Java 21 runtime as the base
 FROM eclipse-temurin:21-jre
 
-# Install Python and Tesseract from standard repositories (no custom keys needed)
+# Install Python and Tesseract
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     python3-venv \
     tesseract-ocr \
-    wget \
-    unzip \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Create and activate a Python virtual environment
+# Create and activate virtual environment
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
@@ -38,7 +43,7 @@ COPY . .
 # Install dependencies inside the virtual environment
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Set permissions
+# Create necessary directories and set permissions
 RUN mkdir -p /app/audiveris_home/.config/AudiverisLtd/audiveris && \
     chmod -R 777 /app/Audiveris /app/audiveris_home
 
