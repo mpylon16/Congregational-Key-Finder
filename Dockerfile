@@ -2,26 +2,34 @@
 FROM eclipse-temurin:21-jdk AS builder
 WORKDIR /app
 
-# Install tools needed to download and extract
-RUN apt-get update && apt-get install -y wget unzip && rm -rf /var/lib/apt/lists/*
+# Install everything needed in one layer
+RUN apt-get update && \
+    apt-get install -y wget unzip git && \
+    rm -rf /var/lib/apt/lists/* && \
+    # Diagnostic: Prove git is installed
+    git --version
 
-# Download and extract the source using your specific link
+# Download and extract
 RUN wget -q -O audiveris.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=3h8bdw36&dl=1" && \
-    unzip -q audiveris.zip -d /app/audiveris_source && \
-    rm audiveris.zip
+    # Unzip directly into /app to avoid nested 'audiveris_source/audiveris_source' folders
+    unzip -q audiveris.zip -d /app/temp_source && \
+    mv /app/temp_source/*/* /app/ 2>/dev/null || mv /app/temp_source/* /app/ && \
+    rm -rf audiveris.zip /app/temp_source
 
-# Build the application with diagnostic flags
-RUN GRADLE_PATH=$(find /app/audiveris_source -name gradlew | head -n 1) && \
-    GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
-    cd "$GRADLE_DIR" && \
+# Build
+RUN git init && \
+    git config user.email "build@example.com" && \
+    git config user.name "Builder" && \
+    git add . && \
+    git commit -m "initial" && \
     chmod +x gradlew && \
-    # Removed -q and added --stacktrace to see the real error in GitHub logs
-    ./gradlew clean installDist -x test --no-daemon --stacktrace
+    # Apply memory limit and stacktrace for final safety
+    ./gradlew clean installDist -x test --no-daemon --stacktrace -Dorg.gradle.jvmargs="-Xmx4g"
 
 # --- STAGE 2: RUNNER ---
 FROM eclipse-temurin:21-jre
 
-# Install Python and Tesseract
+# Standard dependencies
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
@@ -31,20 +39,20 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Create and activate virtual environment
+# Setup Python Virtual Env
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Copy the built Audiveris from the builder stage
-COPY --from=builder /app/audiveris_source/app/build/install/Audiveris /app/Audiveris
+# Copy the build output (the path is now predictable because we flattened it)
+COPY --from=builder /app/app/build/install/Audiveris /app/Audiveris
 
-# Copy your Python app files
+# Copy your Python files
 COPY . .
 
-# Install dependencies inside the virtual environment
+# Install requirements
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Create necessary directories and set permissions
+# Final permissions
 RUN mkdir -p /app/audiveris_home/.config/AudiverisLtd/audiveris && \
     chmod -R 777 /app/Audiveris /app/audiveris_home
 
