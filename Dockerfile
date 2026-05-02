@@ -38,20 +38,26 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Setup Python Virtual Env (Modern Ubuntu requirement)
+# Setup Python Virtual Env
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Copy the built Audiveris from the predictable builder path
+# Copy the built Audiveris
 COPY --from=builder /app/final_app /app/Audiveris
 
 # Copy Python app files
 COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Permissions and config directories
-RUN mkdir -p /app/audiveris_home/.config/AudiverisLtd/audiveris && \
+# --- THE FIX: Create a dedicated home and set permissions ---
+RUN mkdir -p /app/audiveris_home && \
     chmod -R 777 /app/Audiveris /app/audiveris_home
+
+# Set Environment Variables
+# 1. Point Java home to our writable directory
+# 2. Point Tesseract to the system-installed data
+ENV JAVA_OPTS="-Duser.home=/app/audiveris_home"
+ENV TESSDATA_PREFIX="/usr/share/tesseract-ocr/5/tessdata"
 
 EXPOSE 8080
 CMD ["python", "app.py"]
