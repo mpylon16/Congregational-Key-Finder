@@ -2,31 +2,32 @@
 FROM eclipse-temurin:21-jdk AS builder
 WORKDIR /app
 
-# 1. Install tools
+# 1. Install necessary tools (Git is required for Audiveris versioning task)
 RUN apt-get update && apt-get install -y wget unzip git && rm -rf /var/lib/apt/lists/*
 
-# 2. Download and extract
+# 2. Extract and Flatten (Eliminates the "nested folder in ZIP" issue forever)
 RUN wget -q -O audiveris.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=3h8bdw36&dl=1" && \
     unzip -q audiveris.zip -d /app/temp_source && \
-    rm audiveris.zip
+    # Locate the directory containing gradlew and move its CONTENTS to /app
+    GW_DIR=$(dirname $(find /app/temp_source -name gradlew | head -n 1)) && \
+    cp -rp "$GW_DIR"/. /app/ && \
+    rm -rf audiveris.zip /app/temp_source
 
-# 3. Build and Move (All in one logical block to keep paths consistent)
-RUN GW_PATH=$(find /app/temp_source -name gradlew | head -n 1) && \
-    cd $(dirname "$GW_PATH") && \
-    # We are now in the root of the Audiveris source
-    git init && \
+# 3. Build (Git init required because the ZIP doesn't have a .git folder)
+RUN git init && \
     git config user.email "build@example.com" && \
     git config user.name "Builder" && \
     git add . && \
     git commit -m "initial" && \
     chmod +x gradlew && \
-    # Run the build
+    # Build the distribution (Memory limit prevents Runner crashes)
     ./gradlew :app:installDist -x test --no-daemon -Dorg.gradle.jvmargs="-Xmx4g" && \
-    # THE FIX: Move the result using the relative path we KNOW exists after a successful build
-    mkdir -p /app/final_app && \
-    mv app/build/install/Audiveris/* /app/final_app/ && \
-    # Clean up the massive source folder immediately to save space
-    rm -rf /app/temp_source
+    # 4. CAPTURE THE ARTIFACT
+    # Look into the install directory and move the one folder found there to /app/final_app
+    INSTALL_PARENT="/app/app/build/install" && \
+    DIR_NAME=$(ls "$INSTALL_PARENT" | head -n 1) && \
+    mv "$INSTALL_PARENT/$DIR_NAME" /app/final_app && \
+    echo "Successfully captured artifact from $DIR_NAME"
 
 # --- STAGE 2: RUNNER ---
 FROM eclipse-temurin:21-jre
@@ -37,17 +38,18 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
+# Setup Python Virtual Env (Modern Ubuntu requirement)
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Copy the exact folder we secured in the builder stage
+# Copy the built Audiveris from the predictable builder path
 COPY --from=builder /app/final_app /app/Audiveris
 
-# Copy your Python files and install requirements
+# Copy Python app files
 COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Create necessary directories and set permissions
+# Permissions and config directories
 RUN mkdir -p /app/audiveris_home/.config/AudiverisLtd/audiveris && \
     chmod -R 777 /app/Audiveris /app/audiveris_home
 
