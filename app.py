@@ -484,6 +484,11 @@ def upload_file():
                     print(f"⏱️ Starting Audiveris for hash: {pdf_hash}")
                     start_time = time.time()
 
+                    # Prepare the environment with the user.home property
+                    # This tells Audiveris to use our writable folder instead of /root
+                    env = os.environ.copy()
+                    env["JAVA_OPTS"] = "-Duser.home=/app/audiveris_home"
+                    
                     subprocess_args = [
                         AUDIVERIS_CMD_FULL,
                         '-batch',
@@ -493,11 +498,19 @@ def upload_file():
                         '-option', 'org.audiveris.omr.sheet.ProcessingSwitches.smallHeads=true',
                         '-option', 'org.audiveris.omr.sheet.stem.BeamLinker.allowSmallHeadOnStandardBeam=true',
                         '-option', 'audiveris.log.level=WARNING',
-                        #'-threads', '4',
                         filepath
                     ]
+                    
                     print("Running Audiveris command:", ' '.join(subprocess_args))
-                    result = subprocess.run(subprocess_args, capture_output=True, text=True, check=False)
+                    
+                    # Add 'env=env' here to pass the home directory setting
+                    result = subprocess.run(
+                        subprocess_args, 
+                        capture_output=True, 
+                        text=True, 
+                        check=False, 
+                        env=env
+                    )
 
                     duration = time.time() - start_time
                     print(f"✅ Audiveris finished in {duration:.2f} seconds")
