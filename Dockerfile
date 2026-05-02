@@ -21,15 +21,17 @@ RUN GRADLE_PATH=$(find /app/audiveris_source -name gradlew | head -n 1) && \
     GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
     cd "$GRADLE_DIR" && \
     chmod +x gradlew && \
-    ./gradlew clean installDist -x test --no-daemon --parallel && \
-    # Locate and move the final build
+    # -q reduces log output significantly to save disk space
+    ./gradlew clean installDist -x test -q --no-daemon --parallel && \
+    # Move the result
     REAL_BASE=$(ls -d build/install/Audiveris* | head -n 1) && \
     mkdir -p /app/Audiveris /app/audiveris_home/.config/AudiverisLtd/audiveris && \
     cp -rp "$REAL_BASE"/. /app/Audiveris/ && \
-    # AGGRESSIVE CLEANUP: Delete source and gradle files to free space
+    # Immediate cleanup of all heavy directories
     cd /app && \
     rm -rf /app/audiveris_source && \
     rm -rf /root/.gradle && \
+    rm -rf /app/.gradle && \
     chmod -R 777 /app/Audiveris /app/audiveris_home
     
 # 4. Set up your Python app as usual
