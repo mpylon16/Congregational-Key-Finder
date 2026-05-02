@@ -21,6 +21,8 @@ WORKDIR /app
 RUN GRADLE_PATH=$(find /app/audiveris_source -name gradlew | head -n 1) && \
     GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
     cd "$GRADLE_DIR" && \
+    # THIS IS THE MISSING LINE: Give permission to execute the Gradle wrapper
+    chmod +x gradlew && \
     # Use --no-daemon and --parallel to speed up the Java compilation
     ./gradlew clean installDist -x test --no-daemon --parallel && \
     # Locate the result
