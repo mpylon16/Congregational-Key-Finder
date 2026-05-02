@@ -5,17 +5,18 @@ WORKDIR /app
 # Install tools needed to download and extract
 RUN apt-get update && apt-get install -y wget unzip && rm -rf /var/lib/apt/lists/*
 
-# Download and extract the source
+# Download and extract the source using your specific link
 RUN wget -q -O audiveris.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=3h8bdw36&dl=1" && \
     unzip -q audiveris.zip -d /app/audiveris_source && \
     rm audiveris.zip
 
-# Build the application
+# Build the application with diagnostic flags
 RUN GRADLE_PATH=$(find /app/audiveris_source -name gradlew | head -n 1) && \
     GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
     cd "$GRADLE_DIR" && \
     chmod +x gradlew && \
-    ./gradlew clean installDist -x test -q --no-daemon
+    # Removed -q and added --stacktrace to see the real error in GitHub logs
+    ./gradlew clean installDist -x test --no-daemon --stacktrace
 
 # --- STAGE 2: RUNNER ---
 FROM eclipse-temurin:21-jre
