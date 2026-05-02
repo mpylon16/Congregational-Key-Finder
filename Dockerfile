@@ -10,34 +10,24 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# 2. DOWNLOAD & CLEAN
-RUN wget -O audiveris_source.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=fi6sjjdc&dl=1" && \
-    unzip audiveris_source.zip && \
-    rm audiveris_source.zip
+# 2. DOWNLOAD & UNZIP (Optimized)
+RUN wget -q -O audiveris.zip "YOUR_DROPBOX_LINK_HERE" && \
+    # -q makes unzip quiet, which speeds up the build and prevents log hanging
+    unzip -q audiveris.zip -d /app/audiveris_source && \
+    rm audiveris.zip
 
-# We use a separate RUN for the cleanup to keep it clean
-RUN find . -name ".gradle" -type d -exec rm -rf {} + && \
-    find . -name "build" -type d -exec rm -rf {} +
-
-# 3. BUILD Audiveris
+# 3. BUILD Audiveris (Robust & Fast)
 WORKDIR /app
-RUN GRADLE_PATH=$(find . -name gradlew | head -n 1) && \
+RUN GRADLE_PATH=$(find /app/audiveris_source -name gradlew | head -n 1) && \
     GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
     cd "$GRADLE_DIR" && \
-    rm -rf .gradle .idea build out bin && \
-    chmod +x gradlew && \
-    # Build the distribution
-    ./gradlew clean installDist -x test --no-daemon && \
-    # Locate the installation result
+    # Use --no-daemon and --parallel to speed up the Java compilation
+    ./gradlew clean installDist -x test --no-daemon --parallel && \
+    # Locate the result
     REAL_BASE=$(ls -d build/install/Audiveris* | head -n 1) && \
-    # Create destination folders first to prevent "No such directory" errors
-    mkdir -p /app/Audiveris_Temp /app/audiveris_home/.config/AudiverisLtd/audiveris && \
-    # Copy the content
-    cp -rp "$REAL_BASE"/. /app/Audiveris_Temp/ && \
-    # Swap it into the final location
-    rm -rf /app/Audiveris && \
-    mv /app/Audiveris_Temp /app/Audiveris && \
-    # Set permissions
+    # Create the folder and move files physically
+    mkdir -p /app/Audiveris /app/audiveris_home/.config/AudiverisLtd/audiveris && \
+    cp -rp "$REAL_BASE"/. /app/Audiveris/ && \
     chmod -R 777 /app/Audiveris /app/audiveris_home
     
 # 4. Set up your Python app as usual
