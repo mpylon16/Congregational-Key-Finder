@@ -16,36 +16,37 @@ RUN wget -q -O audiveris.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwym
     rm audiveris.zip
 
 # 3. BUILD Audiveris & CLEANUP
+# --- STAGE 1: BUILDER ---
+FROM openjdk:21-jdk-slim AS builder
 WORKDIR /app
+COPY --from=0 /app/audiveris_source /app/audiveris_source
+
 RUN GRADLE_PATH=$(find /app/audiveris_source -name gradlew | head -n 1) && \
     GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
     cd "$GRADLE_DIR" && \
     chmod +x gradlew && \
-    # -q reduces log output significantly to save disk space
-    ./gradlew clean installDist -x test -q --no-daemon --parallel && \
-    # Move the result
-    REAL_BASE=$(ls -d build/install/Audiveris* | head -n 1) && \
-    mkdir -p /app/Audiveris /app/audiveris_home/.config/AudiverisLtd/audiveris && \
-    cp -rp "$REAL_BASE"/. /app/Audiveris/ && \
-    # Immediate cleanup of all heavy directories
-    cd /app && \
-    rm -rf /app/audiveris_source && \
-    rm -rf /root/.gradle && \
-    rm -rf /app/.gradle && \
-    chmod -R 777 /app/Audiveris /app/audiveris_home
-    
-# 4. Set up your Python app as usual
+    ./gradlew clean installDist -x test -q --no-daemon
+
+# --- STAGE 2: RUNNER (Final Image) ---
+FROM python:3.11-slim
+# Install Java and Tesseract in the final slim image
+RUN apt-get update && apt-get install -y \
+    openjdk-17-jre-headless \
+    tesseract-ocr \
+    wget \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
+# Copy the built Audiveris from the builder stage
+COPY --from=builder /app/audiveris_source/app/build/install/Audiveris /app/Audiveris
+# Copy your Python app files
 COPY . .
-RUN pip3 install --break-system-packages -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# 5. Env Vars we fixed earlier
-ENV HOME=/app/audiveris_home
-ENV JAVA_OPTS="-Djava.io.tmpdir=/app/tmp"
-ENV LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/local/lib
-ENV TESSDATA_PREFIX=/usr/share/tesseract-ocr/tessdata
+# Set permissions
+RUN mkdir -p /app/audiveris_home/.config/AudiverisLtd/audiveris && \
+    chmod -R 777 /app/Audiveris /app/audiveris_home
 
-RUN mkdir -p /app/audiveris_home /app/tmp uploads output
-
-EXPOSE 5000
-CMD ["python3", "app.py"]
+EXPOSE 8080
+CMD ["python", "app.py"]
