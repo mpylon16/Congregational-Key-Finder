@@ -12,24 +12,24 @@ WORKDIR /app
 
 # 2. DOWNLOAD & UNZIP (Optimized)
 RUN wget -q -O audiveris.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=fi6sjjdc&dl=1" && \
-    # -q makes unzip quiet, which speeds up the build and prevents log hanging
     unzip -q audiveris.zip -d /app/audiveris_source && \
     rm audiveris.zip
 
-# 3. BUILD Audiveris (Robust & Fast)
+# 3. BUILD Audiveris & CLEANUP
 WORKDIR /app
 RUN GRADLE_PATH=$(find /app/audiveris_source -name gradlew | head -n 1) && \
     GRADLE_DIR=$(dirname "$GRADLE_PATH") && \
     cd "$GRADLE_DIR" && \
-    # THIS IS THE MISSING LINE: Give permission to execute the Gradle wrapper
     chmod +x gradlew && \
-    # Use --no-daemon and --parallel to speed up the Java compilation
     ./gradlew clean installDist -x test --no-daemon --parallel && \
-    # Locate the result
+    # Locate and move the final build
     REAL_BASE=$(ls -d build/install/Audiveris* | head -n 1) && \
-    # Create the folder and move files physically
     mkdir -p /app/Audiveris /app/audiveris_home/.config/AudiverisLtd/audiveris && \
     cp -rp "$REAL_BASE"/. /app/Audiveris/ && \
+    # AGGRESSIVE CLEANUP: Delete source and gradle files to free space
+    cd /app && \
+    rm -rf /app/audiveris_source && \
+    rm -rf /root/.gradle && \
     chmod -R 777 /app/Audiveris /app/audiveris_home
     
 # 4. Set up your Python app as usual
