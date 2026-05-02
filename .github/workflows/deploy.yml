@@ -12,6 +12,13 @@ jobs:
     steps:
       - name: Checkout Python Code
         uses: actions/checkout@v3
+      - name: Free Disk Space
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+          sudo rm -rf "/usr/local/share/boost"
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v2
