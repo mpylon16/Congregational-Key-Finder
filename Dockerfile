@@ -8,21 +8,25 @@ RUN apt-get update && apt-get install -y wget unzip git && rm -rf /var/lib/apt/l
 # 2. Download and extract
 RUN wget -q -O audiveris.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=3h8bdw36&dl=1" && \
     unzip -q audiveris.zip -d /app/temp_source && \
-    find /app/temp_source -maxdepth 4 -name "gradlew" -execdir cp -rp . /app/ \; && \
-    rm -rf audiveris.zip /app/temp_source
+    rm audiveris.zip
 
-# 3. Build
-RUN git init && \
+# 3. Build and Move (All in one logical block to keep paths consistent)
+RUN GW_PATH=$(find /app/temp_source -name gradlew | head -n 1) && \
+    cd $(dirname "$GW_PATH") && \
+    # We are now in the root of the Audiveris source
+    git init && \
     git config user.email "build@example.com" && \
     git config user.name "Builder" && \
     git add . && \
     git commit -m "initial" && \
     chmod +x gradlew && \
-    ./gradlew clean installDist -x test --no-daemon -Dorg.gradle.jvmargs="-Xmx4g" && \
-    # --- THE FIX: Safe path discovery ---
-    FINAL_PATH=$(find /app -type d -path "*/build/install/Audiveris" | head -n 1) && \
-    if [ -z "$FINAL_PATH" ]; then echo "Error: Audiveris build output not found!"; exit 1; fi && \
-    mv "$FINAL_PATH" /app/final_app
+    # Run the build
+    ./gradlew :app:installDist -x test --no-daemon -Dorg.gradle.jvmargs="-Xmx4g" && \
+    # THE FIX: Move the result using the relative path we KNOW exists after a successful build
+    mkdir -p /app/final_app && \
+    mv app/build/install/Audiveris/* /app/final_app/ && \
+    # Clean up the massive source folder immediately to save space
+    rm -rf /app/temp_source
 
 # --- STAGE 2: RUNNER ---
 FROM eclipse-temurin:21-jre
