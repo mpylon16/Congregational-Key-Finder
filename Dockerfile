@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # 2. DOWNLOAD & UNZIP (Optimized)
-RUN wget -q -O audiveris.zip "YOUR_DROPBOX_LINK_HERE" && \
+RUN wget -q -O audiveris.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=fi6sjjdc&dl=1" && \
     # -q makes unzip quiet, which speeds up the build and prevents log hanging
     unzip -q audiveris.zip -d /app/audiveris_source && \
     rm audiveris.zip
