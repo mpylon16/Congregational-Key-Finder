@@ -152,11 +152,9 @@ def get_file_hash(pdf_path):
     with open(pdf_path, 'rb') as f:
         return hashlib.md5(f.read()).hexdigest()
 
-# Use a safe temp folder outside protected areas like Documents or AppData
 def get_safe_scratch_dir():
-    # Try C:/temp/m21_scratch first (Windows), then fall back to system temp
-    base_temp = os.environ.get("TEMP", "C:/temp")
-    scratch_dir = os.path.join(base_temp, "m21_scratch")
+    # Use /tmp, which is the standard, writable temp space on Railway/Linux
+    scratch_dir = "/tmp/m21_scratch"
 
     try:
         os.makedirs(scratch_dir, exist_ok=True)
@@ -168,16 +166,16 @@ def get_safe_scratch_dir():
         print(f"✅ Scratch dir is writable: {scratch_dir}")
         return scratch_dir
     except Exception as e:
-        print(f"❌ Failed to use preferred scratch dir: {scratch_dir} — {e}")
-        # Fall back to system temp
+        print(f"❌ Failed to use scratch dir: {scratch_dir} — {e}")
+        # Final fallback to whatever the OS suggests
         fallback = os.path.join(tempfile.gettempdir(), "m21_scratch_fallback")
         os.makedirs(fallback, exist_ok=True)
-        print(f"⚠️  Falling back to system temp dir: {fallback}")
         return fallback
 
 # Set music21's scratch directory
 safe_working_dir = get_safe_scratch_dir()
 us = environment.UserSettings()
+# Ensure music21 actually uses this path
 us['directoryScratch'] = safe_working_dir
 
 # --- Configuration ---
@@ -491,6 +489,7 @@ def upload_file():
                     
                     subprocess_args = [
                         AUDIVERIS_CMD_FULL,
+                        "-Duser.home=/app/audiveris_home",
                         '-batch',
                         '-transcribe',
                         '-export',
