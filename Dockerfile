@@ -46,7 +46,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 COPY --from=builder /app/final_app /app/Audiveris
 
 # THE FIX: Inject the property directly into the start script's default options
-RUN sed -i 's/^DEFAULT_JVM_OPTS=.*/DEFAULT_JVM_OPTS="-Duser.home=\/app\/audiveris_home"/' /app/Audiveris/bin/Audiveris
+RUN sed -i '2i export JAVA_OPTS="-Duser.home=/app/audiveris_home"' /app/Audiveris/bin/Audiveris
 
 # Ensure permissions
 RUN mkdir -p /app/audiveris_home && \
