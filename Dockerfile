@@ -45,24 +45,23 @@ ENV PATH="/opt/venv/bin:$PATH"
 # Copy the built Audiveris
 COPY --from=builder /app/final_app /app/Audiveris
 
-# THE FIX: Inject the property directly into the start script's default options
-RUN sed -i '2i export JAVA_OPTS="-Duser.home=/app/audiveris_home"' /app/Audiveris/bin/Audiveris
-
 # Ensure permissions
 RUN mkdir -p /app/audiveris_home && \
     chmod -R 777 /app/Audiveris /app/audiveris_home
+
+# We can remove the 'sed' hack. We are going straight to the OS level now.
+ENV TESSDATA_PREFIX="/usr/share/tesseract-ocr/5/tessdata"
     
 # Copy Python app files
 COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# --- THE FIX: Create a dedicated home and set permissions ---
-RUN mkdir -p /app/audiveris_home && \
-    chmod -R 777 /app/Audiveris /app/audiveris_home
 
 # Set Environment Variables
-# 1. Point Java home to our writable directory
-# 2. Point Tesseract to the system-installed data
+# 1. Change the Linux HOME variable for the whole container
+# 2. Point Java home to our writable directory
+# 3. Point Tesseract to the system-installed data
+ENV HOME="/app/audiveris_home"
 ENV JAVA_OPTS="-Duser.home=/app/audiveris_home"
 ENV TESSDATA_PREFIX="/usr/share/tesseract-ocr/5/tessdata"
 
