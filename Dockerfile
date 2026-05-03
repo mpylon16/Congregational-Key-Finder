@@ -27,6 +27,7 @@ RUN git init && \
     INSTALL_PARENT="/app/app/build/install" && \
     DIR_NAME=$(ls "$INSTALL_PARENT" | head -n 1) && \
     mv "$INSTALL_PARENT/$DIR_NAME" /app/final_app && \
+    cp -r /app/res /app/final_app/res && \
     echo "Successfully captured artifact from $DIR_NAME"
 
 # --- STAGE 2: RUNNER ---
