@@ -489,7 +489,6 @@ def upload_file():
                     
                     subprocess_args = [
                         AUDIVERIS_CMD_FULL,
-                        "-Duser.home=/app/audiveris_home",
                         '-batch',
                         '-transcribe',
                         '-export',
@@ -499,10 +498,15 @@ def upload_file():
                         '-option', 'audiveris.log.level=WARNING',
                         filepath
                     ]
-                    
+
+                    # 2. This is where the magic happens for shell scripts
+                    env = os.environ.copy()
+                    # We set both common names for this variable to be absolutely sure the script sees it
+                    env["JAVA_OPTS"] = "-Duser.home=/app/audiveris_home"
+                    env["AUDIVERIS_OPTS"] = "-Duser.home=/app/audiveris_home"
+
                     print("Running Audiveris command:", ' '.join(subprocess_args))
                     
-                    # Add 'env=env' here to pass the home directory setting
                     result = subprocess.run(
                         subprocess_args, 
                         capture_output=True, 
