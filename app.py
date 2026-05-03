@@ -482,13 +482,21 @@ def upload_file():
                     print(f"⏱️ Starting Audiveris for hash: {pdf_hash}")
                     start_time = time.time()
 
-                    # Prepare the environment with the user.home property
-                    # This tells Audiveris to use our writable folder instead of /root
+                    # 1. Environment Setup
+                    # We force the HOME and TESSDATA paths at the process level
                     env = os.environ.copy()
-                    env["JAVA_OPTS"] = "-Duser.home=/app/audiveris_home"
+                    env["HOME"] = "/app/audiveris_home"
+                    env["TESSDATA_PREFIX"] = "/usr/share/tesseract-ocr/5/tessdata"
                     
+                    # 2. Direct Java Command
+                    # By calling 'java' directly, we can force the 'res' folder into the classpath
+                    # and bypass the problematic bash start-script.
                     subprocess_args = [
-                        AUDIVERIS_CMD_FULL,
+                        'java',
+                        '-Xmx4g',                          # High memory for OCR
+                        '-Duser.home=/app/audiveris_home',  # Fix for the config path
+                        '-cp', '/app/Audiveris/lib/*:/app/Audiveris/res', # Load code AND resources
+                        'Audiveris',                       # The Main Class name
                         '-batch',
                         '-transcribe',
                         '-export',
@@ -499,26 +507,31 @@ def upload_file():
                         filepath
                     ]
 
-                    # The ultimate override: Force the OS HOME variable
-                    env = os.environ.copy()
-                    env["HOME"] = "/app/audiveris_home"
-                    env["JAVA_OPTS"] = "-Duser.home=/app/audiveris_home"
-
-                    print("Running Audiveris command:", ' '.join(subprocess_args))
+                    print("Running Audiveris (Direct Java Call):", ' '.join(subprocess_args))
                     
                     result = subprocess.run(
                         subprocess_args, 
                         capture_output=True, 
                         text=True, 
-                        check=False, 
+                        check=False,
+                        env=env  # Pass the explicit environment lie
                     )
 
                     duration = time.time() - start_time
-                    print(f"✅ Audiveris finished in {duration:.2f} seconds")
-                    print("📂 Contents of output directory:", os.listdir(cached_output_dir))
+                    
+                    # Log the actual output even if it fails, so we can see what's happening
+                    if result.stdout:
+                        print("--- Audiveris STDOUT ---")
+                        print(result.stdout)
+                    if result.stderr:
+                        print("--- Audiveris STDERR ---")
+                        print(result.stderr)
 
                     if result.returncode != 0:
                         return f"<p>Audiveris processing failed (Error Code: {result.returncode}). Check server logs.</p><pre>{result.stdout}\n{result.stderr}</pre>", 500
+
+                    print(f"✅ Audiveris finished in {duration:.2f} seconds")
+                    print("📂 Contents of output directory:", os.listdir(cached_output_dir))
 
                 except Exception as e:
                     return f"<p>Unexpected error during Audiveris processing: {e}</p>", 500
