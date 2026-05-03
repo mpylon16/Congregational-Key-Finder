@@ -499,12 +499,6 @@ def upload_file():
                         filepath
                     ]
 
-                    # 2. This is where the magic happens for shell scripts
-                    env = os.environ.copy()
-                    # We set both common names for this variable to be absolutely sure the script sees it
-                    env["JAVA_OPTS"] = "-Duser.home=/app/audiveris_home"
-                    env["AUDIVERIS_OPTS"] = "-Duser.home=/app/audiveris_home"
-
                     print("Running Audiveris command:", ' '.join(subprocess_args))
                     
                     result = subprocess.run(
@@ -512,7 +506,6 @@ def upload_file():
                         capture_output=True, 
                         text=True, 
                         check=False, 
-                        env=env
                     )
 
                     duration = time.time() - start_time
