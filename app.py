@@ -499,6 +499,11 @@ def upload_file():
                         filepath
                     ]
 
+                    # The ultimate override: Force the OS HOME variable
+                    env = os.environ.copy()
+                    env["HOME"] = "/app/audiveris_home"
+                    env["JAVA_OPTS"] = "-Duser.home=/app/audiveris_home"
+
                     print("Running Audiveris command:", ' '.join(subprocess_args))
                     
                     result = subprocess.run(
