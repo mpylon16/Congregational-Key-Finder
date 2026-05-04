@@ -115,6 +115,21 @@
             font-size: 0.9rem;
             color: #7f8c8d;
         }
+
+        .comfort-tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: white;
+            margin-left: 5px;
+        }
+        .perfect { background-color: #28a745; }        /* Green */
+        .very-singable { background-color: #2ecc71; }  /* Emerald */
+        .challenging { background-color: #f1c40f; color: #333; } /* Yellow */
+        .uncomfortable { background-color: #e67e22; }  /* Orange */
+        .unsuitable { background-color: #e74c3c; }     /* Red */
     </style>
 </head>
 <body>
@@ -142,7 +157,7 @@
 
             <!-- Original Key Block -->
             <h3 style="margin-top: 0; color: #34495e;">Original Key Info</h3>
-            <p>
+            <p style="margin-bottom: 0.5rem;">
                 <strong>Key:</strong> {{ original_key.name | replace('-', '♭')}}<br>
                 <strong>Pitch Range:</strong> 
                 {% if original_key.low_out %}
@@ -157,8 +172,21 @@
                 {{ original_key.range_high }}
                 {% endif %}
                 <br>
-                <strong>Comfort Score:</strong> -{{ original_key.comfort_score }} ({{ original_key.comfort_label }})
+                <strong>Singability:</strong> 
+                <span class="comfort-tag {{ original_key.comfort_label_slug }}">
+                    {{ original_key.comfort_label }}
+                </span>
             </p>
+            
+            <details style="border: none; background: transparent; margin: 0 0 1rem 0; padding: 0; box-shadow: none;">
+                <summary style="font-size: 0.85rem; color: #7f8c8d; padding: 0; background: transparent; border: none;">
+                    View technical difficulty score
+                </summary>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">
+                    <strong>Difficulty Score:</strong> {{ original_key.comfort_score }} 
+                    <small>(Higher = more strain/effort required)</small>
+                </p>
+            </details>
 
             {% if original_key_is_singable == false %}
                 <p class="alert-danger" style="margin-bottom: 0;">⚠️ The original key is not ideal for congregational singing. {{ original_key_comment }}</p>
@@ -171,7 +199,7 @@
         {% if recommended %}
         <div class="card recommendation-card">
             <h2 style="margin-top: 0; color: #28a745;">🎯 Recommended Key</h2>
-            <p>
+            <p style="margin-bottom: 0.5rem;">
                 <strong>Key:</strong> {{ recommended['key'].tonic.name | replace('-', '♭') }}{% if recommended['key'].mode != 'major' %} {{ recommended['key'].mode }}{% endif %}
                 <span class="alert-success">(Best overall fit)</span><br>
                 
@@ -190,8 +218,21 @@
                   {{ recommended.range_high | replace('-', '♭')}}
                 {% endif %}
                 <br>
-                <strong>Comfort Score:</strong> -{{ recommended.comfort_score }} ({{ recommended.comfort_label }})
+                <strong>Singability:</strong> 
+                <span class="comfort-tag {{ recommended.comfort_label_slug }}">
+                    {{ recommended.comfort_label }}
+                </span>
             </p>
+
+            <details style="border: none; background: transparent; margin: 0 0 1rem 0; padding: 0; box-shadow: none;">
+                <summary style="font-size: 0.85rem; color: #7f8c8d; padding: 0; background: transparent; border: none;">
+                    View technical difficulty score
+                </summary>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">
+                    <strong>Difficulty Score:</strong> {{ recommended.comfort_score }} 
+                    <small>(Higher = more strain/effort required)</small>
+                </p>
+            </details>
             
             {% if ccli_link %}
             <p style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #c3e6cb;">
@@ -205,8 +246,8 @@
         </div>
         {% endif %}
 
-        <!-- Other Options by Comfort Score -->
-        <h3 style="color: #2c3e50; margin-top: 2rem;">🎵 Other Options by Comfort Score</h3>
+        <!-- Other Options by Singability -->
+        <h3 style="color: #2c3e50; margin-top: 2rem;">🎵 Other Options by Singability</h3>
         {% set grouped = {} %}
         {% for k in other_keys if recommended and k.shift != recommended.shift %}
           {% set cat = k.comfort_label %}
@@ -233,7 +274,7 @@
                       {{ k['key'].tonic.name | replace('-', '♭') }}
                       {% if k['key'].mode != 'major' %} {{ k['key'].mode }}{% endif %}
                       ({{ '%+d'|format(k.shift) }}):
-                      Score -{{ k.comfort_score }}
+                      Difficulty Score: {{ k.comfort_score }}
                       <a href="/generate_pdf/{{ pdf_hash }}?key={{ k.shift }}"> [Download PDF]</a>
                     </li>
                   {% endfor %}
@@ -257,34 +298,35 @@
               <li><strong>❌ Out of Range:</strong> below <code>G3</code> or above <code>E5</code> — difficult or unreachable for most</li>
             </ul>
 
-            <h4>🎯 How the Comfort Score works</h4>
-            <p>Each note is scored based on its pitch and duration. Notes outside the ideal range increase the score:</p>
+            <h4>🎯 How the Difficulty Score works</h4>
+            <p>Each note is scored based on its pitch and duration. Notes outside the ideal range accumulate "difficulty points":</p>
             <ul>
-              <li><strong>0 penalty:</strong> Notes between <code>C4–C5</code></li>
-              <li><strong>+1 per beat:</strong> Slightly outside (e.g., <code>A3–B3</code>, <code>C5–D5</code>)</li>
-              <li><strong>+3 per beat:</strong> Edge of range (e.g., <code>G3</code>, <code>D#5–E5</code>)</li>
-              <li><strong>+10 per beat:</strong> Far out of range (e.g., <code>F3</code> or <code>F5+</code>)</li>
+              <li><strong>0 points:</strong> Notes between <code>C4–C5</code></li>
+              <li><strong>+1 point per beat:</strong> Slightly outside (e.g., <code>A3–B3</code>, <code>C5–D5</code>)</li>
+              <li><strong>+3 points per beat:</strong> Edge of range (e.g., <code>G3</code>, <code>D#5–E5</code>)</li>
+              <li><strong>+10 points per beat:</strong> Far out of range (e.g., <code>F3</code> or <code>F5+</code>)</li>
             </ul>
             
-            <p style="margin-left: 20px; font-size: 0.95em; color: #555;">
-              <em><strong>Note on Duration:</strong> Notes held for <strong>two beats or more</strong> receive an additional "stamina penalty" to account for the increased breath control required in difficult ranges.</em>
+            <p style="margin-left: 20px; font-size: 0.95em; color: #555; border-left: 3px solid #eee; padding-left: 10px;">
+              <em><strong>Note on Duration:</strong> Points scale with time (e.g., two quavers equal one crotchet). However, single notes held for <strong>two beats or more</strong> receive an additional "stamina penalty" to reflect the extra breath control required in difficult ranges.</em>
             </p>
 
             <h4>📊 Interpreting the Score</h4>
+            <p>The total score represents physical strain—<strong>lower is better</strong>.</p>
             <table>
-              <tr><th>Score</th><th>Interpretation</th></tr>
-              <tr><td>0</td><td>✅ Perfect fit (in ideal tessitura)</td></tr>
-              <tr><td>1–20</td><td>🎵 Very singable</td></tr>
-              <tr><td>21–80</td><td>⚠️ May challenge some voices</td></tr>
-              <li>81–200</td><td>❌ Uncomfortable for most</td></tr>
-              <tr><td>200+</td><td>🚫 Not suitable for congregational singing</td></tr>
+              <tr><th>Difficulty Score</th><th>Interpretation</th></tr>
+              <tr><td>0</td><td>✅ Perfect fit (Entirely in ideal range)</td></tr>
+              <tr><td>1–35</td><td>🎵 Very singable</td></tr>
+              <tr><td>36–120</td><td>⚠️ Singable but may challenge some</td></tr>
+              <tr><td>121–250</td><td>❌ Uncomfortable for most</td></tr>
+              <tr><td>251+</td><td>🚫 Not suitable for congregational singing</td></tr>
             </table>
 
             <h4>📝 Notes</h4>
             <ul>
               <li>Only <strong>notes with lyrics</strong> are analyzed — instrumental intros/outros are ignored.</li>
-              <li>Accidentals and key signatures <strong>do not affect</strong> comfort score — only pitch and duration matter.</li>
-              <li>Key recommendations aim to shift the entire melody so that the most frequent and longest-held notes sit within the most comfortable vocal range.</li>
+              <li>Accidentals and key signatures <strong>do not affect</strong> the score — only absolute pitch and duration matter.</li>
+              <li>Key recommendations aim to shift the melody so that the most frequent and longest-held notes sit within the most comfortable range.</li>
             </ul>
           </div>
         </details>
