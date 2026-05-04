@@ -308,7 +308,7 @@ def calculate_comfort_score(notes_info):
             base_penalty = 3
             score += base_penalty * dur  # edge of range
             # Add an extra penalty for sustained notes in the stretch zone
-            if dur >= 2: # If note is half-note or longer
+            if dur >= 1.9: # If note is half-note or longer
                 score += base_penalty * 0.5 # Add half the base penalty again
         else:
             base_penalty = 10
