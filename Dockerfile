@@ -3,8 +3,10 @@ FROM eclipse-temurin:21-jdk AS builder
 WORKDIR /app
 
 # 1. Install necessary tools (Git is required for Audiveris versioning task)
-RUN apt-get update && apt-get install -y wget unzip git && rm -rf /var/lib/apt/lists/*
-
+RUN apt-get update --fix-missing && \
+    apt-get install -y --no-install-recommends wget unzip git && \
+    rm -rf /var/lib/apt/lists/*
+    
 # 2. Extract and Flatten (Eliminates the "nested folder in ZIP" issue forever)
 RUN wget -q -O audiveris.zip "https://www.dropbox.com/scl/fi/ehql5rgigwea1q7cwymsr/audiveris_source.zip?rlkey=m5rol41patcos7u2fxsp2mttb&st=3h8bdw36&dl=1" && \
     unzip -q audiveris.zip -d /app/temp_source && \
