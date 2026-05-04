@@ -116,20 +116,52 @@
             color: #7f8c8d;
         }
 
+        /* --- 1. Fix the "Vanishing Text" in Tags --- */
         .comfort-tag {
             display: inline-block;
             padding: 2px 10px;
             border-radius: 15px;
             font-size: 0.9rem;
             font-weight: bold;
-            color: white;
+            /* Changed from white to a dark slate for better readability on light colors */
+            color: #2c3e50; 
             margin-left: 5px;
+            border: 1px solid rgba(0,0,0,0.1);
         }
-        .perfect { background-color: #28a745; }        /* Green */
-        .very-singable { background-color: #2ecc71; }  /* Emerald */
-        .challenging { background-color: #f1c40f; color: #333; } /* Yellow */
-        .uncomfortable { background-color: #e67e22; }  /* Orange */
-        .unsuitable { background-color: #e74c3c; }     /* Red */
+
+        /* Specific Tag Backgrounds - Using slightly softer colors */
+        .perfect { background-color: #2ecc71; color: white; } /* Keep green as white text */
+        .very-singable { background-color: #a2e8b9; }       /* Soft Green */
+        .challenging { background-color: #fce18a; }         /* Soft Yellow */
+        .uncomfortable { background-color: #ffcc99; }       /* Soft Orange */
+        .unsuitable { background-color: #ff9999; }          /* Soft Red */
+
+
+        /* --- 2. Fix the "Horrible" Dropdown Backgrounds --- */
+        details.comfort-group {
+            background: white; /* Keep the main body white */
+            border: 1px solid #ddd;
+            border-left-width: 6px; /* Thicker left border for the "color hint" */
+            margin-bottom: 1rem;
+        }
+
+        /* Use the colors for the border and a very light background tint on the summary */
+        .perfect { border-left-color: #28a745 !important; }
+        .very-singable { border-left-color: #2ecc71 !important; }
+        .challenging { border-left-color: #f1c40f !important; }
+        .uncomfortable { border-left-color: #e67e22 !important; }
+        .unsuitable { border-left-color: #e74c3c !important; }
+
+        /* Styles the clickable header of the dropdown */
+        details.comfort-group summary {
+            background: #fff;
+            padding: 1rem;
+            transition: background 0.2s;
+        }
+
+        /* Optional: Slight tint when hovering so it feels interactive */
+        details.comfort-group.perfect summary:hover { background: #f0fff4; }
+        details.comfort-group.challenging summary:hover { background: #fffdf5; }
     </style>
 </head>
 <body>
