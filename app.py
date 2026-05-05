@@ -187,9 +187,17 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # --- Flask App Initialization ---
+import os
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
+
+# Ensure the app knows EXACTLY where it lives on the Linux server
+basedir = os.path.abspath(os.path.dirname(__file__))
+app.config['UPLOAD_FOLDER'] = os.path.join(basedir, 'uploads')
+app.config['OUTPUT_FOLDER'] = os.path.join(basedir, 'output')
+
+# Make sure these folders actually exist so the app doesn't crash on the first upload
+os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+os.makedirs(app.config['OUTPUT_FOLDER'], exist_ok=True)
 
 # --- Music Analysis Constants (Tunable) ---
 # Comfortable vocal range for most congregations (C4 to D5)
@@ -482,6 +490,10 @@ def upload_file():
                     print(f"⏱️ Starting Audiveris for hash: {pdf_hash}")
                     start_time = time.time()
 
+                    import os
+                    classpath_sep = os.pathsep  # Automatically picks ; for Windows and : for Linux
+                    # We use the variable here to make the classpath 'Universal'
+                    cp_value = f"/app/Audiveris/lib/*{classpath_sep}/app/Audiveris/res"
                     # 1. Environment Setup
                     # We force the HOME and TESSDATA paths at the process level
                     env = os.environ.copy()
@@ -495,7 +507,7 @@ def upload_file():
                         'java',
                         '-Xmx4g',                          # High memory for OCR
                         '-Duser.home=/app/audiveris_home',  # Fix for the config path
-                        '-cp', '/app/Audiveris/lib/*:/app/Audiveris/res', # Load code AND resources
+                        '-cp', cp_value, # Load code AND resources
                         'Audiveris',                       # The Main Class name
                         '-batch',
                         '-transcribe',
@@ -531,6 +543,8 @@ def upload_file():
                         return f"<p>Audiveris processing failed (Error Code: {result.returncode}). Check server logs.</p><pre>{result.stdout}\n{result.stderr}</pre>", 500
 
                     print(f"✅ Audiveris finished in {duration:.2f} seconds")
+                    import time
+                    time.sleep(1.0) # Give Linux a full second to finalize the file writes
                     print("📂 Contents of output directory:", os.listdir(cached_output_dir))
 
                 except Exception as e:
@@ -566,13 +580,21 @@ def upload_file():
                 logging.error("--- END FATAL ERROR ---")
 
                 print("Error:", e)
-                if cached_output_dir in locals() and os.path.exists(cached_output_dir):
+
+                if 'cached_output_dir' in locals() and os.path.exists(cached_output_dir):
                     import shutil
-                    shutil.rmtree(cached_output_dir)
+                    try:
+                        # We use ignore_errors=True so that if a single temp file 
+                        # is 'locked', the whole app doesn't crash.
+                        shutil.rmtree(cached_output_dir, ignore_errors=True)
+                        print(f"🧹 Cleaned up failed directory: {cached_output_dir}")
+                    except Exception as cleanup_error:
+                        # Log it, but don't stop the user from seeing the original error
+                        logging.warning(f"Cleanup failed for {cached_output_dir}: {cleanup_error}")
 
                 return f"<p>MusicXML analysis failed: {e}</p>", 500
 
-        return "<p>Please upload a valid PDF file.</p><p><a href='/'>Try Again</a></p>"
+        return f"<p>Please upload a valid PDF file.</p><p><a href='{url_for('upload_file')}'>Try Again</a></p>"
 
     return render_template('upload.html')
 
