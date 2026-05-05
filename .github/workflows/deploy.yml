@@ -2,16 +2,19 @@ name: Build and Push Docker Image
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, develop ] # <-- Added develop here
+
 permissions:
   contents: read
   packages: write  # This is the line that fixes the "Denied" error
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Python Code
         uses: actions/checkout@v3
+
       - name: Free Disk Space
         run: |
           sudo rm -rf /usr/share/dotnet
@@ -19,6 +22,10 @@ jobs:
           sudo rm -rf /opt/ghc
           sudo rm -rf "/usr/local/share/boost"
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+
+      # REQUIRED FOR CACHING: This enables the advanced Docker engine
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v2
@@ -32,4 +39,9 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/mpylon16/congregational-key-finder:latest
+          # Dynamically tags as 'latest' if on main, otherwise tags as 'staging'
+          tags: |
+            ghcr.io/mpylon16/congregational-key-finder:${{ github.ref == 'refs/heads/main' && 'latest' || 'staging' }}
+          # THE SPEED FIX: Tells GitHub to save/load the Docker layer cache
+          cache-from: type=gha
+          cache-to: type=gha,mode=max 
