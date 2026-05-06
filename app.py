@@ -194,7 +194,12 @@ app = Flask(__name__)
 # Supabase Configuration
 SUPABASE_URL = os.environ.get("SUPABASE_URL")
 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+# Safety check: avoid crashing if variables are missing
+if SUPABASE_URL and SUPABASE_KEY:
+    supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+else:
+    supabase = None
+    print("⚠️ WARNING: Supabase credentials missing from environment!")
 
 # Ensure the app knows EXACTLY where it lives on the Linux server
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -566,17 +571,14 @@ def upload_file():
                     pdf_metadata=pdf_metadata
                 )
 
-                # --- NEW SUPABASE SAVE LOGIC START ---
+                if supabase: # Only try if the client was actually created
                 try:
-                    # 1. Find the MXL file in the output directory
-                    # Audiveris output folder usually contains one .mxl file
                     mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
                     if mxl_files:
                         mxl_filename = mxl_files[0]
                         local_mxl_path = os.path.join(cached_output_dir, mxl_filename)
-
-                        # 2. Upload MXL to Storage Bucket (named by its hash)
                         storage_path = f"{pdf_hash}.mxl"
+
                         with open(local_mxl_path, 'rb') as f:
                             supabase.storage.from_('mxl-library').upload(
                                 path=storage_path, 
@@ -584,10 +586,8 @@ def upload_file():
                                 file_options={"upsert": "true"}
                             )
                         
-                        # 3. Get the URL for the database
                         mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
                         
-                        # 4. Upsert (Update or Insert) metadata into the 'songs' table
                         supabase.table('songs').upsert({
                             "pdf_hash": pdf_hash,
                             "title": summary.get("title", "Unknown Title"),
@@ -595,13 +595,11 @@ def upload_file():
                             "mxl_url": mxl_url,
                             "analysis_results": summary 
                         }).execute()
-                        
-                        print(f"🚀 Cloud Save Successful: {summary.get('title')}")
-                except Exception as cloud_error:
-                    # We print the error but don't stop the app—the user still needs their results!
-                    print(f"⚠️ Cloud Save failed: {cloud_error}")
-                # --- NEW SUPABASE SAVE LOGIC END ---                
-
+                        print(f"🚀 Cloud Save Successful for {pdf_hash}")
+                except Exception as cloud_err:
+                    # This prints to the Railway logs but DOES NOT trigger a 500 error for the user
+                    print(f"⚠️ Cloud Save background error: {cloud_err}")
+                    
                 return render_template("analysis_results.html",
                     pdf_hash=pdf_hash,                                       
                     original_key=summary["original_key_info"],
