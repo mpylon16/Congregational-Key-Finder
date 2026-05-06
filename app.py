@@ -572,34 +572,34 @@ def upload_file():
                 )
 
                 if supabase: # Only try if the client was actually created
-                try:
-                    mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
-                    if mxl_files:
-                        mxl_filename = mxl_files[0]
-                        local_mxl_path = os.path.join(cached_output_dir, mxl_filename)
-                        storage_path = f"{pdf_hash}.mxl"
+                    try:
+                        mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
+                        if mxl_files:
+                            mxl_filename = mxl_files[0]
+                            local_mxl_path = os.path.join(cached_output_dir, mxl_filename)
+                            storage_path = f"{pdf_hash}.mxl"
 
-                        with open(local_mxl_path, 'rb') as f:
-                            supabase.storage.from_('mxl-library').upload(
-                                path=storage_path, 
-                                file=f, 
-                                file_options={"upsert": "true"}
-                            )
+                            with open(local_mxl_path, 'rb') as f:
+                                supabase.storage.from_('mxl-library').upload(
+                                    path=storage_path, 
+                                    file=f, 
+                                    file_options={"upsert": "true"}
+                                )
+                            
+                            mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
+                            
+                            supabase.table('songs').upsert({
+                                "pdf_hash": pdf_hash,
+                                "title": summary.get("title", "Unknown Title"),
+                                "ccli_number": summary.get("ccli_number", "N/A"),
+                                "mxl_url": mxl_url,
+                                "analysis_results": summary 
+                            }).execute()
+                            print(f"🚀 Cloud Save Successful for {pdf_hash}")
+                    except Exception as cloud_err:
+                        # This prints to the Railway logs but DOES NOT trigger a 500 error for the user
+                        print(f"⚠️ Cloud Save background error: {cloud_err}")
                         
-                        mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
-                        
-                        supabase.table('songs').upsert({
-                            "pdf_hash": pdf_hash,
-                            "title": summary.get("title", "Unknown Title"),
-                            "ccli_number": summary.get("ccli_number", "N/A"),
-                            "mxl_url": mxl_url,
-                            "analysis_results": summary 
-                        }).execute()
-                        print(f"🚀 Cloud Save Successful for {pdf_hash}")
-                except Exception as cloud_err:
-                    # This prints to the Railway logs but DOES NOT trigger a 500 error for the user
-                    print(f"⚠️ Cloud Save background error: {cloud_err}")
-                    
                 return render_template("analysis_results.html",
                     pdf_hash=pdf_hash,                                       
                     original_key=summary["original_key_info"],
