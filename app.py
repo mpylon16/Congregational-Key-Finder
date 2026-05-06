@@ -5,6 +5,7 @@ import music21
 from music21 import converter, pitch, key, interval, stream, meter, expressions, environment, note, chord, harmony
 import tempfile
 import os
+import time
 import subprocess
 from flask import Flask, request, render_template, send_from_directory, abort, url_for, redirect
 from werkzeug.utils import secure_filename
@@ -13,14 +14,14 @@ import math # For math.inf
 import io
 import zipfile
 from xml.etree import ElementTree as ET
-import time
-import logging
 from collections import defaultdict
 import re
 from pathlib import Path
 from supabase import create_client, Client
 import sys
 import logging
+import pdfplumber
+import shutil
 
 # This forces every error to show up in your Railway Deploy Logs
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
@@ -50,11 +51,9 @@ def temporarily_set_cwd(path):
     finally:
         os.chdir(prev)
 
-import hashlib
 
 def extract_metadata_from_pdf(pdf_path):
     try:
-        import pdfplumber
         with pdfplumber.open(pdf_path) as pdf:
             text = pdf.pages[0].extract_text() or ""
             ccli_match = re.search(r'CCLI\s+Song\s+#?\s*(\d{5,8})', text, re.IGNORECASE)
@@ -193,7 +192,6 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # --- Flask App Initialization ---
-import os
 app = Flask(__name__)
 
 # Supabase Configuration
@@ -506,7 +504,6 @@ def upload_file():
                     print(f"⏱️ Starting Audiveris for hash: {pdf_hash}")
                     start_time = time.time()
 
-                    import os
                     classpath_sep = os.pathsep  # Automatically picks ; for Windows and : for Linux
                     # We use the variable here to make the classpath 'Universal'
                     cp_value = f"/app/Audiveris/lib/*{classpath_sep}/app/Audiveris/res"
@@ -559,7 +556,6 @@ def upload_file():
                         return f"<p>Audiveris processing failed (Error Code: {result.returncode}). Check server logs.</p><pre>{result.stdout}\n{result.stderr}</pre>", 500
 
                     print(f"✅ Audiveris finished in {duration:.2f} seconds")
-                    import time
                     time.sleep(1.0) # Give Linux a full second to finalize the file writes
                     print("📂 Contents of output directory:", os.listdir(cached_output_dir))
 
@@ -627,7 +623,6 @@ def upload_file():
                 print("Error:", e)
 
                 if 'cached_output_dir' in locals() and os.path.exists(cached_output_dir):
-                    import shutil
                     try:
                         # We use ignore_errors=True so that if a single temp file 
                         # is 'locked', the whole app doesn't crash.
@@ -642,8 +637,6 @@ def upload_file():
         return f"<p>Please upload a valid PDF file.</p><p><a href='{url_for('upload_file')}'>Try Again</a></p>"
 
     return render_template('upload.html')
-
-import zipfile
 
 def extract_xml_from_mxl(path):
     with zipfile.ZipFile(path, 'r') as z:
@@ -735,7 +728,6 @@ def extract_written_chords(score):
 def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_metadata=None):
     print("🎬 Running analyse_musicxml_summary()")
     from music21 import converter, pitch, stream, note
-    import os, glob, tempfile
 
     pattern = os.path.join(output_dir, f"{name}*.mxl")
     mxl_files = sorted(glob.glob(pattern))
@@ -977,7 +969,6 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     return summary
 
 def extract_vocal_note_info(score, fallback_time_signature='4/4', source_name='unknown.mxl'):
-    from music21 import stream, meter, expressions
     warnings = []
 
     combined_vocal_part = stream.Part()
