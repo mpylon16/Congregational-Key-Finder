@@ -19,6 +19,11 @@ from collections import defaultdict
 import re
 from pathlib import Path
 from supabase import create_client, Client
+import sys
+import logging
+
+# This forces every error to show up in your Railway Deploy Logs
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
 # --- NEW LOGGING SETUP START ---
 # Define the path for your log file. It will be in the same directory as app.py
