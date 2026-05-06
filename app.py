@@ -6,7 +6,7 @@ from music21 import converter, pitch, key, interval, stream, meter, expressions,
 import tempfile
 import os
 import subprocess
-from flask import Flask, request, render_template, send_from_directory, abort
+from flask import Flask, request, render_template, send_from_directory, abort, url_for, redirect
 from werkzeug.utils import secure_filename
 import glob
 import math # For math.inf
@@ -18,6 +18,7 @@ import logging
 from collections import defaultdict
 import re
 from pathlib import Path
+from supabase import create_client, Client
 
 # --- NEW LOGGING SETUP START ---
 # Define the path for your log file. It will be in the same directory as app.py
@@ -189,6 +190,11 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 # --- Flask App Initialization ---
 import os
 app = Flask(__name__)
+
+# Supabase Configuration
+SUPABASE_URL = os.environ.get("SUPABASE_URL")
+SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # Ensure the app knows EXACTLY where it lives on the Linux server
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -559,6 +565,42 @@ def upload_file():
                     prefer_transpose_keys=prefer_transpose_keys,
                     pdf_metadata=pdf_metadata
                 )
+
+                # --- NEW SUPABASE SAVE LOGIC START ---
+                try:
+                    # 1. Find the MXL file in the output directory
+                    # Audiveris output folder usually contains one .mxl file
+                    mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
+                    if mxl_files:
+                        mxl_filename = mxl_files[0]
+                        local_mxl_path = os.path.join(cached_output_dir, mxl_filename)
+
+                        # 2. Upload MXL to Storage Bucket (named by its hash)
+                        storage_path = f"{pdf_hash}.mxl"
+                        with open(local_mxl_path, 'rb') as f:
+                            supabase.storage.from_('mxl-library').upload(
+                                path=storage_path, 
+                                file=f, 
+                                file_options={"upsert": "true"}
+                            )
+                        
+                        # 3. Get the URL for the database
+                        mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
+                        
+                        # 4. Upsert (Update or Insert) metadata into the 'songs' table
+                        supabase.table('songs').upsert({
+                            "pdf_hash": pdf_hash,
+                            "title": summary.get("title", "Unknown Title"),
+                            "ccli_number": summary.get("ccli_number", "N/A"),
+                            "mxl_url": mxl_url,
+                            "analysis_results": summary 
+                        }).execute()
+                        
+                        print(f"🚀 Cloud Save Successful: {summary.get('title')}")
+                except Exception as cloud_error:
+                    # We print the error but don't stop the app—the user still needs their results!
+                    print(f"⚠️ Cloud Save failed: {cloud_error}")
+                # --- NEW SUPABASE SAVE LOGIC END ---                
 
                 return render_template("analysis_results.html",
                     pdf_hash=pdf_hash,                                       
