@@ -575,6 +575,10 @@ def upload_file():
 
                 if supabase: # Only try if the client was actually created
                     try:
+                        # Debug: List all buckets to see what the app actually sees
+                        buckets = supabase.storage.list_buckets()
+                        print(f"DEBUG: Visible buckets: {[b.name for b in buckets]}")
+                        
                         mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
                         if mxl_files:
                             mxl_filename = mxl_files[0]
