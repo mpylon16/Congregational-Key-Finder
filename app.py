@@ -536,7 +536,8 @@ def upload_file():
                     
                     result = subprocess.run(
                         subprocess_args, 
-                        capture_output=True, 
+                        stdout=subprocess.DEVNULL, # This silences the thousands of lines of logs
+                        stderr=subprocess.PIPE,    # But keeps the errors if it crashes
                         text=True, 
                         check=False,
                         env=env  # Pass the explicit environment lie
@@ -599,6 +600,8 @@ def upload_file():
                             print(f"🚀 Cloud Save Successful for {pdf_hash}")
                     except Exception as cloud_err:
                         # This prints to the Railway logs but DOES NOT trigger a 500 error for the user
+                        # TEMPORARY: Stop the app and show us the exact database error
+                        return f"<h1>Database Error</h1><p>{cloud_err}</p>", 500                       
                         print(f"⚠️ Cloud Save background error: {cloud_err}")
                         
                 return render_template("analysis_results.html",
