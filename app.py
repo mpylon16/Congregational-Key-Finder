@@ -578,7 +578,7 @@ def upload_file():
                         # Debug: List all buckets to see what the app actually sees
                         buckets = supabase.storage.list_buckets()
                         print(f"DEBUG: Visible buckets: {[b.name for b in buckets]}")
-                        
+
                         mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
                         if mxl_files:
                             mxl_filename = mxl_files[0]
@@ -593,13 +593,23 @@ def upload_file():
                                 )
                             
                             mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
+                            # Fix: Create a "database-friendly" copy of the summary
+                            db_summary = summary.copy()
+                            
+                            # Convert any music21 objects into strings so they can be saved as JSON
+                            for key, value in db_summary.items():
+                                # If it's a music21 Key object, convert to string (e.g., "F major")
+                                if hasattr(value, 'name'): 
+                                    db_summary[key] = str(value.name)
+                                elif hasattr(value, 'classes'): # Catch-all for other music21 objects
+                                    db_summary[key] = str(value)
                             
                             supabase.table('songs').upsert({
                                 "pdf_hash": pdf_hash,
                                 "title": summary.get("title", "Unknown Title"),
                                 "ccli_number": summary.get("ccli_number", "N/A"),
                                 "mxl_url": mxl_url,
-                                "analysis_results": summary 
+                                "analysis_results": db_summary 
                             }).execute()
                             print(f"🚀 Cloud Save Successful for {pdf_hash}")
                     except Exception as cloud_err:
