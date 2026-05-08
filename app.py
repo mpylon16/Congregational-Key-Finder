@@ -22,6 +22,7 @@ import sys
 import logging
 import pdfplumber
 import shutil
+import json
 
 # This forces every error to show up in your Railway Deploy Logs
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
@@ -51,6 +52,16 @@ def temporarily_set_cwd(path):
     finally:
         os.chdir(prev)
 
+def make_json_safe(data):
+    """Recursively converts all music21 objects in a dict/list to strings."""
+    if isinstance(data, dict):
+        return {k: make_json_safe(v) for k, v in data.items()}
+    elif isinstance(data, list):
+        return [make_json_safe(v) for v in data]
+    # If it's a music21 object, it will have a 'name' or 'fullName' attribute
+    elif hasattr(data, 'classes') or 'music21' in str(type(data)):
+        return str(data)
+    return data
 
 def extract_metadata_from_pdf(pdf_path):
     try:
@@ -594,16 +605,8 @@ def upload_file():
                             
                             mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
                             # Fix: Create a "database-friendly" copy of the summary
-                            db_summary = summary.copy()
-                            
-                            # Convert any music21 objects into strings so they can be saved as JSON
-                            for key, value in db_summary.items():
-                                # If it's a music21 Key object, convert to string (e.g., "F major")
-                                if hasattr(value, 'name'): 
-                                    db_summary[key] = str(value.name)
-                                elif hasattr(value, 'classes'): # Catch-all for other music21 objects
-                                    db_summary[key] = str(value)
-                            
+                            db_summary = make_json_safe(summary)
+                                                      
                             supabase.table('songs').upsert({
                                 "pdf_hash": pdf_hash,
                                 "title": summary.get("title", "Unknown Title"),
