@@ -600,7 +600,10 @@ def upload_file():
                                 supabase.storage.from_('mxl-library').upload(
                                     path=storage_path, 
                                     file=f, 
-                                    file_options={"upsert": "true"}
+                                    file_options={
+                                        "upsert": "true",
+                                        "content-type": "application/vnd.recordare.musicxml+xml" # The official MXL type
+                                    }
                                 )
                             
                             mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
@@ -616,9 +619,7 @@ def upload_file():
                             }).execute()
                             print(f"🚀 Cloud Save Successful for {pdf_hash}")
                     except Exception as cloud_err:
-                        # This prints to the Railway logs but DOES NOT trigger a 500 error for the user
-                        # TEMPORARY: Stop the app and show us the exact database error
-                        return f"<h1>Database Error</h1><p>{cloud_err}</p>", 500                       
+                        # This prints to the Railway logs but DOES NOT trigger a 500 error for the user                     
                         print(f"⚠️ Cloud Save background error: {cloud_err}")
                         
                 return render_template("analysis_results.html",
