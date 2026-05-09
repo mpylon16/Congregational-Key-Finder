@@ -4,8 +4,8 @@ WORKDIR /app
 
 # 1. Install necessary tools (Git is required for Audiveris versioning task)
 # Use cache mounts to keep unzip/git/wget in the build cache
-RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
-    --mount=type=cache,target=/var/lib/apt,sharing=locked \
+RUN --mount=type=cache,id=apt-cache,target=/var/cache/apt,sharing=locked \
+    --mount=type=cache,id=apt-lib,target=/var/lib/apt,sharing=locked \
     apt-get update && apt-get install -y wget unzip git && rm -rf /var/lib/apt/lists/*
 
 # 2. Extract and Flatten (Eliminates the "nested folder in ZIP" issue forever)
