@@ -5,19 +5,27 @@ import music21
 from music21 import converter, pitch, key, interval, stream, meter, expressions, environment, note, chord, harmony
 import tempfile
 import os
+import time
 import subprocess
-from flask import Flask, request, render_template, send_from_directory, abort
+from flask import Flask, request, render_template, send_from_directory, abort, url_for, redirect
 from werkzeug.utils import secure_filename
 import glob
 import math # For math.inf
 import io
 import zipfile
 from xml.etree import ElementTree as ET
-import time
-import logging
 from collections import defaultdict
 import re
 from pathlib import Path
+from supabase import create_client, Client
+import sys
+import logging
+import pdfplumber
+import shutil
+import json
+
+# This forces every error to show up in your Railway Deploy Logs
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
 # --- NEW LOGGING SETUP START ---
 # Define the path for your log file. It will be in the same directory as app.py
@@ -44,11 +52,19 @@ def temporarily_set_cwd(path):
     finally:
         os.chdir(prev)
 
-import hashlib
+def make_json_safe(data):
+    """Recursively converts all music21 objects in a dict/list to strings."""
+    if isinstance(data, dict):
+        return {k: make_json_safe(v) for k, v in data.items()}
+    elif isinstance(data, list):
+        return [make_json_safe(v) for v in data]
+    # If it's a music21 object, it will have a 'name' or 'fullName' attribute
+    elif hasattr(data, 'classes') or 'music21' in str(type(data)):
+        return str(data)
+    return data
 
 def extract_metadata_from_pdf(pdf_path):
     try:
-        import pdfplumber
         with pdfplumber.open(pdf_path) as pdf:
             text = pdf.pages[0].extract_text() or ""
             ccli_match = re.search(r'CCLI\s+Song\s+#?\s*(\d{5,8})', text, re.IGNORECASE)
@@ -188,8 +204,25 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # --- Flask App Initialization ---
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
+
+# Supabase Configuration
+SUPABASE_URL = os.environ.get("SUPABASE_URL")
+SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
+# Safety check: avoid crashing if variables are missing
+if SUPABASE_URL and SUPABASE_KEY:
+    supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+else:
+    supabase = None
+    print("⚠️ WARNING: Supabase credentials missing from environment!")
+
+# Ensure the app knows EXACTLY where it lives on the Linux server
+basedir = os.path.abspath(os.path.dirname(__file__))
+app.config['UPLOAD_FOLDER'] = os.path.join(basedir, 'uploads')
+app.config['OUTPUT_FOLDER'] = os.path.join(basedir, 'output')
+
+# Make sure these folders actually exist so the app doesn't crash on the first upload
+os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+os.makedirs(app.config['OUTPUT_FOLDER'], exist_ok=True)
 
 # --- Music Analysis Constants (Tunable) ---
 # Comfortable vocal range for most congregations (C4 to D5)
@@ -482,6 +515,9 @@ def upload_file():
                     print(f"⏱️ Starting Audiveris for hash: {pdf_hash}")
                     start_time = time.time()
 
+                    classpath_sep = os.pathsep  # Automatically picks ; for Windows and : for Linux
+                    # We use the variable here to make the classpath 'Universal'
+                    cp_value = f"/app/Audiveris/lib/*{classpath_sep}/app/Audiveris/res"
                     # 1. Environment Setup
                     # We force the HOME and TESSDATA paths at the process level
                     env = os.environ.copy()
@@ -495,7 +531,7 @@ def upload_file():
                         'java',
                         '-Xmx4g',                          # High memory for OCR
                         '-Duser.home=/app/audiveris_home',  # Fix for the config path
-                        '-cp', '/app/Audiveris/lib/*:/app/Audiveris/res', # Load code AND resources
+                        '-cp', cp_value, # Load code AND resources
                         'Audiveris',                       # The Main Class name
                         '-batch',
                         '-transcribe',
@@ -511,7 +547,8 @@ def upload_file():
                     
                     result = subprocess.run(
                         subprocess_args, 
-                        capture_output=True, 
+                        stdout=subprocess.DEVNULL, # This silences the thousands of lines of logs
+                        stderr=subprocess.PIPE,    # But keeps the errors if it crashes
                         text=True, 
                         check=False,
                         env=env  # Pass the explicit environment lie
@@ -531,6 +568,7 @@ def upload_file():
                         return f"<p>Audiveris processing failed (Error Code: {result.returncode}). Check server logs.</p><pre>{result.stdout}\n{result.stderr}</pre>", 500
 
                     print(f"✅ Audiveris finished in {duration:.2f} seconds")
+                    time.sleep(1.0) # Give Linux a full second to finalize the file writes
                     print("📂 Contents of output directory:", os.listdir(cached_output_dir))
 
                 except Exception as e:
@@ -546,6 +584,44 @@ def upload_file():
                     pdf_metadata=pdf_metadata
                 )
 
+                if supabase: # Only try if the client was actually created
+                    try:
+                        # Debug: List all buckets to see what the app actually sees
+                        buckets = supabase.storage.list_buckets()
+                        print(f"DEBUG: Visible buckets: {[b.name for b in buckets]}")
+
+                        mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
+                        if mxl_files:
+                            mxl_filename = mxl_files[0]
+                            local_mxl_path = os.path.join(cached_output_dir, mxl_filename)
+                            storage_path = f"{pdf_hash}.mxl"
+
+                            with open(local_mxl_path, 'rb') as f:
+                                supabase.storage.from_('mxl-library').upload(
+                                    path=storage_path, 
+                                    file=f, 
+                                    file_options={
+                                        "upsert": "true",
+                                        "content-type": "application/vnd.recordare.musicxml+xml" # The official MXL type
+                                    }
+                                )
+                            
+                            mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
+                            # Fix: Create a "database-friendly" copy of the summary
+                            db_summary = make_json_safe(summary)
+                                                      
+                            supabase.table('songs').upsert({
+                                "pdf_hash": pdf_hash,
+                                "title": summary.get("title", "Unknown Title"),
+                                "ccli_number": summary.get("ccli_number", "N/A"),
+                                "mxl_url": mxl_url,
+                                "analysis_results": db_summary 
+                            }).execute()
+                            print(f"🚀 Cloud Save Successful for {pdf_hash}")
+                    except Exception as cloud_err:
+                        # This prints to the Railway logs but DOES NOT trigger a 500 error for the user                     
+                        print(f"⚠️ Cloud Save background error: {cloud_err}")
+                        
                 return render_template("analysis_results.html",
                     pdf_hash=pdf_hash,                                       
                     original_key=summary["original_key_info"],
@@ -566,17 +642,22 @@ def upload_file():
                 logging.error("--- END FATAL ERROR ---")
 
                 print("Error:", e)
-                if cached_output_dir in locals() and os.path.exists(cached_output_dir):
-                    import shutil
-                    shutil.rmtree(cached_output_dir)
+
+                if 'cached_output_dir' in locals() and os.path.exists(cached_output_dir):
+                    try:
+                        # We use ignore_errors=True so that if a single temp file 
+                        # is 'locked', the whole app doesn't crash.
+                        shutil.rmtree(cached_output_dir, ignore_errors=True)
+                        print(f"🧹 Cleaned up failed directory: {cached_output_dir}")
+                    except Exception as cleanup_error:
+                        # Log it, but don't stop the user from seeing the original error
+                        logging.warning(f"Cleanup failed for {cached_output_dir}: {cleanup_error}")
 
                 return f"<p>MusicXML analysis failed: {e}</p>", 500
 
-        return "<p>Please upload a valid PDF file.</p><p><a href='/'>Try Again</a></p>"
+        return f"<p>Please upload a valid PDF file.</p><p><a href='{url_for('upload_file')}'>Try Again</a></p>"
 
     return render_template('upload.html')
-
-import zipfile
 
 def extract_xml_from_mxl(path):
     with zipfile.ZipFile(path, 'r') as z:
@@ -668,7 +749,6 @@ def extract_written_chords(score):
 def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_metadata=None):
     print("🎬 Running analyse_musicxml_summary()")
     from music21 import converter, pitch, stream, note
-    import os, glob, tempfile
 
     pattern = os.path.join(output_dir, f"{name}*.mxl")
     mxl_files = sorted(glob.glob(pattern))
@@ -910,7 +990,6 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     return summary
 
 def extract_vocal_note_info(score, fallback_time_signature='4/4', source_name='unknown.mxl'):
-    from music21 import stream, meter, expressions
     warnings = []
 
     combined_vocal_part = stream.Part()
