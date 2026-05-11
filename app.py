@@ -647,6 +647,9 @@ def upload_file():
                             mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
                             # Fix: Create a "database-friendly" copy of the summary
                             db_summary = make_json_safe(summary)
+
+                            # Flatten analysis for easy searching/filtering
+                            orig_info = summary.get("original_key_info", {})
                                                       
                             supabase.table('songs').upsert({
                                 "pdf_hash": pdf_hash,
@@ -656,7 +659,7 @@ def upload_file():
                                 "year": pdf_metadata.get("year", "Unknown"),               # NEW COLUMN
                                 "original_key": orig_info.get("name", "Unknown"),          # NEW COLUMN
                                 "lowest_note": orig_info.get("range_low", "Unknown"),      # NEW COLUMN
-                                "highest_note": orig_info.get("range_high", "Unknown")
+                                "highest_note": orig_info.get("range_high", "Unknown"),
                                 "mxl_url": mxl_url,
                                 "analysis_results": db_summary 
                             }, on_conflict="pdf_hash").execute()  # <--- Added on_conflict="pdf_hash"
