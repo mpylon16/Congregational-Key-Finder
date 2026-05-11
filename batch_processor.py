@@ -7,7 +7,6 @@ import tempfile
 import os
 import time
 import subprocess
-from flask import Flask, request, render_template, send_from_directory, abort, url_for, redirect
 from werkzeug.utils import secure_filename
 import glob
 import math # For math.inf
@@ -23,7 +22,37 @@ import logging
 import pdfplumber
 import shutil
 import json
+from dotenv import load_dotenv
 
+load_dotenv() # Loads your .env file
+supabase = create_client(os.getenv("SUPABASE_URL"), os.getenv("SUPABASE_KEY"))
+
+PDF_DIR = "./pending_pdfs"
+OUTPUT_DIR = "./output"
+os.makedirs(PDF_DIR, exist_ok=True)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+def get_file_hash(pdf_path):
+    with open(pdf_path, 'rb') as f:
+        return hashlib.md5(f.read()).hexdigest()
+
+def is_already_in_supabase(pdf_hash):
+    """Check if this hash already exists in your Supabase table."""
+    res = supabase.table('songs').select("pdf_hash").eq("pdf_hash", pdf_hash).execute()
+    return len(res.data) > 0
+
+def extract_metadata_from_pdf(pdf_path):
+    try:
+        with pdfplumber.open(pdf_path) as pdf:
+            text = pdf.pages[0].extract_text() or ""
+            ccli_match = re.search(r'CCLI\s+Song\s+#?\s*(\d{5,8})', text, re.IGNORECASE)
+            ccli_number = ccli_match.group(1) if ccli_match else None
+            print(f"📄 PDF metadata — CCLI: {ccli_number}")
+            return {"ccli_number": ccli_number}
+    except Exception as e:
+        print(f"⚠️ pdfplumber extraction failed: {e}")
+        return {"ccli_number": None}
+    
 # This forces every error to show up in your Railway Deploy Logs
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
@@ -62,54 +91,7 @@ def make_json_safe(data):
     elif hasattr(data, 'classes') or 'music21' in str(type(data)):
         return str(data)
     return data
-
-def extract_metadata_from_pdf(pdf_path):
-    metadata = {
-        "ccli_number": "Unknown",
-        "author": "Unknown",
-        "year": "Unknown"
-    }
-    try:
-        with pdfplumber.open(pdf_path) as pdf:
-            first_page = pdf.pages[0]
-            width, height = first_page.width, first_page.height
-            
-            # Extract header text (top 30%) for Year and Author
-            header_box = (0, 0, width, height * 0.3)
-            header_text = first_page.within_bbox(header_box).extract_text() or ""
-            
-            # Extract full page text for CCLI (usually at the bottom)
-            full_text = first_page.extract_text() or ""
-
-            # 1. CCLI Extraction
-            ccli_match = re.search(r'CCLI\s+Song\s+#?\s*(\d{5,8})', full_text, re.IGNORECASE)
-            if ccli_match:
-                metadata["ccli_number"] = ccli_match.group(1)
-
-            # 2. Year Extraction
-            year_match = re.search(r'(?:©|Words:|Music:)\s*.*?(\d{4})', header_text)
-            if year_match:
-                metadata["year"] = year_match.group(1)
-
-            # 3. Author Extraction
-            words_by = re.search(r'Words (?:and Music )?by\s*(.*?)(?=\n|Music by|©|CCLI|$)', header_text, re.IGNORECASE)
-            music_by = re.search(r'Music by\s*(.*?)(?=\n|Words by|©|CCLI|$)', header_text, re.IGNORECASE)
-            
-            if words_by and music_by:
-                w, m = words_by.group(1).strip().strip(','), music_by.group(1).strip().strip(',')
-                metadata["author"] = w if w == m else f"Words: {w} / Music: {m}"
-            elif words_by:
-                metadata["author"] = words_by.group(1).strip()
-            elif music_by:
-                metadata["author"] = music_by.group(1).strip()
-            elif "Public Domain" in header_text:
-                metadata["author"] = "Public Domain"
-
-            return metadata
-    except Exception as e:
-        print(f"⚠️ Metadata extraction failed: {e}")
-        return metadata
-       
+     
 def extract_metadata_from_musicxml(xml_text):
     """
     Extracts CCLI Song number and title from MusicXML text.
@@ -199,10 +181,6 @@ def extract_metadata_from_musicxml(xml_text):
         'title': title
     }
 
-def get_file_hash(pdf_path):
-    with open(pdf_path, 'rb') as f:
-        return hashlib.md5(f.read()).hexdigest()
-
 def get_safe_scratch_dir():
     # Use /tmp, which is the standard, writable temp space on Railway/Linux
     scratch_dir = "/tmp/m21_scratch"
@@ -237,9 +215,6 @@ OUTPUT_FOLDER = 'output'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
-# --- Flask App Initialization ---
-app = Flask(__name__)
-
 # Supabase Configuration
 SUPABASE_URL = os.environ.get("SUPABASE_URL")
 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
@@ -252,12 +227,6 @@ else:
 
 # Ensure the app knows EXACTLY where it lives on the Linux server
 basedir = os.path.abspath(os.path.dirname(__file__))
-app.config['UPLOAD_FOLDER'] = os.path.join(basedir, 'uploads')
-app.config['OUTPUT_FOLDER'] = os.path.join(basedir, 'output')
-
-# Make sure these folders actually exist so the app doesn't crash on the first upload
-os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-os.makedirs(app.config['OUTPUT_FOLDER'], exist_ok=True)
 
 # --- Music Analysis Constants (Tunable) ---
 # Comfortable vocal range for most congregations (C4 to D5)
@@ -524,183 +493,6 @@ def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=Fa
     key_analysis_info.sort(key=lambda k: k['final_score'])
 
     return key_analysis_info
-
-# --- Flask Routes ---
-
-@app.route('/', methods=['GET', 'POST'])
-def upload_file():
-    if request.method == 'POST':
-        file = request.files['file']
-        prefer_transpose_keys = 'transpose_keys' in request.form
-
-        if file and file.filename.endswith('.pdf'):
-            filename = secure_filename(file.filename)
-            filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-            file.save(filepath)
-            pdf_metadata = extract_metadata_from_pdf(filepath)
-            name, _ = os.path.splitext(filename)
-
-            pdf_hash = get_file_hash(filepath)
-
-            cached_output_dir = os.path.join(app.config['OUTPUT_FOLDER'], pdf_hash)
-            os.makedirs(cached_output_dir, exist_ok=True)
-
-            if not any(fname.endswith('.mxl') for fname in os.listdir(cached_output_dir)):
-                try:
-                    print(f"⏱️ Starting Audiveris for hash: {pdf_hash}")
-                    start_time = time.time()
-
-                    classpath_sep = os.pathsep  # Automatically picks ; for Windows and : for Linux
-                    # We use the variable here to make the classpath 'Universal'
-                    cp_value = f"/app/Audiveris/lib/*{classpath_sep}/app/Audiveris/res"
-                    # 1. Environment Setup
-                    # We force the HOME and TESSDATA paths at the process level
-                    env = os.environ.copy()
-                    env["HOME"] = "/app/audiveris_home"
-                    env["TESSDATA_PREFIX"] = "/usr/share/tesseract-ocr/5/tessdata"
-                    
-                    # 2. Direct Java Command
-                    # By calling 'java' directly, we can force the 'res' folder into the classpath
-                    # and bypass the problematic bash start-script.
-                    subprocess_args = [
-                        'java',
-                        '-Xmx4g',                          # High memory for OCR
-                        '-Duser.home=/app/audiveris_home',  # Fix for the config path
-                        '-cp', cp_value, # Load code AND resources
-                        'Audiveris',                       # The Main Class name
-                        '-batch',
-                        '-transcribe',
-                        '-export',
-                        '-output', cached_output_dir,
-                        '-option', 'org.audiveris.omr.sheet.ProcessingSwitches.smallHeads=true',
-                        '-option', 'org.audiveris.omr.sheet.stem.BeamLinker.allowSmallHeadOnStandardBeam=true',
-                        # --- New Silencing Options ---
-                        '-option', 'org.audiveris.omr.util.LogLevel.level=WARNING',
-                        '-option', 'org.audiveris.omr.text.TextBuilder.level=SEVERE', 
-                        '-option', 'org.audiveris.omr.step.PageRhythm.level=WARNING',
-                        filepath
-                    ]
-
-                    print("Running Audiveris (Direct Java Call):", ' '.join(subprocess_args))
-                    
-                    result = subprocess.run(
-                        subprocess_args, 
-                        stdout=subprocess.DEVNULL, # This silences the thousands of lines of logs
-                        stderr=subprocess.PIPE,    # But keeps the errors if it crashes
-                        text=True, 
-                        check=False,
-                        env=env  # Pass the explicit environment lie
-                    )
-
-                    duration = time.time() - start_time
-                    
-                    # Log the actual output even if it fails, so we can see what's happening
-                    if result.stdout:
-                        print("--- Audiveris STDOUT ---")
-                        print(result.stdout)
-                    if result.stderr:
-                        print("--- Audiveris STDERR ---")
-                        print(result.stderr)
-
-                    if result.returncode != 0:
-                        return f"<p>Audiveris processing failed (Error Code: {result.returncode}). Check server logs.</p><pre>{result.stdout}\n{result.stderr}</pre>", 500
-
-                    print(f"✅ Audiveris finished in {duration:.2f} seconds")
-                    time.sleep(1.0) # Give Linux a full second to finalize the file writes
-                    print("📂 Contents of output directory:", os.listdir(cached_output_dir))
-
-                except Exception as e:
-                    return f"<p>Unexpected error during Audiveris processing: {e}</p>", 500
-            else:
-                print(f"✅ Using cached MXL files for {filename} (hash: {pdf_hash})")
-
-            try:
-                summary = analyse_musicxml_summary(
-                    output_dir=cached_output_dir,
-                    name=name,
-                    prefer_transpose_keys=prefer_transpose_keys,
-                    pdf_metadata=pdf_metadata
-                )
-
-                if supabase: # Only try if the client was actually created
-                    try:
-                        # Debug: List all buckets to see what the app actually sees
-                        buckets = supabase.storage.list_buckets()
-                        print(f"DEBUG: Visible buckets: {[b.name for b in buckets]}")
-
-                        mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
-                        if mxl_files:
-                            mxl_filename = mxl_files[0]
-                            local_mxl_path = os.path.join(cached_output_dir, mxl_filename)
-                            storage_path = f"{pdf_hash}.mxl"
-
-                            with open(local_mxl_path, 'rb') as f:
-                                supabase.storage.from_('mxl-library').upload(
-                                    path=storage_path, 
-                                    file=f, 
-                                    file_options={
-                                        "upsert": "true",
-                                        "content-type": "application/vnd.recordare.musicxml+xml" # The official MXL type
-                                    }
-                                )
-                            
-                            mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
-                            # Fix: Create a "database-friendly" copy of the summary
-                            db_summary = make_json_safe(summary)
-                                                      
-                            supabase.table('songs').upsert({
-                                "pdf_hash": pdf_hash,
-                                "title": summary.get("title", "Unknown Title"),
-                                "ccli_number": pdf_metadata.get("ccli_number", "Unknown"), # From the NEW pdf_metadata
-                                "author": pdf_metadata.get("author", "Unknown"),           # NEW COLUMN
-                                "year": pdf_metadata.get("year", "Unknown"),               # NEW COLUMN
-                                "original_key": orig_info.get("name", "Unknown"),          # NEW COLUMN
-                                "lowest_note": orig_info.get("range_low", "Unknown"),      # NEW COLUMN
-                                "highest_note": orig_info.get("range_high", "Unknown")
-                                "mxl_url": mxl_url,
-                                "analysis_results": db_summary 
-                            }, on_conflict="pdf_hash").execute()  # <--- Added on_conflict="pdf_hash"
-                            print(f"🚀 Cloud Save Successful for {pdf_hash}")
-                    except Exception as cloud_err:
-                        # This prints to the Railway logs but DOES NOT trigger a 500 error for the user                     
-                        print(f"⚠️ Cloud Save background error: {cloud_err}")
-                        
-                return render_template("analysis_results.html",
-                    pdf_hash=pdf_hash,                                       
-                    original_key=summary["original_key_info"],
-                    recommended=summary["recommended"],
-                    other_keys=summary["other_keys"],
-                    skipped=summary["skipped"],
-                    warnings=summary["warnings"],
-                    ccli_link=summary.get("ccli_url"),
-                    title=summary.get("title"),
-                    ccli_no=summary["ccli_number"]
-                )
-
-            except Exception as e:
-                logging.error("--- FATAL ERROR DURING MUSICXML ANALYSIS ---")
-                logging.error(f"Exception Type: {type(e)}")
-                logging.error(f"Exception Message: {e}")
-                logging.exception("Full Traceback Details:")
-                logging.error("--- END FATAL ERROR ---")
-
-                print("Error:", e)
-
-                if 'cached_output_dir' in locals() and os.path.exists(cached_output_dir):
-                    try:
-                        # We use ignore_errors=True so that if a single temp file 
-                        # is 'locked', the whole app doesn't crash.
-                        shutil.rmtree(cached_output_dir, ignore_errors=True)
-                        print(f"🧹 Cleaned up failed directory: {cached_output_dir}")
-                    except Exception as cleanup_error:
-                        # Log it, but don't stop the user from seeing the original error
-                        logging.warning(f"Cleanup failed for {cached_output_dir}: {cleanup_error}")
-
-                return f"<p>MusicXML analysis failed: {e}</p>", 500
-
-        return f"<p>Please upload a valid PDF file.</p><p><a href='{url_for('upload_file')}'>Try Again</a></p>"
-
-    return render_template('upload.html')
 
 def extract_xml_from_mxl(path):
     with zipfile.ZipFile(path, 'r') as z:
@@ -1129,16 +921,120 @@ def deduplicate_by_key(all_keys_analysis):
             best_versions[key_id] = k
     return list(best_versions.values())
 
+def run_local_batch():
+    pdf_folder = "./pending_pdfs"
+    # Create the processed subfolder if it doesn't exist
+    processed_folder = os.path.join(pdf_folder, "processed")
+    os.makedirs(processed_folder, exist_ok=True)
+    
+    files = [f for f in os.listdir(pdf_folder) if f.lower().endswith('.pdf')]
+    print(f"Found {len(files)} files to process.")
 
-@app.route('/download/<folder>/<filename>')
-def download_file(folder, filename):
-    full_dir = os.path.join(app.config['OUTPUT_FOLDER'], folder)
-    full_path = os.path.join(full_dir, filename)
-    if not os.path.isfile(full_path):
-        abort(404, description="File not found.")
-    return send_from_directory(directory=full_dir, path=filename, as_attachment=True)
+    for filename in files:
+        print(f"\n--- Starting: {filename} ---")
+        pdf_path = os.path.join(pdf_folder, filename)
+        pdf_hash = get_file_hash(pdf_path) 
 
+        # 1. Skip if already done
+        # Set this to True once to force re-processing of everything in the folder
+        FORCE_REPROCESS = True 
 
+        if is_already_in_supabase(pdf_hash) and not FORCE_REPROCESS: 
+            print(f"⏩ Skipping {filename}, already exists in Supabase.")
+            continue
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=False)
+        try:
+            # 2. Setup paths - MAKE THEM ABSOLUTE
+            # This ensures Audiveris can find them regardless of its working directory
+            cached_output_dir = os.path.abspath(os.path.join(OUTPUT_DIR, pdf_hash))
+            os.makedirs(cached_output_dir, exist_ok=True)
+            abs_pdf_path = os.path.abspath(pdf_path)
+            
+            # 3. RUN AUDIVERIS (Using the official Windows .bat file)
+            print(f"⏱️ Starting Audiveris for: {filename}")
+            
+            env = os.environ.copy()
+            # Use forward slashes to prevent \r and \t escape character bugs in the .bat file
+            env["HOME"] = "C:/audiveris_full_install/user_home"
+            env["TESSDATA_PREFIX"] = "C:/audiveris_full_install/tessdata" 
+            os.makedirs(env["HOME"], exist_ok=True)
+            
+            env["JAVA_OPTS"] = f"-Xmx4g -Duser.home={env['HOME']}"
+            
+            bat_path = r"C:\audiveris_full_install\bin\Audiveris.bat"
+            
+            subprocess_args = [
+                bat_path,
+                '-batch',
+                '-transcribe',
+                '-export',
+                '-output', cached_output_dir,
+                '-option', 'org.audiveris.omr.sheet.ProcessingSwitches.smallHeads=true',
+                '-option', 'org.audiveris.omr.sheet.stem.BeamLinker.allowSmallHeadOnStandardBeam=true',
+                # --- New Silencing Options ---
+                '-option', 'org.audiveris.omr.util.LogLevel.level=WARNING',
+                '-option', 'org.audiveris.omr.text.TextBuilder.level=SEVERE', 
+                '-option', 'org.audiveris.omr.step.PageRhythm.level=WARNING',
+                abs_pdf_path # Feed it the absolute C:\... path to the PDF
+            ]
+
+            print(f"🚀 Launching Audiveris.bat for {filename}...")
+            subprocess.run(
+                subprocess_args, 
+                env=env, 
+                check=False, # Changed to False so we can handle the error message gracefully
+                cwd=r"C:\audiveris_full_install",
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.PIPE,
+                text=True
+            )
+
+            # 4. RUN ANALYSIS (Using your existing function)
+            print(f"🔍 Analyzing {filename}...")
+            name_no_ext = os.path.splitext(filename)[0]
+            # Use your existing metadata extractor for CCLI
+            pdf_metadata = extract_metadata_from_pdf(pdf_path)
+            
+            summary = analyse_musicxml_summary(
+                output_dir=cached_output_dir,
+                name=name_no_ext,
+                prefer_transpose_keys=False,
+                pdf_metadata=pdf_metadata
+            )
+
+            # 5. UPLOAD TO STORAGE & DB
+            mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
+            if mxl_files:
+                mxl_filename = mxl_files[0]
+                local_mxl_path = os.path.join(cached_output_dir, mxl_filename)
+                storage_path = f"{pdf_hash}.mxl"
+
+                print(f"📤 Uploading to Supabase...")
+                with open(local_mxl_path, 'rb') as f:
+                    supabase.storage.from_('mxl-library').upload(
+                        path=storage_path, 
+                        file=f, 
+                        file_options={"upsert": "true", "content-type": "application/vnd.recordare.musicxml+xml"}
+                    )
+                
+                mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
+                db_summary = make_json_safe(summary)
+                                          
+                supabase.table('songs').upsert({
+                    "pdf_hash": pdf_hash,
+                    "title": summary.get("title", "Unknown Title"),
+                    "ccli_number": summary.get("ccli_number", "N/A"),
+                    "mxl_url": mxl_url,
+                    "analysis_results": db_summary 
+                }, on_conflict="pdf_hash").execute()  # <--- Added on_conflict="pdf_hash"
+                
+            print(f"✅ Done! {filename} is now live.")
+            shutil.move(pdf_path, os.path.join(processed_folder, filename))
+            print(f"📂 Moved {filename} to {processed_folder}")
+
+        except Exception as e:
+            print(f"💥 Error processing {filename}: {str(e)}")
+            traceback.print_exc()
+
+if __name__ == "__main__":
+    run_local_batch()
