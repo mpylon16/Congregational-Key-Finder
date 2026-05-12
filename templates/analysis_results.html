@@ -162,6 +162,19 @@
         /* Optional: Slight tint when hovering so it feels interactive */
         details.comfort-group.perfect summary:hover { background: #f0fff4; }
         details.comfort-group.challenging summary:hover { background: #fffdf5; }
+
+        .metadata-subtitle {
+            font-size: 1.1rem;
+            color: #555;
+            margin-top: -10px; /* Pulls it closer to the H1 title */
+            margin-bottom: 10px;
+        }
+
+        .ccli-number {
+            display: block;
+            font-size: 0.9rem;
+            color: #888;
+        }
     </style>
 </head>
 <body>
@@ -184,6 +197,9 @@
         <div class="card">
             <div class="card-header">
                 <h1>{{ title }}</h1>
+                <div class="metadata-subtitle">
+                    <strong>{{ author }}</strong> {% if year != 'Unknown' %}— {{ year }}{% endif %}
+                </div>
                 <span class="ccli-number"><strong>CCLI:</strong> {{ccli_no}}</span>
             </div>
 

@@ -7,7 +7,7 @@ import tempfile
 import os
 import time
 import subprocess
-from flask import Flask, request, render_template, send_from_directory, abort, url_for, redirect
+from flask import Flask, request, render_template, send_from_directory, abort, url_for, redirect, jsonify
 from werkzeug.utils import secure_filename
 import glob
 import math # For math.inf
@@ -677,6 +677,8 @@ def upload_file():
                     warnings=summary["warnings"],
                     ccli_link=summary.get("ccli_url"),
                     title=summary.get("title"),
+                    author=pdf_metadata.get("author"),
+                    year=pdf_metadata.get("year"),
                     ccli_no=summary["ccli_number"]
                 )
 
@@ -704,6 +706,50 @@ def upload_file():
         return f"<p>Please upload a valid PDF file.</p><p><a href='{url_for('upload_file')}'>Try Again</a></p>"
 
     return render_template('upload.html')
+
+@app.route('/search_songs', methods=['GET'])
+def search_songs():
+    query = request.args.get('q', '')
+    if len(query) < 2:
+        return jsonify([])
+
+    try:
+        # Search title, author, or CCLI number
+        # ILIKE is case-insensitive search
+        res = supabase.table('songs').select("*").or_(
+            f"title.ilike.%{query}%,author.ilike.%{query}%,ccli_number.ilike.%{query}%"
+        ).limit(10).execute()
+        
+        return jsonify(res.data)
+    except Exception as e:
+        print(f"Search error: {e}")
+        return jsonify([]), 500
+
+@app.route('/get_song/<pdf_hash>', methods=['GET'])
+def get_song(pdf_hash):
+    # Fetch pre-analyzed data for a selected song
+    res = supabase.table('songs').select("*").eq('pdf_hash', pdf_hash).single().execute()
+    song = res.data
+    
+    if not song:
+        return "Song not found", 404
+        
+    summary = song['analysis_results']
+    
+    # Return the same analysis template we use for new uploads
+    return render_template("analysis_results.html",
+        pdf_hash=song['pdf_hash'],
+        original_key=summary["original_key_info"],
+        recommended=summary["recommended"],
+        other_keys=summary["other_keys"],
+        skipped=summary["skipped"],
+        warnings=summary["warnings"],
+        ccli_link=summary.get("ccli_url"),
+        title=song.get("title"),
+        author=pdf_metadata.get("author"),
+        year=pdf_metadata.get("year"),
+        ccli_no=song.get("ccli_number")
+    )
 
 def extract_xml_from_mxl(path):
     with zipfile.ZipFile(path, 'r') as z:

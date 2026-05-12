@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeySelect | Professional Key Analysis</title>
+    <title>KeySelect | Find & Analyze Songs</title>
     <style>
         /* Modernized Styles */
         body { 
@@ -30,23 +30,79 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 1rem;
+            width: 100%;
+            box-sizing: border-box;
         }
 
-        /* Branding */
-        .logo-placeholder {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
+        .logo-placeholder { font-size: 3rem; margin-bottom: 0.5rem; }
         h1 { margin: 0; font-weight: 300; letter-spacing: 1px; }
 
-        /* The Upload Box */
+        /* Search Section */
+        .search-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        #songSearch {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.2rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        #songSearch:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        /* Search Results */
+        .song-result {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .song-result:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+
+        .result-info { text-align: left; }
+        .result-title { font-weight: bold; font-size: 1.1rem; color: #2c3e50; }
+        .result-meta { font-size: 0.9rem; color: #7f8c8d; }
+        .result-badge { 
+            background: #e8f5e9; 
+            color: #2e7d32; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 0.8rem; 
+            font-weight: bold; 
+        }
+
+        /* Upload Section */
+        #upload-section { margin-top: 3rem; opacity: 0.7; transition: opacity 0.3s; }
+        #upload-section:hover { opacity: 1; }
+
         #upload-container, #loading-screen { 
             background: white;
-            border: none;
             padding: 2.5rem; 
             border-radius: 12px; 
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 2rem;
         }
 
         .instruction-box {
@@ -54,6 +110,7 @@
             padding: 1.5rem;
             border-radius: 8px;
             margin-bottom: 2rem;
+            font-size: 0.9rem;
         }
 
         input[type="file"] {
@@ -63,6 +120,7 @@
             width: 100%;
             border: 1px dashed #ccc;
             border-radius: 4px;
+            box-sizing: border-box;
         }
 
         input[type="submit"] { 
@@ -73,29 +131,22 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 1rem;
-            transition: background 0.3s;
+            width: 100%;
         }
 
-        input[type="submit"]:hover { background-color: #2980b9; }
-
-        /* Spinner Animation */
+        /* Spinner */
         .spinner {
             margin: 20px auto;
-            width: 50px;
-            height: 50px;
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid #3498db;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: #7f8c8d;
-        }
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #7f8c8d; }
     </style>
 </head>
 <body>
@@ -108,37 +159,39 @@
 
     <div class="container">
         
-        <!-- INSTRUCTIONS -->
-        <div class="instruction-box">
-            <h3>How to use KeySelect:</h3>
-            <ol>
-                <li>Upload a <strong>Lead Sheet (PDF)</strong> of your song.</li>
-                <li>The software uses optical music recognition to scan the notes and lyrics.</li>
-                <li>We'll calculate the vocal range and suggest the best keys for a mixed congregation.</li>
-            </ol>
+        <div class="search-box">
+            <h3>Find a Song</h3>
+            <p>Search our library of analyzed songs for instant results.</p>
+            <input type="text" id="songSearch" placeholder="Type song title, author, or CCLI number..." autocomplete="off">
+            <div id="searchResults"></div>
         </div>
 
-        <!-- 1. THE UPLOAD BOX -->
-        <div id="upload-container">
-            <form id="analysis-form" method="post" enctype="multipart/form-data" onsubmit="showLoading()">
-                <label style="font-weight: bold;">Select your Sheet Music:</label>
-                <input type="file" name="file" accept=".pdf" required>
-                
-                <div style="margin: 1.5rem 0;">
-                    <input type="checkbox" id="transpose_keys" name="transpose_keys">
-                    <label for="transpose_keys">Prefer transposing keys (Bb, Eb, Ab)</label>
+        <div id="upload-section">
+            <div id="upload-container">
+                <div class="instruction-box">
+                    <strong>Can't find your song?</strong> Upload a Lead Sheet (PDF) to analyze it now. 
+                    Optical recognition takes about 30 seconds.
                 </div>
                 
-                <input type="submit" value="Start Analysis">
-            </form>
-        </div>
+                <form id="analysis-form" method="post" enctype="multipart/form-data" onsubmit="showLoading()">
+                    <label style="font-weight: bold;">Upload New PDF:</label>
+                    <input type="file" name="file" accept=".pdf" required>
+                    
+                    <div style="margin: 1rem 0;">
+                        <input type="checkbox" id="transpose_keys" name="transpose_keys">
+                        <label for="transpose_keys">Prefer transposing keys (Bb, Eb, Ab)</label>
+                    </div>
+                    
+                    <input type="submit" value="Start New Analysis">
+                </form>
+            </div>
 
-        <!-- 2. THE WAIT SCREEN (Hidden by default) -->
-        <div id="loading-screen" style="display: none; text-align: center;">
-            <div class="spinner"></div>
-            <h2 style="color: #2c3e50;">Analyzing your music...</h2>
-            <p>Our "digital musician" is currently reading your PDF.</p>
-            <p><strong>This usually takes 20-40 seconds.</strong> Please don't refresh the page.</p>
+            <div id="loading-screen" style="display: none; text-align: center;">
+                <div class="spinner"></div>
+                <h2 style="color: #2c3e50;">Reading your music...</h2>
+                <p>Our OMR engine is scanning notes and ranges.</p>
+                <p><strong>Please wait 20-40 seconds.</strong></p>
+            </div>
         </div>
     </div>
 
@@ -147,9 +200,46 @@
     </footer>
 
     <script>
+        const searchInput = document.getElementById('songSearch');
+        const resultsDiv = document.getElementById('searchResults');
+        const uploadSection = document.getElementById('upload-section');
+
+        // Real-time Search Logic
+        searchInput.addEventListener('input', async (e) => {
+            const query = e.target.value.trim();
+            
+            if (query.length < 2) {
+                resultsDiv.innerHTML = '';
+                return;
+            }
+
+            try {
+                const response = await fetch(`/search_songs?q=${encodeURIComponent(query)}`);
+                const songs = await response.json();
+
+                if (songs.length > 0) {
+                    resultsDiv.innerHTML = songs.map(song => `
+                        <div class="song-result" onclick="window.location.href='/get_song/${song.pdf_hash}'">
+                            <div class="result-info">
+                                <div class="result-title">${song.title}</div>
+                                <div class="result-meta">${song.author || 'Unknown'} • ${song.year || 'Unknown'}</div>
+                            </div>
+                            <div class="result-badge">INSTANT</div>
+                        </div>
+                    `).join('');
+                } else {
+                    resultsDiv.innerHTML = '<p style="margin-top:15px; color:#e67e22;">Not found in library. Use the upload form below.</p>';
+                }
+            } catch (err) {
+                console.error("Search failed", err);
+            }
+        });
+
         function showLoading() {
             document.getElementById('upload-container').style.display = 'none';
             document.getElementById('loading-screen').style.display = 'block';
+            // Scroll to the loading screen so the user sees the spinner
+            document.getElementById('loading-screen').scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 
