@@ -248,7 +248,12 @@
         <div class="card recommendation-card">
             <h2 style="margin-top: 0; color: #28a745;">🎯 Recommended Key</h2>
             <p style="margin-bottom: 0.5rem;">
-                <strong>Key:</strong> {{ recommended['key'].tonic.name | replace('-', '♭') }}{% if recommended['key'].mode != 'major' %} {{ recommended['key'].mode }}{% endif %}
+                <strong>Key:</strong> 
+                {% if recommended['key'] is string %}
+                    {{ recommended['key'] | replace('-', '♭') }}
+                {% else %}
+                    {{ recommended['key'].tonic.name | replace('-', '♭') }}{% if recommended['key'].mode != 'major' %} {{ recommended['key'].mode }}{% endif %}
+                {% endif %}
                 <span class="alert-success">(Best overall fit)</span><br>
                 
                 <strong>Shift:</strong> {{ '%+d'|format(recommended.shift) }} semitone{{ 's' if recommended.shift != 1 else '' }}<br>
@@ -319,11 +324,15 @@
                 <ul>
                   {% for k in grouped[category]|sort(attribute='comfort_score') %}
                     <li>
-                      {{ k['key'].tonic.name | replace('-', '♭') }}
-                      {% if k['key'].mode != 'major' %} {{ k['key'].mode }}{% endif %}
-                      ({{ '%+d'|format(k.shift) }}):
-                      Difficulty Score: {{ k.comfort_score }}
-                      <a href="/generate_pdf/{{ pdf_hash }}?key={{ k.shift }}"> [Download PDF]</a>
+                        {% if k['key'] is string %}
+                            {{ k['key'] | replace('-', '♭') }}
+                        {% else %}
+                            {{ k['key'].tonic.name | replace('-', '♭') }}{% if k['key'].mode != 'major' %} {{ k['key'].mode }}{% endif %}
+                        {% endif %}
+                        
+                        ({{ '%+d'|format(k.shift) }}):
+                        Difficulty Score: {{ k.comfort_score }}
+                        <a href="/generate_pdf/{{ pdf_hash }}?key={{ k.shift }}"> [Download PDF]</a>
                     </li>
                   {% endfor %}
                 </ul>
