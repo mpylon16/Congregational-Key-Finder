@@ -1,0 +1,164 @@
+2026-05-10 21:22:05,098 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]         ScaleBuilder.java:293  | No reliable beam height found, guessed value: 10
+2026-05-10 21:22:12,882 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,883 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,885 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,887 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,888 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,888 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,888 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,889 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,889 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,889 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,890 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,890 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,890 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,890 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,891 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,891 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,891 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,892 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,892 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,893 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,893 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,894 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,894 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,895 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,895 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,896 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,896 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,896 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,897 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,897 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,898 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,899 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,899 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,899 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,900 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,900 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,900 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,900 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,901 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,901 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,901 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,901 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,902 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,902 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,902 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,903 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,903 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,904 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,904 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,905 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,905 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,906 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,906 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,907 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,907 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,907 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,908 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,908 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,909 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,909 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,909 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,909 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,910 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,910 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,910 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,911 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,911 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,911 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,911 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,913 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,913 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,913 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,913 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,914 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,914 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,914 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,914 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,915 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,915 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,915 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,915 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,916 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,916 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:12,916 WARN [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:22:18,042 INFO [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:176  | {Page#1.1} Starting PageRhythm time signature check
+2026-05-10 21:22:18,042 INFO [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN1- tSig:3/4} → ts: TimePairInter#98{ FROZEN(0.952/0.952) staff:1 3/4}
+2026-05-10 21:22:18,043 INFO [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN1- tSig:3/4}, ts: TimePairInter#98{ FROZEN(0.952/0.952) staff:1 3/4}
+2026-05-10 21:22:18,044 INFO [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:277  | Last range: Range{SN1-17 tSig:3/4 dur:3/4}
+2026-05-10 21:22:18,045 INFO [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:278  | lastRange.timeRational = 3/4
+2026-05-10 21:22:18,045 INFO [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:279  | lastRange.ts = TimePairInter#98{ FROZEN(0.952/0.952) staff:1 3/4}
+2026-05-10 21:22:18,045 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#1 frats: 0 []
+2026-05-10 21:22:18,046 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#2 frats: 0 []
+2026-05-10 21:22:18,046 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#3 frats: 0 []
+2026-05-10 21:22:18,046 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#4 frats: 0 []
+2026-05-10 21:22:18,047 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#5 frats: 0 []
+2026-05-10 21:22:18,047 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#6 frats: 1 [6113]
+2026-05-10 21:22:18,048 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#7 frats: 0 []
+2026-05-10 21:22:18,048 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#8 frats: 1 [7429]
+2026-05-10 21:22:18,048 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#9 frats: 1 [6577]
+2026-05-10 21:22:18,050 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#10 frats: 0 []
+2026-05-10 21:22:18,050 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#11 frats: 1 [7432]
+2026-05-10 21:22:18,050 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#12 frats: 0 []
+2026-05-10 21:22:18,051 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#13 frats: 1 [7399]
+2026-05-10 21:22:18,051 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#14 frats: 1 [8057]
+2026-05-10 21:22:18,052 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#15 frats: 2 [8059, 8062]
+2026-05-10 21:22:18,053 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#16 frats: 0 []
+2026-05-10 21:22:18,053 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:121  | MeasureStack#17 frats: 0 []
+2026-05-10 21:22:18,053 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:325  | Starting Range{SN1-17 tSig:3/4 dur:3/4}
+2026-05-10 21:22:18,053 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 21:22:18,055 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 1
+2026-05-10 21:22:18,067 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 21:22:18,067 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 21:22:18,069 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 2
+2026-05-10 21:22:18,072 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 21:22:18,072 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 21:22:18,074 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 3
+2026-05-10 21:22:18,074 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 21:22:18,075 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 21:22:18,075 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 4
+2026-05-10 21:22:18,076 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 21:22:18,076 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 21:22:18,077 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 5
+2026-05-10 21:22:18,078 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 21:22:18,078 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 21:22:18,078 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 6
+2026-05-10 21:22:18,081 INFO [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:226  | S1 MeasureStack#6 no correct rhythm
+2026-05-10 21:22:18,082 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 21:22:18,084 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 21:22:18,084 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 7
+2026-05-10 21:22:18,085 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 21:22:18,086 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 21:22:18,087 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 8
+2026-05-10 21:22:18,088 INFO [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:226  | S2 MeasureStack#8 no correct rhythm
+2026-05-10 21:22:18,088 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 21:22:18,088 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 21:22:18,089 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 9
+2026-05-10 21:22:18,091 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 21:22:18,091 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 21:22:18,091 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 10
+2026-05-10 21:22:18,093 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 21:22:18,093 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 21:22:18,093 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 11
+2026-05-10 21:22:18,095 INFO [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:226  | S2 MeasureStack#11 no correct rhythm
+2026-05-10 21:22:18,095 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 21:22:18,096 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 21:22:18,096 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 12
+2026-05-10 21:22:18,098 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 21:22:18,098 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 21:22:18,099 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 13
+2026-05-10 21:22:18,099 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 21:22:18,100 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 21:22:18,100 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 14
+2026-05-10 21:22:18,101 INFO [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:226  | S3 MeasureStack#14 no correct rhythm
+2026-05-10 21:22:18,101 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 21:22:18,102 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 21:22:18,102 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 15
+2026-05-10 21:22:18,103 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 21:22:18,103 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 21:22:18,103 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 16
+2026-05-10 21:22:18,105 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 21:22:18,105 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 21:22:18,105 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]          StackRhythm.java:221  | Setting expectedDuration=3/4 for stack on page 17
+2026-05-10 21:22:18,107 DEBUG [When I Survey The Wondrous Cross (Rockingham)-lead-Db]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17

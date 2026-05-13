@@ -1,0 +1,896 @@
+2026-05-10 16:49:06,139 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,142 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,143 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,143 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,144 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,145 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,146 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,147 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,147 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,147 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,148 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,148 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,149 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,149 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,149 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,150 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,150 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,150 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,152 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,152 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,153 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,153 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,154 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,154 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,155 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,155 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,155 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,156 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,156 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,156 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,156 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,156 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,157 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,157 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,158 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,158 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,158 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,158 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,160 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,160 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,160 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,161 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,161 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,161 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,161 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,163 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,163 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,163 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,163 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,165 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,165 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,166 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,166 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,166 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,166 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,167 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,168 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,168 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,168 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,168 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,168 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,168 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,170 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,170 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,170 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,171 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,171 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,171 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,172 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,172 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,172 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,172 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,172 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,172 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,173 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,173 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,173 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,173 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,174 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,174 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,174 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,174 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,175 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,175 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,176 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,176 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,176 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,176 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,176 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,177 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,177 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,177 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,179 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,179 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,180 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,180 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,181 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,181 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,182 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,182 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,183 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,183 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,183 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,184 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,184 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,184 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,185 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,185 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,186 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,186 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,186 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,187 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,187 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,187 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,187 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,187 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,189 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,189 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,189 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,190 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,190 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,190 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,190 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,190 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,191 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,191 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,191 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,192 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,192 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,193 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,193 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,194 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,195 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,196 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,196 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,197 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,198 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,198 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,198 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,200 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,200 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,200 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,200 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,201 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,201 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,201 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,202 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,202 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,202 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,203 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,203 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,203 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,204 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,204 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,204 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,205 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,206 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,206 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,206 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,206 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,207 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,207 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,207 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,207 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,208 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,208 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,209 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,209 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,210 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,210 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,211 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,211 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,211 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,212 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,212 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,213 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,213 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,213 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,214 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,214 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,214 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,216 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,216 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,216 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,216 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,216 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,217 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,217 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,217 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,218 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,218 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,218 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,218 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,220 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,220 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,220 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,220 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,220 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,221 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,222 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,222 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,222 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,223 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,223 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,223 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,223 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,224 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,224 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,224 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,224 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,225 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,225 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,225 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,226 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,226 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,227 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,227 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,227 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,227 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,227 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,227 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,227 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,228 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,228 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,228 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,230 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,231 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,231 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,231 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,231 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,231 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,232 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,233 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,233 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,233 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,234 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,234 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,234 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,235 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,235 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,235 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,235 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,236 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,236 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,236 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,236 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,236 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,237 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,237 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,237 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,237 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,238 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,238 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,238 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,238 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,239 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,239 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,240 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,240 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,241 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,241 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,241 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,242 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,242 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,242 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,243 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,244 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,244 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,245 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,245 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,247 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,247 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,248 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,248 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,249 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,249 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,250 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,250 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,251 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,251 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,251 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,251 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,252 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,252 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,253 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,253 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,259 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,259 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,260 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,260 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,260 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,261 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,261 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,261 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,261 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,262 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,262 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,262 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,263 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,263 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,264 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,264 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,265 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,265 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,265 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,265 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,267 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,267 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,267 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,268 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,268 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,269 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,270 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,270 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:06,271 WARN [Battle Belongs-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:12,377 INFO [Battle Belongs-lead-Db#1]           PageRhythm.java:176  | {Page#1.1} Starting PageRhythm time signature check
+2026-05-10 16:49:12,377 INFO [Battle Belongs-lead-Db#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN1- tSig:4/4} → ts: TimePairInter#222{ FROZEN(0.949/0.949) staff:1 4/4}
+2026-05-10 16:49:12,380 INFO [Battle Belongs-lead-Db#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN26- tSig:2/4} → ts: TimeWholeInter#11852{(0.800/0.800) staff:7 TIME_TWO_FOUR 2/4}
+2026-05-10 16:49:12,381 INFO [Battle Belongs-lead-Db#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN1- tSig:4/4}, ts: TimePairInter#222{ FROZEN(0.949/0.949) staff:1 4/4}
+2026-05-10 16:49:12,381 INFO [Battle Belongs-lead-Db#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN26- tSig:2/4}, ts: TimeWholeInter#11852{(0.800/0.800) staff:7 TIME_TWO_FOUR 2/4}
+2026-05-10 16:49:12,381 INFO [Battle Belongs-lead-Db#1]           PageRhythm.java:277  | Last range: Range{SN26-26 tSig:2/4 dur:1/2}
+2026-05-10 16:49:12,382 INFO [Battle Belongs-lead-Db#1]           PageRhythm.java:278  | lastRange.timeRational = 2/4
+2026-05-10 16:49:12,382 INFO [Battle Belongs-lead-Db#1]           PageRhythm.java:279  | lastRange.ts = TimeWholeInter#11852{(0.800/0.800) staff:7 TIME_TWO_FOUR 2/4}
+2026-05-10 16:49:12,382 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#1 frats: 0 []
+2026-05-10 16:49:12,383 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#2 frats: 0 []
+2026-05-10 16:49:12,383 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#3 frats: 0 []
+2026-05-10 16:49:12,384 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#4 frats: 2 [9197, 9070]
+2026-05-10 16:49:12,384 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#5 frats: 1 [9727]
+2026-05-10 16:49:12,384 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#6 frats: 4 [9728, 9387, 9737, 9731]
+2026-05-10 16:49:12,385 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#7 frats: 1 [9732]
+2026-05-10 16:49:12,385 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#8 frats: 2 [9733, 9581]
+2026-05-10 16:49:12,386 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#9 frats: 5 [10172, 10173, 9818, 10181, 10174]
+2026-05-10 16:49:12,386 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#10 frats: 1 [10178]
+2026-05-10 16:49:12,386 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#11 frats: 2 [10179, 9975]
+2026-05-10 16:49:12,386 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#12 frats: 0 []
+2026-05-10 16:49:12,386 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#13 frats: 3 [10374, 10640, 10632]
+2026-05-10 16:49:12,387 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#14 frats: 2 [10634, 10635]
+2026-05-10 16:49:12,387 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#15 frats: 1 [10636]
+2026-05-10 16:49:12,387 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#16 frats: 3 [11138, 10714, 11147]
+2026-05-10 16:49:12,388 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#17 frats: 1 [11140]
+2026-05-10 16:49:12,388 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#18 frats: 3 [11141, 11142, 10947]
+2026-05-10 16:49:12,389 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#19 frats: 0 []
+2026-05-10 16:49:12,389 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#20 frats: 1 [11515]
+2026-05-10 16:49:12,389 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#21 frats: 0 []
+2026-05-10 16:49:12,390 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#22 frats: 5 [11522, 11519, 11523, 11453, 11518]
+2026-05-10 16:49:12,390 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#23 frats: 3 [11853, 11854, 11855]
+2026-05-10 16:49:12,390 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#24 frats: 2 [11856, 11624]
+2026-05-10 16:49:12,391 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#25 frats: 0 []
+2026-05-10 16:49:12,391 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:121  | MeasureStack#26 frats: 0 []
+2026-05-10 16:49:12,391 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:325  | Starting Range{SN1-25 tSig:4/4 dur:1}
+2026-05-10 16:49:12,391 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 16:49:12,392 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 16:49:12,404 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 16:49:12,405 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 16:49:12,405 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 16:49:12,406 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 16:49:12,406 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 16:49:12,407 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 16:49:12,408 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 16:49:12,408 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 16:49:12,409 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 16:49:12,423 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 16:49:12,425 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 16:49:12,425 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 16:49:12,427 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 16:49:12,428 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 16:49:12,429 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 16:49:12,431 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 16:49:12,431 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 16:49:12,432 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 16:49:12,432 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 16:49:12,433 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 16:49:12,433 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 16:49:12,435 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 16:49:12,435 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 16:49:12,435 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 16:49:12,440 INFO [Battle Belongs-lead-Db#1]          StackRhythm.java:226  | S3 MeasureStack#9 no correct rhythm
+2026-05-10 16:49:12,441 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 16:49:12,441 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 16:49:12,441 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 16:49:12,443 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 16:49:12,443 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 16:49:12,444 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 16:49:12,446 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 16:49:12,447 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 16:49:12,447 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 16:49:12,449 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 16:49:12,449 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 16:49:12,449 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 16:49:12,451 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 16:49:12,452 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 16:49:12,452 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 16:49:12,453 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 16:49:12,453 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 16:49:12,453 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 16:49:12,455 WARN [Battle Belongs-lead-Db#1]          StackRhythm.java:229  | StackRhythm error processing MeasureStack#15 java.lang.IllegalStateException: Attempt to setVoice() on SmallChordInter#6039{(0.896/0.896) staff:4 dur:1/8}
+java.lang.IllegalStateException: Attempt to setVoice() on SmallChordInter#6039{(0.896/0.896) staff:4 dur:1/8}
+	at org.audiveris.omr.sig.inter.SmallChordInter.setVoice(SmallChordInter.java:240)
+	at org.audiveris.omr.sig.inter.BeamGroupInter.setVoice(BeamGroupInter.java:912)
+	at org.audiveris.omr.sig.inter.AbstractChordInter.setVoice(AbstractChordInter.java:1428)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm$SlotMapper.applyMapping(MeasureRhythm.java:924)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm$SlotMapper.mapRookies(MeasureRhythm.java:1448)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm$SlotMapper.mapChords(MeasureRhythm.java:1290)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm.process(MeasureRhythm.java:579)
+	at org.audiveris.omr.sheet.rhythm.StackRhythm.doProcess(StackRhythm.java:127)
+	at org.audiveris.omr.sheet.rhythm.StackRhythm.process(StackRhythm.java:225)
+	at org.audiveris.omr.sheet.rhythm.PageRhythm.processRanges(PageRhythm.java:330)
+	at org.audiveris.omr.sheet.rhythm.PageRhythm.process(PageRhythm.java:304)
+	at org.audiveris.omr.sheet.rhythm.RhythmsStep.doit(RhythmsStep.java:192)
+	at org.audiveris.omr.step.OmrStep.doit(OmrStep.java:138)
+	at org.audiveris.omr.sheet.SheetStub.lambda$doOneStep$2(SheetStub.java:499)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-10 16:49:12,456 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 16:49:12,457 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 16:49:12,457 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 16:49:12,460 WARN [Battle Belongs-lead-Db#1]          StackRhythm.java:229  | StackRhythm error processing MeasureStack#16 java.lang.IllegalStateException: Attempt to setVoice() on SmallChordInter#6048{(0.899/0.899) staff:5 dur:1/8}
+java.lang.IllegalStateException: Attempt to setVoice() on SmallChordInter#6048{(0.899/0.899) staff:5 dur:1/8}
+	at org.audiveris.omr.sig.inter.SmallChordInter.setVoice(SmallChordInter.java:240)
+	at org.audiveris.omr.sig.inter.BeamGroupInter.setVoice(BeamGroupInter.java:912)
+	at org.audiveris.omr.sig.inter.AbstractChordInter.setVoice(AbstractChordInter.java:1428)
+	at org.audiveris.omr.sheet.rhythm.Voice.<init>(Voice.java:173)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm$SlotMapper.createNewVoices(MeasureRhythm.java:1017)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm$SlotMapper.mapChords(MeasureRhythm.java:1297)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm.process(MeasureRhythm.java:579)
+	at org.audiveris.omr.sheet.rhythm.StackRhythm.doProcess(StackRhythm.java:127)
+	at org.audiveris.omr.sheet.rhythm.StackRhythm.process(StackRhythm.java:225)
+	at org.audiveris.omr.sheet.rhythm.PageRhythm.processRanges(PageRhythm.java:330)
+	at org.audiveris.omr.sheet.rhythm.PageRhythm.process(PageRhythm.java:304)
+	at org.audiveris.omr.sheet.rhythm.RhythmsStep.doit(RhythmsStep.java:192)
+	at org.audiveris.omr.step.OmrStep.doit(OmrStep.java:138)
+	at org.audiveris.omr.sheet.SheetStub.lambda$doOneStep$2(SheetStub.java:499)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-10 16:49:12,461 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 16:49:12,461 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 16:49:12,461 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 16:49:12,463 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 16:49:12,463 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 16:49:12,464 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 16:49:12,465 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 16:49:12,465 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 16:49:12,466 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 16:49:12,467 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 16:49:12,467 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 16:49:12,468 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 16:49:12,469 INFO [Battle Belongs-lead-Db#1]          StackRhythm.java:226  | S6 MeasureStack#20 no correct rhythm
+2026-05-10 16:49:12,470 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 16:49:12,470 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 16:49:12,470 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 16:49:12,473 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 16:49:12,473 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 16:49:12,473 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 22
+2026-05-10 16:49:12,474 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 16:49:12,475 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 16:49:12,475 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 23
+2026-05-10 16:49:12,477 INFO [Battle Belongs-lead-Db#1]          StackRhythm.java:226  | S7 MeasureStack#23 no correct rhythm
+2026-05-10 16:49:12,477 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23
+2026-05-10 16:49:12,477 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#24
+2026-05-10 16:49:12,477 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 24
+2026-05-10 16:49:12,479 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#24
+2026-05-10 16:49:12,480 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#25
+2026-05-10 16:49:12,480 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 25
+2026-05-10 16:49:12,481 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#25
+2026-05-10 16:49:12,482 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:325  | Starting Range{SN26-26 tSig:2/4 dur:1/2}
+2026-05-10 16:49:12,482 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#26
+2026-05-10 16:49:12,482 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 26
+2026-05-10 16:49:12,482 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#26
+2026-05-10 16:49:12,487 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:360  | PageRhythm.reprocessStack MeasureStack#9
+2026-05-10 16:49:12,487 DEBUG [Battle Belongs-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 16:49:12,489 INFO [Battle Belongs-lead-Db#1]          StackRhythm.java:226  | S3 MeasureStack#9 no correct rhythm
+2026-05-10 16:49:12,490 DEBUG [Battle Belongs-lead-Db#1]           PageRhythm.java:364  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 16:49:22,966 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,967 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,967 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,968 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,968 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,968 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,969 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,969 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,969 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,969 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,971 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,971 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,971 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,971 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,971 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,972 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,972 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,972 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,973 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,974 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,974 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,974 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,975 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,975 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,975 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,975 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,976 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,976 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,976 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,977 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,977 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,977 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,977 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,977 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,978 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,978 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,979 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,979 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,979 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,980 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,980 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,980 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,981 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,981 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,982 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,982 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,982 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,982 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,983 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,983 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,983 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,984 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,984 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,984 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,984 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,984 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,985 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,985 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,985 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,985 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,985 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,987 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,987 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,987 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,987 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,987 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,988 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,988 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,988 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,988 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,989 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,990 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,990 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,990 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,990 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,991 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,991 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,991 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,992 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,993 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,993 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,993 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,993 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,994 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,994 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,994 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,994 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,994 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,995 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,995 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,996 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,996 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,996 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,996 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,998 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,998 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,998 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,998 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,999 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,999 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,999 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,999 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,999 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,999 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:22,999 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,001 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,001 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,001 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,001 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,002 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,002 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,002 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,002 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,002 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,002 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,003 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,003 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,003 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,003 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,004 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,004 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,004 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,004 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,004 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,005 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,005 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,005 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,005 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,006 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,006 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,006 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,006 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,007 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,007 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,007 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,007 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,008 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,008 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,009 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,009 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,009 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,009 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,009 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,010 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,010 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,010 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,010 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,010 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,011 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,011 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,011 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,011 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,012 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,012 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,012 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,012 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,013 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,013 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,013 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,014 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,014 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,014 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,014 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,015 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,015 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,015 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,015 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,016 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,016 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,017 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,017 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,017 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,017 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,017 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,017 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,018 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,018 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,019 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,019 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,019 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,019 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,020 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,020 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,020 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,020 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,020 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,020 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,022 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,022 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,022 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,022 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,022 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,023 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,023 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,023 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,023 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,024 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,024 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,024 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,024 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,024 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,024 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,024 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,025 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,025 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,025 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,025 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,026 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,026 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,026 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,026 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,027 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,027 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,027 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,028 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,028 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,028 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,028 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,029 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,029 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,029 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,031 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,031 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,032 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,032 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,032 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,033 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,033 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,033 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,033 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,034 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,034 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,034 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,035 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,035 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,035 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,035 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,035 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,035 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,036 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,036 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,037 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,037 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,037 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,038 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,038 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,038 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,038 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,038 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,039 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,039 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,039 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,040 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,040 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,041 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,041 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,041 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,042 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,042 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,042 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,043 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,043 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,043 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,043 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,044 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,044 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,044 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,044 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,044 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,046 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,046 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,047 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,047 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,047 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,047 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,047 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,047 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,049 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,049 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,049 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,049 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,050 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,050 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,050 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,051 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,051 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,051 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,052 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,052 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,052 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,053 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,053 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,053 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,053 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,054 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,054 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,054 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,054 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,055 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,055 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,056 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,056 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,056 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,056 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,057 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,057 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,057 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:23,057 WARN [Battle Belongs-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:49:27,031 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:176  | {Page#2.1} Starting PageRhythm time signature check
+2026-05-10 16:49:27,032 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN1- tSig:2/4} → ts: TimePairInter#206{ FROZEN(0.944/0.944) staff:1 2/4}
+2026-05-10 16:49:27,032 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN4- tSig:2/4} → ts: TimeWholeInter#8004{(0.800/0.800) staff:1 TIME_TWO_FOUR 2/4}
+2026-05-10 16:49:27,033 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN6- tSig:4/4} → ts: TimePairInter#228{ FROZEN(0.947/0.947) staff:2 4/4}
+2026-05-10 16:49:27,033 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN20- tSig:2/4} → ts: TimeWholeInter#9647{(0.800/0.800) staff:6 TIME_TWO_FOUR 2/4}
+2026-05-10 16:49:27,034 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN1- tSig:2/4}, ts: TimePairInter#206{ FROZEN(0.944/0.944) staff:1 2/4}
+2026-05-10 16:49:27,034 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN4- tSig:2/4}, ts: TimeWholeInter#8004{(0.800/0.800) staff:1 TIME_TWO_FOUR 2/4}
+2026-05-10 16:49:27,034 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN6- tSig:4/4}, ts: TimePairInter#228{ FROZEN(0.947/0.947) staff:2 4/4}
+2026-05-10 16:49:27,035 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN20- tSig:2/4}, ts: TimeWholeInter#9647{(0.800/0.800) staff:6 TIME_TWO_FOUR 2/4}
+2026-05-10 16:49:27,036 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:277  | Last range: Range{SN20-23 tSig:2/4 dur:1/2}
+2026-05-10 16:49:27,036 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:278  | lastRange.timeRational = 2/4
+2026-05-10 16:49:27,036 INFO [Battle Belongs-lead-Db#2]           PageRhythm.java:279  | lastRange.ts = TimeWholeInter#9647{(0.800/0.800) staff:6 TIME_TWO_FOUR 2/4}
+2026-05-10 16:49:27,036 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#1 frats: 1 [8113]
+2026-05-10 16:49:27,037 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#2 frats: 2 [8111, 8112]
+2026-05-10 16:49:27,037 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#3 frats: 0 []
+2026-05-10 16:49:27,037 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#4 frats: 1 [8114]
+2026-05-10 16:49:27,038 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#5 frats: 0 []
+2026-05-10 16:49:27,038 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#6 frats: 2 [8337, 8338]
+2026-05-10 16:49:27,038 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#7 frats: 1 [8339]
+2026-05-10 16:49:27,038 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#8 frats: 1 [8340]
+2026-05-10 16:49:27,038 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#9 frats: 1 [8407]
+2026-05-10 16:49:27,038 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#10 frats: 1 [8827]
+2026-05-10 16:49:27,039 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#11 frats: 2 [8828, 8677]
+2026-05-10 16:49:27,039 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#12 frats: 2 [9353, 8908]
+2026-05-10 16:49:27,039 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#13 frats: 4 [9020, 9356, 9059, 9037]
+2026-05-10 16:49:27,040 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#14 frats: 4 [9357, 9360, 9358, 9300]
+2026-05-10 16:49:27,040 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#15 frats: 0 []
+2026-05-10 16:49:27,040 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#16 frats: 1 [9598]
+2026-05-10 16:49:27,040 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#17 frats: 3 [9596, 9475, 9493]
+2026-05-10 16:49:27,053 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#18 frats: 4 [9599, 9597, 9595, 9600]
+2026-05-10 16:49:27,056 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#19 frats: 1 [9813]
+2026-05-10 16:49:27,060 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#20 frats: 1 [9816]
+2026-05-10 16:49:27,060 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#21 frats: 1 [9815]
+2026-05-10 16:49:27,061 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#22 frats: 0 []
+2026-05-10 16:49:27,062 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:121  | MeasureStack#23 frats: 0 []
+2026-05-10 16:49:27,062 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:325  | Starting Range{SN1-3 tSig:2/4 dur:1/2}
+2026-05-10 16:49:27,062 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 16:49:27,066 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 1
+2026-05-10 16:49:27,069 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 16:49:27,069 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 16:49:27,070 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 2
+2026-05-10 16:49:27,072 INFO [Battle Belongs-lead-Db#2]          StackRhythm.java:226  | S1 MeasureStack#2 no correct rhythm
+2026-05-10 16:49:27,073 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 16:49:27,073 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 16:49:27,074 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 3
+2026-05-10 16:49:27,074 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 16:49:27,075 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:325  | Starting Range{SN4-5 tSig:2/4 dur:1/2}
+2026-05-10 16:49:27,076 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 16:49:27,077 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 4
+2026-05-10 16:49:27,078 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 16:49:27,079 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 16:49:27,079 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 5
+2026-05-10 16:49:27,080 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 16:49:27,080 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:325  | Starting Range{SN6-19 tSig:4/4 dur:1}
+2026-05-10 16:49:27,082 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 16:49:27,082 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 16:49:27,083 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 16:49:27,083 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 16:49:27,083 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 16:49:27,084 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 16:49:27,084 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 16:49:27,084 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 16:49:27,085 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 16:49:27,085 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 16:49:27,086 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 16:49:27,086 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 16:49:27,086 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 16:49:27,087 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 16:49:27,088 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 16:49:27,089 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 16:49:27,090 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 16:49:27,091 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 16:49:27,093 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 16:49:27,093 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 16:49:27,095 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 16:49:27,095 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 16:49:27,096 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 16:49:27,099 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 16:49:27,099 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 16:49:27,100 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 16:49:27,101 INFO [Battle Belongs-lead-Db#2]          StackRhythm.java:226  | S4 MeasureStack#14 no correct rhythm
+2026-05-10 16:49:27,101 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 16:49:27,103 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 16:49:27,103 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 16:49:27,104 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 16:49:27,105 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 16:49:27,105 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 16:49:27,106 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 16:49:27,106 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 16:49:27,106 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 16:49:27,107 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 16:49:27,107 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 16:49:27,108 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 16:49:27,109 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 16:49:27,109 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 16:49:27,109 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 16:49:27,110 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 16:49:27,111 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:325  | Starting Range{SN20-23 tSig:2/4 dur:1/2}
+2026-05-10 16:49:27,111 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 16:49:27,111 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 20
+2026-05-10 16:49:27,112 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 16:49:27,112 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 16:49:27,112 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 21
+2026-05-10 16:49:27,113 INFO [Battle Belongs-lead-Db#2]          StackRhythm.java:226  | S6 MeasureStack#21 no correct rhythm
+2026-05-10 16:49:27,113 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 16:49:27,113 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 16:49:27,114 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 22
+2026-05-10 16:49:27,114 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 16:49:27,115 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 16:49:27,115 DEBUG [Battle Belongs-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 23
+2026-05-10 16:49:27,116 INFO [Battle Belongs-lead-Db#2]          StackRhythm.java:226  | S7 MeasureStack#23 no correct rhythm
+2026-05-10 16:49:27,116 DEBUG [Battle Belongs-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23

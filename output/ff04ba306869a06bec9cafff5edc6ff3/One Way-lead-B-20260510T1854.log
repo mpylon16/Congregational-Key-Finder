@@ -1,0 +1,625 @@
+2026-05-10 18:55:00,858 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,861 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,862 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,863 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,865 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,866 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,867 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,867 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,868 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,869 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,870 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,871 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,871 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,871 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,872 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,872 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,873 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,873 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,874 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,874 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,875 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,876 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,876 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,877 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,877 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,878 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,878 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,878 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,878 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,878 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,878 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,880 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,880 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,880 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,881 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,881 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,881 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,881 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,881 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,883 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,883 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,883 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,884 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,885 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,886 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,886 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,886 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,886 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,887 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,887 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,887 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,888 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,888 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,888 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,888 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,889 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,889 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,889 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,889 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,889 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,891 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,891 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,892 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,892 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,893 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,894 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,894 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,895 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,895 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,896 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,896 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,896 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,897 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,897 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,897 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,897 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,898 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,898 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,898 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,898 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,899 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,899 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,899 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,899 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,901 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,901 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,902 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,902 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,903 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,903 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,904 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,904 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,904 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,904 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,904 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,905 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,905 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,905 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,905 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,907 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,907 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,908 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,908 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,909 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,909 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,909 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,909 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,910 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,910 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,911 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,912 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,912 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,912 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,913 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,913 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,914 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,914 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,914 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,914 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,914 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,915 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,915 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,915 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,915 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,916 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,916 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,917 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,917 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,917 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,919 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,919 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,920 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,920 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,920 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,921 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,921 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,921 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,921 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,921 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,923 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,923 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,923 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,923 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,923 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,924 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,924 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,925 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,925 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,925 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,926 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,926 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,926 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,928 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,928 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,928 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,928 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,930 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,930 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,930 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,931 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,931 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,931 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,932 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,932 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,932 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,933 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,933 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,933 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,933 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,933 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,933 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,933 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,935 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,936 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,936 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,936 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,936 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,937 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,937 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,937 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,938 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,938 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,938 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,938 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,939 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,939 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,939 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,939 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,939 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,939 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,940 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,940 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,941 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,941 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,942 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,942 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,943 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,943 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,943 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,943 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,944 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,944 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,944 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,944 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,945 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,945 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,945 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,946 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,946 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,946 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,946 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,947 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,947 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,947 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,947 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,948 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,949 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,950 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,950 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,950 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,951 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,951 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,951 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,951 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,952 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,952 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,952 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,952 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,953 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,953 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,953 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,954 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,954 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,954 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,955 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,955 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,955 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,955 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,956 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,956 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,956 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,956 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,957 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,957 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,957 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,958 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,958 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,958 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,958 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,960 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,964 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,965 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,966 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,966 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,967 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,967 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,968 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:00,969 WARN [One Way-lead-B#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:05,369 INFO [One Way-lead-B#1]           PageRhythm.java:176  | {Page#1.1} Starting PageRhythm time signature check
+2026-05-10 18:55:05,370 INFO [One Way-lead-B#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN1- tSig:4/4} → ts: TimePairInter#147{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 18:55:05,372 INFO [One Way-lead-B#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN1- tSig:4/4}, ts: TimePairInter#147{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 18:55:05,372 INFO [One Way-lead-B#1]           PageRhythm.java:277  | Last range: Range{SN1-28 tSig:4/4 dur:1}
+2026-05-10 18:55:05,374 INFO [One Way-lead-B#1]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 18:55:05,374 INFO [One Way-lead-B#1]           PageRhythm.java:279  | lastRange.ts = TimePairInter#147{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 18:55:05,375 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#1 frats: 0 []
+2026-05-10 18:55:05,376 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#2 frats: 4 [6860, 6486, 6861, 6866]
+2026-05-10 18:55:05,377 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#3 frats: 1 [6862]
+2026-05-10 18:55:05,377 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#4 frats: 3 [6863, 6864, 6865]
+2026-05-10 18:55:05,378 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#5 frats: 2 [7154, 7157]
+2026-05-10 18:55:05,378 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#6 frats: 2 [7155, 6948]
+2026-05-10 18:55:05,379 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#7 frats: 3 [7095, 7136, 7151]
+2026-05-10 18:55:05,380 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#8 frats: 0 []
+2026-05-10 18:55:05,380 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#9 frats: 2 [7158, 7156]
+2026-05-10 18:55:05,381 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#10 frats: 2 [7595, 7169]
+2026-05-10 18:55:05,381 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#11 frats: 0 []
+2026-05-10 18:55:05,382 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#12 frats: 3 [7598, 7599, 7601]
+2026-05-10 18:55:05,382 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#13 frats: 0 []
+2026-05-10 18:55:05,382 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#14 frats: 5 [7902, 7671, 7680, 7904, 7911]
+2026-05-10 18:55:05,382 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#15 frats: 4 [7912, 7824, 7825, 7852]
+2026-05-10 18:55:05,383 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#16 frats: 0 []
+2026-05-10 18:55:05,383 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#17 frats: 1 [7906]
+2026-05-10 18:55:05,384 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#18 frats: 1 [7907]
+2026-05-10 18:55:05,384 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#19 frats: 1 [7909]
+2026-05-10 18:55:05,384 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#20 frats: 3 [8245, 8246, 8008]
+2026-05-10 18:55:05,384 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#21 frats: 0 []
+2026-05-10 18:55:05,386 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#22 frats: 1 [8247]
+2026-05-10 18:55:05,386 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#23 frats: 1 [8249]
+2026-05-10 18:55:05,386 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#24 frats: 3 [8274, 8285, 8316]
+2026-05-10 18:55:05,386 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#25 frats: 0 []
+2026-05-10 18:55:05,387 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#26 frats: 2 [8442, 8443]
+2026-05-10 18:55:05,387 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#27 frats: 2 [8444, 8445]
+2026-05-10 18:55:05,387 DEBUG [One Way-lead-B#1]           PageRhythm.java:121  | MeasureStack#28 frats: 1 [8446]
+2026-05-10 18:55:05,388 DEBUG [One Way-lead-B#1]           PageRhythm.java:325  | Starting Range{SN1-28 tSig:4/4 dur:1}
+2026-05-10 18:55:05,388 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 18:55:05,390 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 18:55:05,405 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 18:55:05,406 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 18:55:05,406 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 18:55:05,424 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 18:55:05,426 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 18:55:05,426 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 18:55:05,428 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 18:55:05,429 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 18:55:05,429 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 18:55:05,429 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 18:55:05,432 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 18:55:05,434 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 18:55:05,435 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 18:55:05,435 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 18:55:05,435 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 18:55:05,437 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 18:55:05,437 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 18:55:05,437 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 18:55:05,441 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 18:55:05,442 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 18:55:05,442 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 18:55:05,443 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 18:55:05,444 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 18:55:05,445 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 18:55:05,446 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 18:55:05,446 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 18:55:05,446 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 18:55:05,448 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 18:55:05,448 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 18:55:05,449 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 18:55:05,450 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 18:55:05,451 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 18:55:05,451 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 18:55:05,452 INFO [One Way-lead-B#1]          StackRhythm.java:226  | S3 MeasureStack#12 no correct rhythm
+2026-05-10 18:55:05,452 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 18:55:05,453 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 18:55:05,453 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 18:55:05,455 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 18:55:05,456 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 18:55:05,457 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 18:55:05,458 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 18:55:05,460 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 18:55:05,460 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 18:55:05,462 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 18:55:05,462 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 18:55:05,463 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 18:55:05,463 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 18:55:05,464 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 18:55:05,464 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 18:55:05,465 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 18:55:05,466 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 18:55:05,466 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 18:55:05,467 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 18:55:05,467 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 18:55:05,467 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 18:55:05,468 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 18:55:05,469 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 18:55:05,469 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 18:55:05,472 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 18:55:05,472 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 18:55:05,473 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 18:55:05,474 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 18:55:05,475 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 18:55:05,475 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 22
+2026-05-10 18:55:05,476 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 18:55:05,477 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 18:55:05,477 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 23
+2026-05-10 18:55:05,478 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23
+2026-05-10 18:55:05,479 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#24
+2026-05-10 18:55:05,479 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 24
+2026-05-10 18:55:05,481 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#24
+2026-05-10 18:55:05,482 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#25
+2026-05-10 18:55:05,482 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 25
+2026-05-10 18:55:05,483 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#25
+2026-05-10 18:55:05,484 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#26
+2026-05-10 18:55:05,484 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 26
+2026-05-10 18:55:05,484 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#26
+2026-05-10 18:55:05,484 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#27
+2026-05-10 18:55:05,484 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 27
+2026-05-10 18:55:05,487 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#27
+2026-05-10 18:55:05,487 DEBUG [One Way-lead-B#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#28
+2026-05-10 18:55:05,487 DEBUG [One Way-lead-B#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 28
+2026-05-10 18:55:05,488 DEBUG [One Way-lead-B#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#28
+2026-05-10 18:55:13,666 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,667 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,667 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,667 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,667 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,668 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,668 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,668 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,668 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,669 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,669 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,669 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,670 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,670 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,671 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,671 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,672 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,672 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,672 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,673 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,673 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,673 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,674 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,674 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,674 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,675 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,675 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,675 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,677 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,677 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,678 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,678 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,679 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,679 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,679 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,679 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,680 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,680 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,680 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,681 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,681 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,681 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,683 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,683 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,683 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,684 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,684 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,684 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,685 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,685 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,686 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,686 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,686 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,687 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,687 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,687 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,688 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,689 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,689 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,690 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,690 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,690 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,691 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,691 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,692 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,692 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,692 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,693 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,693 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,693 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,695 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,695 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,695 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,696 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,696 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,696 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,696 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,697 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,697 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,697 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,698 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,698 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,698 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,699 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,699 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,701 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,702 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,702 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,702 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,703 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,703 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,703 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,704 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,704 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,704 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,705 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,705 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,705 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,706 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,706 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,706 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,706 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,707 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,707 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,707 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,708 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,708 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,708 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,710 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,710 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,711 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,711 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,712 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,712 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,712 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,713 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,713 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,713 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,713 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,714 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,714 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,714 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,714 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,715 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,715 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,715 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,715 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,716 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,716 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,716 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,717 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,717 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,717 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,717 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,719 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,719 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,720 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,720 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,720 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:13,721 WARN [One Way-lead-B#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 18:55:16,804 INFO [One Way-lead-B#2]           PageRhythm.java:176  | {Page#2.1} Starting PageRhythm time signature check
+2026-05-10 18:55:16,806 INFO [One Way-lead-B#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 18:55:16,806 INFO [One Way-lead-B#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 18:55:16,806 INFO [One Way-lead-B#2]           PageRhythm.java:207  | {Page#2.1} Time value reused from sheet#1
+2026-05-10 18:55:16,806 INFO [One Way-lead-B#2]           PageRhythm.java:277  | Last range: Range{SN1-24 tRat:4/4 dur:1}
+2026-05-10 18:55:16,806 INFO [One Way-lead-B#2]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 18:55:16,807 INFO [One Way-lead-B#2]           PageRhythm.java:279  | lastRange.ts = null
+2026-05-10 18:55:16,807 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#1 frats: 3 [6038, 6039, 6040]
+2026-05-10 18:55:16,807 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#2 frats: 0 []
+2026-05-10 18:55:16,808 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#3 frats: 1 [6041]
+2026-05-10 18:55:16,808 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#4 frats: 1 [6042]
+2026-05-10 18:55:16,808 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#5 frats: 1 [5892]
+2026-05-10 18:55:16,808 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#6 frats: 0 []
+2026-05-10 18:55:16,808 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#7 frats: 1 [6444]
+2026-05-10 18:55:16,808 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#8 frats: 2 [6446, 6447]
+2026-05-10 18:55:16,810 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#9 frats: 1 [6449]
+2026-05-10 18:55:16,810 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#10 frats: 0 []
+2026-05-10 18:55:16,810 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#11 frats: 0 []
+2026-05-10 18:55:16,810 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#12 frats: 4 [6490, 6523, 6946, 6954]
+2026-05-10 18:55:16,811 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#13 frats: 2 [6610, 6653]
+2026-05-10 18:55:16,811 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#14 frats: 6 [6735, 6950, 6951, 6777, 6799, 6808]
+2026-05-10 18:55:16,811 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#15 frats: 6 [6810, 6869, 6953, 6899, 6959, 6945]
+2026-05-10 18:55:16,811 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#16 frats: 1 [7191]
+2026-05-10 18:55:16,812 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#17 frats: 4 [7091, 7105, 7106, 7172]
+2026-05-10 18:55:16,812 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#18 frats: 0 []
+2026-05-10 18:55:16,812 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#19 frats: 0 []
+2026-05-10 18:55:16,812 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#20 frats: 2 [7189, 7190]
+2026-05-10 18:55:16,813 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#21 frats: 1 [7381]
+2026-05-10 18:55:16,813 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#22 frats: 2 [7383, 7385]
+2026-05-10 18:55:16,813 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#23 frats: 0 []
+2026-05-10 18:55:16,814 DEBUG [One Way-lead-B#2]           PageRhythm.java:121  | MeasureStack#24 frats: 0 []
+2026-05-10 18:55:16,814 DEBUG [One Way-lead-B#2]           PageRhythm.java:325  | Starting Range{SN1-24 tRat:4/4 dur:1}
+2026-05-10 18:55:16,814 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 18:55:16,814 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 18:55:16,816 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 18:55:16,816 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 18:55:16,816 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 18:55:16,817 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 18:55:16,817 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 18:55:16,818 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 18:55:16,818 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 18:55:16,820 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 18:55:16,820 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 18:55:16,821 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 18:55:16,821 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 18:55:16,821 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 18:55:16,822 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 18:55:16,823 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 18:55:16,823 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 18:55:16,824 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 18:55:16,825 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 18:55:16,826 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 18:55:16,827 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 18:55:16,827 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 18:55:16,828 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 18:55:16,828 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 18:55:16,829 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 18:55:16,829 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 18:55:16,831 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 18:55:16,831 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 18:55:16,831 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 18:55:16,833 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 18:55:16,833 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 18:55:16,833 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 18:55:16,834 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 18:55:16,834 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 18:55:16,834 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 18:55:16,836 INFO [One Way-lead-B#2]          StackRhythm.java:226  | S3 MeasureStack#12 no correct rhythm
+2026-05-10 18:55:16,836 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 18:55:16,836 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 18:55:16,837 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 18:55:16,838 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 18:55:16,838 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 18:55:16,840 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 18:55:16,842 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 18:55:16,843 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 18:55:16,843 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 18:55:16,844 INFO [One Way-lead-B#2]          StackRhythm.java:226  | S3 MeasureStack#15 no correct rhythm
+2026-05-10 18:55:16,845 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 18:55:16,845 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 18:55:16,846 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 18:55:16,847 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 18:55:16,847 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 18:55:16,848 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 18:55:16,850 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 18:55:16,850 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 18:55:16,850 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 18:55:16,851 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 18:55:16,851 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 18:55:16,852 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 18:55:16,852 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 18:55:16,852 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 18:55:16,853 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 18:55:16,853 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 18:55:16,854 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 18:55:16,855 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 18:55:16,856 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 18:55:16,857 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 18:55:16,857 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 22
+2026-05-10 18:55:16,858 INFO [One Way-lead-B#2]          StackRhythm.java:226  | S5 MeasureStack#22 no correct rhythm
+2026-05-10 18:55:16,858 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 18:55:16,858 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 18:55:16,859 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 23
+2026-05-10 18:55:16,860 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23
+2026-05-10 18:55:16,860 DEBUG [One Way-lead-B#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#24
+2026-05-10 18:55:16,860 DEBUG [One Way-lead-B#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 24
+2026-05-10 18:55:16,861 DEBUG [One Way-lead-B#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#24

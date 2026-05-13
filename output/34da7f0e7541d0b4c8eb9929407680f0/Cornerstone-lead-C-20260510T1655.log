@@ -1,0 +1,771 @@
+2026-05-10 16:55:49,241 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,245 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,245 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,247 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,249 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,250 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,250 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,251 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,252 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,252 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,252 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,253 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,253 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,253 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,253 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,255 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,255 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,255 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,256 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,256 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,256 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,257 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,257 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,258 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,258 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,258 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,258 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,258 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,259 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,260 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,260 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,260 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,261 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,261 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,262 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,262 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,263 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,264 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,264 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,265 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,265 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,265 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,265 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,265 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,265 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,265 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,267 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,267 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,267 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,267 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,267 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,267 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,268 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,268 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,268 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,268 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,269 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,270 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,270 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,270 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,270 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,270 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,271 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,271 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,271 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,272 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,272 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,272 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,272 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,272 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,274 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,274 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,274 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,274 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,275 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,275 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,275 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,275 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,276 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,276 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,277 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,277 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,278 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,278 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,278 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,279 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,279 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,279 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,279 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,279 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,279 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,279 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,280 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,280 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,280 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,281 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,281 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,281 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,281 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,282 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,282 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,283 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,283 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,283 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,284 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,284 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,284 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,284 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,285 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,285 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,285 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,286 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,286 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,286 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,286 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,288 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,288 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,288 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,288 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,289 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,289 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,289 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,289 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,289 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,289 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,289 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,291 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,291 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,291 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,292 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,293 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,293 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,293 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,294 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,294 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,294 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,295 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,295 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,295 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,295 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,296 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,296 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,296 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,297 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,297 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,297 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,299 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,299 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,299 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,299 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,299 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,300 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,300 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,300 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,300 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,301 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,301 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,301 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,302 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,302 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,302 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,302 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,302 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,302 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,304 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,304 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,304 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,304 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,304 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,305 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,305 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,306 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,306 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,306 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,306 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,307 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,307 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,308 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,308 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,308 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,309 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,309 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,309 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,309 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,310 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,310 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,310 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,311 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,311 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,311 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,311 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,311 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,313 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,313 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,313 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,313 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,314 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,315 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,315 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,315 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,315 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,315 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,316 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,316 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,316 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,316 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,317 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,317 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,317 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,317 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,317 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,317 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,317 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,318 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,318 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:49,318 WARN [Cornerstone-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:55:52,412 INFO [Cornerstone-lead-C#1]           PageRhythm.java:176  | {Page#1.1} Starting PageRhythm time signature check
+2026-05-10 16:55:52,413 INFO [Cornerstone-lead-C#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN1- tSig:4/4} → ts: TimePairInter#195{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 16:55:52,414 INFO [Cornerstone-lead-C#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN1- tSig:4/4}, ts: TimePairInter#195{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 16:55:52,415 INFO [Cornerstone-lead-C#1]           PageRhythm.java:277  | Last range: Range{SN1-25 tSig:4/4 dur:1}
+2026-05-10 16:55:52,415 INFO [Cornerstone-lead-C#1]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 16:55:52,415 INFO [Cornerstone-lead-C#1]           PageRhythm.java:279  | lastRange.ts = TimePairInter#195{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 16:55:52,415 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#1 frats: 1 [7585]
+2026-05-10 16:55:52,416 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#2 frats: 1 [7586]
+2026-05-10 16:55:52,416 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#3 frats: 1 [7587]
+2026-05-10 16:55:52,417 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#4 frats: 1 [7588]
+2026-05-10 16:55:52,417 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#5 frats: 1 [7798]
+2026-05-10 16:55:52,417 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#6 frats: 1 [7799]
+2026-05-10 16:55:52,418 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#7 frats: 4 [7800, 7599, 7803, 7688]
+2026-05-10 16:55:52,418 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#8 frats: 2 [7782, 7805]
+2026-05-10 16:55:52,419 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#9 frats: 4 [8150, 7879, 8152, 7926]
+2026-05-10 16:55:52,419 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#10 frats: 3 [7933, 8153, 8154]
+2026-05-10 16:55:52,420 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#11 frats: 5 [8155, 7937, 7980, 8157, 8063]
+2026-05-10 16:55:52,420 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#12 frats: 2 [8083, 8158]
+2026-05-10 16:55:52,420 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#13 frats: 3 [8472, 8170, 8475]
+2026-05-10 16:55:52,421 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#14 frats: 1 [8476]
+2026-05-10 16:55:52,421 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#15 frats: 1 [8473]
+2026-05-10 16:55:52,421 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#16 frats: 1 [8474]
+2026-05-10 16:55:52,421 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#17 frats: 1 [8726]
+2026-05-10 16:55:52,422 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#18 frats: 1 [8727]
+2026-05-10 16:55:52,422 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#19 frats: 1 [8728]
+2026-05-10 16:55:52,423 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#20 frats: 1 [8731]
+2026-05-10 16:55:52,423 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#21 frats: 1 [8885]
+2026-05-10 16:55:52,423 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#22 frats: 1 [8886]
+2026-05-10 16:55:52,424 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#23 frats: 1 [8887]
+2026-05-10 16:55:52,424 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#24 frats: 1 [8889]
+2026-05-10 16:55:52,424 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:121  | MeasureStack#25 frats: 1 [8888]
+2026-05-10 16:55:52,424 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:325  | Starting Range{SN1-25 tSig:4/4 dur:1}
+2026-05-10 16:55:52,425 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 16:55:52,426 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 16:55:52,440 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 16:55:52,442 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 16:55:52,442 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 16:55:52,442 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 16:55:52,443 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 16:55:52,443 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 16:55:52,445 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 16:55:52,446 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 16:55:52,446 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 16:55:52,446 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 16:55:52,461 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 16:55:52,462 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 16:55:52,465 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 16:55:52,466 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 16:55:52,466 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 16:55:52,467 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 16:55:52,468 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 16:55:52,468 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 16:55:52,483 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 16:55:52,483 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 16:55:52,483 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 16:55:52,486 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 16:55:52,486 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 16:55:52,486 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 16:55:52,488 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 16:55:52,489 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 16:55:52,489 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 16:55:52,491 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 16:55:52,492 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 16:55:52,492 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 16:55:52,494 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 16:55:52,495 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 16:55:52,496 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 16:55:52,497 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 16:55:52,497 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 16:55:52,498 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 16:55:52,500 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 16:55:52,500 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 16:55:52,500 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 16:55:52,502 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 16:55:52,502 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 16:55:52,502 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 16:55:52,502 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 16:55:52,502 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 16:55:52,503 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 16:55:52,503 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 16:55:52,503 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 16:55:52,503 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 16:55:52,504 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 16:55:52,504 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 16:55:52,504 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 16:55:52,505 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 16:55:52,505 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 16:55:52,506 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 16:55:52,507 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 16:55:52,507 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 16:55:52,507 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 16:55:52,510 INFO [Cornerstone-lead-C#1]          StackRhythm.java:226  | S5 MeasureStack#20 no correct rhythm
+2026-05-10 16:55:52,510 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 16:55:52,510 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 16:55:52,511 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 16:55:52,512 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 16:55:52,512 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 16:55:52,513 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 22
+2026-05-10 16:55:52,515 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 16:55:52,515 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 16:55:52,515 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 23
+2026-05-10 16:55:52,515 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23
+2026-05-10 16:55:52,515 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#24
+2026-05-10 16:55:52,516 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 24
+2026-05-10 16:55:52,517 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#24
+2026-05-10 16:55:52,517 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#25
+2026-05-10 16:55:52,517 DEBUG [Cornerstone-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 25
+2026-05-10 16:55:52,518 DEBUG [Cornerstone-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#25
+2026-05-10 16:56:02,070 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,071 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,072 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,072 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,072 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,073 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,073 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,073 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,073 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,073 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,074 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,074 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,075 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,075 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,076 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,076 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,076 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,076 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,077 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,077 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,077 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,077 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,078 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,078 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,078 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,078 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,078 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,079 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,079 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,079 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,079 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,079 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,079 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,079 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,079 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,080 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,081 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,081 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,081 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,081 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,082 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,083 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,083 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,083 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,083 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,083 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,083 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,084 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,084 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,084 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,084 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,084 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,085 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,085 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,085 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,085 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,085 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,086 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,086 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,086 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,086 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,086 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,087 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,087 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,087 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,087 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,087 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,087 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,087 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,089 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,089 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,089 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,090 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,090 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,090 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,090 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,090 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,091 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,091 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,091 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,091 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,091 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,092 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,092 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,093 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,093 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,093 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,094 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,094 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,094 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,094 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,095 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,095 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,095 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,095 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,095 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,096 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,096 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,096 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,097 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,097 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,097 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,097 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,097 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,097 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,098 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,098 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,098 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,098 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,098 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,099 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,099 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,099 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,100 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,100 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,101 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,101 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,101 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,101 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,101 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,101 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,101 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,102 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,102 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,103 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,103 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,103 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,103 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,103 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,104 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,104 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,104 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,104 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,104 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,104 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,105 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,105 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,105 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,105 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,105 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,106 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,106 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,106 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,106 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,106 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,107 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,107 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,107 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,107 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,107 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,107 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,107 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,107 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,107 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,109 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,109 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,109 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,109 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,109 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,109 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,109 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,111 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,111 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,111 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,112 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,112 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,112 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,113 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,113 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,113 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,113 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,113 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,114 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,114 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,114 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,114 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,114 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,115 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,115 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,115 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,115 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,115 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,116 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,116 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,116 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,116 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,117 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,117 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,117 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,117 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,117 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,118 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,118 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,118 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,118 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,118 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,118 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,119 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,119 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,119 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,119 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,119 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,120 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,120 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,120 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,120 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,121 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,121 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,122 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,122 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,122 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,122 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,122 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,122 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,122 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,122 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,123 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,123 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,123 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,123 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,123 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,123 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,123 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,125 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,125 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,125 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,125 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,126 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,126 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,126 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,126 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,127 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,127 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,127 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,127 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,128 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,128 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,128 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,128 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,128 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,128 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,128 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,129 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,129 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,129 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,130 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,130 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,130 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,130 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,131 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,131 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,131 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,131 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,131 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,131 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,132 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,132 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,132 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,133 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,133 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,133 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,133 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,134 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,134 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,134 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,134 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,134 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,134 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,135 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,135 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,135 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,135 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,135 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,136 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,136 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,136 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,136 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,136 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,136 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,136 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,136 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,137 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,137 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,137 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,138 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,138 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:02,138 WARN [Cornerstone-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:06,561 INFO [Cornerstone-lead-C#2]           PageRhythm.java:176  | {Page#2.1} Starting PageRhythm time signature check
+2026-05-10 16:56:06,562 INFO [Cornerstone-lead-C#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 16:56:06,563 INFO [Cornerstone-lead-C#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 16:56:06,563 INFO [Cornerstone-lead-C#2]           PageRhythm.java:207  | {Page#2.1} Time value reused from sheet#1
+2026-05-10 16:56:06,563 INFO [Cornerstone-lead-C#2]           PageRhythm.java:277  | Last range: Range{SN1-31 tRat:4/4 dur:1}
+2026-05-10 16:56:06,564 INFO [Cornerstone-lead-C#2]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 16:56:06,564 INFO [Cornerstone-lead-C#2]           PageRhythm.java:279  | lastRange.ts = null
+2026-05-10 16:56:06,564 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#1 frats: 5 [7689, 7180, 7690, 7691, 7438]
+2026-05-10 16:56:06,564 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#2 frats: 2 [7692, 7693]
+2026-05-10 16:56:06,565 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#3 frats: 4 [7694, 7585, 7696, 7688]
+2026-05-10 16:56:06,565 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#4 frats: 4 [7830, 7863, 8665, 8666]
+2026-05-10 16:56:06,565 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#5 frats: 6 [8667, 8668, 8141, 8669, 8672, 8437]
+2026-05-10 16:56:06,565 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#6 frats: 1 [8674]
+2026-05-10 16:56:06,566 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#7 frats: 3 [9199, 8752, 9207]
+2026-05-10 16:56:06,566 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#8 frats: 1 [9208]
+2026-05-10 16:56:06,566 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#9 frats: 3 [9203, 9092, 9209]
+2026-05-10 16:56:06,566 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#10 frats: 1 [9210]
+2026-05-10 16:56:06,567 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#11 frats: 1 [9609]
+2026-05-10 16:56:06,567 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#12 frats: 1 [9611]
+2026-05-10 16:56:06,567 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#13 frats: 0 []
+2026-05-10 16:56:06,567 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#14 frats: 1 [9613]
+2026-05-10 16:56:06,568 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#15 frats: 1 [9790]
+2026-05-10 16:56:06,568 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#16 frats: 1 [9791]
+2026-05-10 16:56:06,568 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#17 frats: 1 [9793]
+2026-05-10 16:56:06,568 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#18 frats: 2 [9797, 9794]
+2026-05-10 16:56:06,569 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#19 frats: 1 [9795]
+2026-05-10 16:56:06,569 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#20 frats: 1 [9796]
+2026-05-10 16:56:06,570 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#21 frats: 1 [10150]
+2026-05-10 16:56:06,570 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#22 frats: 4 [10157, 9842, 10158, 9855]
+2026-05-10 16:56:06,571 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#23 frats: 3 [9843, 10151, 10152]
+2026-05-10 16:56:06,571 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#24 frats: 0 []
+2026-05-10 16:56:06,572 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#25 frats: 1 [10155]
+2026-05-10 16:56:06,572 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#26 frats: 1 [10156]
+2026-05-10 16:56:06,573 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#27 frats: 3 [10234, 10235, 10240]
+2026-05-10 16:56:06,573 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#28 frats: 2 [10241, 10236]
+2026-05-10 16:56:06,573 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#29 frats: 1 [10237]
+2026-05-10 16:56:06,574 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#30 frats: 1 [10238]
+2026-05-10 16:56:06,574 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:121  | MeasureStack#31 frats: 1 [10239]
+2026-05-10 16:56:06,574 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:325  | Starting Range{SN1-31 tRat:4/4 dur:1}
+2026-05-10 16:56:06,574 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 16:56:06,574 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 16:56:06,578 INFO [Cornerstone-lead-C#2]          StackRhythm.java:226  | S1 MeasureStack#1 no correct rhythm
+2026-05-10 16:56:06,578 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 16:56:06,578 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 16:56:06,578 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 16:56:06,579 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 16:56:06,580 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 16:56:06,580 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 16:56:06,581 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 16:56:06,581 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 16:56:06,581 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 16:56:06,582 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 16:56:06,582 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 16:56:06,582 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 16:56:06,584 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 16:56:06,584 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 16:56:06,585 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 16:56:06,585 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 16:56:06,585 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 16:56:06,585 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 16:56:06,587 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 16:56:06,587 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 16:56:06,587 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 16:56:06,588 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 16:56:06,588 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 16:56:06,588 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 16:56:06,590 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 16:56:06,590 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 16:56:06,590 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 16:56:06,591 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 16:56:06,591 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 16:56:06,592 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 16:56:06,593 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 16:56:06,593 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 16:56:06,593 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 16:56:06,594 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 16:56:06,594 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 16:56:06,594 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 16:56:06,595 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 16:56:06,595 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 16:56:06,595 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 16:56:06,596 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 16:56:06,596 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 16:56:06,597 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 16:56:06,597 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 16:56:06,597 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 16:56:06,597 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 16:56:06,599 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 16:56:06,599 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 16:56:06,599 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 16:56:06,600 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 16:56:06,600 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 16:56:06,600 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 16:56:06,601 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 16:56:06,601 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 16:56:06,601 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 16:56:06,602 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 16:56:06,602 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 16:56:06,602 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 16:56:06,603 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 16:56:06,603 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 16:56:06,603 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 16:56:06,604 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 16:56:06,605 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 16:56:06,605 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 22
+2026-05-10 16:56:06,605 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 16:56:06,606 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 16:56:06,606 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 23
+2026-05-10 16:56:06,606 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23
+2026-05-10 16:56:06,607 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#24
+2026-05-10 16:56:06,607 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 24
+2026-05-10 16:56:06,607 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#24
+2026-05-10 16:56:06,607 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#25
+2026-05-10 16:56:06,607 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 25
+2026-05-10 16:56:06,609 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#25
+2026-05-10 16:56:06,609 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#26
+2026-05-10 16:56:06,610 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 26
+2026-05-10 16:56:06,610 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#26
+2026-05-10 16:56:06,611 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#27
+2026-05-10 16:56:06,611 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 27
+2026-05-10 16:56:06,611 INFO [Cornerstone-lead-C#2]          StackRhythm.java:226  | S7 MeasureStack#27 no correct rhythm
+2026-05-10 16:56:06,612 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#27
+2026-05-10 16:56:06,612 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#28
+2026-05-10 16:56:06,612 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 28
+2026-05-10 16:56:06,612 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#28
+2026-05-10 16:56:06,613 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#29
+2026-05-10 16:56:06,613 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 29
+2026-05-10 16:56:06,613 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#29
+2026-05-10 16:56:06,613 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#30
+2026-05-10 16:56:06,614 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 30
+2026-05-10 16:56:06,614 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#30
+2026-05-10 16:56:06,614 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#31
+2026-05-10 16:56:06,614 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 31
+2026-05-10 16:56:06,614 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#31
+2026-05-10 16:56:06,616 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:360  | PageRhythm.reprocessStack MeasureStack#5
+2026-05-10 16:56:06,617 DEBUG [Cornerstone-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 16:56:06,618 DEBUG [Cornerstone-lead-C#2]           PageRhythm.java:364  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 16:56:10,557 WARN [Cornerstone-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:10,558 WARN [Cornerstone-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:10,558 WARN [Cornerstone-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:56:11,263 INFO [Cornerstone-lead-C#3]           PageRhythm.java:176  | {Page#3.1} Starting PageRhythm time signature check
+2026-05-10 16:56:11,263 INFO [Cornerstone-lead-C#3]           PageRhythm.java:178  | {Page#3.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 16:56:11,263 INFO [Cornerstone-lead-C#3]           PageRhythm.java:184  | {Page#3.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 16:56:11,264 INFO [Cornerstone-lead-C#3]           PageRhythm.java:207  | {Page#3.1} Time value reused from sheet#2
+2026-05-10 16:56:11,264 INFO [Cornerstone-lead-C#3]           PageRhythm.java:277  | Last range: Range{SN1-3 tRat:4/4 dur:1}
+2026-05-10 16:56:11,264 INFO [Cornerstone-lead-C#3]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 16:56:11,264 INFO [Cornerstone-lead-C#3]           PageRhythm.java:279  | lastRange.ts = null
+2026-05-10 16:56:11,264 DEBUG [Cornerstone-lead-C#3]           PageRhythm.java:121  | MeasureStack#1 frats: 1 [415]
+2026-05-10 16:56:11,265 DEBUG [Cornerstone-lead-C#3]           PageRhythm.java:121  | MeasureStack#2 frats: 1 [413]
+2026-05-10 16:56:11,265 DEBUG [Cornerstone-lead-C#3]           PageRhythm.java:121  | MeasureStack#3 frats: 1 [414]
+2026-05-10 16:56:11,265 DEBUG [Cornerstone-lead-C#3]           PageRhythm.java:325  | Starting Range{SN1-3 tRat:4/4 dur:1}
+2026-05-10 16:56:11,265 DEBUG [Cornerstone-lead-C#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 16:56:11,266 DEBUG [Cornerstone-lead-C#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 16:56:11,266 DEBUG [Cornerstone-lead-C#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 16:56:11,267 DEBUG [Cornerstone-lead-C#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 16:56:11,267 DEBUG [Cornerstone-lead-C#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 16:56:11,267 DEBUG [Cornerstone-lead-C#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 16:56:11,267 DEBUG [Cornerstone-lead-C#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 16:56:11,268 DEBUG [Cornerstone-lead-C#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 16:56:11,268 DEBUG [Cornerstone-lead-C#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3

@@ -1,0 +1,18 @@
+2026-05-10 18:58:59,322 WARN [Revelation Song-lead-D]         ImageLoading.java:162  | Error opening pdf file C:\Users\fe1pm\Documents\GitHub Repository\Congregational-Key-Finder\pending_pdfs\Revelation Song-lead-D.pdf
+java.io.IOException: Error: End-of-File, expected line at offset 6493
+	at org.apache.pdfbox.pdfparser.BaseParser.readLine(BaseParser.java:1134)
+	at org.apache.pdfbox.pdfparser.COSParser.parseHeader(COSParser.java:1619)
+	at org.apache.pdfbox.pdfparser.COSParser.parsePDFHeader(COSParser.java:1598)
+	at org.apache.pdfbox.pdfparser.PDFParser.parse(PDFParser.java:157)
+	at org.apache.pdfbox.pdfparser.PDFParser.parse(PDFParser.java:136)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:480)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2026-05-10 18:58:59,327 WARN [Revelation Song-lead-D]         ImageLoading.java:216  | Cannot find a loader for C:\Users\fe1pm\Documents\GitHub Repository\Congregational-Key-Finder\pending_pdfs\Revelation Song-lead-D.pdf
