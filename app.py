@@ -746,8 +746,8 @@ def get_song(pdf_hash):
         warnings=summary["warnings"],
         ccli_link=summary.get("ccli_url"),
         title=song.get("title"),
-        author=pdf_metadata.get("author"),
-        year=pdf_metadata.get("year"),
+        author=song.get("author"),
+        year=song.get("year"),
         ccli_no=song.get("ccli_number")
     )
 
