@@ -7,7 +7,7 @@ import tempfile
 import os
 import time
 import subprocess
-from flask import Flask, request, render_template, send_from_directory, abort, url_for, redirect
+from flask import Flask, request, render_template, send_from_directory, abort, url_for, redirect, jsonify
 from werkzeug.utils import secure_filename
 import glob
 import math # For math.inf
@@ -64,16 +64,51 @@ def make_json_safe(data):
     return data
 
 def extract_metadata_from_pdf(pdf_path):
+    metadata = {
+        "ccli_number": "Unknown",
+        "author": "Unknown",
+        "year": "Unknown"
+    }
     try:
         with pdfplumber.open(pdf_path) as pdf:
-            text = pdf.pages[0].extract_text() or ""
-            ccli_match = re.search(r'CCLI\s+Song\s+#?\s*(\d{5,8})', text, re.IGNORECASE)
-            ccli_number = ccli_match.group(1) if ccli_match else None
-            print(f"📄 PDF metadata — CCLI: {ccli_number}")
-            return {"ccli_number": ccli_number}
+            first_page = pdf.pages[0]
+            width, height = first_page.width, first_page.height
+            
+            # Extract header text (top 30%) for Year and Author
+            header_box = (0, 0, width, height * 0.3)
+            header_text = first_page.within_bbox(header_box).extract_text() or ""
+            
+            # Extract full page text for CCLI (usually at the bottom)
+            full_text = first_page.extract_text() or ""
+
+            # 1. CCLI Extraction
+            ccli_match = re.search(r'CCLI\s+Song\s+#?\s*(\d{5,8})', full_text, re.IGNORECASE)
+            if ccli_match:
+                metadata["ccli_number"] = ccli_match.group(1)
+
+            # 2. Year Extraction
+            year_match = re.search(r'(?:©|Words:|Music:)\s*.*?(\d{4})', header_text)
+            if year_match:
+                metadata["year"] = year_match.group(1)
+
+            # 3. Author Extraction
+            words_by = re.search(r'Words (?:and Music )?by\s*(.*?)(?=\n|Music by|©|CCLI|$)', header_text, re.IGNORECASE)
+            music_by = re.search(r'Music by\s*(.*?)(?=\n|Words by|©|CCLI|$)', header_text, re.IGNORECASE)
+            
+            if words_by and music_by:
+                w, m = words_by.group(1).strip().strip(','), music_by.group(1).strip().strip(',')
+                metadata["author"] = w if w == m else f"Words: {w} / Music: {m}"
+            elif words_by:
+                metadata["author"] = words_by.group(1).strip()
+            elif music_by:
+                metadata["author"] = music_by.group(1).strip()
+            elif "Public Domain" in header_text:
+                metadata["author"] = "Public Domain"
+
+            return metadata
     except Exception as e:
-        print(f"⚠️ pdfplumber extraction failed: {e}")
-        return {"ccli_number": None}
+        print(f"⚠️ Metadata extraction failed: {e}")
+        return metadata
        
 def extract_metadata_from_musicxml(xml_text):
     """
@@ -539,7 +574,10 @@ def upload_file():
                         '-output', cached_output_dir,
                         '-option', 'org.audiveris.omr.sheet.ProcessingSwitches.smallHeads=true',
                         '-option', 'org.audiveris.omr.sheet.stem.BeamLinker.allowSmallHeadOnStandardBeam=true',
-                        '-option', 'audiveris.log.level=WARNING',
+                        # --- New Silencing Options ---
+                        '-option', 'org.audiveris.omr.util.LogLevel.level=WARNING',
+                        '-option', 'org.audiveris.omr.text.TextBuilder.level=SEVERE', 
+                        '-option', 'org.audiveris.omr.step.PageRhythm.level=WARNING',
                         filepath
                     ]
 
@@ -609,14 +647,22 @@ def upload_file():
                             mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
                             # Fix: Create a "database-friendly" copy of the summary
                             db_summary = make_json_safe(summary)
+
+                            # Flatten analysis for easy searching/filtering
+                            orig_info = summary.get("original_key_info", {})
                                                       
                             supabase.table('songs').upsert({
                                 "pdf_hash": pdf_hash,
                                 "title": summary.get("title", "Unknown Title"),
-                                "ccli_number": summary.get("ccli_number", "N/A"),
+                                "ccli_number": pdf_metadata.get("ccli_number", "Unknown"), # From the NEW pdf_metadata
+                                "author": pdf_metadata.get("author", "Unknown"),           # NEW COLUMN
+                                "year": pdf_metadata.get("year", "Unknown"),               # NEW COLUMN
+                                "original_key": orig_info.get("name", "Unknown"),          # NEW COLUMN
+                                "lowest_note": orig_info.get("range_low", "Unknown"),      # NEW COLUMN
+                                "highest_note": orig_info.get("range_high", "Unknown"),
                                 "mxl_url": mxl_url,
                                 "analysis_results": db_summary 
-                            }).execute()
+                            }, on_conflict="pdf_hash").execute()  # <--- Added on_conflict="pdf_hash"
                             print(f"🚀 Cloud Save Successful for {pdf_hash}")
                     except Exception as cloud_err:
                         # This prints to the Railway logs but DOES NOT trigger a 500 error for the user                     
@@ -631,6 +677,8 @@ def upload_file():
                     warnings=summary["warnings"],
                     ccli_link=summary.get("ccli_url"),
                     title=summary.get("title"),
+                    author=pdf_metadata.get("author"),
+                    year=pdf_metadata.get("year"),
                     ccli_no=summary["ccli_number"]
                 )
 
@@ -659,6 +707,50 @@ def upload_file():
 
     return render_template('upload.html')
 
+@app.route('/search_songs', methods=['GET'])
+def search_songs():
+    query = request.args.get('q', '')
+    if len(query) < 2:
+        return jsonify([])
+
+    try:
+        # Search title, author, or CCLI number
+        # ILIKE is case-insensitive search
+        res = supabase.table('songs').select("*").or_(
+            f"title.ilike.%{query}%,author.ilike.%{query}%,ccli_number.ilike.%{query}%"
+        ).limit(10).execute()
+        
+        return jsonify(res.data)
+    except Exception as e:
+        print(f"Search error: {e}")
+        return jsonify([]), 500
+
+@app.route('/get_song/<pdf_hash>', methods=['GET'])
+def get_song(pdf_hash):
+    # Fetch pre-analyzed data for a selected song
+    res = supabase.table('songs').select("*").eq('pdf_hash', pdf_hash).single().execute()
+    song = res.data
+    
+    if not song:
+        return "Song not found", 404
+        
+    summary = song['analysis_results']
+    
+    # Return the same analysis template we use for new uploads
+    return render_template("analysis_results.html",
+        pdf_hash=song['pdf_hash'],
+        original_key=summary["original_key_info"],
+        recommended=summary["recommended"],
+        other_keys=summary["other_keys"],
+        skipped=summary["skipped"],
+        warnings=summary["warnings"],
+        ccli_link=summary.get("ccli_url"),
+        title=song.get("title"),
+        author=song.get("author"),
+        year=song.get("year"),
+        ccli_no=song.get("ccli_number")
+    )
+
 def extract_xml_from_mxl(path):
     with zipfile.ZipFile(path, 'r') as z:
         # Find the first .xml file inside the .mxl archive
@@ -667,57 +759,49 @@ def extract_xml_from_mxl(path):
                 return z.read(name).decode("utf-8")
     raise ValueError(f"No .xml file found inside {path}")
 
-def inject_divisions_and_time_from_previous(current_path, previous_path=None):
-    """
-    Patch MusicXML if it contains <divisions>0</divisions> or is missing <time>.
-    Tries to copy <divisions> and <time> from the previous movement if provided.
-    Falls back to divisions=1 and time=4/4.
-    Returns: patched XML as bytes if modified, else None.
-    """
-    xml = extract_xml_from_mxl(current_path)
+def inject_divisions_and_time_if_missing(current_path, previous_path=None):
+    # Load the XML content
+    xml_data = extract_xml_from_mxl(current_path)
+    xml = xml_data.decode("utf-8") if isinstance(xml_data, bytes) else xml_data
 
+    # --- FIX 1: Zero/Missing Divisions ---
+    if "<divisions>0</divisions>" in xml:
+        xml = xml.replace("<divisions>0</divisions>", "<divisions>1</divisions>")
+    elif "<divisions>" not in xml:
+        xml = re.sub(r"<attributes>", "<attributes><divisions>1</divisions>", xml, count=1)
 
-    needs_patch = (
-        "<divisions>0</divisions>" in xml
-        or "<divisions>" not in xml
-        or "<time>" not in xml
-    )
+    # --- FIX 2: Empty/Missing Time Signatures ---
+    xml = xml.replace("<beats></beats>", "<beats>4</beats>")
+    xml = xml.replace("<beat-type></beat-type>", "<beat-type>4</beat-type>")
+    if "<time" not in xml:
+        fallback_time = "<time><beats>4</beats><beat-type>4</beat-type></time>"
+        xml = re.sub(r"<attributes>", f"<attributes>{fallback_time}", xml, count=1)
 
-    if not needs_patch:
-        return None  # No patch needed
+    # --- FIX 3: Rest Injection for Empty Measures (The "Come Lord Jesus" Fix) ---
+    # This regex finds measures that contain <attributes> but NO <note> tags
+    # and inserts a 1-beat rest so music21 doesn't divide by zero.
+    
+    def add_rest_to_empty(match):
+        measure_open = match.group(1)   # e.g., <measure number="22">
+        attributes = match.group(2)     # The <attributes> block
+        measure_close = match.group(3)  # </measure>
+        
+        # If there is no <note> tag between attributes and the end of the measure:
+        dummy_note = '<note><rest/><duration>1</duration><voice>1</voice><type>quarter</type></note>'
+        print(f"🛠️ Injected dummy rest into empty measure.")
+        return f"{measure_open}{attributes}{dummy_note}{measure_close}"
 
-    # Try to extract divisions/time from previous movement
-    fallback_divisions = "<divisions>1</divisions>"
-    fallback_time = "<time><beats>4</beats><beat-type>4</beat-type></time>"
+    # Pattern: Look for <measure>...<attributes>... but NO <note> before </measure>
+    empty_measure_pattern = r'(<measure[^>]*>)\s*(<attributes>.*?</attributes>)(?!\s*<note)\s*(</measure>)'
+    xml = re.sub(empty_measure_pattern, add_rest_to_empty, xml, flags=re.DOTALL)
 
-    prior_divisions = None
-    prior_time = None
+    # --- FIX 4: Grace-Note-Only Measures ---
+    # Measures 21 and 30 in your file only have <grace/> notes (0 duration).
+    # We must ensure at least one note with duration exists.
+    grace_only_pattern = r'(<measure[^>]*>.*?<grace/>.*?(?<!<duration>))(?=\s*</measure>)'
+    xml = re.sub(grace_only_pattern, r'\1<note><rest/><duration>1</duration><type>quarter</type></note>', xml, flags=re.DOTALL)
 
-    if previous_path and Path(previous_path).exists():
-        prev_xml = extract_xml_from_mxl(previous_path)
-
-        div_match = re.search(r"<divisions>(\d+)</divisions>", prev_xml)
-        if div_match and int(div_match.group(1)) > 0:
-            prior_divisions = f"<divisions>{div_match.group(1)}</divisions>"
-
-        time_match = re.search(r"<time>(.*?)</time>", prev_xml, re.DOTALL)
-        if time_match:
-            prior_time = f"<time>{time_match.group(1)}</time>"
-
-    # Use prior or fallback values
-    new_divisions = prior_divisions or fallback_divisions
-    new_time = prior_time or fallback_time
-
-    # Inject into first <attributes> tag
-    patched = re.sub(
-        r"<attributes>(.*?)</attributes>",
-        lambda m: inject_into_attributes(m.group(1), new_divisions, new_time),
-        xml,
-        count=1,
-        flags=re.DOTALL,
-    )
-
-    return patched.encode("utf-8")
+    return xml.encode("utf-8")
 
 def inject_into_attributes(attrs_content, divisions_tag, time_tag):
     # Only inject if the tags are missing or broken
@@ -774,7 +858,7 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     for path in mxl_files:
         current_path = path
         try:
-            injected_bytes = inject_divisions_and_time_from_previous(current_path, previous_path)
+            injected_bytes = inject_divisions_and_time_if_missing(current_path, previous_path)
 
             if injected_bytes:
                 patched_path = os.path.join(tempfile.gettempdir(), f"{os.path.basename(current_path)}_patched.xml")

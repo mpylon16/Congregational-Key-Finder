@@ -1,0 +1,21 @@
+# Local data folders
+pending_pdfs/
+output/
+uploads/
+audiveris_home/
+
+# Secrets
+.env
+
+# Python junk
+__pycache__/
+*.py[cod]
+.venv/
+
+# Audiveris Build Artifacts
+audiveris_compiled/
+.gradle/
+build/
+out/
+*.jar
+*.class
