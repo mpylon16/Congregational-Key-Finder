@@ -44,4 +44,4 @@ jobs:
             ghcr.io/mpylon16/congregational-key-finder:${{ github.ref == 'refs/heads/main' && 'latest' || 'staging' }}
           # THE SPEED FIX: Tells GitHub to save/load the Docker layer cache
           cache-from: type=gha
-          cache-to: type=gha,mode=max 
+          cache-to: type=gha,mode=max
