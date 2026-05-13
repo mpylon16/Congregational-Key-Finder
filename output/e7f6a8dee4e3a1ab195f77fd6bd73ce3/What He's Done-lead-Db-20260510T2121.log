@@ -1,0 +1,847 @@
+2026-05-10 21:21:36,125 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,129 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,129 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,130 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,134 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,135 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,136 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,136 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,137 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,137 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,137 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,138 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,138 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,138 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,139 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,139 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,140 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,140 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,140 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,141 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,141 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,141 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,141 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,143 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,143 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,143 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,143 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,144 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,144 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,144 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,144 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,145 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,146 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,146 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,146 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,146 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,146 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,148 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,148 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,149 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,149 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,149 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,150 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,150 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,151 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,151 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,152 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,152 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,152 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,153 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,153 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,153 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,154 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,154 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,154 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,154 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,155 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,155 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,155 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,156 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,156 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,156 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,156 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,156 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,157 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,157 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,157 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,157 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,158 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,158 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,158 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,158 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,159 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,159 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,159 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,160 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,160 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,160 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,161 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,161 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,162 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,162 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,162 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,162 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,163 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,163 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,163 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,164 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,165 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,166 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,166 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,166 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,166 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,167 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,167 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,167 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,167 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,168 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,168 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,168 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,169 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,169 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,169 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,169 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,170 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,170 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,170 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,170 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,171 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,171 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,171 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,171 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,171 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,172 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,172 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,172 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,172 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,172 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,172 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,174 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,174 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,174 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,174 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,175 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,175 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,175 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,176 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,176 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,177 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,177 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,177 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,178 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,178 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,180 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,180 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,180 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,181 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,181 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,181 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,181 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,181 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,182 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,182 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,182 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,182 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,182 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,183 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,183 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,183 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,183 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,184 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,184 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,184 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,184 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,184 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,185 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,185 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,186 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,186 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,186 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,186 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,187 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,187 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,187 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,187 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,188 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,188 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,188 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,188 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,188 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,189 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,189 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,189 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,189 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,189 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,189 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,190 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,190 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,191 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,191 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,191 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,191 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,191 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,191 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,191 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,191 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,191 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,191 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,192 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,192 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,192 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,192 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,193 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,193 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,193 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,193 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,194 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,194 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,194 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,194 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,194 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,196 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,196 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,196 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,197 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,197 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,197 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,197 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,197 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,198 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,198 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,198 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,198 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,198 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,199 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,199 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,199 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,199 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,199 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,200 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,200 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,200 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,201 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,201 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,201 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,201 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,201 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,202 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,202 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,202 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,202 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,202 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,203 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,203 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,203 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,203 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,204 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,204 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,204 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,204 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,204 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,204 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,206 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,206 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,206 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,206 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,207 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,207 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,207 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,207 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,207 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,207 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,208 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,208 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,208 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,208 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,208 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,209 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,209 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,209 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,209 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,210 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,210 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:36,210 WARN [What He's Done-lead-Db#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:40,200 INFO [What He's Done-lead-Db#1]           PageRhythm.java:176  | {Page#1.1} Starting PageRhythm time signature check
+2026-05-10 21:21:40,202 INFO [What He's Done-lead-Db#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN1- tSig:4/4} → ts: TimePairInter#217{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 21:21:40,203 INFO [What He's Done-lead-Db#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN1- tSig:4/4}, ts: TimePairInter#217{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 21:21:40,203 INFO [What He's Done-lead-Db#1]           PageRhythm.java:277  | Last range: Range{SN1-20 tSig:4/4 dur:1}
+2026-05-10 21:21:40,204 INFO [What He's Done-lead-Db#1]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 21:21:40,204 INFO [What He's Done-lead-Db#1]           PageRhythm.java:279  | lastRange.ts = TimePairInter#217{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 21:21:40,205 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#1 frats: 4 [8466, 8467, 8468, 8204]
+2026-05-10 21:21:40,206 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#2 frats: 2 [8469, 8282]
+2026-05-10 21:21:40,206 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#3 frats: 2 [8470, 8390]
+2026-05-10 21:21:40,208 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#4 frats: 3 [8930, 8931, 8937]
+2026-05-10 21:21:40,208 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#5 frats: 2 [8932, 8635]
+2026-05-10 21:21:40,208 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#6 frats: 2 [8933, 8811]
+2026-05-10 21:21:40,209 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#7 frats: 2 [9263, 9006]
+2026-05-10 21:21:40,209 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#8 frats: 2 [9264, 9107]
+2026-05-10 21:21:40,210 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#9 frats: 0 []
+2026-05-10 21:21:40,210 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#10 frats: 1 [9267]
+2026-05-10 21:21:40,210 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#11 frats: 2 [9624, 9619]
+2026-05-10 21:21:40,211 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#12 frats: 4 [9621, 9378, 9374, 9430]
+2026-05-10 21:21:40,211 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#13 frats: 5 [9625, 9622, 9626, 9571, 9587]
+2026-05-10 21:21:40,212 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#14 frats: 1 [9863]
+2026-05-10 21:21:40,212 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#15 frats: 4 [9859, 9864, 9711, 9764]
+2026-05-10 21:21:40,212 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#16 frats: 2 [9861, 9862]
+2026-05-10 21:21:40,212 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#17 frats: 1 [9865]
+2026-05-10 21:21:40,213 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#18 frats: 2 [10203, 10204]
+2026-05-10 21:21:40,214 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#19 frats: 1 [10205]
+2026-05-10 21:21:40,214 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:121  | MeasureStack#20 frats: 3 [10206, 10128, 10207]
+2026-05-10 21:21:40,214 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:325  | Starting Range{SN1-20 tSig:4/4 dur:1}
+2026-05-10 21:21:40,215 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 21:21:40,216 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 21:21:40,239 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 21:21:40,239 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 21:21:40,239 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 21:21:40,241 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 21:21:40,242 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 21:21:40,242 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 21:21:40,244 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 21:21:40,246 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 21:21:40,247 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 21:21:40,248 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 21:21:40,248 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 21:21:40,248 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 21:21:40,251 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 21:21:40,251 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 21:21:40,251 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 21:21:40,252 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 21:21:40,252 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 21:21:40,252 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 21:21:40,254 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 21:21:40,254 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 21:21:40,255 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 21:21:40,255 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 21:21:40,255 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 21:21:40,257 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 21:21:40,258 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 21:21:40,258 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 21:21:40,258 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 21:21:40,259 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 21:21:40,260 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 21:21:40,260 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 21:21:40,265 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 21:21:40,266 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 21:21:40,266 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 21:21:40,267 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 21:21:40,267 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 21:21:40,267 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 21:21:40,268 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 21:21:40,270 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 21:21:40,270 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 21:21:40,271 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 21:21:40,271 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 21:21:40,271 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 21:21:40,272 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 21:21:40,273 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 21:21:40,273 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 21:21:40,273 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 21:21:40,273 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 21:21:40,275 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 21:21:40,276 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 21:21:40,276 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 21:21:40,276 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 21:21:40,279 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 21:21:40,279 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 21:21:40,279 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 21:21:40,280 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 21:21:40,280 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 21:21:40,281 DEBUG [What He's Done-lead-Db#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 21:21:40,282 DEBUG [What He's Done-lead-Db#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 21:21:49,491 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,492 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,493 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,494 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,495 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,495 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,496 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,496 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,497 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,497 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,497 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,499 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,499 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,499 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,499 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,500 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,500 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,500 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,501 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,501 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,501 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,501 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,501 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,501 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,502 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,502 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,503 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,503 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,503 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,503 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,503 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,504 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,504 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,504 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,504 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,504 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,505 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,505 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,505 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,505 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,505 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,505 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,506 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,506 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,506 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,506 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,506 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,506 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,506 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,508 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,508 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,508 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,508 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,508 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,508 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,509 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,509 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,509 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,509 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,509 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,510 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,510 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,510 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,510 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,510 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,511 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,511 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,511 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,511 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,511 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,511 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,511 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,511 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,512 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,512 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,512 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,513 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,513 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,513 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,513 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,513 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,514 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,514 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,514 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,515 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,515 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,515 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,515 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,515 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,515 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,515 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,515 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,516 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,516 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,516 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,516 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,517 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,517 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,517 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,517 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,517 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,517 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,517 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,518 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,518 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,518 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,518 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,518 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,518 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,518 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,518 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,518 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,518 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,519 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,519 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,519 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,519 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,520 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,520 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,520 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,520 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,520 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,520 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,520 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,521 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,522 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,522 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,522 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,522 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,522 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,522 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,523 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,523 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,524 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,524 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,524 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,525 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,525 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,525 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,525 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,525 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,526 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,526 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,526 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,526 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,526 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,527 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,527 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,527 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,527 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,527 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,527 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,527 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,528 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,528 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,528 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,528 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,528 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,528 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,529 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,529 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,530 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,530 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,530 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,530 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,530 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,530 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,531 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,531 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,531 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,531 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,531 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,531 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,531 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,531 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,531 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,533 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,533 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,533 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,534 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,534 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,534 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,534 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,534 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,535 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,535 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,535 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,535 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,535 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,535 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,535 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,535 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,535 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,535 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,536 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,536 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,536 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,536 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,536 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,536 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,536 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,537 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,537 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,537 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,537 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,537 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,537 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,537 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,537 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,539 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,539 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,539 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,539 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,539 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,539 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,539 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,540 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,540 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,540 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,540 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,540 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,540 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,541 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,541 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,541 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,541 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,541 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,541 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,541 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,541 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,542 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,542 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,542 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,542 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,542 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,542 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,542 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,544 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,544 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,544 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,544 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,544 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,545 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,545 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,545 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,545 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,546 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,546 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,546 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,546 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,546 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,546 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,546 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,546 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,547 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,547 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,547 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,547 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,547 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,547 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,548 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,548 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,548 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,548 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,548 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,548 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,549 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,549 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,549 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,550 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,550 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,550 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,550 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,550 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,550 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,550 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,550 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,551 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,551 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,551 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,551 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,551 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,551 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,552 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,552 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,552 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,552 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,552 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,552 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,553 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,553 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,553 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,553 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,553 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,553 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,554 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,554 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,554 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,554 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,555 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,556 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,556 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,556 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,556 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,556 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,556 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,556 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:49,556 WARN [What He's Done-lead-Db#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:53,762 INFO [What He's Done-lead-Db#2]           PageRhythm.java:176  | {Page#2.1} Starting PageRhythm time signature check
+2026-05-10 21:21:53,762 INFO [What He's Done-lead-Db#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 21:21:53,764 INFO [What He's Done-lead-Db#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 21:21:53,765 INFO [What He's Done-lead-Db#2]           PageRhythm.java:207  | {Page#2.1} Time value reused from sheet#1
+2026-05-10 21:21:53,765 INFO [What He's Done-lead-Db#2]           PageRhythm.java:277  | Last range: Range{SN1-21 tRat:4/4 dur:1}
+2026-05-10 21:21:53,766 INFO [What He's Done-lead-Db#2]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 21:21:53,766 INFO [What He's Done-lead-Db#2]           PageRhythm.java:279  | lastRange.ts = null
+2026-05-10 21:21:53,767 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#1 frats: 2 [7905, 7906]
+2026-05-10 21:21:53,767 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#2 frats: 3 [7907, 7908, 7650]
+2026-05-10 21:21:53,767 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#3 frats: 2 [7712, 7910]
+2026-05-10 21:21:53,768 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#4 frats: 1 [8488]
+2026-05-10 21:21:53,768 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#5 frats: 2 [8490, 8491]
+2026-05-10 21:21:53,768 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#6 frats: 0 []
+2026-05-10 21:21:53,769 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#7 frats: 1 [8725]
+2026-05-10 21:21:53,769 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#8 frats: 4 [8728, 8734, 8564, 8565]
+2026-05-10 21:21:53,770 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#9 frats: 4 [8613, 8730, 8731, 8623]
+2026-05-10 21:21:53,770 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#10 frats: 1 [9067]
+2026-05-10 21:21:53,770 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#11 frats: 4 [8876, 9068, 8880, 8919]
+2026-05-10 21:21:53,771 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#12 frats: 2 [8983, 9069]
+2026-05-10 21:21:53,771 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#13 frats: 1 [9408]
+2026-05-10 21:21:53,771 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#14 frats: 2 [9414, 9409]
+2026-05-10 21:21:53,772 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#15 frats: 3 [9411, 9412, 9415]
+2026-05-10 21:21:53,772 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#16 frats: 2 [9719, 9720]
+2026-05-10 21:21:53,772 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#17 frats: 1 [9722]
+2026-05-10 21:21:53,772 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#18 frats: 5 [9721, 9589, 9586, 9695, 9673]
+2026-05-10 21:21:53,772 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#19 frats: 5 [10040, 10031, 10041, 9839, 9858]
+2026-05-10 21:21:53,772 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#20 frats: 2 [10042, 10033]
+2026-05-10 21:21:53,772 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:121  | MeasureStack#21 frats: 8 [10034, 10035, 10043, 10037, 10044, 9950, 10038, 10045]
+2026-05-10 21:21:53,773 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:325  | Starting Range{SN1-21 tRat:4/4 dur:1}
+2026-05-10 21:21:53,773 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 21:21:53,773 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 21:21:53,774 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 21:21:53,774 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 21:21:53,775 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 21:21:53,777 INFO [What He's Done-lead-Db#2]          StackRhythm.java:226  | S1 MeasureStack#2 no correct rhythm
+2026-05-10 21:21:53,777 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 21:21:53,777 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 21:21:53,777 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 21:21:53,778 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 21:21:53,779 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 21:21:53,779 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 21:21:53,780 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 21:21:53,781 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 21:21:53,781 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 21:21:53,782 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 21:21:53,782 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 21:21:53,782 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 21:21:53,782 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 21:21:53,782 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 21:21:53,782 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 21:21:53,785 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 21:21:53,785 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 21:21:53,785 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 21:21:53,786 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 21:21:53,787 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 21:21:53,787 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 21:21:53,788 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 21:21:53,788 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 21:21:53,788 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 21:21:53,788 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 21:21:53,788 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 21:21:53,789 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 21:21:53,790 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 21:21:53,790 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 21:21:53,790 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 21:21:53,791 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 21:21:53,791 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 21:21:53,791 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 21:21:53,793 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 21:21:53,793 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 21:21:53,793 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 21:21:53,794 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 21:21:53,795 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 21:21:53,795 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 21:21:53,796 INFO [What He's Done-lead-Db#2]          StackRhythm.java:226  | S5 MeasureStack#15 no correct rhythm
+2026-05-10 21:21:53,797 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 21:21:53,797 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 21:21:53,797 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 21:21:53,799 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 21:21:53,799 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 21:21:53,799 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 21:21:53,801 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 21:21:53,801 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 21:21:53,801 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 21:21:53,801 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 21:21:53,802 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 21:21:53,802 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 21:21:53,802 WARN [What He's Done-lead-Db#2]          StackRhythm.java:229  | StackRhythm error processing MeasureStack#19 java.lang.IllegalStateException: Attempt to setVoice() on SmallChordInter#5640{(0.573/0.573) staff:7 dur:1/8}
+java.lang.IllegalStateException: Attempt to setVoice() on SmallChordInter#5640{(0.573/0.573) staff:7 dur:1/8}
+	at org.audiveris.omr.sig.inter.SmallChordInter.setVoice(SmallChordInter.java:240)
+	at org.audiveris.omr.sig.inter.BeamGroupInter.setVoice(BeamGroupInter.java:912)
+	at org.audiveris.omr.sig.inter.AbstractChordInter.setVoice(AbstractChordInter.java:1428)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm$SlotMapper.applyMapping(MeasureRhythm.java:924)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm$SlotMapper.mapRookies(MeasureRhythm.java:1448)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm$SlotMapper.mapChords(MeasureRhythm.java:1290)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm.process(MeasureRhythm.java:579)
+	at org.audiveris.omr.sheet.rhythm.StackRhythm.doProcess(StackRhythm.java:127)
+	at org.audiveris.omr.sheet.rhythm.StackRhythm.process(StackRhythm.java:225)
+	at org.audiveris.omr.sheet.rhythm.PageRhythm.processRanges(PageRhythm.java:330)
+	at org.audiveris.omr.sheet.rhythm.PageRhythm.process(PageRhythm.java:304)
+	at org.audiveris.omr.sheet.rhythm.RhythmsStep.doit(RhythmsStep.java:192)
+	at org.audiveris.omr.step.OmrStep.doit(OmrStep.java:138)
+	at org.audiveris.omr.sheet.SheetStub.lambda$doOneStep$2(SheetStub.java:499)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-10 21:21:53,805 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 21:21:53,806 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 21:21:53,806 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 21:21:53,807 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 21:21:53,807 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 21:21:53,808 DEBUG [What He's Done-lead-Db#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 21:21:53,808 INFO [What He's Done-lead-Db#2]          StackRhythm.java:226  | S7 MeasureStack#21 no correct rhythm
+2026-05-10 21:21:53,808 DEBUG [What He's Done-lead-Db#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 21:21:58,395 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,397 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,397 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,397 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,397 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,397 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,398 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,398 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,398 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,398 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,398 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,400 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,401 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,401 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,401 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,401 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,402 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,402 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,403 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,403 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,403 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,403 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,403 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:58,403 WARN [What He's Done-lead-Db#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 21:21:59,660 INFO [What He's Done-lead-Db#3]           PageRhythm.java:176  | {Page#3.1} Starting PageRhythm time signature check
+2026-05-10 21:21:59,661 INFO [What He's Done-lead-Db#3]           PageRhythm.java:178  | {Page#3.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 21:21:59,661 INFO [What He's Done-lead-Db#3]           PageRhythm.java:184  | {Page#3.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 21:21:59,662 INFO [What He's Done-lead-Db#3]           PageRhythm.java:207  | {Page#3.1} Time value reused from sheet#2
+2026-05-10 21:21:59,662 INFO [What He's Done-lead-Db#3]           PageRhythm.java:277  | Last range: Range{SN1-5 tRat:4/4 dur:1}
+2026-05-10 21:21:59,662 INFO [What He's Done-lead-Db#3]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 21:21:59,663 INFO [What He's Done-lead-Db#3]           PageRhythm.java:279  | lastRange.ts = null
+2026-05-10 21:21:59,663 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:121  | MeasureStack#1 frats: 2 [1805, 1806]
+2026-05-10 21:21:59,663 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:121  | MeasureStack#2 frats: 3 [1809, 1808, 1810]
+2026-05-10 21:21:59,664 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:121  | MeasureStack#3 frats: 4 [1815, 1811, 1816, 1817]
+2026-05-10 21:21:59,665 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:121  | MeasureStack#4 frats: 2 [1812, 1813]
+2026-05-10 21:21:59,665 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:121  | MeasureStack#5 frats: 0 []
+2026-05-10 21:21:59,665 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:325  | Starting Range{SN1-5 tRat:4/4 dur:1}
+2026-05-10 21:21:59,665 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 21:21:59,665 DEBUG [What He's Done-lead-Db#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 21:21:59,666 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 21:21:59,667 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 21:21:59,667 DEBUG [What He's Done-lead-Db#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 21:21:59,668 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 21:21:59,668 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 21:21:59,668 DEBUG [What He's Done-lead-Db#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 21:21:59,670 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 21:21:59,670 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 21:21:59,670 DEBUG [What He's Done-lead-Db#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 21:21:59,671 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 21:21:59,671 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 21:21:59,671 DEBUG [What He's Done-lead-Db#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 21:21:59,671 DEBUG [What He's Done-lead-Db#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5

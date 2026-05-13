@@ -1,0 +1,666 @@
+2026-05-10 16:53:16,971 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,973 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,974 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,974 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,975 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,976 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,976 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,978 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,979 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,983 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,985 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,987 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,988 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,988 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,989 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,989 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,990 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,990 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,991 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,991 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,992 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,992 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,993 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,994 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,994 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,994 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,995 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,995 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,997 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,997 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,998 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,998 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,999 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,999 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,999 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,999 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:16,999 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,001 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,001 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,003 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,004 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,004 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,004 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,005 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,005 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,006 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,006 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,007 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,007 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,007 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,009 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,009 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,009 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,009 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,010 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,012 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,013 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,014 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,014 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,015 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,015 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,015 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,016 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,016 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,017 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,017 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,017 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,017 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,019 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,019 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,020 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,020 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,020 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,020 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,021 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,021 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,022 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,022 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,023 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,024 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,024 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,026 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,026 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,028 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,028 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,029 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,029 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,031 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,031 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,032 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,032 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,032 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,033 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,033 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,034 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,034 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,035 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,036 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,037 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,037 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,037 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,038 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,038 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,039 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,039 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,040 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,040 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,040 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,041 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,041 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,042 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,042 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,042 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,043 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,044 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,044 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,045 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,047 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,048 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,048 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,049 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,049 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,049 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,049 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,050 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,050 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,050 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,052 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,052 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,053 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,054 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,055 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,056 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,057 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,057 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,059 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,059 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,059 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,060 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,060 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,061 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,063 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,064 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,064 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,065 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,065 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,065 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,066 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,066 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,066 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,066 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,068 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,068 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,068 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,069 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,069 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,071 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,071 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,072 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,072 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,073 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,073 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,074 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,074 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,075 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,075 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,075 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,077 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,077 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,077 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,078 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,079 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,079 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,079 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,081 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,081 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,082 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,082 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,083 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,083 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,083 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,084 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,084 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,084 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,084 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,084 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,085 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,086 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,086 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,086 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,087 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,087 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,088 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,088 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,088 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,090 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,090 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,090 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,093 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,096 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,097 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,098 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,099 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,099 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,099 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,100 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,100 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,101 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,101 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,101 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,102 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,102 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,102 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,103 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,104 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,105 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,105 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,106 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,106 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,106 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,106 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,107 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,107 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,107 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,107 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,107 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,109 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,109 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,109 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,110 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,111 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,111 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,112 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:17,113 WARN [Celebrate-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:22,733 INFO [Celebrate-lead-D#1]           PageRhythm.java:176  | {Page#1.1} Starting PageRhythm time signature check
+2026-05-10 16:53:22,734 INFO [Celebrate-lead-D#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN1- tSig:4/4} → ts: TimePairInter#203{ FROZEN(0.948/0.948) staff:1 4/4}
+2026-05-10 16:53:22,736 INFO [Celebrate-lead-D#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN1- tSig:4/4}, ts: TimePairInter#203{ FROZEN(0.948/0.948) staff:1 4/4}
+2026-05-10 16:53:22,737 INFO [Celebrate-lead-D#1]           PageRhythm.java:277  | Last range: Range{SN1-33 tSig:4/4 dur:1}
+2026-05-10 16:53:22,737 INFO [Celebrate-lead-D#1]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 16:53:22,738 INFO [Celebrate-lead-D#1]           PageRhythm.java:279  | lastRange.ts = TimePairInter#203{ FROZEN(0.948/0.948) staff:1 4/4}
+2026-05-10 16:53:22,738 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#1 frats: 0 []
+2026-05-10 16:53:22,739 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#2 frats: 0 []
+2026-05-10 16:53:22,739 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#3 frats: 2 [9013, 8659]
+2026-05-10 16:53:22,739 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#4 frats: 2 [8803, 8895]
+2026-05-10 16:53:22,739 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#5 frats: 1 [9011]
+2026-05-10 16:53:22,741 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#6 frats: 0 []
+2026-05-10 16:53:22,741 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#7 frats: 5 [9478, 9485, 9032, 9479, 9486]
+2026-05-10 16:53:22,742 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#8 frats: 0 []
+2026-05-10 16:53:22,742 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#9 frats: 3 [9480, 9481, 9188]
+2026-05-10 16:53:22,742 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#10 frats: 2 [9199, 9319]
+2026-05-10 16:53:22,743 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#11 frats: 4 [9337, 9484, 9488, 9444]
+2026-05-10 16:53:22,744 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#12 frats: 1 [9489]
+2026-05-10 16:53:22,744 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#13 frats: 2 [9959, 9592]
+2026-05-10 16:53:22,744 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#14 frats: 3 [9652, 9960, 9736]
+2026-05-10 16:53:22,745 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#15 frats: 2 [9737, 9814]
+2026-05-10 16:53:22,745 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#16 frats: 0 []
+2026-05-10 16:53:22,745 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#17 frats: 4 [9962, 9846, 9899, 9958]
+2026-05-10 16:53:22,746 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#18 frats: 2 [9985, 10074]
+2026-05-10 16:53:22,746 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#19 frats: 4 [10084, 10140, 10141, 10178]
+2026-05-10 16:53:22,746 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#20 frats: 0 []
+2026-05-10 16:53:22,747 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#21 frats: 2 [10291, 10186]
+2026-05-10 16:53:22,747 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#22 frats: 0 []
+2026-05-10 16:53:22,747 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#23 frats: 4 [10292, 10250, 10251, 10290]
+2026-05-10 16:53:22,747 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#24 frats: 4 [10350, 10380, 10381, 10408]
+2026-05-10 16:53:22,749 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#25 frats: 2 [10676, 10427]
+2026-05-10 16:53:22,749 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#26 frats: 0 []
+2026-05-10 16:53:22,749 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#27 frats: 2 [10542, 10566]
+2026-05-10 16:53:22,749 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#28 frats: 4 [10567, 10636, 10637, 10675]
+2026-05-10 16:53:22,750 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#29 frats: 5 [10907, 10691, 10908, 10912, 10909]
+2026-05-10 16:53:22,750 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#30 frats: 1 [10913]
+2026-05-10 16:53:22,750 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#31 frats: 4 [10910, 10812, 10813, 10821]
+2026-05-10 16:53:22,750 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#32 frats: 4 [10823, 10837, 10839, 10866]
+2026-05-10 16:53:22,750 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:121  | MeasureStack#33 frats: 4 [10911, 10878, 10879, 10906]
+2026-05-10 16:53:22,750 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:325  | Starting Range{SN1-33 tSig:4/4 dur:1}
+2026-05-10 16:53:22,752 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 16:53:22,752 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 16:53:22,772 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 16:53:22,772 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 16:53:22,773 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 16:53:22,774 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 16:53:22,775 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 16:53:22,775 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 16:53:22,776 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 16:53:22,776 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 16:53:22,777 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 16:53:22,779 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 16:53:22,779 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 16:53:22,779 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 16:53:22,782 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 16:53:22,782 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 16:53:22,783 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 16:53:22,784 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 16:53:22,786 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 16:53:22,786 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 16:53:22,789 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 16:53:22,790 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 16:53:22,790 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 16:53:22,791 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 16:53:22,791 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 16:53:22,791 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 16:53:22,793 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 16:53:22,793 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 16:53:22,793 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 16:53:22,795 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 16:53:22,795 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 16:53:22,796 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 16:53:22,798 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 16:53:22,798 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 16:53:22,798 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 16:53:22,800 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 16:53:22,801 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 16:53:22,801 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 16:53:22,802 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 16:53:22,803 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 16:53:22,803 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 16:53:22,805 INFO [Celebrate-lead-D#1]          StackRhythm.java:226  | S3 MeasureStack#14 no correct rhythm
+2026-05-10 16:53:22,805 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 16:53:22,805 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 16:53:22,805 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 16:53:22,806 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 16:53:22,807 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 16:53:22,807 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 16:53:22,807 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 16:53:22,807 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 16:53:22,807 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 16:53:22,809 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 16:53:22,809 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 16:53:22,810 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 16:53:22,811 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 16:53:22,811 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 16:53:22,812 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 16:53:22,815 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 16:53:22,815 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 16:53:22,815 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 16:53:22,816 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 16:53:22,816 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 16:53:22,816 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 16:53:22,817 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 16:53:22,817 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 16:53:22,817 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 22
+2026-05-10 16:53:22,819 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 16:53:22,819 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 16:53:22,819 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 23
+2026-05-10 16:53:22,820 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23
+2026-05-10 16:53:22,821 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#24
+2026-05-10 16:53:22,821 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 24
+2026-05-10 16:53:22,822 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#24
+2026-05-10 16:53:22,822 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#25
+2026-05-10 16:53:22,823 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 25
+2026-05-10 16:53:22,824 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#25
+2026-05-10 16:53:22,824 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#26
+2026-05-10 16:53:22,825 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 26
+2026-05-10 16:53:22,825 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#26
+2026-05-10 16:53:22,825 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#27
+2026-05-10 16:53:22,825 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 27
+2026-05-10 16:53:22,827 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#27
+2026-05-10 16:53:22,827 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#28
+2026-05-10 16:53:22,827 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 28
+2026-05-10 16:53:22,828 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#28
+2026-05-10 16:53:22,829 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#29
+2026-05-10 16:53:22,829 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 29
+2026-05-10 16:53:22,831 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#29
+2026-05-10 16:53:22,831 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#30
+2026-05-10 16:53:22,831 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 30
+2026-05-10 16:53:22,832 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#30
+2026-05-10 16:53:22,833 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#31
+2026-05-10 16:53:22,833 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 31
+2026-05-10 16:53:22,834 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#31
+2026-05-10 16:53:22,834 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#32
+2026-05-10 16:53:22,834 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 32
+2026-05-10 16:53:22,836 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#32
+2026-05-10 16:53:22,836 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#33
+2026-05-10 16:53:22,836 DEBUG [Celebrate-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 33
+2026-05-10 16:53:22,837 DEBUG [Celebrate-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#33
+2026-05-10 16:53:30,319 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,320 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,320 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,321 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,321 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,321 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,323 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,323 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,323 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,323 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,324 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,324 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,324 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,324 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,324 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,326 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,326 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,326 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,326 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,327 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,327 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,327 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,327 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,327 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,328 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,329 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,329 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,329 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,329 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,330 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,330 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,331 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,331 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,331 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,332 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,332 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,332 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,332 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,332 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,332 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,334 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,334 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,334 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,334 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,334 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,334 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,335 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,335 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,335 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,335 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,336 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,336 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,336 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,336 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,336 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,336 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,338 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,338 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,338 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,339 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,339 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,339 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,339 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,340 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,340 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,340 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,340 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,341 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,341 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,341 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,341 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,341 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,341 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,341 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,341 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,343 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,343 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,343 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,343 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,344 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,344 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,344 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,344 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,344 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,344 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,344 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,345 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,345 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,345 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,345 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,346 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,346 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,346 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,346 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,346 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,346 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,348 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,348 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,348 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,348 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,348 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,349 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,349 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,349 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,349 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,350 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,350 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,350 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,350 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,350 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,351 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,351 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,351 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,351 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,351 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,351 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,352 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,352 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,352 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,352 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,352 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,353 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,353 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,353 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,354 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,354 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,354 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,354 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,354 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,354 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,354 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,354 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,355 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,355 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,355 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,355 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,355 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,355 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,356 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,356 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,356 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,356 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,356 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,357 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,357 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,357 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,357 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,357 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,357 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:30,357 WARN [Celebrate-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 16:53:33,101 INFO [Celebrate-lead-D#2]           PageRhythm.java:176  | {Page#2.1} Starting PageRhythm time signature check
+2026-05-10 16:53:33,102 INFO [Celebrate-lead-D#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 16:53:33,102 INFO [Celebrate-lead-D#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 16:53:33,102 INFO [Celebrate-lead-D#2]           PageRhythm.java:207  | {Page#2.1} Time value reused from sheet#1
+2026-05-10 16:53:33,103 INFO [Celebrate-lead-D#2]           PageRhythm.java:277  | Last range: Range{SN1-24 tRat:4/4 dur:1}
+2026-05-10 16:53:33,103 INFO [Celebrate-lead-D#2]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 16:53:33,103 INFO [Celebrate-lead-D#2]           PageRhythm.java:279  | lastRange.ts = null
+2026-05-10 16:53:33,103 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#1 frats: 3 [5408, 5409, 5412]
+2026-05-10 16:53:33,103 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#2 frats: 4 [5413, 5186, 5187, 5248]
+2026-05-10 16:53:33,103 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#3 frats: 0 []
+2026-05-10 16:53:33,105 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#4 frats: 4 [5410, 5314, 5318, 5385]
+2026-05-10 16:53:33,105 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#5 frats: 0 []
+2026-05-10 16:53:33,106 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#6 frats: 1 [5411]
+2026-05-10 16:53:33,107 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#7 frats: 1 [5583]
+2026-05-10 16:53:33,107 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#8 frats: 1 [5584]
+2026-05-10 16:53:33,107 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#9 frats: 2 [5585, 5507]
+2026-05-10 16:53:33,108 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#10 frats: 4 [5586, 5533, 5535, 5578]
+2026-05-10 16:53:33,108 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#11 frats: 1 [5587]
+2026-05-10 16:53:33,108 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#12 frats: 4 [5895, 5611, 5612, 5669]
+2026-05-10 16:53:33,109 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#13 frats: 0 []
+2026-05-10 16:53:33,109 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#14 frats: 0 []
+2026-05-10 16:53:33,109 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#15 frats: 2 [5890, 5726]
+2026-05-10 16:53:33,109 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#16 frats: 2 [5891, 5818]
+2026-05-10 16:53:33,109 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#17 frats: 4 [5893, 5864, 5865, 5889]
+2026-05-10 16:53:33,110 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#18 frats: 5 [5921, 5930, 5931, 5934, 5988]
+2026-05-10 16:53:33,110 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#19 frats: 2 [6281, 6050]
+2026-05-10 16:53:33,110 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#20 frats: 2 [6283, 6126]
+2026-05-10 16:53:33,110 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#21 frats: 4 [6284, 6138, 6139, 6176]
+2026-05-10 16:53:33,110 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#22 frats: 0 []
+2026-05-10 16:53:33,112 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#23 frats: 3 [6286, 6287, 6251]
+2026-05-10 16:53:33,112 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:121  | MeasureStack#24 frats: 2 [6312, 6297]
+2026-05-10 16:53:33,112 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:325  | Starting Range{SN1-24 tRat:4/4 dur:1}
+2026-05-10 16:53:33,113 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 16:53:33,113 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 16:53:33,114 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 16:53:33,114 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 16:53:33,114 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 16:53:33,114 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 16:53:33,116 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 16:53:33,116 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 16:53:33,116 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 16:53:33,116 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 16:53:33,116 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 16:53:33,117 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 16:53:33,117 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 16:53:33,117 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 16:53:33,117 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 16:53:33,118 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 16:53:33,118 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 16:53:33,118 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 16:53:33,119 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 16:53:33,119 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 16:53:33,119 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 16:53:33,119 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 16:53:33,119 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 16:53:33,120 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 16:53:33,120 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 16:53:33,120 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 16:53:33,121 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 16:53:33,121 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 16:53:33,121 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 16:53:33,122 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 16:53:33,122 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 16:53:33,123 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 16:53:33,123 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 16:53:33,123 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 16:53:33,125 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 16:53:33,125 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 16:53:33,125 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 16:53:33,126 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 16:53:33,126 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 16:53:33,126 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 16:53:33,126 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 16:53:33,126 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 16:53:33,128 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 16:53:33,128 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 16:53:33,128 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 16:53:33,129 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 16:53:33,129 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 16:53:33,130 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 16:53:33,130 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 16:53:33,130 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 16:53:33,131 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 16:53:33,131 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 16:53:33,131 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 16:53:33,135 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 16:53:33,136 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 16:53:33,136 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 16:53:33,137 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 16:53:33,137 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 16:53:33,137 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 16:53:33,138 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 16:53:33,138 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 16:53:33,138 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 16:53:33,140 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 16:53:33,140 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 16:53:33,140 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 22
+2026-05-10 16:53:33,141 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 16:53:33,141 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 16:53:33,141 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 23
+2026-05-10 16:53:33,141 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23
+2026-05-10 16:53:33,142 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#24
+2026-05-10 16:53:33,142 DEBUG [Celebrate-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 24
+2026-05-10 16:53:33,143 DEBUG [Celebrate-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#24
+2026-05-10 16:53:34,944 WARN [Celebrate-lead-D]      PartwiseBuilder.java:2212 | Error visiting Measure{#22} in {Page#2.1}
+java.lang.ClassCastException: class org.audiveris.omr.sig.inter.HeadChordInter cannot be cast to class org.audiveris.omr.sig.inter.SmallChordInter (org.audiveris.omr.sig.inter.HeadChordInter and org.audiveris.omr.sig.inter.SmallChordInter are in unnamed module of loader 'app')
+	at org.audiveris.omr.sig.inter.HeadChordInter.getGraceChord(HeadChordInter.java:353)
+	at org.audiveris.omr.score.PartwiseBuilder.processMeasure(PartwiseBuilder.java:2106)
+	at org.audiveris.omr.score.PartwiseBuilder.processPart(PartwiseBuilder.java:2668)
+	at org.audiveris.omr.score.PartwiseBuilder.processSystem(PartwiseBuilder.java:3169)
+	at org.audiveris.omr.score.PartwiseBuilder.processLogicalPart(PartwiseBuilder.java:1875)
+	at org.audiveris.omr.score.PartwiseBuilder.processStub(PartwiseBuilder.java:3120)
+	at org.audiveris.omr.score.PartwiseBuilder.processPartList(PartwiseBuilder.java:2700)
+	at org.audiveris.omr.score.PartwiseBuilder.processScore(PartwiseBuilder.java:2932)
+	at org.audiveris.omr.score.PartwiseBuilder.build(PartwiseBuilder.java:3488)
+	at org.audiveris.omr.score.ScoreExporter.export(ScoreExporter.java:122)
+	at org.audiveris.omr.score.ScoreExporter.export(ScoreExporter.java:163)
+	at org.audiveris.omr.sheet.Book.export(Book.java:633)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:896)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2026-05-10 16:53:34,947 WARN [Celebrate-lead-D]      PartwiseBuilder.java:2212 | Error visiting Measure{#23} in {Page#2.1}
+java.lang.ClassCastException: class org.audiveris.omr.sig.inter.HeadChordInter cannot be cast to class org.audiveris.omr.sig.inter.SmallChordInter (org.audiveris.omr.sig.inter.HeadChordInter and org.audiveris.omr.sig.inter.SmallChordInter are in unnamed module of loader 'app')
+	at org.audiveris.omr.sig.inter.HeadChordInter.getGraceChord(HeadChordInter.java:353)
+	at org.audiveris.omr.score.PartwiseBuilder.processMeasure(PartwiseBuilder.java:2106)
+	at org.audiveris.omr.score.PartwiseBuilder.processPart(PartwiseBuilder.java:2668)
+	at org.audiveris.omr.score.PartwiseBuilder.processSystem(PartwiseBuilder.java:3169)
+	at org.audiveris.omr.score.PartwiseBuilder.processLogicalPart(PartwiseBuilder.java:1875)
+	at org.audiveris.omr.score.PartwiseBuilder.processStub(PartwiseBuilder.java:3120)
+	at org.audiveris.omr.score.PartwiseBuilder.processPartList(PartwiseBuilder.java:2700)
+	at org.audiveris.omr.score.PartwiseBuilder.processScore(PartwiseBuilder.java:2932)
+	at org.audiveris.omr.score.PartwiseBuilder.build(PartwiseBuilder.java:3488)
+	at org.audiveris.omr.score.ScoreExporter.export(ScoreExporter.java:122)
+	at org.audiveris.omr.score.ScoreExporter.export(ScoreExporter.java:163)
+	at org.audiveris.omr.sheet.Book.export(Book.java:633)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:896)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)

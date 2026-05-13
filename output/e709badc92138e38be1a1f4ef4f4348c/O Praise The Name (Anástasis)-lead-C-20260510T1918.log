@@ -1,0 +1,726 @@
+2026-05-10 19:18:16,517 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,521 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,521 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,522 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,525 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,525 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,527 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,527 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,527 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,528 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,529 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,529 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,530 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,530 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,531 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,531 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,531 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,532 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,532 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,532 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,532 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,533 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,534 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,534 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,535 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,535 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,535 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,536 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,537 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,537 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,537 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,537 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,539 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,539 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,539 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,540 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,540 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,541 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,541 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,541 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,542 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,542 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,543 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,543 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,543 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,543 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,543 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,544 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,545 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,545 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,545 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,545 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,546 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,546 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,546 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,547 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,547 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,547 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,547 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,547 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,548 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,548 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,548 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,549 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,550 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,550 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,550 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,551 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,551 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,551 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,552 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,552 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,554 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,554 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,554 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,554 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,554 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,555 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,555 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,555 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,556 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,557 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,557 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,557 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,558 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,558 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,558 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,559 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,559 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,559 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,560 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,560 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,560 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,560 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,561 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,561 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,561 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,561 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,561 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,562 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,562 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,562 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,562 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,563 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,563 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,563 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,563 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,564 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,564 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,564 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,565 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,565 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,565 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,565 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,566 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,566 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,566 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,566 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,567 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,567 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,567 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,568 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,568 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,568 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,568 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,569 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,569 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,569 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,570 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,570 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,570 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,571 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,571 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,571 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,571 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,572 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,572 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,572 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,572 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,572 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,573 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,573 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,573 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,573 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,574 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,574 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,574 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,574 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,574 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,575 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,575 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,575 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,575 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,576 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,576 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,576 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,576 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,576 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,577 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,577 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,577 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,577 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,577 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,578 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,578 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,578 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,578 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,580 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,580 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,580 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,580 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,581 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,581 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,581 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,581 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,582 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,582 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,582 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,582 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,582 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,582 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,582 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,584 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,584 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,584 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,584 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,585 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,585 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,585 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,586 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,586 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,586 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,586 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,586 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,587 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,587 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,587 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,587 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,587 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,588 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,588 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,589 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,589 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,589 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,589 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,590 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,590 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,590 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,590 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:16,591 WARN [O Praise The Name (Anástasis)-lead-C#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:19,802 INFO [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:176  | {Page#1.1} Starting PageRhythm time signature check
+2026-05-10 19:18:19,802 INFO [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN1- tSig:4/4} → ts: TimePairInter#135{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 19:18:19,804 INFO [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN1- tSig:4/4}, ts: TimePairInter#135{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 19:18:19,804 INFO [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:277  | Last range: Range{SN1-25 tSig:4/4 dur:1}
+2026-05-10 19:18:19,806 INFO [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 19:18:19,807 INFO [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:279  | lastRange.ts = TimePairInter#135{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 19:18:19,807 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#1 frats: 3 [7181, 6916, 7182]
+2026-05-10 19:18:19,808 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#2 frats: 3 [7184, 7185, 7043]
+2026-05-10 19:18:19,808 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#3 frats: 3 [7187, 7188, 7111]
+2026-05-10 19:18:19,809 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#4 frats: 1 [7189]
+2026-05-10 19:18:19,810 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#5 frats: 4 [7202, 7484, 7474, 7221]
+2026-05-10 19:18:19,810 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#6 frats: 3 [7475, 7476, 7285]
+2026-05-10 19:18:19,811 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#7 frats: 5 [7477, 7478, 7479, 7405, 7486]
+2026-05-10 19:18:19,811 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#8 frats: 4 [7480, 7481, 7459, 7488]
+2026-05-10 19:18:19,811 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#9 frats: 3 [7498, 7821, 7814]
+2026-05-10 19:18:19,812 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#10 frats: 3 [7815, 7816, 7546]
+2026-05-10 19:18:19,812 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#11 frats: 3 [7817, 7818, 7640]
+2026-05-10 19:18:19,813 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#12 frats: 3 [7819, 7820, 7720]
+2026-05-10 19:18:19,813 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#13 frats: 0 []
+2026-05-10 19:18:19,814 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#14 frats: 4 [7899, 8194, 8190, 7954]
+2026-05-10 19:18:19,814 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#15 frats: 2 [8192, 8109]
+2026-05-10 19:18:19,814 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#16 frats: 3 [8193, 8182, 8195]
+2026-05-10 19:18:19,815 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#17 frats: 4 [8530, 8531, 8282, 8536]
+2026-05-10 19:18:19,815 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#18 frats: 3 [8293, 8537, 8532]
+2026-05-10 19:18:19,815 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#19 frats: 1 [8533]
+2026-05-10 19:18:19,815 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#20 frats: 0 []
+2026-05-10 19:18:19,815 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#21 frats: 2 [8535, 8529]
+2026-05-10 19:18:19,816 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#22 frats: 2 [8848, 8624]
+2026-05-10 19:18:19,816 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#23 frats: 4 [8849, 8647, 8846, 8658]
+2026-05-10 19:18:19,816 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#24 frats: 0 []
+2026-05-10 19:18:19,816 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:121  | MeasureStack#25 frats: 3 [8820, 8847, 8845]
+2026-05-10 19:18:19,816 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:325  | Starting Range{SN1-25 tSig:4/4 dur:1}
+2026-05-10 19:18:19,818 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 19:18:19,819 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 19:18:19,834 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 19:18:19,835 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 19:18:19,835 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 19:18:19,837 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 19:18:19,837 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 19:18:19,837 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 19:18:19,839 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 19:18:19,839 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 19:18:19,839 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 19:18:19,841 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 19:18:19,844 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 19:18:19,845 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 19:18:19,846 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 19:18:19,846 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 19:18:19,846 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 19:18:19,849 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 19:18:19,849 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 19:18:19,849 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 19:18:19,851 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 19:18:19,852 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 19:18:19,852 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 19:18:19,853 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 19:18:19,854 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 19:18:19,854 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 19:18:19,855 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 19:18:19,855 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 19:18:19,855 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 19:18:19,856 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 19:18:19,856 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 19:18:19,856 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 19:18:19,858 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 19:18:19,858 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 19:18:19,858 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 19:18:19,860 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 19:18:19,861 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 19:18:19,861 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 19:18:19,862 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 19:18:19,862 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 19:18:19,862 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 19:18:19,863 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 19:18:19,864 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 19:18:19,864 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 19:18:19,865 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 19:18:19,865 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 19:18:19,865 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 19:18:19,867 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 19:18:19,868 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 19:18:19,868 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 19:18:19,869 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 19:18:19,869 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 19:18:19,871 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 19:18:19,872 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 19:18:19,872 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 19:18:19,872 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 19:18:19,873 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 19:18:19,873 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 19:18:19,873 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 19:18:19,874 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 19:18:19,875 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 19:18:19,875 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 19:18:19,875 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 19:18:19,876 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 19:18:19,876 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 22
+2026-05-10 19:18:19,877 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 19:18:19,877 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 19:18:19,877 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 23
+2026-05-10 19:18:19,877 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23
+2026-05-10 19:18:19,879 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#24
+2026-05-10 19:18:19,879 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 24
+2026-05-10 19:18:19,880 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#24
+2026-05-10 19:18:19,880 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#25
+2026-05-10 19:18:19,880 DEBUG [O Praise The Name (Anástasis)-lead-C#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 25
+2026-05-10 19:18:19,882 DEBUG [O Praise The Name (Anástasis)-lead-C#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#25
+2026-05-10 19:18:28,767 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,769 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,770 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,771 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,772 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,772 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,772 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,773 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,774 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,774 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,775 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,775 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,775 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,775 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,776 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,776 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,776 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,776 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,777 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,777 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,778 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,778 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,778 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,778 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,779 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,779 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,779 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,779 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,780 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,780 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,781 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,781 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,781 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,781 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,781 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,783 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,783 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,783 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,784 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,784 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,784 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,784 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,784 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,784 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,784 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,785 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,785 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,785 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,785 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,785 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,787 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,787 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,787 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,787 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,788 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,788 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,788 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,788 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,789 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,789 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,789 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,789 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,789 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,789 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,790 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,790 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,790 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,790 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,791 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,791 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,792 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,792 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,792 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,792 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,792 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,793 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,793 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,793 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,794 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,794 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,794 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,794 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,794 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,794 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,794 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,795 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,795 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,795 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,795 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,796 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,796 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,796 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,796 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,796 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,796 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,797 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,797 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,797 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,797 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,797 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,798 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,798 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,799 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,799 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,799 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,799 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,799 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,800 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,800 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,800 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,801 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,801 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,801 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,801 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,802 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,802 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,802 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,802 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,802 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,802 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,802 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,804 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,804 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,804 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,804 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,804 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,805 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,805 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,805 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,805 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,805 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,805 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,806 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,806 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,806 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,806 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,807 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,807 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,808 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,808 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,808 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,808 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,808 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,809 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,809 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,809 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,810 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,810 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,810 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,810 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,811 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,814 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,817 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,818 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,819 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,820 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,820 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,821 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,822 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,822 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,822 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,822 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,822 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,823 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,823 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,823 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,823 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,823 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,824 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,824 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,824 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,824 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,824 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,824 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,824 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,824 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,825 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,825 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,825 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,826 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,828 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,829 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,829 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,829 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,829 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,829 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,830 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,830 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,831 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,831 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,832 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,832 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,832 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,832 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,833 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,833 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,834 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,837 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,838 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,839 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,839 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,839 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,839 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,840 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,840 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,840 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,840 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,840 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,841 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,841 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,841 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,841 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,842 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,842 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,842 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,842 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,843 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,843 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,844 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,844 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,844 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,844 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,844 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,844 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,844 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,845 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,845 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,845 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,846 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,847 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,847 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,847 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,847 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,848 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,848 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,848 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,848 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:28,848 WARN [O Praise The Name (Anástasis)-lead-C#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:31,749 INFO [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:176  | {Page#2.1} Starting PageRhythm time signature check
+2026-05-10 19:18:31,749 INFO [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 19:18:31,749 INFO [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN9- tSig:4/4} → ts: TimeWholeInter#179{ FROZEN(0.151/0.151) staff:3 COMMON_TIME COMMON_TIME}
+2026-05-10 19:18:31,750 INFO [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 19:18:31,751 INFO [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:207  | {Page#2.1} Time value reused from sheet#1
+2026-05-10 19:18:31,751 INFO [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN9- tSig:4/4}, ts: TimeWholeInter#179{ FROZEN(0.151/0.151) staff:3 COMMON_TIME COMMON_TIME}
+2026-05-10 19:18:31,751 INFO [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:277  | Last range: Range{SN9-30 tSig:4/4 dur:1}
+2026-05-10 19:18:31,752 INFO [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 19:18:31,752 INFO [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:279  | lastRange.ts = TimeWholeInter#179{ FROZEN(0.151/0.151) staff:3 COMMON_TIME COMMON_TIME}
+2026-05-10 19:18:31,753 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#1 frats: 3 [7500, 7199, 7501]
+2026-05-10 19:18:31,753 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#2 frats: 1 [7494]
+2026-05-10 19:18:31,754 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#3 frats: 3 [7495, 7496, 7318]
+2026-05-10 19:18:31,754 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#4 frats: 4 [7497, 7498, 7433, 7502]
+2026-05-10 19:18:31,754 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#5 frats: 4 [7510, 7880, 7876, 7539]
+2026-05-10 19:18:31,754 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#6 frats: 0 []
+2026-05-10 19:18:31,755 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#7 frats: 3 [7881, 7878, 7685]
+2026-05-10 19:18:31,756 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#8 frats: 3 [7879, 7851, 7882]
+2026-05-10 19:18:31,756 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#9 frats: 3 [8114, 8108, 7938]
+2026-05-10 19:18:31,756 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#10 frats: 2 [8109, 8003]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#11 frats: 1 [8117]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#12 frats: 2 [8111, 8112]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#13 frats: 1 [8113]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#14 frats: 4 [8389, 8390, 8137, 8398]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#15 frats: 6 [8391, 8392, 8184, 8399, 8393, 8400]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#16 frats: 4 [8217, 8401, 8395, 8261]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#17 frats: 3 [8396, 8353, 8403]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#18 frats: 4 [8407, 8745, 8735, 8444]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#19 frats: 3 [8736, 8737, 8566]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#20 frats: 4 [8739, 8740, 8619, 8746]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#21 frats: 5 [8664, 8747, 8742, 8678, 8748]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#22 frats: 3 [8698, 8749, 8744]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#23 frats: 2 [9060, 9061]
+2026-05-10 19:18:31,757 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#24 frats: 3 [8784, 9062, 9065]
+2026-05-10 19:18:31,759 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#25 frats: 2 [9063, 8919]
+2026-05-10 19:18:31,759 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#26 frats: 4 [9066, 9064, 9059, 9068]
+2026-05-10 19:18:31,759 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#27 frats: 4 [9403, 9093, 9399, 9105]
+2026-05-10 19:18:31,759 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#28 frats: 2 [9108, 9400]
+2026-05-10 19:18:31,760 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#29 frats: 2 [9402, 9335]
+2026-05-10 19:18:31,760 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:121  | MeasureStack#30 frats: 3 [9404, 9364, 9405]
+2026-05-10 19:18:31,760 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:325  | Starting Range{SN1-8 tRat:4/4 dur:1}
+2026-05-10 19:18:31,761 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 19:18:31,761 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 19:18:31,762 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 19:18:31,762 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 19:18:31,763 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 19:18:31,763 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 19:18:31,763 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 19:18:31,764 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 19:18:31,765 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 19:18:31,765 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 19:18:31,765 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 19:18:31,766 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 19:18:31,767 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 19:18:31,767 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 19:18:31,768 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 19:18:31,769 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 19:18:31,769 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 19:18:31,769 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 19:18:31,769 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 19:18:31,769 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 19:18:31,772 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 19:18:31,772 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 19:18:31,772 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 19:18:31,773 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 19:18:31,774 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:325  | Starting Range{SN9-30 tSig:4/4 dur:1}
+2026-05-10 19:18:31,774 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 19:18:31,774 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 19:18:31,775 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 19:18:31,775 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 19:18:31,775 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 19:18:31,776 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 19:18:31,777 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 19:18:31,777 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 19:18:31,778 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 19:18:31,778 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 19:18:31,778 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 19:18:31,779 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 19:18:31,779 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 19:18:31,779 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 19:18:31,779 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 19:18:31,780 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 19:18:31,780 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 19:18:31,781 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 19:18:31,781 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 19:18:31,781 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 19:18:31,783 INFO [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:226  | S4 MeasureStack#15 no correct rhythm
+2026-05-10 19:18:31,783 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 19:18:31,783 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 19:18:31,783 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 19:18:31,784 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 19:18:31,784 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 19:18:31,784 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 19:18:31,786 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 19:18:31,787 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 19:18:31,787 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 19:18:31,788 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 19:18:31,789 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 19:18:31,789 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 19:18:31,790 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 19:18:31,790 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 19:18:31,790 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 19:18:31,791 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 19:18:31,791 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 19:18:31,792 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 19:18:31,793 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 19:18:31,793 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 19:18:31,793 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 22
+2026-05-10 19:18:31,793 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 19:18:31,794 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 19:18:31,794 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 23
+2026-05-10 19:18:31,794 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23
+2026-05-10 19:18:31,794 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#24
+2026-05-10 19:18:31,795 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 24
+2026-05-10 19:18:31,795 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#24
+2026-05-10 19:18:31,796 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#25
+2026-05-10 19:18:31,796 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 25
+2026-05-10 19:18:31,796 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#25
+2026-05-10 19:18:31,797 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#26
+2026-05-10 19:18:31,797 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 26
+2026-05-10 19:18:31,798 INFO [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:226  | S6 MeasureStack#26 no correct rhythm
+2026-05-10 19:18:31,798 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#26
+2026-05-10 19:18:31,798 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#27
+2026-05-10 19:18:31,798 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 27
+2026-05-10 19:18:31,799 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#27
+2026-05-10 19:18:31,799 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#28
+2026-05-10 19:18:31,799 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 28
+2026-05-10 19:18:31,800 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#28
+2026-05-10 19:18:31,800 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#29
+2026-05-10 19:18:31,800 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 29
+2026-05-10 19:18:31,802 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#29
+2026-05-10 19:18:31,803 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#30
+2026-05-10 19:18:31,803 DEBUG [O Praise The Name (Anástasis)-lead-C#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 30
+2026-05-10 19:18:31,804 DEBUG [O Praise The Name (Anástasis)-lead-C#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#30
+2026-05-10 19:18:35,827 WARN [O Praise The Name (Anástasis)-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:35,827 WARN [O Praise The Name (Anástasis)-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:35,827 WARN [O Praise The Name (Anástasis)-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:35,827 WARN [O Praise The Name (Anástasis)-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:35,828 WARN [O Praise The Name (Anástasis)-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:35,829 WARN [O Praise The Name (Anástasis)-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:35,829 WARN [O Praise The Name (Anástasis)-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:35,829 WARN [O Praise The Name (Anástasis)-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:35,830 WARN [O Praise The Name (Anástasis)-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:35,830 WARN [O Praise The Name (Anástasis)-lead-C#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 19:18:36,664 INFO [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:176  | {Page#3.1} Starting PageRhythm time signature check
+2026-05-10 19:18:36,665 INFO [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:178  | {Page#3.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 19:18:36,665 INFO [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:184  | {Page#3.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 19:18:36,665 INFO [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:207  | {Page#3.1} Time value reused from sheet#2
+2026-05-10 19:18:36,666 INFO [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:277  | Last range: Range{SN1-5 tRat:4/4 dur:1}
+2026-05-10 19:18:36,667 INFO [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 19:18:36,667 INFO [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:279  | lastRange.ts = null
+2026-05-10 19:18:36,667 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:121  | MeasureStack#1 frats: 3 [1331, 1332, 1158]
+2026-05-10 19:18:36,668 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:121  | MeasureStack#2 frats: 3 [1337, 1188, 1338]
+2026-05-10 19:18:36,668 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:121  | MeasureStack#3 frats: 3 [1333, 1334, 1258]
+2026-05-10 19:18:36,668 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:121  | MeasureStack#4 frats: 2 [1339, 1287]
+2026-05-10 19:18:36,668 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:121  | MeasureStack#5 frats: 1 [1336]
+2026-05-10 19:18:36,669 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:325  | Starting Range{SN1-5 tRat:4/4 dur:1}
+2026-05-10 19:18:36,669 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 19:18:36,669 DEBUG [O Praise The Name (Anástasis)-lead-C#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 19:18:36,670 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 19:18:36,670 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 19:18:36,670 DEBUG [O Praise The Name (Anástasis)-lead-C#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 19:18:36,672 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 19:18:36,673 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 19:18:36,673 DEBUG [O Praise The Name (Anástasis)-lead-C#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 19:18:36,674 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 19:18:36,674 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 19:18:36,675 DEBUG [O Praise The Name (Anástasis)-lead-C#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 19:18:36,675 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 19:18:36,675 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 19:18:36,675 DEBUG [O Praise The Name (Anástasis)-lead-C#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 19:18:36,676 DEBUG [O Praise The Name (Anástasis)-lead-C#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5

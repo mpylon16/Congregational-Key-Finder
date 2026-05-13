@@ -1,0 +1,845 @@
+2026-05-10 17:44:31,098 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,102 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,103 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,104 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,107 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,108 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,108 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,108 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,110 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,110 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,110 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,111 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,111 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,112 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,112 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,113 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,113 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,113 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,115 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,115 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,116 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,116 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,117 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,117 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,118 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,118 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,118 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,119 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,119 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,120 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,120 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,121 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,121 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,121 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,122 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,122 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,122 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,124 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,126 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,126 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,127 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,128 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,128 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,129 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,129 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,130 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,130 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,131 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,131 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,131 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,131 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,132 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,132 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,133 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,133 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,133 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,134 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,134 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,135 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,135 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,136 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,136 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,136 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,136 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,137 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,137 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,138 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,138 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,139 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,139 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,139 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,140 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,140 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,140 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,142 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,142 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,142 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,143 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,143 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,143 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,144 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,144 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,144 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,145 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,145 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,145 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,145 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,145 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,145 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,145 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,147 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,147 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,147 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,147 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,148 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,148 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,148 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,149 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,149 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,149 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,150 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,150 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,150 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,150 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,151 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,151 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,151 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,151 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,151 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,152 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,152 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,153 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,153 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,154 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,154 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,154 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,154 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,155 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,155 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,155 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,155 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,156 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,156 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,156 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,156 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,157 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,157 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,157 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,158 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,159 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,159 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,160 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,160 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,161 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,161 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,161 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,162 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,162 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,162 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,162 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,162 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,163 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,163 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,164 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,164 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,164 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,164 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,165 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,166 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,166 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,167 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,167 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,167 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,167 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,168 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,168 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,169 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,169 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,169 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,170 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,170 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,170 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,171 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,171 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,171 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,171 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,172 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,172 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,172 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,173 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,173 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,173 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,174 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,174 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,175 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,175 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,176 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,176 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,176 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,176 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,177 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,177 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,178 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,178 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,178 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,179 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,180 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,180 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,180 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,181 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,181 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,181 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,182 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,182 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,182 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,183 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,183 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,183 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,184 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,184 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,184 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,184 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,184 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,185 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,185 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,185 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,186 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,186 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,186 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,186 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,187 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,187 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,187 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,187 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,188 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,188 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,188 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,189 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,189 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,189 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,189 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:31,189 WARN [King Of Kings-lead-D#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:36,873 INFO [King Of Kings-lead-D#1]           PageRhythm.java:176  | {Page#1.1} Starting PageRhythm time signature check
+2026-05-10 17:44:36,875 INFO [King Of Kings-lead-D#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN1- tSig:4/4} → ts: TimePairInter#167{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 17:44:36,877 INFO [King Of Kings-lead-D#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN9- tSig:2/4} → ts: TimeWholeInter#9791{(0.800/0.800) staff:4 TIME_TWO_FOUR 2/4}
+2026-05-10 17:44:36,877 INFO [King Of Kings-lead-D#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN11- tSig:4/4} → ts: TimePairInter#209{ FROZEN(0.952/0.952) staff:5 4/4}
+2026-05-10 17:44:36,878 INFO [King Of Kings-lead-D#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN20- tSig:2/4} → ts: TimeWholeInter#10435{(0.794/0.794) staff:6 TIME_TWO_FOUR 2/4}
+2026-05-10 17:44:36,878 INFO [King Of Kings-lead-D#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN1- tSig:4/4}, ts: TimePairInter#167{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 17:44:36,879 INFO [King Of Kings-lead-D#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN9- tSig:2/4}, ts: TimeWholeInter#9791{(0.800/0.800) staff:4 TIME_TWO_FOUR 2/4}
+2026-05-10 17:44:36,879 INFO [King Of Kings-lead-D#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN11- tSig:4/4}, ts: TimePairInter#209{ FROZEN(0.952/0.952) staff:5 4/4}
+2026-05-10 17:44:36,880 INFO [King Of Kings-lead-D#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN20- tSig:2/4}, ts: TimeWholeInter#10435{(0.794/0.794) staff:6 TIME_TWO_FOUR 2/4}
+2026-05-10 17:44:36,881 INFO [King Of Kings-lead-D#1]           PageRhythm.java:277  | Last range: Range{SN20-20 tSig:2/4 dur:1/2}
+2026-05-10 17:44:36,881 INFO [King Of Kings-lead-D#1]           PageRhythm.java:278  | lastRange.timeRational = 2/4
+2026-05-10 17:44:36,881 INFO [King Of Kings-lead-D#1]           PageRhythm.java:279  | lastRange.ts = TimeWholeInter#10435{(0.794/0.794) staff:6 TIME_TWO_FOUR 2/4}
+2026-05-10 17:44:36,881 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#1 frats: 0 []
+2026-05-10 17:44:36,882 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#2 frats: 1 [8180]
+2026-05-10 17:44:36,883 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#3 frats: 3 [8654, 8657, 8658]
+2026-05-10 17:44:36,883 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#4 frats: 1 [8660]
+2026-05-10 17:44:36,884 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#5 frats: 1 [9221]
+2026-05-10 17:44:36,885 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#6 frats: 5 [9223, 9224, 9230, 9225, 9231]
+2026-05-10 17:44:36,885 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#7 frats: 2 [9364, 9958]
+2026-05-10 17:44:36,885 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#8 frats: 2 [9636, 9964]
+2026-05-10 17:44:36,886 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#9 frats: 0 []
+2026-05-10 17:44:36,886 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#10 frats: 0 []
+2026-05-10 17:44:36,886 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#11 frats: 2 [10160, 10161]
+2026-05-10 17:44:36,886 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#12 frats: 0 []
+2026-05-10 17:44:36,888 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#13 frats: 0 []
+2026-05-10 17:44:36,888 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#14 frats: 1 [10162]
+2026-05-10 17:44:36,889 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#15 frats: 1 [10456]
+2026-05-10 17:44:36,889 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#16 frats: 1 [10458]
+2026-05-10 17:44:36,889 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#17 frats: 0 []
+2026-05-10 17:44:36,889 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#18 frats: 1 [10461]
+2026-05-10 17:44:36,889 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#19 frats: 1 [10390]
+2026-05-10 17:44:36,890 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:121  | MeasureStack#20 frats: 0 []
+2026-05-10 17:44:36,891 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:325  | Starting Range{SN1-8 tSig:4/4 dur:1}
+2026-05-10 17:44:36,891 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 17:44:36,892 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 17:44:36,911 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 17:44:36,912 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 17:44:36,912 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 17:44:36,919 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 17:44:36,922 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 17:44:36,922 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 17:44:36,927 WARN [King Of Kings-lead-D#1]          StackRhythm.java:229  | StackRhythm error processing MeasureStack#3 java.lang.IllegalStateException: Attempt to setVoice() on SmallChordInter#4991{(0.883/0.883) staff:2 dur:1/16}
+java.lang.IllegalStateException: Attempt to setVoice() on SmallChordInter#4991{(0.883/0.883) staff:2 dur:1/16}
+	at org.audiveris.omr.sig.inter.SmallChordInter.setVoice(SmallChordInter.java:240)
+	at org.audiveris.omr.sig.inter.BeamGroupInter.setVoice(BeamGroupInter.java:912)
+	at org.audiveris.omr.sig.inter.AbstractChordInter.setVoice(AbstractChordInter.java:1428)
+	at org.audiveris.omr.sheet.rhythm.Voice.<init>(Voice.java:173)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm.processStartingChords(MeasureRhythm.java:642)
+	at org.audiveris.omr.sheet.rhythm.MeasureRhythm.process(MeasureRhythm.java:570)
+	at org.audiveris.omr.sheet.rhythm.StackRhythm.doProcess(StackRhythm.java:127)
+	at org.audiveris.omr.sheet.rhythm.StackRhythm.process(StackRhythm.java:225)
+	at org.audiveris.omr.sheet.rhythm.PageRhythm.processRanges(PageRhythm.java:330)
+	at org.audiveris.omr.sheet.rhythm.PageRhythm.process(PageRhythm.java:304)
+	at org.audiveris.omr.sheet.rhythm.RhythmsStep.doit(RhythmsStep.java:192)
+	at org.audiveris.omr.step.OmrStep.doit(OmrStep.java:138)
+	at org.audiveris.omr.sheet.SheetStub.lambda$doOneStep$2(SheetStub.java:499)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-10 17:44:36,929 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 17:44:36,930 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 17:44:36,930 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 17:44:36,933 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 17:44:36,934 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 17:44:36,934 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 17:44:36,937 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 17:44:36,938 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 17:44:36,938 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 17:44:36,945 INFO [King Of Kings-lead-D#1]          StackRhythm.java:226  | S3 MeasureStack#6 no correct rhythm
+2026-05-10 17:44:36,945 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 17:44:36,946 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 17:44:36,946 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 17:44:36,950 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 17:44:36,951 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 17:44:36,951 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 17:44:36,954 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 17:44:36,955 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:325  | Starting Range{SN9-10 tSig:2/4 dur:1/2}
+2026-05-10 17:44:36,955 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 17:44:36,955 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 9
+2026-05-10 17:44:36,957 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 17:44:36,958 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 17:44:36,959 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 10
+2026-05-10 17:44:36,960 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 17:44:36,961 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:325  | Starting Range{SN11-19 tSig:4/4 dur:1}
+2026-05-10 17:44:36,961 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 17:44:36,961 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 17:44:36,962 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 17:44:36,963 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 17:44:36,963 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 17:44:36,964 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 17:44:36,964 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 17:44:36,965 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 17:44:36,966 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 17:44:36,966 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 17:44:36,967 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 17:44:36,968 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 17:44:36,969 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 17:44:36,970 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 17:44:36,971 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 17:44:36,972 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 17:44:36,973 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 17:44:36,975 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 17:44:36,976 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 17:44:36,977 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 17:44:36,978 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 17:44:36,979 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 17:44:36,979 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 17:44:36,981 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 17:44:36,981 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 17:44:36,981 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 17:44:36,983 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 17:44:36,983 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:325  | Starting Range{SN20-20 tSig:2/4 dur:1/2}
+2026-05-10 17:44:36,983 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 17:44:36,984 DEBUG [King Of Kings-lead-D#1]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 20
+2026-05-10 17:44:36,985 DEBUG [King Of Kings-lead-D#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 17:44:46,856 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,857 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,857 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,858 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,858 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,858 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,858 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,859 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,859 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,859 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,859 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,860 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,860 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,861 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,861 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,861 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,861 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,863 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,863 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,863 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,863 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,864 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,864 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,864 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,865 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,866 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,866 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,867 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,867 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,867 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,867 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,868 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,868 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,869 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,869 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,869 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,869 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,870 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,870 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,870 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,870 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,870 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,870 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,871 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,871 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,871 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,871 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,871 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,871 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,872 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,872 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,872 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,872 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,872 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,873 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,873 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,873 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,874 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,874 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,874 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,874 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,874 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,874 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,874 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,875 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,876 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,876 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,876 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,876 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,877 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,877 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,877 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,877 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,878 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,878 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,878 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,878 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,878 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,878 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,879 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,879 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,879 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,880 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,880 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,880 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,880 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,880 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,881 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,881 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,881 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,882 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,882 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,882 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,882 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,882 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,883 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,883 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,883 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,883 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,883 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,884 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,884 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,884 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,884 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,884 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,884 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,885 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,885 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,885 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,885 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,885 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,885 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,885 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,885 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,885 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,885 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,887 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,887 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,887 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,887 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,887 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,888 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,888 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,888 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,888 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,889 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,889 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,889 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,889 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,889 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,889 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,889 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,889 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,889 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,890 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,890 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,890 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,890 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,891 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,891 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,891 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,891 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,891 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,892 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,892 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,892 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,892 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,892 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,893 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,893 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,893 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,893 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,893 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,893 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,893 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,893 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,893 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,895 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,895 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,895 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,895 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,895 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,895 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,896 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,896 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,896 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,896 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,897 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,897 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,898 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,898 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,898 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,898 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,898 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,899 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,899 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,899 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,899 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,899 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,900 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,900 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,900 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,900 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,900 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,900 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,900 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,900 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,900 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:46,901 WARN [King Of Kings-lead-D#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:51,109 INFO [King Of Kings-lead-D#2]           PageRhythm.java:176  | {Page#2.1} Starting PageRhythm time signature check
+2026-05-10 17:44:51,110 INFO [King Of Kings-lead-D#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN1- tSig:2/4} → ts: TimePairInter#173{ FROZEN(0.952/0.952) staff:1 2/4}
+2026-05-10 17:44:51,111 INFO [King Of Kings-lead-D#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN1- tSig:2/4}, ts: TimePairInter#173{ FROZEN(0.952/0.952) staff:1 2/4}
+2026-05-10 17:44:51,112 INFO [King Of Kings-lead-D#2]           PageRhythm.java:277  | Last range: Range{SN1-16 tSig:2/4 dur:1/2}
+2026-05-10 17:44:51,112 INFO [King Of Kings-lead-D#2]           PageRhythm.java:278  | lastRange.timeRational = 2/4
+2026-05-10 17:44:51,112 INFO [King Of Kings-lead-D#2]           PageRhythm.java:279  | lastRange.ts = TimePairInter#173{ FROZEN(0.952/0.952) staff:1 2/4}
+2026-05-10 17:44:51,112 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#1 frats: 2 [6764, 6610]
+2026-05-10 17:44:51,113 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#2 frats: 3 [6766, 6760, 6761]
+2026-05-10 17:44:51,113 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#3 frats: 1 [6762]
+2026-05-10 17:44:51,113 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#4 frats: 1 [6763]
+2026-05-10 17:44:51,113 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#5 frats: 0 []
+2026-05-10 17:44:51,114 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#6 frats: 1 [7100]
+2026-05-10 17:44:51,114 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#7 frats: 1 [7392]
+2026-05-10 17:44:51,114 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#8 frats: 1 [7393]
+2026-05-10 17:44:51,114 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#9 frats: 1 [7758]
+2026-05-10 17:44:51,114 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#10 frats: 0 []
+2026-05-10 17:44:51,115 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#11 frats: 2 [7973, 7974]
+2026-05-10 17:44:51,115 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#12 frats: 2 [7902, 7975]
+2026-05-10 17:44:51,115 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#13 frats: 1 [8316]
+2026-05-10 17:44:51,115 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#14 frats: 1 [8318]
+2026-05-10 17:44:51,116 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#15 frats: 3 [8588, 8590, 8591]
+2026-05-10 17:44:51,116 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:121  | MeasureStack#16 frats: 1 [8592]
+2026-05-10 17:44:51,116 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:325  | Starting Range{SN1-16 tSig:2/4 dur:1/2}
+2026-05-10 17:44:51,116 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 17:44:51,116 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 1
+2026-05-10 17:44:51,118 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 17:44:51,118 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 17:44:51,118 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 2
+2026-05-10 17:44:51,120 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S1 MeasureStack#2 no correct rhythm
+2026-05-10 17:44:51,121 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 17:44:51,121 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 17:44:51,122 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 3
+2026-05-10 17:44:51,123 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 17:44:51,123 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 17:44:51,123 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 4
+2026-05-10 17:44:51,124 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 17:44:51,124 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 17:44:51,124 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 5
+2026-05-10 17:44:51,126 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S2 MeasureStack#5 no correct rhythm
+2026-05-10 17:44:51,127 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 17:44:51,127 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 17:44:51,127 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 6
+2026-05-10 17:44:51,129 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S2 MeasureStack#6 no correct rhythm
+2026-05-10 17:44:51,130 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 17:44:51,130 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 17:44:51,130 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 7
+2026-05-10 17:44:51,132 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S3 MeasureStack#7 no correct rhythm
+2026-05-10 17:44:51,132 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 17:44:51,132 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 17:44:51,132 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 8
+2026-05-10 17:44:51,134 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S3 MeasureStack#8 no correct rhythm
+2026-05-10 17:44:51,134 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 17:44:51,134 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 17:44:51,135 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 9
+2026-05-10 17:44:51,137 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S4 MeasureStack#9 no correct rhythm
+2026-05-10 17:44:51,137 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 17:44:51,137 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 17:44:51,137 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 10
+2026-05-10 17:44:51,139 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S4 MeasureStack#10 no correct rhythm
+2026-05-10 17:44:51,139 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 17:44:51,140 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 17:44:51,140 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 11
+2026-05-10 17:44:51,143 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S5 MeasureStack#11 no correct rhythm
+2026-05-10 17:44:51,143 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 17:44:51,144 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 17:44:51,144 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 12
+2026-05-10 17:44:51,146 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S5 MeasureStack#12 no correct rhythm
+2026-05-10 17:44:51,146 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 17:44:51,146 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 17:44:51,146 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 13
+2026-05-10 17:44:51,148 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S6 MeasureStack#13 no correct rhythm
+2026-05-10 17:44:51,148 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 17:44:51,148 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 17:44:51,149 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 14
+2026-05-10 17:44:51,150 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S6 MeasureStack#14 no correct rhythm
+2026-05-10 17:44:51,150 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 17:44:51,151 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 17:44:51,151 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 15
+2026-05-10 17:44:51,153 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S7 MeasureStack#15 no correct rhythm
+2026-05-10 17:44:51,153 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 17:44:51,153 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 17:44:51,154 DEBUG [King Of Kings-lead-D#2]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 16
+2026-05-10 17:44:51,154 INFO [King Of Kings-lead-D#2]          StackRhythm.java:226  | S7 MeasureStack#16 no correct rhythm
+2026-05-10 17:44:51,154 DEBUG [King Of Kings-lead-D#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 17:44:57,562 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,563 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,563 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,563 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,564 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,564 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,564 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,565 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,565 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,565 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,566 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,566 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,566 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,566 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,567 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,567 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,567 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,567 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,567 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,568 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,568 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,568 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,568 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,569 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,569 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,569 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,570 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,571 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,571 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,571 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,571 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,572 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,572 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,572 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,572 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,572 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,572 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,572 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,572 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,573 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,573 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,573 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,573 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,573 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,573 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,574 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,574 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,574 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,574 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,575 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,575 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,575 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,575 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,576 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,576 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,576 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,576 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,576 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,576 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,577 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,577 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,577 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,577 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,577 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,577 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,577 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,577 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,577 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,579 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,579 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,579 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,579 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,579 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,580 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,580 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,580 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,580 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,580 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,581 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,581 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,581 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,581 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,581 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,581 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,581 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,582 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,582 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,582 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,582 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,582 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,582 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,583 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,583 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,583 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,583 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,583 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,584 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,584 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,584 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,584 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,585 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,585 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,585 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,585 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,585 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,585 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,586 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,586 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,586 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,586 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,586 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,586 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,586 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,587 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,587 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,587 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,587 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,587 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,587 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,588 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,588 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,588 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,588 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,588 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,588 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,588 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,589 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,589 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,589 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:57,589 WARN [King Of Kings-lead-D#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:44:59,893 INFO [King Of Kings-lead-D#3]           PageRhythm.java:176  | {Page#3.1} Starting PageRhythm time signature check
+2026-05-10 17:44:59,894 INFO [King Of Kings-lead-D#3]           PageRhythm.java:178  | {Page#3.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 17:44:59,894 INFO [King Of Kings-lead-D#3]           PageRhythm.java:178  | {Page#3.1} Initial range state: Range{SN18- tSig:4/4} → ts: TimePairInter#181{ FROZEN(0.950/0.950) staff:5 4/4}
+2026-05-10 17:44:59,895 INFO [King Of Kings-lead-D#3]           PageRhythm.java:184  | {Page#3.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 17:44:59,896 INFO [King Of Kings-lead-D#3]           PageRhythm.java:207  | {Page#3.1} Time value reused from sheet#2
+2026-05-10 17:44:59,896 INFO [King Of Kings-lead-D#3]           PageRhythm.java:184  | {Page#3.1} Checking range: Range{SN18- tSig:4/4}, ts: TimePairInter#181{ FROZEN(0.950/0.950) staff:5 4/4}
+2026-05-10 17:44:59,896 INFO [King Of Kings-lead-D#3]           PageRhythm.java:277  | Last range: Range{SN18-20 tSig:4/4 dur:1}
+2026-05-10 17:44:59,896 INFO [King Of Kings-lead-D#3]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 17:44:59,896 INFO [King Of Kings-lead-D#3]           PageRhythm.java:279  | lastRange.ts = TimePairInter#181{ FROZEN(0.950/0.950) staff:5 4/4}
+2026-05-10 17:44:59,897 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#1 frats: 4 [4963, 4979, 5280, 5285]
+2026-05-10 17:44:59,897 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#2 frats: 4 [5281, 5287, 5282, 5288]
+2026-05-10 17:44:59,898 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#3 frats: 0 []
+2026-05-10 17:44:59,898 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#4 frats: 1 [5475]
+2026-05-10 17:44:59,898 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#5 frats: 2 [5473, 5474]
+2026-05-10 17:44:59,899 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#6 frats: 0 []
+2026-05-10 17:44:59,899 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#7 frats: 0 []
+2026-05-10 17:44:59,899 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#8 frats: 1 [5818]
+2026-05-10 17:44:59,899 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#9 frats: 1 [5689]
+2026-05-10 17:44:59,900 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#10 frats: 1 [5819]
+2026-05-10 17:44:59,900 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#11 frats: 2 [5820, 5821]
+2026-05-10 17:44:59,900 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#12 frats: 3 [6068, 6074, 6069]
+2026-05-10 17:44:59,901 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#13 frats: 0 []
+2026-05-10 17:44:59,901 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#14 frats: 3 [6075, 5925, 6072]
+2026-05-10 17:44:59,901 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#15 frats: 0 []
+2026-05-10 17:44:59,901 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#16 frats: 3 [6076, 6077, 6051]
+2026-05-10 17:44:59,902 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#17 frats: 0 []
+2026-05-10 17:44:59,902 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#18 frats: 2 [6114, 6115]
+2026-05-10 17:44:59,902 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#19 frats: 0 []
+2026-05-10 17:44:59,903 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:121  | MeasureStack#20 frats: 0 []
+2026-05-10 17:44:59,903 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:325  | Starting Range{SN1-17 tRat:2/4 dur:1/2}
+2026-05-10 17:44:59,903 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 17:44:59,903 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 1
+2026-05-10 17:44:59,905 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S1 MeasureStack#1 no correct rhythm
+2026-05-10 17:44:59,906 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 17:44:59,906 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 17:44:59,906 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 2
+2026-05-10 17:44:59,908 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S1 MeasureStack#2 no correct rhythm
+2026-05-10 17:44:59,909 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 17:44:59,910 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 17:44:59,910 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 3
+2026-05-10 17:44:59,911 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S2 MeasureStack#3 no correct rhythm
+2026-05-10 17:44:59,911 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 17:44:59,913 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 17:44:59,913 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 4
+2026-05-10 17:44:59,914 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 17:44:59,914 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 17:44:59,914 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 5
+2026-05-10 17:44:59,915 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S2 MeasureStack#5 no correct rhythm
+2026-05-10 17:44:59,915 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 17:44:59,916 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 17:44:59,916 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 6
+2026-05-10 17:44:59,917 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 17:44:59,917 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 17:44:59,917 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 7
+2026-05-10 17:44:59,918 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S3 MeasureStack#7 no correct rhythm
+2026-05-10 17:44:59,918 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 17:44:59,918 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 17:44:59,918 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 8
+2026-05-10 17:44:59,919 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S3 MeasureStack#8 no correct rhythm
+2026-05-10 17:44:59,919 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 17:44:59,919 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 17:44:59,920 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 9
+2026-05-10 17:44:59,920 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S3 MeasureStack#9 no correct rhythm
+2026-05-10 17:44:59,920 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 17:44:59,920 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 17:44:59,920 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 10
+2026-05-10 17:44:59,922 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S3 MeasureStack#10 no correct rhythm
+2026-05-10 17:44:59,922 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 17:44:59,922 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 17:44:59,922 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 11
+2026-05-10 17:44:59,923 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S3 MeasureStack#11 no correct rhythm
+2026-05-10 17:44:59,923 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 17:44:59,923 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 17:44:59,924 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 12
+2026-05-10 17:44:59,924 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S4 MeasureStack#12 no correct rhythm
+2026-05-10 17:44:59,925 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 17:44:59,925 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 17:44:59,925 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 13
+2026-05-10 17:44:59,926 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S4 MeasureStack#13 no correct rhythm
+2026-05-10 17:44:59,927 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 17:44:59,927 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 17:44:59,927 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 14
+2026-05-10 17:44:59,928 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S4 MeasureStack#14 no correct rhythm
+2026-05-10 17:44:59,929 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 17:44:59,929 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 17:44:59,929 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 15
+2026-05-10 17:44:59,930 INFO [King Of Kings-lead-D#3]          StackRhythm.java:226  | S4 MeasureStack#15 no correct rhythm
+2026-05-10 17:44:59,930 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 17:44:59,930 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 17:44:59,930 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 16
+2026-05-10 17:44:59,931 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 17:44:59,931 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 17:44:59,932 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1/2 for stack on page 17
+2026-05-10 17:44:59,932 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 17:44:59,932 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:325  | Starting Range{SN18-20 tSig:4/4 dur:1}
+2026-05-10 17:44:59,932 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 17:44:59,933 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 17:44:59,934 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 17:44:59,934 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 17:44:59,934 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 17:44:59,934 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 17:44:59,934 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 17:44:59,935 DEBUG [King Of Kings-lead-D#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 17:44:59,935 DEBUG [King Of Kings-lead-D#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20

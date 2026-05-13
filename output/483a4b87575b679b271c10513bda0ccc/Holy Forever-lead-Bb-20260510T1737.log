@@ -1,0 +1,914 @@
+2026-05-10 17:38:02,873 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,875 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,877 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,877 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,880 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,882 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,882 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,882 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,883 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,883 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,885 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,885 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,885 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,886 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,886 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,886 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,887 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,887 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,887 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,888 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,888 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,888 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,889 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,889 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,889 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,890 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,890 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,890 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,892 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,892 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,892 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,892 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,892 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,893 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,893 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,893 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,893 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,894 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,896 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,902 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,903 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,903 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,905 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,906 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,908 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,909 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,909 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,910 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,911 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,913 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,915 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,915 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,915 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,916 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,917 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,917 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,918 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,919 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,920 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,920 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,920 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,921 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,921 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,923 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,923 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,924 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,925 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,926 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,926 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,927 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,927 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,929 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,930 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,931 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,933 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,933 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,933 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,934 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,934 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,935 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,935 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,936 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,936 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,936 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,936 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,938 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,938 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,938 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,938 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,939 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,939 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,939 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,940 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,940 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,940 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,941 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,941 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,941 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,942 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,942 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,942 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,943 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,945 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,945 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,946 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,946 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,947 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,947 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,948 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,948 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,949 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,950 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,951 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,951 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,952 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,952 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,952 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,952 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,953 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,954 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,954 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,954 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,954 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,954 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,955 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,955 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,955 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,955 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,956 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,956 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,956 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,956 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,957 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,957 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,957 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,958 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,958 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,958 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,958 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,959 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,959 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,959 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,959 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,960 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,960 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,960 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,960 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,961 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,961 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,962 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,962 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,962 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,963 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,963 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,963 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,964 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,964 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,964 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,964 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,965 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,966 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,966 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,966 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,966 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,967 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,967 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,967 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,968 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,968 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,968 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,968 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,969 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,969 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,969 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,969 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,970 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,970 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,971 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,971 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,971 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,972 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,972 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,972 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,973 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,973 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,974 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,975 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,976 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,976 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,976 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,976 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,977 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,977 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,978 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,978 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,978 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,978 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,979 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,979 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,979 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,979 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,981 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,981 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,982 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,982 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,982 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,982 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,982 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,982 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,983 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,983 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,983 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,983 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,984 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,984 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,985 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,985 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,985 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,985 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,986 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,987 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:02,987 WARN [Holy Forever-lead-Bb#1]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:07,004 INFO [Holy Forever-lead-Bb#1]           PageRhythm.java:176  | {Page#1.1} Starting PageRhythm time signature check
+2026-05-10 17:38:07,005 INFO [Holy Forever-lead-Bb#1]           PageRhythm.java:178  | {Page#1.1} Initial range state: Range{SN1- tSig:4/4} → ts: TimePairInter#101{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 17:38:07,007 INFO [Holy Forever-lead-Bb#1]           PageRhythm.java:184  | {Page#1.1} Checking range: Range{SN1- tSig:4/4}, ts: TimePairInter#101{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 17:38:07,007 INFO [Holy Forever-lead-Bb#1]           PageRhythm.java:277  | Last range: Range{SN1-20 tSig:4/4 dur:1}
+2026-05-10 17:38:07,008 INFO [Holy Forever-lead-Bb#1]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 17:38:07,008 INFO [Holy Forever-lead-Bb#1]           PageRhythm.java:279  | lastRange.ts = TimePairInter#101{ FROZEN(0.952/0.952) staff:1 4/4}
+2026-05-10 17:38:07,009 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#1 frats: 3 [8315, 8316, 8320]
+2026-05-10 17:38:07,010 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#2 frats: 0 []
+2026-05-10 17:38:07,010 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#3 frats: 2 [8317, 8321]
+2026-05-10 17:38:07,010 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#4 frats: 0 []
+2026-05-10 17:38:07,012 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#5 frats: 3 [8318, 8322, 8314]
+2026-05-10 17:38:07,012 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#6 frats: 2 [8642, 8636]
+2026-05-10 17:38:07,013 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#7 frats: 4 [8643, 8637, 8644, 8473]
+2026-05-10 17:38:07,013 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#8 frats: 2 [8639, 8646]
+2026-05-10 17:38:07,014 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#9 frats: 5 [8884, 8885, 8886, 8892, 8666]
+2026-05-10 17:38:07,014 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#10 frats: 5 [8718, 8893, 8888, 8894, 8744]
+2026-05-10 17:38:07,014 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#11 frats: 3 [8890, 8895, 8883]
+2026-05-10 17:38:07,015 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#12 frats: 2 [9217, 9209]
+2026-05-10 17:38:07,015 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#13 frats: 4 [9210, 9211, 9212, 9105]
+2026-05-10 17:38:07,015 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#14 frats: 4 [9214, 9218, 9216, 9207]
+2026-05-10 17:38:07,017 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#15 frats: 4 [9564, 9572, 9565, 9387]
+2026-05-10 17:38:07,017 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#16 frats: 3 [9568, 9573, 9574]
+2026-05-10 17:38:07,018 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#17 frats: 4 [9569, 9570, 9571, 9562]
+2026-05-10 17:38:07,018 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#18 frats: 4 [9827, 9832, 9828, 9623]
+2026-05-10 17:38:07,018 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#19 frats: 5 [9833, 9829, 9834, 9830, 9679]
+2026-05-10 17:38:07,019 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:121  | MeasureStack#20 frats: 3 [9831, 9835, 9836]
+2026-05-10 17:38:07,019 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:325  | Starting Range{SN1-20 tSig:4/4 dur:1}
+2026-05-10 17:38:07,019 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 17:38:07,020 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 17:38:07,036 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 17:38:07,036 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 17:38:07,037 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 17:38:07,037 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 17:38:07,038 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 17:38:07,038 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 17:38:07,038 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 17:38:07,039 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 17:38:07,039 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 17:38:07,040 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 17:38:07,040 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 17:38:07,040 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 17:38:07,043 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 17:38:07,045 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 17:38:07,046 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 17:38:07,050 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 17:38:07,051 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 17:38:07,051 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 17:38:07,053 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 17:38:07,054 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 17:38:07,055 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 17:38:07,061 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 17:38:07,061 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 17:38:07,062 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 17:38:07,064 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 17:38:07,065 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 17:38:07,065 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 17:38:07,068 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 17:38:07,068 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 17:38:07,069 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 17:38:07,070 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 17:38:07,070 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 17:38:07,072 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 17:38:07,074 INFO [Holy Forever-lead-Bb#1]          StackRhythm.java:226  | S4 MeasureStack#12 no correct rhythm
+2026-05-10 17:38:07,075 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 17:38:07,075 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 17:38:07,075 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 17:38:07,076 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 17:38:07,077 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 17:38:07,077 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 17:38:07,079 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 17:38:07,079 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 17:38:07,079 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 17:38:07,082 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 17:38:07,083 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 17:38:07,083 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 17:38:07,084 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 17:38:07,084 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 17:38:07,084 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 17:38:07,085 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 17:38:07,086 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 17:38:07,086 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 17:38:07,089 INFO [Holy Forever-lead-Bb#1]          StackRhythm.java:226  | S6 MeasureStack#18 no correct rhythm
+2026-05-10 17:38:07,090 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 17:38:07,090 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 17:38:07,090 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 17:38:07,092 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 17:38:07,093 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 17:38:07,093 DEBUG [Holy Forever-lead-Bb#1]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 17:38:07,095 INFO [Holy Forever-lead-Bb#1]          StackRhythm.java:226  | S6 MeasureStack#20 no correct rhythm
+2026-05-10 17:38:07,096 DEBUG [Holy Forever-lead-Bb#1]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 17:38:17,602 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,603 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,605 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,605 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,605 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,606 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,607 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,607 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,607 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,608 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,608 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,609 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,609 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,609 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,610 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,610 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,610 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,610 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,611 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,611 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,611 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,611 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,611 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,611 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,611 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,612 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,612 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,612 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,612 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,612 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,613 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,613 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,613 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,613 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,614 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,614 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,614 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,614 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,615 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,616 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,616 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,617 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,617 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,617 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,617 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,617 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,617 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,617 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,618 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,618 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,618 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,618 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,618 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,618 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,619 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,619 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,619 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,619 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,619 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,620 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,620 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,620 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,620 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,620 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,620 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,622 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,622 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,622 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,622 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,622 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,622 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,622 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,622 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,622 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,623 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,623 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,623 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,623 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,625 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,625 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,625 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,625 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,625 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,626 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,626 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,626 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,626 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,626 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,627 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,627 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,627 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,627 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,627 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,627 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,627 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,627 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,628 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,628 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,628 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,628 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,628 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,629 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,629 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,629 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,629 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,630 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,630 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,630 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,630 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,631 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,631 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,631 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,631 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,632 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,633 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,633 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,633 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,633 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,633 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,633 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,633 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,633 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,633 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,634 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,634 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,634 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,634 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,634 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,635 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,635 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,635 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,636 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,636 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,636 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,636 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,636 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,637 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,637 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,638 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,638 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,638 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,638 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,638 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,638 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,638 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,639 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,639 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,639 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,639 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,639 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,640 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,640 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,640 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,641 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,641 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,641 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,641 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,641 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,641 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,641 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,643 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,643 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,643 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,643 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,643 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,643 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,644 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,644 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,644 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,644 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,645 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,645 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,645 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,645 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,646 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,646 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,646 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,646 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,646 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,647 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,647 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,647 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,647 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,647 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,648 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,648 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,649 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,649 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,649 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,649 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,650 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,650 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,650 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,651 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,651 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,651 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,651 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,652 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,652 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,652 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,652 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,652 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,652 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,652 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,652 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,652 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,653 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,653 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,654 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,654 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,654 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,654 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,654 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,654 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,655 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,655 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,655 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,655 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,655 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,656 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,656 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,656 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,656 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,657 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,657 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,657 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,657 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,657 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,657 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,659 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,659 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,659 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,659 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,659 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,659 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,659 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,659 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,660 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,660 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,660 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,660 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,661 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,661 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,661 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,661 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,661 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,662 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,662 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,662 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,662 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,663 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,663 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,664 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,664 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,664 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,664 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,664 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,665 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,665 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,665 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,665 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,666 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,666 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,666 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,666 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:17,666 WARN [Holy Forever-lead-Bb#2]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:22,086 INFO [Holy Forever-lead-Bb#2]           PageRhythm.java:176  | {Page#2.1} Starting PageRhythm time signature check
+2026-05-10 17:38:22,087 INFO [Holy Forever-lead-Bb#2]           PageRhythm.java:178  | {Page#2.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 17:38:22,087 INFO [Holy Forever-lead-Bb#2]           PageRhythm.java:184  | {Page#2.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 17:38:22,087 INFO [Holy Forever-lead-Bb#2]           PageRhythm.java:207  | {Page#2.1} Time value reused from sheet#1
+2026-05-10 17:38:22,088 INFO [Holy Forever-lead-Bb#2]           PageRhythm.java:277  | Last range: Range{SN1-24 tRat:4/4 dur:1}
+2026-05-10 17:38:22,088 INFO [Holy Forever-lead-Bb#2]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 17:38:22,088 INFO [Holy Forever-lead-Bb#2]           PageRhythm.java:279  | lastRange.ts = null
+2026-05-10 17:38:22,088 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#1 frats: 2 [8326, 8330]
+2026-05-10 17:38:22,088 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#2 frats: 1 [8328]
+2026-05-10 17:38:22,088 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#3 frats: 2 [8329, 8331]
+2026-05-10 17:38:22,088 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#4 frats: 0 []
+2026-05-10 17:38:22,088 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#5 frats: 2 [8547, 8552]
+2026-05-10 17:38:22,088 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#6 frats: 2 [8548, 8549]
+2026-05-10 17:38:22,089 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#7 frats: 0 []
+2026-05-10 17:38:22,089 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#8 frats: 2 [8527, 8553]
+2026-05-10 17:38:22,089 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#9 frats: 2 [8550, 8551]
+2026-05-10 17:38:22,089 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#10 frats: 5 [8834, 8840, 8835, 8841, 8696]
+2026-05-10 17:38:22,089 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#11 frats: 1 [8837]
+2026-05-10 17:38:22,090 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#12 frats: 1 [9191]
+2026-05-10 17:38:22,090 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#13 frats: 2 [9187, 9188]
+2026-05-10 17:38:22,090 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#14 frats: 4 [9192, 9189, 9193, 9185]
+2026-05-10 17:38:22,091 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#15 frats: 1 [9538]
+2026-05-10 17:38:22,091 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#16 frats: 1 [9547]
+2026-05-10 17:38:22,091 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#17 frats: 5 [9542, 9543, 9544, 9548, 9537]
+2026-05-10 17:38:22,091 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#18 frats: 1 [9918]
+2026-05-10 17:38:22,091 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#19 frats: 2 [9919, 9921]
+2026-05-10 17:38:22,092 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#20 frats: 1 [9920]
+2026-05-10 17:38:22,092 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#21 frats: 2 [10363, 10370]
+2026-05-10 17:38:22,092 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#22 frats: 2 [10148, 10365]
+2026-05-10 17:38:22,092 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#23 frats: 2 [10367, 10371]
+2026-05-10 17:38:22,092 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:121  | MeasureStack#24 frats: 2 [10368, 10369]
+2026-05-10 17:38:22,093 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:325  | Starting Range{SN1-24 tRat:4/4 dur:1}
+2026-05-10 17:38:22,093 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 17:38:22,094 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 17:38:22,095 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 17:38:22,097 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 17:38:22,097 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 17:38:22,098 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 17:38:22,098 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 17:38:22,098 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 17:38:22,099 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 17:38:22,100 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 17:38:22,100 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 17:38:22,100 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 17:38:22,100 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 17:38:22,102 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 17:38:22,102 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 17:38:22,103 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 17:38:22,104 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 17:38:22,105 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 17:38:22,106 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 17:38:22,106 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 17:38:22,106 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 17:38:22,106 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 17:38:22,108 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 17:38:22,109 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 17:38:22,109 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 17:38:22,109 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 17:38:22,110 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 17:38:22,111 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 17:38:22,112 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 17:38:22,113 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 17:38:22,113 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 17:38:22,113 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 17:38:22,116 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 17:38:22,116 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 17:38:22,116 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 17:38:22,118 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 17:38:22,118 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 17:38:22,118 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 17:38:22,119 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 17:38:22,119 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 17:38:22,119 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 17:38:22,122 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 17:38:22,122 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 17:38:22,122 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 17:38:22,124 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 17:38:22,124 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 17:38:22,124 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 17:38:22,125 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 17:38:22,125 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 17:38:22,126 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 17:38:22,126 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 17:38:22,126 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 17:38:22,126 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 17:38:22,128 INFO [Holy Forever-lead-Bb#2]          StackRhythm.java:226  | S6 MeasureStack#18 no correct rhythm
+2026-05-10 17:38:22,129 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 17:38:22,130 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 17:38:22,130 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 17:38:22,131 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
+2026-05-10 17:38:22,131 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#20
+2026-05-10 17:38:22,131 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 20
+2026-05-10 17:38:22,132 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#20
+2026-05-10 17:38:22,132 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#21
+2026-05-10 17:38:22,132 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 21
+2026-05-10 17:38:22,133 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#21
+2026-05-10 17:38:22,133 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#22
+2026-05-10 17:38:22,133 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 22
+2026-05-10 17:38:22,134 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#22
+2026-05-10 17:38:22,134 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#23
+2026-05-10 17:38:22,134 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 23
+2026-05-10 17:38:22,135 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#23
+2026-05-10 17:38:22,136 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#24
+2026-05-10 17:38:22,136 DEBUG [Holy Forever-lead-Bb#2]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 24
+2026-05-10 17:38:22,136 INFO [Holy Forever-lead-Bb#2]          StackRhythm.java:226  | S7 MeasureStack#24 no correct rhythm
+2026-05-10 17:38:22,137 DEBUG [Holy Forever-lead-Bb#2]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#24
+2026-05-10 17:38:30,602 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,603 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,603 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,603 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,605 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,605 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,605 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,605 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,606 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,606 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,606 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,606 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,607 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,607 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,607 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,607 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,608 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,608 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,608 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,608 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,609 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,609 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,609 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,610 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,611 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,611 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,611 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,611 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,611 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,611 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,612 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,612 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,612 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,612 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,613 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,613 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,613 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,613 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,614 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,614 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,614 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,614 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,615 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,615 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,616 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,616 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,616 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,617 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,617 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,617 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,617 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,617 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,617 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,617 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,618 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,618 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,618 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,618 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,618 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,618 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,619 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,619 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,619 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,619 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,619 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,619 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,619 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,619 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,621 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,621 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,621 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,621 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,621 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,621 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,622 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,622 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,622 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,622 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,622 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,622 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,622 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,623 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,623 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,623 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,623 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,623 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,623 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,624 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,624 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,624 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,625 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,625 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,625 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,625 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,625 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,625 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,625 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,626 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,626 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,626 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,626 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,627 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,627 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,627 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,627 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,628 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,628 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,628 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,628 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,628 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,629 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,629 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,630 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,630 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,630 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,631 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,632 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,632 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,632 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,632 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,633 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,634 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,634 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,634 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,634 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,635 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,635 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,635 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,635 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,635 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,635 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,636 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,636 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,636 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,637 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,637 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,637 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,637 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,637 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,637 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,638 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,638 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,639 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,639 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:30,639 WARN [Holy Forever-lead-Bb#3]          TextBuilder.java:412  | Skipping TextLine with null bounds: TextLine{ "" conf:NaN}
+2026-05-10 17:38:33,575 INFO [Holy Forever-lead-Bb#3]           PageRhythm.java:176  | {Page#3.1} Starting PageRhythm time signature check
+2026-05-10 17:38:33,575 INFO [Holy Forever-lead-Bb#3]           PageRhythm.java:178  | {Page#3.1} Initial range state: Range{SN1-} → ts: null
+2026-05-10 17:38:33,577 INFO [Holy Forever-lead-Bb#3]           PageRhythm.java:184  | {Page#3.1} Checking range: Range{SN1-}, ts: null
+2026-05-10 17:38:33,577 INFO [Holy Forever-lead-Bb#3]           PageRhythm.java:207  | {Page#3.1} Time value reused from sheet#2
+2026-05-10 17:38:33,577 INFO [Holy Forever-lead-Bb#3]           PageRhythm.java:277  | Last range: Range{SN1-19 tRat:4/4 dur:1}
+2026-05-10 17:38:33,577 INFO [Holy Forever-lead-Bb#3]           PageRhythm.java:278  | lastRange.timeRational = 4/4
+2026-05-10 17:38:33,578 INFO [Holy Forever-lead-Bb#3]           PageRhythm.java:279  | lastRange.ts = null
+2026-05-10 17:38:33,578 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#1 frats: 0 []
+2026-05-10 17:38:33,578 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#2 frats: 3 [6572, 6906, 6899]
+2026-05-10 17:38:33,580 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#3 frats: 3 [6900, 6901, 6907]
+2026-05-10 17:38:33,580 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#4 frats: 4 [6902, 6903, 6904, 6894]
+2026-05-10 17:38:33,580 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#5 frats: 0 []
+2026-05-10 17:38:33,580 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#6 frats: 5 [6956, 7243, 7252, 7245, 6997]
+2026-05-10 17:38:33,580 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#7 frats: 5 [7247, 7248, 7253, 7249, 7081]
+2026-05-10 17:38:33,581 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#8 frats: 3 [7250, 7254, 7255]
+2026-05-10 17:38:33,581 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#9 frats: 4 [7645, 7646, 7647, 7301]
+2026-05-10 17:38:33,581 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#10 frats: 3 [7648, 7649, 7439]
+2026-05-10 17:38:33,581 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#11 frats: 7 [7653, 7654, 7650, 7655, 7656, 7651, 7644]
+2026-05-10 17:38:33,582 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#12 frats: 2 [8063, 8064]
+2026-05-10 17:38:33,582 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#13 frats: 2 [8058, 8065]
+2026-05-10 17:38:33,583 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#14 frats: 3 [8060, 8066, 8017]
+2026-05-10 17:38:33,583 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#15 frats: 3 [8184, 8185, 8190]
+2026-05-10 17:38:33,583 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#16 frats: 1 [8186]
+2026-05-10 17:38:33,583 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#17 frats: 1 [8187]
+2026-05-10 17:38:33,584 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#18 frats: 2 [8165, 8191]
+2026-05-10 17:38:33,584 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:121  | MeasureStack#19 frats: 2 [8188, 8189]
+2026-05-10 17:38:33,584 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:325  | Starting Range{SN1-19 tRat:4/4 dur:1}
+2026-05-10 17:38:33,585 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#1
+2026-05-10 17:38:33,585 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 1
+2026-05-10 17:38:33,586 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#1
+2026-05-10 17:38:33,586 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#2
+2026-05-10 17:38:33,587 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 2
+2026-05-10 17:38:33,587 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#2
+2026-05-10 17:38:33,588 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#3
+2026-05-10 17:38:33,588 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 3
+2026-05-10 17:38:33,589 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#3
+2026-05-10 17:38:33,589 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#4
+2026-05-10 17:38:33,589 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 4
+2026-05-10 17:38:33,590 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#4
+2026-05-10 17:38:33,590 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#5
+2026-05-10 17:38:33,590 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 5
+2026-05-10 17:38:33,590 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#5
+2026-05-10 17:38:33,591 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#6
+2026-05-10 17:38:33,591 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 6
+2026-05-10 17:38:33,592 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#6
+2026-05-10 17:38:33,592 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#7
+2026-05-10 17:38:33,592 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 7
+2026-05-10 17:38:33,594 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#7
+2026-05-10 17:38:33,594 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#8
+2026-05-10 17:38:33,594 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 8
+2026-05-10 17:38:33,595 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#8
+2026-05-10 17:38:33,596 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#9
+2026-05-10 17:38:33,596 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 9
+2026-05-10 17:38:33,597 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#9
+2026-05-10 17:38:33,597 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#10
+2026-05-10 17:38:33,597 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 10
+2026-05-10 17:38:33,599 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#10
+2026-05-10 17:38:33,599 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#11
+2026-05-10 17:38:33,600 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 11
+2026-05-10 17:38:33,601 INFO [Holy Forever-lead-Bb#3]          StackRhythm.java:226  | S3 MeasureStack#11 no correct rhythm
+2026-05-10 17:38:33,601 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#11
+2026-05-10 17:38:33,601 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#12
+2026-05-10 17:38:33,601 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 12
+2026-05-10 17:38:33,602 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#12
+2026-05-10 17:38:33,602 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#13
+2026-05-10 17:38:33,602 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 13
+2026-05-10 17:38:33,604 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#13
+2026-05-10 17:38:33,604 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#14
+2026-05-10 17:38:33,604 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 14
+2026-05-10 17:38:33,605 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#14
+2026-05-10 17:38:33,606 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#15
+2026-05-10 17:38:33,606 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 15
+2026-05-10 17:38:33,607 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#15
+2026-05-10 17:38:33,607 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#16
+2026-05-10 17:38:33,607 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 16
+2026-05-10 17:38:33,608 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#16
+2026-05-10 17:38:33,608 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#17
+2026-05-10 17:38:33,609 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 17
+2026-05-10 17:38:33,610 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#17
+2026-05-10 17:38:33,611 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#18
+2026-05-10 17:38:33,611 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 18
+2026-05-10 17:38:33,612 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#18
+2026-05-10 17:38:33,612 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:329  | About to process StackRhythm for MeasureStack#19
+2026-05-10 17:38:33,612 DEBUG [Holy Forever-lead-Bb#3]          StackRhythm.java:221  | Setting expectedDuration=1 for stack on page 19
+2026-05-10 17:38:33,613 DEBUG [Holy Forever-lead-Bb#3]           PageRhythm.java:331  | Finished processing StackRhythm for MeasureStack#19
