@@ -260,29 +260,38 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(app.config['OUTPUT_FOLDER'], exist_ok=True)
 
 # --- Music Analysis Constants (Tunable) ---
-# Comfortable vocal range for most congregations (C4 to D5)
-# C4 = MIDI 60, D5 = MIDI 74
-COMFORTABLE_RANGE = (pitch.Pitch('C4').midi, pitch.Pitch('D5').midi)
 
-# "Sweet Spot" within the comfortable range, notes here are extra comfortable
-# Example: E4 (64) to B4 (71)
-SWEET_SPOT_RANGE = (pitch.Pitch('E4').midi, pitch.Pitch('B4').midi)
+# 1. Pitch Boundary Definitions (MIDI)
+G3 = 55
+A3 = 57
+B3 = 59
+C4 = 60
+C5 = 72
+D5 = 74
+E5 = 76
 
-# Penalties for notes outside the comfortable range
-OUT_OF_RANGE_PENALTY_PER_SEMITONE = 5 # Penalty for each semitone outside the comfortable range
-SWEET_SPOT_BONUS_PER_SEMITONE = 1     # Bonus (score reduction) for each semitone inside the sweet spot
+# 2. Scoring Weight Multipliers
+# These control how the 0-100 score is calculated
+AVG_PENALTY_MULTIPLIER = 12  # Weight of overall stamina/tessitura
+PEAK_PENALTY_MULTIPLIER = 5   # Weight of "deal-breaker" high/low notes
 
-# Threshold for notes considered "harsh outliers" (very difficult to sing)
-HARSH_OUTLIER_THRESHOLD = 8 # Notes more than this many semitones outside range get extra penalty
-
-# Maximum number of sharps/flats considered "friendly" for congregational singing
+# 3. Key Preference Settings
 MAX_ACCIDENTALS = 3
-
-# List of keys considered "friendly" (e.g., C, G, D, A, E, F, Bb, Eb)
 FRIENDLY_KEYS = {'C', 'G', 'D', 'A', 'E', 'F', 'Bb', 'Eb'}
-
-# List of keys that are common for transposing instruments (Bb, Eb, Ab)
 TRANSPOSE_INSTRUMENT_KEYS = {'Bb', 'Eb', 'Ab'}
+
+# 4. Global Comfort Thresholds 
+# Centralized for use in logic, slugs, and HTML explanations
+AVG_PENALTY_MULTIPLIER = 12
+PEAK_PENALTY_MULTIPLIER = 5
+
+COMFORT_THRESHOLDS = [
+    {"min": 98, "label": "✅ Perfect Fit", "slug": "perfect", "desc": "Right in the Ideal Tessitura for a congregation."},
+    {"min": 85, "label": "🎵 Very Singable", "slug": "very-singable", "desc": "Mostly Comfortable with a few manageable high or low spots."},
+    {"min": 65, "label": "⚠️ Challenging", "slug": "challenging", "desc": "Frequent visits to the Max Singing Range; may tire some voices."},
+    {"min": 40, "label": "❌ Uncomfortable", "slug": "uncomfortable", "desc": "Significant strain. Contains several notes that are difficult for a crowd."},
+    {"min": 0,  "label": "🚫 Not Suitable", "slug": "unsuitable", "desc": "Contains notes beyond the Max Singing Range."}
+]
 
 # --- Helper Functions for Music Analysis ---
 
@@ -355,60 +364,56 @@ def get_note_comfort_color(midi_note):
     else: # out_of_range
         return "red"
 
-def calculate_comfort_score(notes_info):
-    """
-    Calculates comfort score based on note durations and pitch zones.
-    Lower is better. 0 = ideal tessitura only.
-    """
-    if not notes_info:
-        print("⚠️ Empty note list in calculate_comfort_score")
-        return float('inf')
+# --- 2. LOGIC FUNCTIONS ---
+def get_comfort_metadata(score):
+    for threshold in COMFORT_THRESHOLDS:
+        if score >= threshold["min"]:
+            return threshold
+    return COMFORT_THRESHOLDS[-1]
 
-    score = 0
+def calculate_comfort_score(notes_info):
+    if not notes_info:
+        return 0
+
+    total_penalty = 0
+    total_duration = 0
+    max_penalty_seen = 0 
+
     for note in notes_info:
         midi = note['midi']
         dur = note['duration']
+        total_duration += dur
+        
+        current_penalty = 0
         if C4 <= midi <= C5:
-            continue  # ideal tessitura
+            current_penalty = 0
         elif A3 <= midi <= B3 or C5 < midi <= D5:
-            score += 1 * dur  # slightly outside ideal
+            current_penalty = 1 * dur
         elif G3 <= midi < A3 or D5 < midi <= E5:
-            base_penalty = 3
-            score += base_penalty * dur  # edge of range
-            # Add an extra penalty for sustained notes in the stretch zone
-            if dur >= 1.9: # If note is half-note or longer
-                score += base_penalty * 0.5 # Add half the base penalty again
+            base = 3
+            current_penalty = base * dur
+            if dur >= 1.9: current_penalty += base * 0.5
         else:
-            base_penalty = 10
-            score += base_penalty * dur
-            # Add a more significant extra penalty for sustained notes out of range
-            if dur >= 2: # If note is half-note or longer
-                score += base_penalty # Add full base penalty again
-    return round(score, 1)
+            base = 10
+            current_penalty = base * dur
+            if dur >= 2: current_penalty += base
+        
+        total_penalty += current_penalty
+        density = current_penalty / dur if dur > 0 else 0
+        if density > max_penalty_seen:
+            max_penalty_seen = density
+
+    avg_penalty = total_penalty / total_duration if total_duration > 0 else 0
+    
+    # Calculate 0-100 score using global multipliers
+    comfort_index = 100 - (avg_penalty * AVG_PENALTY_MULTIPLIER) - (max_penalty_seen * PEAK_PENALTY_MULTIPLIER)
+    return max(0, min(100, round(comfort_index, 1)))
 
 def comfort_category(score):
-    if score == 0:
-        return "✅ Perfect fit"
-    elif score <= 35:
-        return "🎵 Very singable"
-    elif score <= 120:
-        return "⚠️ Singable but may challenge some"
-    elif score <= 250:
-        return "❌ Uncomfortable for most"
-    else:
-        return "🚫 Not suitable for congregational singing"
+    return get_comfort_metadata(score)["label"]
 
 def comfort_category_slug(score):
-    if score == 0:
-        return "perfect"
-    elif score <= 35:
-        return "very-singable"
-    elif score <= 120:
-        return "challenging"
-    elif score <= 250:
-        return "uncomfortable"
-    else:
-        return "unsuitable"
+    return get_comfort_metadata(score)["slug"]
 
 def ensure_music21_key(k):
     """
@@ -442,86 +447,86 @@ def ensure_music21_key(k):
 
 def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=False):
     """
-    Finds and scores potential transposed keys based on comfort, key complexity,
-    and preference for instrument keys.
-    Returns a sorted list of all candidates and a filtered list of truly singable options.
+    Finds and scores potential transposed keys based on comfort (0-100%), 
+    key complexity, and preference for instrument keys.
     """
     key_analysis_info = []
-##    print(f"all_notes_info={all_notes_info}")
-    warnings = []
-    # Iterate through possible transpositions (e.g., -12 to +12 semitones = full octave up/down)
+    original_key_obj = ensure_music21_key(original_key)
+    
+    if not isinstance(original_key_obj, music21.key.Key):
+        return []
+
+    # Iterate through possible transpositions (-11 to +12 semitones)
     for i in range(-11, 12):
         try:
             shifted_notes_info = [
                 {'midi': n['midi'] + i, 'duration': n['duration']}
                 for n in all_notes_info
-                if 'midi' in n and 'duration' in n and isinstance(n['duration'], (int, float)) and n['duration'] > 0
+                if 'midi' in n and 'duration' in n and n['duration'] > 0
             ]
 
             if not shifted_notes_info:
-                print(f"⚠️ Skipping shift {i}: no valid notes after filtering")
                 continue
 
+            # 1. Calculate the base comfort percentage (0-100)
             comfort_score = calculate_comfort_score(shifted_notes_info)
-            original_key = ensure_music21_key(original_key)
-            if not isinstance(original_key, music21.key.Key):
-                print(f"⚠️ Cannot transpose shift {i}: final_key is not a valid music21 Key object. Skipping.")
-                continue
+            
             try:
-                transposed_key = original_key.transpose(i)
-            except Exception as e:
-                print(f"❌ Transposition failed for shift {i}: {e}")
+                transposed_key = original_key_obj.transpose(i)
+            except Exception:
                 continue
 
+            # 2. Calculate Penalties (to be subtracted from the comfort percentage)
+            # Music Theory Penalty: Favor keys with fewer accidentals
+            accidental_count = abs(transposed_key.sharps)
+            accidental_penalty = accidental_count * 1.5
+            if accidental_count > MAX_ACCIDENTALS:
+                accidental_penalty += 10 # Extra heavy penalty for 4+ sharps/flats
+
+            # Key Preference Penalty
             key_tonic_name = transposed_key.tonic.name
-
-            accidental_penalty = abs(transposed_key.sharps)
-            if accidental_penalty > MAX_ACCIDENTALS:
-                accidental_penalty *= 5
-
             key_preference_penalty = 0
             if prefer_transpose_keys:
                 if key_tonic_name not in TRANSPOSE_INSTRUMENT_KEYS:
-                    key_preference_penalty = 10
+                    key_preference_penalty = 5
             else:
                 if key_tonic_name not in FRIENDLY_KEYS:
                     key_preference_penalty = 3
 
-            final_score = comfort_score + (accidental_penalty * 2) + key_preference_penalty + abs(i)
+            # Distance Penalty: Small penalty for shifting too far from original
+            distance_penalty = abs(i) * 0.5
 
+            # 3. Final Combined Score (Starts at comfort, subtracts ease-of-use penalties)
+            final_score = comfort_score - accidental_penalty - key_preference_penalty - distance_penalty
+            final_score = round(max(0, final_score), 1)
+
+            # 4. Gather Range Metadata
             lowest = min(n['midi'] for n in shifted_notes_info)
             highest = max(n['midi'] for n in shifted_notes_info)
-            low_comfort = get_note_comfort_category(lowest)
-            high_comfort = get_note_comfort_category(highest)
-            low_color = get_note_comfort_color(lowest)
-            high_color = get_note_comfort_color(highest)
 
             key_analysis_info.append({
                 'shift': i,
                 'key': transposed_key,
-                'comfort_score': round(comfort_score, 1),
-                'final_score': round(final_score, 1),
-                'low': lowest,
-                'high': highest,
-                'low_comfort': low_comfort,
-                'high_comfort': high_comfort,
-                'low_color': low_color,
-                'high_color': high_color,
+                'comfort_score': comfort_score, # The pure 0-100% vocal score
+                'final_score': final_score,     # The weighted score used for ranking
+                'low_midi': lowest,             # For piano markers
+                'high_midi': highest,           # For piano markers
+                'low_comfort': get_note_comfort_category(lowest),
+                'high_comfort': get_note_comfort_category(highest),
+                'low_color': get_note_comfort_color(lowest),
+                'high_color': get_note_comfort_color(highest),
                 'range_low': pitch.Pitch(lowest).nameWithOctave,
                 'range_high': pitch.Pitch(highest).nameWithOctave,
                 'comfort_label': comfort_category(comfort_score),
                 'comfort_slug': comfort_category_slug(comfort_score),
             })
 
-        except ZeroDivisionError:
-            print(f"❌ ZeroDivisionError on shift {i}")
-            continue
         except Exception as e:
-            print(f"❌ Unexpected error on shift {i}: {e}")
+            print(f"❌ Error on shift {i}: {e}")
             continue
- 
-    # Sort all candidates by their final_score (lowest score is best)
-    key_analysis_info.sort(key=lambda k: k['final_score'])
+
+    # Sort candidates by final_score (Highest score is now the best key)
+    key_analysis_info.sort(key=lambda k: k['final_score'], reverse=True)
 
     return key_analysis_info
 
@@ -679,7 +684,9 @@ def upload_file():
                     title=summary.get("title"),
                     author=pdf_metadata.get("author"),
                     year=pdf_metadata.get("year"),
-                    ccli_no=summary["ccli_number"]
+                    ccli_no=summary["ccli_number"],
+                    meta=get_comfort_metadata(summary["original_key_info"]["comfort_score"]),
+                    thresholds=COMFORT_THRESHOLDS
                 )
 
             except Exception as e:
@@ -748,7 +755,9 @@ def get_song(pdf_hash):
         title=song.get("title"),
         author=song.get("author"),
         year=song.get("year"),
-        ccli_no=song.get("ccli_number")
+        ccli_no=song.get("ccli_number"),
+        meta=get_comfort_metadata(summary["original_key_info"]["comfort_score"]),
+        thresholds=COMFORT_THRESHOLDS
     )
 
 def extract_xml_from_mxl(path):

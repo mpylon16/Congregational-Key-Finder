@@ -341,52 +341,53 @@
           {% endfor %}
         </div>
 
-       <!-- About Section -->
-        <details style="margin-top: 3rem;">
-          <summary>ℹ️ About the KeySelect analysis</summary>
-          <div class="info-section">
-            <p>This tool analyzes your uploaded melody to recommend the best key for <strong>congregational singing</strong>. It uses research-informed vocal ranges to assess how singable the melody is for a typical group of untrained voices.</p>
+       <details style="margin-top: 3rem;">
+  <summary>ℹ️ About the KeySelect analysis</summary>
+  <div class="info-section">
+    <p>This tool assesses how singable a melody is for a mixed group of untrained voices using three nested layers of physical effort:</p>
 
-            <h4>🎶 What’s considered comfortable?</h4>
-            <ul>
-              <li><strong>🎯 Ideal Tessitura:</strong> <code>C4–C5</code> — where most voices can sing easily for long periods</li>
-              <li><strong>✅ Comfortable Range:</strong> <code>A3–D5</code> — safe for nearly all adults in mixed groups</li>
-              <li><strong>⚠️ Stretch Zone:</strong> <code>G3–A3</code> or <code>D5–E5</code> — singable, but may strain some voices</li>
-              <li><strong>❌ Out of Range:</strong> below <code>G3</code> or above <code>E5</code> — difficult or unreachable for most</li>
-            </ul>
+    <div style="margin: 20px 0; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;">
+        <div style="display: flex; height: 35px; border-radius: 5px; overflow: hidden; margin-bottom: 10px; border: 1px solid #999; font-family: sans-serif;">
+            <div style="flex: 2; background: #f8d7da; text-align: center; font-size: 8px; line-height: 35px;">OUT</div>
+            <div style="flex: 2; background: #ffe5d0; text-align: center; font-size: 8px; line-height: 35px;">MAX</div>
+            <div style="flex: 3; background: #fff3cd; text-align: center; font-size: 8px; line-height: 35px;">COMFORT</div>
+            <div style="flex: 12; background: #28a745; color: white; text-align: center; font-size: 11px; line-height: 35px; font-weight: bold;">IDEAL TESSITURA (C4-C5)</div>
+            <div style="flex: 2; background: #fff3cd; text-align: center; font-size: 8px; line-height: 35px;">COMFORT</div>
+            <div style="flex: 2; background: #ffe5d0; text-align: center; font-size: 8px; line-height: 35px;">MAX</div>
+            <div style="flex: 2; background: #f8d7da; text-align: center; font-size: 8px; line-height: 35px;">OUT</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-family: monospace; font-size: 11px; color: #666; padding: 0 5px;">
+            <span>F3</span><span>G3</span><span>A3</span><span>C4</span><span>C5</span><span>D5</span><span>E5</span><span>F5</span>
+        </div>
+    </div>
 
-            <h4>🎯 How the Difficulty Score works</h4>
-            <p>Each note is scored based on its pitch and duration. Notes outside the ideal range accumulate "difficulty points":</p>
-            <ul>
-              <li><strong>0 points:</strong> Notes between <code>C4–C5</code></li>
-              <li><strong>+1 point per beat:</strong> Slightly outside (e.g., <code>A3–B3</code>, <code>C5–D5</code>)</li>
-              <li><strong>+3 points per beat:</strong> Edge of range (e.g., <code>G3</code>, <code>D#5–E5</code>)</li>
-              <li><strong>+10 points per beat:</strong> Far out of range (e.g., <code>F3</code> or <code>F5+</code>)</li>
-            </ul>
-            
-            <p style="margin-left: 20px; font-size: 0.95em; color: #555; border-left: 3px solid #eee; padding-left: 10px;">
-              <em><strong>Note on Duration:</strong> Points scale with time (e.g., two quavers equal one crotchet). However, single notes held for <strong>two beats or more</strong> receive an additional "stamina penalty" to reflect the extra breath control required in difficult ranges.</em>
-            </p>
+    
 
-            <h4>📊 Interpreting the Score</h4>
-            <p>The total score represents physical strain—<strong>lower is better</strong>.</p>
-            <table>
-              <tr><th>Difficulty Score</th><th>Interpretation</th></tr>
-              <tr><td>0</td><td>✅ Perfect fit (Entirely in ideal range)</td></tr>
-              <tr><td>1–35</td><td>🎵 Very singable</td></tr>
-              <tr><td>36–120</td><td>⚠️ Singable but may challenge some</td></tr>
-              <tr><td>121–250</td><td>❌ Uncomfortable for most</td></tr>
-              <tr><td>251+</td><td>🚫 Not suitable for congregational singing</td></tr>
-            </table>
+    <h4>🎶 The Vocal Tiers</h4>
+    <ul>
+      <li><strong>🎯 Ideal Tessitura (C4–C5):</strong> The "Sweet Spot." These notes are effortless for almost all singers.</li>
+      <li><strong>✅ Comfortable Range (A3–D5):</strong> Includes the Ideal Tessitura plus the notes most people can hit naturally without strain.</li>
+      <li><strong>⚠️ Max Singing Range (G3–E5):</strong> The "Outer Limits." This describes the full capacity of a mixed crowd. Notes here require more breath and physical effort.</li>
+      <li><strong>❌ Beyond Limits:</strong> Anything below G3 or above E5 is physically unreachable for a typical congregation.</li>
+    </ul>
 
-            <h4>📝 Notes</h4>
-            <ul>
-              <li>Only <strong>notes with lyrics</strong> are analyzed — instrumental intros/outros are ignored.</li>
-              <li>Accidentals and key signatures <strong>do not affect</strong> the score — only absolute pitch and duration matter.</li>
-              <li>Key recommendations aim to shift the melody so that the most frequent and longest-held notes sit within the most comfortable range.</li>
-            </ul>
-          </div>
-        </details>
+    <h4>📊 Interpreting the Comfort Rating</h4>
+    <p>The rating represents how much of the melody is accessible to a typical crowd—<strong>higher is better (100% is perfect)</strong>.</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+      <tr style="background: #eee;">
+        <th style="padding: 8px; text-align: left;">Rating</th>
+        <th style="padding: 8px; text-align: left;">Interpretation</th>
+      </tr>
+      {% for t in thresholds %}
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 8px;">{{ t.min }}%+</td>
+        <td style="padding: 8px;"><strong>{{ t.label }}</strong>: {{ t.desc }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</details>
 
     </div>
 
