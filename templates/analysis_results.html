@@ -107,22 +107,22 @@
                         </h5>
                         <div class="row align-items-center">
                             <div class="col-sm-4">
-                                <span class="display-6 fw-bold text-dark">{{ recommended.key }}</span>
+                                <span class="display-6 fw-bold text-dark">{{ recommended.key | replace('-', '♭') }}</span>
                             </div>
                             <div class="col-sm-4 text-center">
                                 <span class="fs-3 fw-bold text-success">{{ recommended.comfort_score }}% Singable</span>
                                 <div class="small text-muted">Ranked Best Overall Balance</div>
                             </div>
                             <div class="col-sm-4 text-sm-end">
-                                <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.low_color }}">{{ recommended.range_low }}</span>
+                                <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.low_color }}">{{ recommended.range_low | replace('-', '♭') }}</span>
                                 <span class="text-muted mx-1">to</span>
-                                <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.high_color }}">{{ recommended.range_high }}</span>
+                                <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.high_color }}">{{ recommended.range_high | replace('-', '♭') }}</span>
                             </div>
                         </div>
                     </div>
                     {% endif %}
 
-                    <h5 class="fw-bold text-dark mt-4">All Options by Category</h5>
+                    <h5 class="fw-bold text-dark mt-4">All Other Options by Category</h5>
                     
                     {% for limit in thresholds %}
                         {% set outer_loop = loop %}
@@ -137,7 +137,7 @@
                             <div class="category-header mt-3 px-3 py-2 rounded fw-bold fs-6
                                 {% if limit.slug == 'perfect' %}bg-dark-green text-white
                                 {% elif limit.slug == 'very-singable' %}bg-light-green text-white
-                                {% elif limit.slug == 'challenging' %}bg-warning text-dark
+                                {% elif limit.slug == 'challenging' %}bg-yellow text-dark
                                 {% elif limit.slug == 'uncomfortable' %}bg-orange text-white
                                 {% else %}bg-danger text-white{% endif %}">
                                 {{ limit.label }} <span class="fw-normal fs-6 opacity-90">— {{ limit.desc }}</span>
@@ -148,14 +148,14 @@
                                     <tbody class="bg-white">
                                         {% for k in category_keys %}
                                         <tr>
-                                            <td class="fw-bold text-dark fs-5" style="width: 30%;">{{ k.key }}</td>
+                                            <td class="fw-bold text-dark fs-5" style="width: 30%;">{{ k.key | replace('-', '♭') }}</td>
                                             <td style="width: 35%;">
                                                 <div class="d-flex align-items-center gap-2">
                                                     <div class="progress flex-grow-1" style="height: 8px; max-width: 120px;">
                                                         <div class="progress-bar 
                                                             {% if limit.slug == 'perfect' %}bg-dark-green
                                                             {% elif limit.slug == 'very-singable' %}bg-light-green
-                                                            {% elif limit.slug == 'challenging' %}bg-warning
+                                                            {% elif limit.slug == 'challenging' %}bg-yellow
                                                             {% elif limit.slug == 'uncomfortable' %}bg-orange
                                                             {% else %}bg-danger{% endif %}" style="width: {{ k.comfort_score }}%"></div>
                                                     </div>
@@ -163,9 +163,9 @@
                                                 </div>
                                             </td>
                                             <td style="width: 35%;">
-                                                <span class="badge text-white px-2 py-1" style="background-color: {{ k.low_color }}">{{ k.range_low }}</span>
+                                                <span class="badge text-white px-2 py-1" style="background-color: {{ k.low_color }}">{{ k.range_low | replace('-', '♭') }}</span>
                                                 <span class="text-muted px-1">→</span>
-                                                <span class="badge text-white px-2 py-1" style="background-color: {{ k.high_color }}">{{ k.range_high }}</span>
+                                                <span class="badge text-white px-2 py-1" style="background-color: {{ k.high_color }}">{{ k.range_high | replace('-', '♭') }}</span>
                                             </td>
                                             
                                             {% if not is_database_pull %}
@@ -211,14 +211,14 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="d-flex align-items-center gap-2 mb-1">
                                 <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#146c43;"></span>
-                                <strong class="small text-success">Ideal Tessitura</strong>
+                                <strong class="small" style="color: #146c43;">Ideal Tessitura</strong>
                             </div>
                             <div class="text-muted small ps-3">C4 to C5 (Sweet Spot)</div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="d-flex align-items-center gap-2 mb-1">
                                 <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#2ecc71;"></span>
-                                <strong class="small text-primary">Comfortable Range</strong>
+                                <strong class="small" style="color: #2ecc71;">Comfortable Range</strong>
                             </div>
                             <div class="text-muted small ps-3">A3 to D5</div>
                         </div>
@@ -241,7 +241,7 @@
                     <div class="ranking-explainer">
                         <h6 class="fw-bold text-dark mb-2">📋 How Options are Evaluated & Ranked</h6>
                         <p class="small text-muted m-0">
-                            Keys are indexed by balancing <strong>Vocal Comfort</strong> against physical <strong>Instrument Friction</strong>. Points are subtracted from the vocal score if a key uses difficult accidentals (like 5 sharps) or awkward fretboard/valve positions for typical worship band instruments.
+                            Keys are indexed by balancing <strong>Vocal Comfort</strong> against exactly how much of a pain it is to play for the band. Points are subtracted from the vocal score if a key uses difficult accidentals (like 5 sharps) or awkward fretboard/valve positions for typical worship instruments. <br><br><i>(Note: Instrument team-makeup selection controls will be added to the search/upload page soon to further customize these results).</i>
                         </p>
                     </div>
                 </div>
@@ -258,7 +258,9 @@
 <style>
     .bg-dark-green { background-color: #146c43 !important; }
     .bg-light-green { background-color: #2ecc71 !important; }
+    .bg-yellow { background-color: #ffc107 !important; }
     .bg-orange { background-color: #e67e22 !important; }
+    .bg-red { background-color: #dc3545 !important; }
     
     .scale-container {
         background: #f8f9fa;
@@ -276,12 +278,13 @@
     .tessitura-bar {
         height: 16px;
         border-radius: 8px;
+        /* Perfect color mapping to legend hex codes */
         background: linear-gradient(to right, 
             #dc3545 0%, #dc3545 10%, 
             #e67e22 10%, #e67e22 25%, 
-            #ffc107 25%, #ffc107 40%, 
+            #2ecc71 25%, #2ecc71 40%, 
             #146c43 40%, #146c43 60%, 
-            #ffc107 60%, #ffc107 75%, 
+            #2ecc71 60%, #2ecc71 75%, 
             #e67e22 75%, #e67e22 90%, 
             #dc3545 90%, #dc3545 100%
         );

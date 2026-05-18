@@ -1197,21 +1197,29 @@ def extract_vocal_note_info(score, fallback_time_signature='4/4', source_name='u
 def deduplicate_by_key(all_keys_analysis):
     best_versions = {}
     for k in all_keys_analysis:
-        if not isinstance(k, dict): continue
+        if not isinstance(k, dict) or 'key' not in k: 
+            continue
         
-        # Group by Pitch Class (0-11) to guarantee exactly 12 options
-        if 'music21_key' in k and hasattr(k['music21_key'], 'tonic'):
-            pitch_class = k['music21_key'].tonic.pitchClass
-        else:
-            pitch_class = k['key'] # Fallback for older database caches
-            
-        if pitch_class not in best_versions or k['final_score'] > best_versions[pitch_class]['final_score']:
-            best_versions[pitch_class] = k
+        # Extract the base note name to use as a unique bucket (e.g., "C", "D-", "E♭")
+        raw_tonic = str(k['key']).split()[0]
+        
+        # Normalize enharmonics and legacy minus signs so they map to the exact same bucket
+        enharmonic_map = {
+            'C#': 'D♭', 'D-': 'D♭', 'D#': 'E♭', 'E-': 'E♭', 
+            'F#': 'G♭', 'G-': 'G♭', 'G#': 'A♭', 'A-': 'A♭', 
+            'A#': 'B♭', 'B-': 'B♭'
+        }
+        bucket = enharmonic_map.get(raw_tonic, raw_tonic)
+        
+        # If this bucket is empty, or this specific octave variation has a higher score, keep it
+        if bucket not in best_versions or k['final_score'] > best_versions[bucket]['final_score']:
+            best_versions[bucket] = k
             
     # Sort descending by our newly calculated final score
     sorted_options = sorted(best_versions.values(), key=lambda x: x['final_score'], reverse=True)
-    return sorted_options[:12] # Ensure strictly 12 options
-
+    
+    # This mathematically guarantees exactly 12 options maximum
+    return sorted_options[:12]
 
 @app.route('/download/<folder>/<filename>')
 def download_file(folder, filename):
