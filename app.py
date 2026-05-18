@@ -745,6 +745,7 @@ def get_song(pdf_hash):
     
     # Return the same analysis template we use for new uploads
     return render_template("analysis_results.html",
+        is_database_pull=True, # <--- Tells the HTML to hide the top original key block
         pdf_hash=song['pdf_hash'],
         original_key=summary["original_key_info"],
         recommended=summary["recommended"],
@@ -1181,10 +1182,13 @@ def deduplicate_by_key(all_keys_analysis):
         if not isinstance(k, dict):
             print(f"⚠️ Skipping invalid item: {k} (type: {type(k)})")
             continue
-
-        key_id = (k['key'].tonic.name, k['key'].mode)
-        if key_id not in best_versions or k['comfort_score'] < best_versions[key_id]['comfort_score']:
-            best_versions[key_id] = k
+# Check if it's a music21 object or a cached string dictionary name
+        if hasattr(k['key'], 'tonic'):
+            key_name = f"{k['key'].tonic.name} {k['key'].mode}"
+        else:
+            key_name = str(k['key'])
+        if key_name not in best_versions or k['comfort_score'] > best_versions[key_name]['comfort_score']:
+            best_versions[key_name] = k
     return list(best_versions.values())
 
 
