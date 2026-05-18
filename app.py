@@ -444,89 +444,110 @@ def ensure_music21_key(k):
     print(f"Final return None — unknown type: {type(k)} = {k}")
     return None
 
+def calculate_band_friction(target_key, team_profile=None):
+    """Calculates a friction penalty (0-25 points) based on active instruments."""
+    if not team_profile:
+        team_profile = {'guitar': True, 'keyboard': True} # Default band setup
+
+    clean_tonic = target_key.tonic.name.replace('-', '♭')
+    mode = target_key.mode 
+
+    instrument_friction = {
+        'guitar': {
+            'C': 0, 'C#': 8, 'D♭': 8, 'D': 0, 'D#': 9, 'E♭': 9, 'E': 0, 'F': 4, 
+            'F#': 8, 'G♭': 8, 'G': 0, 'G#': 9, 'A♭': 9, 'A': 0, 'A#': 5, 'B♭': 5, 'B': 7
+        },
+        'keyboard': {
+            'C': 0, 'C#': 3, 'D♭': 3, 'D': 0, 'D#': 3, 'E♭': 2, 'E': 1, 'F': 0, 
+            'F#': 6, 'G♭': 6, 'G': 0, 'G#': 4, 'A♭': 3, 'A': 1, 'A#': 2, 'B♭': 1, 'B': 5
+        },
+        'bb_horns': { 
+            'C': 2, 'C#': 8, 'D♭': 3, 'D': 6, 'D#': 1, 'E♭': 1, 'E': 8, 'F': 0, 
+            'F#': 9, 'G♭': 9, 'G': 3, 'G#': 7, 'A♭': 2, 'A': 8, 'A#': 0, 'B♭': 0, 'B': 8
+        },
+        'eb_horns': { 
+            'C': 1, 'C#': 7, 'D♭': 6, 'D': 2, 'D#': 0, 'E♭': 0, 'E': 6, 'F': 2, 
+            'F#': 8, 'G♭': 8, 'G': 0, 'G#': 5, 'A♭': 5, 'A': 6, 'A#': 1, 'B♭': 1, 'B': 8
+        },
+        'strings': { 
+            'C': 0, 'C#': 8, 'D♭': 8, 'D': 0, 'D#': 5, 'E♭': 4, 'E': 2, 'F': 0, 
+            'F#': 7, 'G♭': 7, 'G': 0, 'G#': 8, 'A♭': 7, 'A': 0, 'A#': 4, 'B♭': 3, 'B': 6
+        }
+    }
+    
+    total_friction = 0
+    active_count = 0
+
+    for instrument, active in team_profile.items():
+        if not active: continue
+        active_count += 1
+        
+        if mode == 'minor':
+            if instrument == 'guitar':
+                base_friction = instrument_friction['guitar'].get(clean_tonic, 5)
+                friction = max(0, base_friction - 2) # Minor open chords are a bit easier
+            else:
+                try:
+                    relative_major = target_key.relative.tonic.name.replace('-', '♭')
+                    friction = instrument_friction[instrument].get(relative_major, 5)
+                except Exception:
+                    friction = 5
+        else:
+            friction = instrument_friction[instrument].get(clean_tonic, 5)
+            
+        total_friction += friction
+
+    if active_count == 0: return 0
+    return round((total_friction / active_count) * 2.5)
 
 def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=False):
-    """
-    Finds and scores potential transposed keys based on comfort (0-100%), 
-    key complexity, and preference for instrument keys.
-    """
     key_analysis_info = []
     original_key_obj = ensure_music21_key(original_key)
-    
-    if not isinstance(original_key_obj, music21.key.Key):
-        return []
+    if not isinstance(original_key_obj, music21.key.Key): return []
 
-    # Iterate through possible transpositions (-11 to +12 semitones)
     for i in range(-11, 12):
         try:
             shifted_notes_info = [
                 {'midi': n['midi'] + i, 'duration': n['duration']}
-                for n in all_notes_info
-                if 'midi' in n and 'duration' in n and n['duration'] > 0
+                for n in all_notes_info if 'midi' in n and 'duration' in n and n['duration'] > 0
             ]
+            if not shifted_notes_info: continue
 
-            if not shifted_notes_info:
-                continue
-
-            # 1. Calculate the base comfort percentage (0-100)
             comfort_score = calculate_comfort_score(shifted_notes_info)
-            
-            try:
-                transposed_key = original_key_obj.transpose(i)
-            except Exception:
-                continue
+            try: transposed_key = original_key_obj.transpose(i)
+            except Exception: continue
 
-            # 2. Calculate Penalties (to be subtracted from the comfort percentage)
-            # Music Theory Penalty: Favor keys with fewer accidentals
-            accidental_count = abs(transposed_key.sharps)
-            accidental_penalty = accidental_count * 1.5
-            if accidental_count > MAX_ACCIDENTALS:
-                accidental_penalty += 10 # Extra heavy penalty for 4+ sharps/flats
-
-            # Key Preference Penalty
-            key_tonic_name = transposed_key.tonic.name
-            key_preference_penalty = 0
-            if prefer_transpose_keys:
-                if key_tonic_name not in TRANSPOSE_INSTRUMENT_KEYS:
-                    key_preference_penalty = 5
-            else:
-                if key_tonic_name not in FRIENDLY_KEYS:
-                    key_preference_penalty = 3
-
-            # Distance Penalty: Small penalty for shifting too far from original
+            # New Ranking Logic using the Instrument Matrix
+            instrument_penalty = calculate_band_friction(transposed_key)
             distance_penalty = abs(i) * 0.5
+            final_score = round(max(0, comfort_score - instrument_penalty - distance_penalty), 1)
 
-            # 3. Final Combined Score (Starts at comfort, subtracts ease-of-use penalties)
-            final_score = comfort_score - accidental_penalty - key_preference_penalty - distance_penalty
-            final_score = round(max(0, final_score), 1)
-
-            # 4. Gather Range Metadata
+            # Gather and Clean Metadata (Fixing the Flat symbols here!)
             lowest = min(n['midi'] for n in shifted_notes_info)
             highest = max(n['midi'] for n in shifted_notes_info)
+            clean_low = pitch.Pitch(lowest).nameWithOctave.replace('-', '♭')
+            clean_high = pitch.Pitch(highest).nameWithOctave.replace('-', '♭')
+            clean_key_name = f"{transposed_key.tonic.name.replace('-', '♭')} {transposed_key.mode}"
 
             key_analysis_info.append({
                 'shift': i,
-                'key': transposed_key,
-                'comfort_score': comfort_score, # The pure 0-100% vocal score
-                'final_score': final_score,     # The weighted score used for ranking
-                'low_midi': lowest,             # For piano markers
-                'high_midi': highest,           # For piano markers
+                'key': clean_key_name, # Exporting clean string for the HTML template
+                'music21_key': transposed_key, # Kept for deduplication math
+                'comfort_score': comfort_score, 
+                'final_score': final_score,     
+                'low_midi': lowest, 'high_midi': highest,
                 'low_comfort': get_note_comfort_category(lowest),
                 'high_comfort': get_note_comfort_category(highest),
                 'low_color': get_note_comfort_color(lowest),
                 'high_color': get_note_comfort_color(highest),
-                'range_low': pitch.Pitch(lowest).nameWithOctave,
-                'range_high': pitch.Pitch(highest).nameWithOctave,
+                'range_low': clean_low,
+                'range_high': clean_high,
                 'comfort_label': comfort_category(comfort_score),
                 'comfort_slug': comfort_category_slug(comfort_score),
             })
-
         except Exception as e:
             print(f"❌ Error on shift {i}: {e}")
             continue
-
-    # Sort candidates by final_score (Highest score is now the best key)
-    key_analysis_info.sort(key=lambda k: k['final_score'], reverse=True)
 
     return key_analysis_info
 
@@ -1174,22 +1195,22 @@ def extract_vocal_note_info(score, fallback_time_signature='4/4', source_name='u
     return all_notes_info, filtered_vocal_part, warnings
 
 def deduplicate_by_key(all_keys_analysis):
-##    print("🔍 Type of all_keys_analysis:", type(all_keys_analysis))
-##    print("🔍 First few entries:", all_keys_analysis[:3])
-
     best_versions = {}
     for k in all_keys_analysis:
-        if not isinstance(k, dict):
-            print(f"⚠️ Skipping invalid item: {k} (type: {type(k)})")
-            continue
-# Check if it's a music21 object or a cached string dictionary name
-        if hasattr(k['key'], 'tonic'):
-            key_name = f"{k['key'].tonic.name} {k['key'].mode}"
+        if not isinstance(k, dict): continue
+        
+        # Group by Pitch Class (0-11) to guarantee exactly 12 options
+        if 'music21_key' in k and hasattr(k['music21_key'], 'tonic'):
+            pitch_class = k['music21_key'].tonic.pitchClass
         else:
-            key_name = str(k['key'])
-        if key_name not in best_versions or k['comfort_score'] > best_versions[key_name]['comfort_score']:
-            best_versions[key_name] = k
-    return list(best_versions.values())
+            pitch_class = k['key'] # Fallback for older database caches
+            
+        if pitch_class not in best_versions or k['final_score'] > best_versions[pitch_class]['final_score']:
+            best_versions[pitch_class] = k
+            
+    # Sort descending by our newly calculated final score
+    sorted_options = sorted(best_versions.values(), key=lambda x: x['final_score'], reverse=True)
+    return sorted_options[:12] # Ensure strictly 12 options
 
 
 @app.route('/download/<folder>/<filename>')
