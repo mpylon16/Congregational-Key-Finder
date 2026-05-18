@@ -129,9 +129,13 @@
                     <h5 class="fw-bold text-dark mt-4">All Transposition Options by Category</h5>
                     
                     {% for limit in thresholds %}
+                        {# Capture the outer loop context cleanly to prevent Jinja scope issues #}
+                        {% set outer_loop = loop %}
                         {% set category_keys = [] %}
+                        
                         {% for k in other_keys %}
-                            {% if k.comfort_score >= limit.min and (loop.parent.loop.first or k.comfort_score < thresholds[loop.parent.loop.index0 - 1].min) %}
+                            {# Use the explicit outer_loop variable to cleanly check bounds #}
+                            {% if k.comfort_score >= limit.min and (outer_loop.first or k.comfort_score < thresholds[outer_loop.index0 - 1].min) %}
                                 {% set _ = category_keys.append(k) %}
                             {% endif %}
                         {% endfor %}
@@ -149,7 +153,7 @@
                                     <tbody class="bg-white">
                                         {% for k in category_keys %}
                                         <tr>
-                                            <td class="fw-bold text-dark fs-5 width-25" style="width: 25%;">
+                                            <td class="fw-bold text-dark fs-5" style="width: 25%;">
                                                 {% if k.key.tonic %}{{ k.key.tonic.name }} {{ k.key.mode }}{% else %}{{ k.key }}{% endif %}
                                             </td>
                                             <td style="width: 30%;">
