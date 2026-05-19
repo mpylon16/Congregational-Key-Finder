@@ -1052,7 +1052,9 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     bad_entries = [k for k in all_keys_analysis if not isinstance(k, dict) or 'key' not in k]
     print("🛠  Number of malformed entries:", len(bad_entries))
 
+    # 1. Find the original key details (shift == 0) from the generated analysis list
     original_key_info = next((k for k in all_keys_analysis if k['shift'] == 0), None)
+    
     if original_key_info:
         original_low = original_key_info["low"]
         original_high = original_key_info["high"]
@@ -1062,30 +1064,43 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
         original_high_comfort = original_key_info["high_comfort"]
         original_low_color = original_key_info["low_color"]
         original_high_color = original_key_info["high_color"]
+        orig_comfort_score = original_key_info["comfort_score"]
+        orig_comfort_label = original_key_info["comfort_label"]
     else:
+        # Fallback values if shift 0 wasn't caught
         midi_values = [n['midi'] for n in all_notes_info]
-        original_low = min(midi_values)
-        original_high = max(midi_values)
+        original_low = min(midi_values) if midi_values else 60
+        original_high = max(midi_values) if midi_values else 72
         low = pitch.Pitch(original_low).nameWithOctave
         high = pitch.Pitch(original_high).nameWithOctave
         original_low_comfort = get_note_comfort_category(original_low)
         original_high_comfort = get_note_comfort_category(original_high)
         original_low_color = get_note_comfort_color(original_low)
         original_high_color = get_note_comfort_color(original_high)
+        orig_comfort_score = 0.0
+        orig_comfort_label = "⚠️ Unknown"
         
+    # 2. Run the full list through your updated pitch-class deduplicator.
+    # This guarantees exactly 12 items max, sorted strictly descending by final_score.
     deduped_keys = deduplicate_by_key(all_keys_analysis)
 
+    # 3. The highest-scoring key is your recommendation
     recommended = deduped_keys[0] if deduped_keys else None
-    recommended['low_comfort'] = get_note_comfort_category(recommended['low'])
-    recommended['high_comfort'] = get_note_comfort_category(recommended['high'])
-    recommended['low_color'] = get_note_comfort_color(recommended['low'])
-    recommended['high_color'] = get_note_comfort_color(recommended['high'])
+    
+    if recommended:
+        recommended['low_comfort'] = get_note_comfort_category(recommended['low'])
+        recommended['high_comfort'] = get_note_comfort_category(recommended['high'])
+        recommended['low_color'] = get_note_comfort_color(recommended['low'])
+        recommended['high_color'] = get_note_comfort_color(recommended['high'])
 
+    # 4. Filter the recommended key out of other_keys so it doesn't print twice.
+    # This leaves exactly 11 distinct items in other_keys.
     other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]
 
-    summary["all_keys_analysis"] = all_keys_analysis
+    # 5. Build your clean summary payload for the database
+    summary["all_keys_analysis"] = deduped_keys  # Holds exactly 12 unique options
     summary["recommended"] = recommended
-    summary["other_keys"] = other_keys
+    summary["other_keys"] = other_keys          # Holds exactly 11 secondary options
     summary["original_key_info"] = {
         "name": original_key_name,
         "range_low": low,
@@ -1094,8 +1109,8 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
         "high_comfort": original_high_comfort,
         "low_color": original_low_color,
         "high_color": original_high_color,
-        "comfort_score": original_key_info["comfort_score"],
-        "comfort_label": original_key_info["comfort_label"]
+        "comfort_score": orig_comfort_score,
+        "comfort_label": orig_comfort_label
     }
     summary["skipped"] = skipped
     summary["warnings"] = warnings
@@ -1196,29 +1211,37 @@ def extract_vocal_note_info(score, fallback_time_signature='4/4', source_name='u
 
 def deduplicate_by_key(all_keys_analysis):
     best_versions = {}
+    
     for k in all_keys_analysis:
-        if not isinstance(k, dict) or 'key' not in k: 
+        if not isinstance(k, dict) or 'key' not in k:
             continue
-        
-        # Extract the base note name to use as a unique bucket (e.g., "C", "D-", "E♭")
-        raw_tonic = str(k['key']).split()[0]
-        
-        # Normalize enharmonics and legacy minus signs so they map to the exact same bucket
-        enharmonic_map = {
-            'C#': 'D♭', 'D-': 'D♭', 'D#': 'E♭', 'E-': 'E♭', 
-            'F#': 'G♭', 'G-': 'G♭', 'G#': 'A♭', 'A-': 'A♭', 
-            'A#': 'B♭', 'B-': 'B♭'
-        }
-        bucket = enharmonic_map.get(raw_tonic, raw_tonic)
-        
-        # If this bucket is empty, or this specific octave variation has a higher score, keep it
-        if bucket not in best_versions or k['final_score'] > best_versions[bucket]['final_score']:
-            best_versions[bucket] = k
             
-    # Sort descending by our newly calculated final score
+        # 1. Cleanly handle both fresh music21 objects and legacy string objects
+        if hasattr(k['key'], 'tonic') and hasattr(k['key'], 'mode'):
+            # Convert to a standardized music21 Key object if needed
+            key_obj = k['key']
+        else:
+            clean_str = " ".join(str(k['key']).split()).replace('♭', '-')
+            try:
+                key_obj = music21.key.Key(clean_str)
+            except Exception:
+                key_obj = None
+
+        # 2. Extract the strict pitch class bucket (0 to 11) + mode
+        if key_obj:
+            bucket_id = f"{key_obj.tonic.pitchClass}_{key_obj.mode}"
+        else:
+            # Absolute fallback if string parsing fails
+            bucket_id = str(k['key'])[:3].strip()
+
+        # 3. Choose the octave variant with the highest FINAL balanced score
+        if bucket_id not in best_versions or k['final_score'] > best_versions[bucket_id]['final_score']:
+            best_versions[bucket_id] = k
+            
+    # 4. Sort the options cleanly by final_score descending (Fixes Point ix)
     sorted_options = sorted(best_versions.values(), key=lambda x: x['final_score'], reverse=True)
     
-    # This mathematically guarantees exactly 12 options maximum
+    # Return exactly the top 12 unique musical keys
     return sorted_options[:12]
 
 @app.route('/download/<folder>/<filename>')
