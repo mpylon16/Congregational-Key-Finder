@@ -127,8 +127,9 @@
                     {% for limit in thresholds %}
                         {% set outer_loop = loop %}
                         {% set category_keys = [] %}
+                        
                         {% for k in other_keys %}
-                            {% if k.comfort_score >= limit.min and (outer_loop.first or k.comfort_score < thresholds[outer_loop.index0 - 1].min) %}
+                            {% if k.final_score >= limit.min and (outer_loop.first or k.final_score < thresholds[outer_loop.index0 - 1].min) %}
                                 {% set _ = category_keys.append(k) %}
                             {% endif %}
                         {% endfor %}
@@ -148,7 +149,9 @@
                                     <tbody class="bg-white">
                                         {% for k in category_keys %}
                                         <tr>
-                                            <td class="fw-bold text-dark fs-5" style="width: 30%;">{{ k.key | replace('-', '♭') }}</td>
+                                            <td class="fw-bold text-dark fs-5" style="width: 30%;">
+                                                {{ k.key | replace('-', '♭') }}
+                                            </td>
                                             <td style="width: 35%;">
                                                 <div class="d-flex align-items-center gap-2">
                                                     <div class="progress flex-grow-1" style="height: 8px; max-width: 120px;">
@@ -157,9 +160,9 @@
                                                             {% elif limit.slug == 'very-singable' %}bg-light-green
                                                             {% elif limit.slug == 'challenging' %}bg-yellow
                                                             {% elif limit.slug == 'uncomfortable' %}bg-orange
-                                                            {% else %}bg-danger{% endif %}" style="width: {{ k.comfort_score }}%"></div>
+                                                            {% else %}bg-danger{% endif %}" style="width: {{ k.final_score }}%"></div>
                                                     </div>
-                                                    <span class="fw-semibold">{{ k.comfort_score }}%</span>
+                                                    <span class="fw-semibold">{{ k.final_score }}%</span>
                                                 </div>
                                             </td>
                                             <td style="width: 35%;">

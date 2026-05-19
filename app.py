@@ -1098,7 +1098,6 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]
 
     # 5. Build your clean summary payload for the database
-    summary["all_keys_analysis"] = deduped_keys  # Holds exactly 12 unique options
     summary["recommended"] = recommended
     summary["other_keys"] = other_keys          # Holds exactly 11 secondary options
     summary["original_key_info"] = {
