@@ -53,18 +53,15 @@ COPY --from=builder /app/final_app /app/Audiveris
 RUN mkdir -p /app/audiveris_home && \
     chmod -R 777 /app/Audiveris /app/audiveris_home
 
-# We can remove the 'sed' hack. We are going straight to the OS level now.
-ENV TESSDATA_PREFIX="/usr/share/tesseract-ocr/5/tessdata"
-    
-# Copy Python app files
-COPY . .
+# --- OPTIMIZED PYTHON LAYER CACHING ---
+# Copy ONLY requirements first so package installation stays cached
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy the rest of your Python application code (invalidates cache only from this line down)
+COPY . .
 
 # Set Environment Variables
-# 1. Change the Linux HOME variable for the whole container
-# 2. Point Java home to our writable directory
-# 3. Point Tesseract to the system-installed data
 ENV HOME="/app/audiveris_home"
 ENV JAVA_OPTS="-Duser.home=/app/audiveris_home"
 ENV TESSDATA_PREFIX="/usr/share/tesseract-ocr/5/tessdata"
