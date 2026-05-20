@@ -4,295 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Song Key Analysis: {{ title }}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { 
-            background-color: #f8f9fa; 
-            padding: 30px 0; 
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
-        .card { 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
-            margin-bottom: 25px; 
-            border-radius: 8px; 
+        .recommendation-card {
+            border-radius: 12px;
+            overflow: hidden;
         }
-        .badge-note { 
-            font-size: 1rem; 
-            padding: 0.4em 0.6em; 
-            font-family: monospace; 
+        .category-section {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
         }
-        
-        /* Fixed Symmetrical Pitch Comfort Scale Visualizer */
-        .scale-container { 
-            background: #fff; 
-            border: 1px solid #dee2e6; 
-            border-radius: 6px; 
-            padding: 20px; 
-            margin: 15px 0; 
+        .category-header {
+            font-size: 1rem;
+            letter-spacing: 0.5px;
         }
-        .tessitura-bar { 
-            height: 24px; 
-            border-radius: 12px; 
-            background: linear-gradient(to right, 
-                #dc3545 0%, #dc3545 10%,    /* Out of Range (Below G3) */
-                #ff8503 10%, #ff8503 25%,   /* Stretch Zone (G3 to A3) */
-                #ffc107 25%, #ffc107 40%,   /* Comfortable Range (A3 to C4) */
-                #198754 40%, #198754 60%,   /* Ideal Tessitura (C4 to C5) */
-                #ffc107 60%, #ffc107 75%,   /* Comfortable Range (C5 to D5) */
-                #ff8503 75%, #ff8503 90%,   /* Stretch Zone (D5 to E5) */
-                #dc3545 90%, #dc3545 100%   /* Out of Range (Above E5) */
-            ); 
-            margin: 10px 0; 
+        .font-monospace {
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
         }
-        .scale-labels { 
-            display: flex; 
-            justify-content: space-between; 
-            font-weight: bold; 
-            font-family: monospace; 
-            padding: 0 5px; 
-        }
-        .category-header { 
-            font-size: 1.15rem; 
-            font-weight: bold; 
-            padding: 8px 12px; 
-            border-radius: 6px; 
-            margin-top: 20px; 
+        .fs-7 {
+            font-size: 0.8rem;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-10">
-            
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <div>
-                    <h1 class="display-5 fw-bold text-dark m-0">{{ title }}</h1>
-                    <p class="text-muted fs-5 m-0">
-                        {% if author and author != 'Unknown' %}{{ author }}{% endif %}
-                        {% if year and year != 'Unknown' %} ({{ year }}){% endif %}
-                    </p>
-                </div>
-                {% if ccli_no and ccli_no != 'Not found' and ccli_link %}
-                <a href="{{ ccli_link }}" target="_blank" class="btn btn-outline-primary btn-sm">CCLI #{{ ccli_no }}</a>
-                {% endif %}
-            </div>
 
-            {% if not is_database_pull %}
-            <div class="card p-3 mb-4 border-start border-4 border-primary bg-white">
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="fs-5 fw-semibold text-secondary">
-                        Uploaded Key ({{ original_key.name }}): 
-                        <span class="text-dark fw-bold">{{ original_key.comfort_score }}% Singable</span> 
-                        <span class="badge bg-secondary ms-2">{{ original_key.comfort_label }}</span>
-                    </span>
-                    <div>
-                        <span class="badge badge-note text-white" style="background-color: {{ original_key.low_color or 'green' }}">{{ original_key.range_low }}</span>
-                        <span class="text-muted mx-1">to</span>
-                        <span class="badge badge-note text-white" style="background-color: {{ original_key.high_color or 'green' }}">{{ original_key.range_high }}</span>
+<div class="container my-5" style="max-width: 900px;">
+    
+    <div class="d-flex justify-content-between align-items-start mb-4 border-bottom pb-3">
+        <div>
+            <h1 class="fw-bold text-dark mb-1">{{ title }}</h1>
+            {% if author % shadow %}<p class="text-secondary mb-0">By {{ author }} {% if year %}({{ year }}){% endif %}</p>{% endif %}
+        </div>
+        {% if ccli_no and ccli_no != "Not found" %}
+        <div class="text-end">
+            <span class="badge bg-secondary px-3 py-2 fs-6">CCLI: {{ ccli_no }}</span>
+            {% if ccli_link %}
+            <br><a href="{{ ccli_link }}" target="_blank" class="btn btn-link btn-sm p-0 mt-1 text-decoration-none">View on SongSelect &rarr;</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+
+    {% if warnings %}
+    <div class="alert alert-warning shadow-sm mb-4" role="alert">
+        <h5 class="alert-heading fw-bold">⚠️ Analysis Notices</h5>
+        <ul class="mb-0 ps-3">
+            {% for w in warnings %}
+                <li>{{ w }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <div class="row g-4">
+        <div class="col-md-7">
+            <h4 class="fw-bold text-secondary mb-3 text-uppercase tracking-wider" style="font-size: 0.85rem;">Target Key Profiles</h4>
+
+            {% if recommended %}
+            <div class="card recommendation-card border-2 shadow-sm mb-4 border-primary">
+                <div class="card-header bg-dark text-white fw-bold d-flex justify-content-between align-items-center py-3">
+                    <span class="letter-spacing-1">⭐ TOP RECOMMENDED KEY</span>
+                    <span class="badge bg-primary px-2.5 py-1.5 font-monospace">Choice #1</span>
+                </div>
+                <div class="card-body text-center py-4 bg-white">
+                    <h1 class="display-2 fw-black text-primary mb-1">{{ recommended.key | replace('-', '♭') }}</h1>
+                    
+                    <h3 class="fw-bold text-dark mb-3">{{ recommended.comfort_score }}% Singable</h3>
+                    
+                    <p class="fs-5 mb-3">
+                        Congregational Range: <span class="fw-bold text-primary font-monospace">{{ recommended.range_low }} &rarr; {{ recommended.range_high }}</span>
+                    </p>
+                    
+                    <div class="mt-2">
+                        <span class="fs-6 px-4 py-2 rounded fw-bold text-white d-inline-block shadow-sm" 
+                              style="background-color: #0d6efd; min-width: 180px;">
+                            {{ recommended.comfort_label }}
+                        </span>
+                        <p class="text-muted small mt-3 mb-0 px-4 lh-base fs-7">
+                            Ranked Best Overall Balance. This configuration offers the mathematically optimized match for your congregation's vocal thresholds while remaining highly practical for common rhythm sections.
+                        </p>
                     </div>
                 </div>
             </div>
             {% endif %}
 
-            <div class="card border-0">
-                <div class="card-header bg-dark text-white py-3">
-                    <h4 class="m-0 fw-bold">🎯 {% if is_database_pull %}Target Key Profiles{% else %}Target Key Options{% endif %}</h4>
-                </div>
-                <div class="card-body bg-white border border-top-0 rounded-bottom">
-                    
-                    {% if recommended %}
-                    <div class="p-4 mb-4 bg-light rounded border border-success">
-                        <h5 class="text-success fw-bold small mb-2">
-                            ⭐ {% if is_database_pull %}TOP RECOMMENDED KEY{% else %}TOP RECOMMENDED TRANSPOSITION{% endif %}
-                        </h5>
-                        <div class="row align-items-center">
-                            <div class="col-sm-4">
-                                <span class="display-6 fw-bold text-dark">{{ recommended.key | replace('-', '♭') }}</span>
-                            </div>
-                            <div class="col-sm-4 text-center">
-                                <span class="fs-3 fw-bold text-success">{{ recommended.comfort_score }}% Singable</span>
-                                <div class="small text-muted">Ranked Best Overall Balance</div>
-                            </div>
-                            <div class="col-sm-4 text-sm-end">
-                                <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.low_color }}">{{ recommended.range_low | replace('-', '♭') }}</span>
-                                <span class="text-muted mx-1">to</span>
-                                <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.high_color }}">{{ recommended.range_high | replace('-', '♭') }}</span>
-                            </div>
-                        </div>
-                    </div>
-                    {% endif %}
+            <div class="mt-4">
+                <h5 class="fw-bold text-dark mb-3">All Other Options by Category</h5>
 
-                    <h5 class="fw-bold text-dark mt-4">All Other Options by Category</h5>
+                {% for limit in thresholds %}
+                    {% set outer_loop = loop %}
+                    {% set category_keys = [] %}
                     
-                    {% for limit in thresholds %}
-                        {% set outer_loop = loop %}
-                        {% set category_keys = [] %}
-                        
-                        {% for k in other_keys %}
-                            {% if k.final_score >= limit.min and (outer_loop.first or k.final_score < thresholds[outer_loop.index0 - 1].min) %}
-                                {% set _ = category_keys.append(k) %}
-                            {% endif %}
-                        {% endfor %}
-
-                        {% if category_keys|length > 0 %}
-                            <div class="category-header mt-3 px-3 py-2 rounded fw-bold fs-6
-                                {% if limit.slug == 'perfect' %}bg-dark-green text-white
-                                {% elif limit.slug == 'very-singable' %}bg-light-green text-white
-                                {% elif limit.slug == 'challenging' %}bg-yellow text-dark
-                                {% elif limit.slug == 'uncomfortable' %}bg-orange text-white
-                                {% else %}bg-danger text-white{% endif %}">
-                                {{ limit.label }} <span class="fw-normal fs-6 opacity-90">— {{ limit.desc }}</span>
-                            </div>
-                            
-                            <div class="table-responsive">
-                                <table class="table table-hover align-middle mb-0 border border-top-0">
-                                    <tbody class="bg-white">
-                                        {% for k in category_keys %}
-                                        <tr>
-                                            <td class="fw-bold text-dark fs-5" style="width: 30%;">
-                                                {{ k.key | replace('-', '♭') }}
-                                            </td>
-                                            <td style="width: 35%;">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div class="progress flex-grow-1" style="height: 8px; max-width: 120px;">
-                                                        <div class="progress-bar 
-                                                            {% if limit.slug == 'perfect' %}bg-dark-green
-                                                            {% elif limit.slug == 'very-singable' %}bg-light-green
-                                                            {% elif limit.slug == 'challenging' %}bg-yellow
-                                                            {% elif limit.slug == 'uncomfortable' %}bg-orange
-                                                            {% else %}bg-danger{% endif %}" style="width: {{ k.final_score }}%"></div>
-                                                    </div>
-                                                    <span class="fw-semibold">{{ k.final_score }}%</span>
-                                                </div>
-                                            </td>
-                                            <td style="width: 35%;">
-                                                <span class="badge text-white px-2 py-1" style="background-color: {{ k.low_color }}">{{ k.range_low | replace('-', '♭') }}</span>
-                                                <span class="text-muted px-1">→</span>
-                                                <span class="badge text-white px-2 py-1" style="background-color: {{ k.high_color }}">{{ k.range_high | replace('-', '♭') }}</span>
-                                            </td>
-                                            
-                                            {% if not is_database_pull %}
-                                            <td class="text-end text-muted small" style="width: 20%;">
-                                                {% if k.shift > 0 %}+{{ k.shift }} semitones
-                                                {% elif k.shift < 0 %}{{ k.shift }} semitones
-                                                {% else %}Original Key{% endif %}
-                                            </td>
-                                            {% endif %}
-                                        </tr>
-                                        {% endfor %}
-                                    </tbody>
-                                </table>
-                            </div>
+                    {% for k in other_keys %}
+                        {% if k.comfort_score >= limit.min and (outer_loop.first or k.comfort_score < thresholds[outer_loop.index0 - 1].min) %}
+                            {% set _ = category_keys.append(k) %}
                         {% endif %}
                     {% endfor %}
-                </div>
+
+                    {% if category_keys|length > 0 %}
+                        {% set sorted_category_keys = category_keys | sort(attribute='final_score', reverse=true) %}
+                        
+                        <div class="category-section mb-4 border shadow-sm">
+                            <div class="category-header px-3 py-2.5 fw-bold text-white d-flex justify-content-between align-items-center" 
+                                 style="background-color: {{ limit.color_hex }};">
+                                <span>{{ limit.label }}</span>
+                                <span class="fw-normal text-white-50 small fs-7">{{ limit.description }}</span>
+                            </div>
+                            
+                            <table class="table table-hover align-middle mb-0 bg-white">
+                                <tbody>
+                                    {% for k in sorted_category_keys %}
+                                    <tr>
+                                        <td class="fw-bold text-dark ps-3" style="width: 25%; font-size: 1.15rem;">
+                                            {{ k.key | replace('-', '♭') }}
+                                        </td>
+                                        
+                                        <td style="width: 35%;">
+                                            <div class="d-flex align-items-center">
+                                                <span class="fw-bold me-2 font-monospace" style="min-width: 45px;">{{ k.comfort_score }}%</span>
+                                                <div class="progress flex-grow-1" style="height: 6px; background-color: #e9ecef;">
+                                                    <div class="progress-bar" style="width: {{ k.comfort_score }}%; background-color: {{ limit.color_hex }};"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        
+                                        <td class="font-monospace text-secondary fs-6" style="width: 20%;">
+                                            {{ k.range_low }}&nbsp;&rarr;&nbsp{{ k.range_high }}
+                                        </td>
+                                        
+                                        <td class="text-end pe-3" style="width: 20%;">
+                                            <span class="badge rounded-pill bg-light text-dark border font-monospace px-2.5 py-1.5 fs-7 fw-semibold">
+                                                Choice #{{ k.recommendation_rank }}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
 
-            <div class="card border-0 mt-4">
-                <div class="card-header bg-secondary text-white py-2">
-                    <h5 class="m-0 fw-bold small">💡 About the Congregational Comfort Analysis Scale</h5>
+        </div>
+
+        <div class="col-md-5">
+            
+            {% if not is_database_pull %}
+            <div class="card shadow-sm mb-4 border-0">
+                <div class="card-header bg-secondary text-white fw-bold py-2.5">
+                    📋 Original File Overview
                 </div>
-                <div class="card-body bg-light border border-top-0 rounded-bottom p-4">
-                    <p class="small text-muted mb-4">
-                        Singing suitability is evaluated based on standard amateur community vocal brackets. Long, sustained notes resting near extreme boundary thresholds apply scaling penalties to prevent crowd vocal fatigue.
+                <div class="card-body bg-white">
+                    <h5 class="fw-bold text-dark mb-1">{{ original_key.name }}</h5>
+                    <p class="text-muted small mb-3">Native Transposition State</p>
+                    <hr class="my-2">
+                    <div class="d-flex justify-content-between align-items-center py-1">
+                        <span class="text-secondary small">Vocal Ceiling:</span>
+                        <span class="font-monospace fw-bold px-2 py-0.5 rounded text-white" style="background-color: {{ original_key.high_color }};">
+                            {{ original_key.range_high }} ({{ original_key.high_comfort }})
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center py-1">
+                        <span class="text-secondary small">Vocal Floor:</span>
+                        <span class="font-monospace fw-bold px-2 py-0.5 rounded text-white" style="background-color: {{ original_key.low_color }};">
+                            {{ original_key.range_low }} ({{ original_key.low_comfort }})
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-header bg-dark text-white fw-bold py-2.5">
+                    📊 Vocal Comfort Metrics Reference
+                </div>
+                <div class="card-body bg-white py-3 fs-7 text-secondary lh-base">
+                    <p class="mb-3">
+                        Singing parameters are scored directly using standardized community vocal ranges. Keys that frequently linger near critical pitch barriers incur penalty multipliers to account for crowd fatigue.
                     </p>
-
-                    <div class="scale-container mb-4">
-                        <div class="scale-labels text-muted small mb-1">
-                            <span>Below G3</span>
-                            <span>G3</span>
-                            <span>A3</span>
-                            <span class="text-success fw-bold">C4 → C5</span>
-                            <span>D5</span>
-                            <span>E5</span>
-                            <span>Above E5</span>
+                    <div class="d-flex flex-column gap-2 border-top pt-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Sweet Spot (Ideal Tessitura):</span>
+                            <span class="badge bg-success font-monospace">C4 to C5</span>
                         </div>
-                        <div class="tessitura-bar"></div>
-                    </div>
-
-                    <div class="row g-3 border-bottom pb-4 mb-4">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="d-flex align-items-center gap-2 mb-1">
-                                <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#146c43;"></span>
-                                <strong class="small" style="color: #146c43;">Ideal Tessitura</strong>
-                            </div>
-                            <div class="text-muted small ps-3">C4 to C5 (Sweet Spot)</div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Standard Comfort Limits:</span>
+                            <span class="badge bg-info text-dark font-monospace">A3 to D5</span>
                         </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="d-flex align-items-center gap-2 mb-1">
-                                <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#2ecc71;"></span>
-                                <strong class="small" style="color: #2ecc71;">Comfortable Range</strong>
-                            </div>
-                            <div class="text-muted small ps-3">A3 to D5</div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Extreme Range Limits:</span>
+                            <span class="badge bg-warning text-dark font-monospace">G3 to E5</span>
                         </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="d-flex align-items-center gap-2 mb-1">
-                                <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#ffc107;"></span>
-                                <strong class="small text-warning">Stretch Zones</strong>
-                            </div>
-                            <div class="text-muted small ps-3">G3 to E5</div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="d-flex align-items-center gap-2 mb-1">
-                                <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#dc3545;"></span>
-                                <strong class="small text-danger">Out of Range</strong>
-                            </div>
-                            <div class="text-muted small ps-3">Below G3 / Above E5</div>
-                        </div>
-                    </div>
-
-                    <div class="ranking-explainer">
-                        <h6 class="fw-bold text-dark mb-2">📋 How Options are Evaluated & Ranked</h6>
-                        <p class="small text-muted m-0">
-                            Keys are indexed by balancing <strong>Vocal Comfort</strong> against exactly how much of a pain it is to play for the band. Points are subtracted from the vocal score if a key uses difficult accidentals (like 5 sharps) or awkward fretboard/valve positions for typical worship instruments. <br><br><i>(Note: Instrument team-makeup selection controls will be added to the search/upload page soon to further customize these results).</i>
-                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center my-4">
-                <a href="/" class="btn btn-secondary px-4">← Return to Search & Upload</a>
+            {% if skipped %}
+            <div class="card shadow-sm border-0 border-start border-3 border-muted">
+                <div class="card-body py-2.5 px-3 bg-white">
+                    <span class="text-muted fw-bold d-block fs-7 text-uppercase tracking-wider">Skipped XML Notation Tracks</span>
+                    <p class="text-secondary small mb-0 fs-7">
+                        Tracks like {{ skipped | join(', ') }} were bypassed during note extraction to keep analysis isolated to primary melody profiles.
+                    </p>
+                </div>
             </div>
+            {% endif %}
 
         </div>
     </div>
 </div>
-
-<style>
-    .bg-dark-green { background-color: #146c43 !important; }
-    .bg-light-green { background-color: #2ecc71 !important; }
-    .bg-yellow { background-color: #ffc107 !important; }
-    .bg-orange { background-color: #e67e22 !important; }
-    .bg-red { background-color: #dc3545 !important; }
-    
-    .scale-container {
-        background: #f8f9fa;
-        padding: 15px;
-        border-radius: 8px;
-        border: 1px solid #e3e6f0;
-    }
-    .scale-labels {
-        display: flex;
-        justify-content: space-between;
-        font-family: monospace;
-        font-size: 0.75rem;
-        padding: 0 4px;
-    }
-    .tessitura-bar {
-        height: 16px;
-        border-radius: 8px;
-        /* Perfect color mapping to legend hex codes */
-        background: linear-gradient(to right, 
-            #dc3545 0%, #dc3545 10%, 
-            #e67e22 10%, #e67e22 25%, 
-            #2ecc71 25%, #2ecc71 40%, 
-            #146c43 40%, #146c43 60%, 
-            #2ecc71 60%, #2ecc71 75%, 
-            #e67e22 75%, #e67e22 90%, 
-            #dc3545 90%, #dc3545 100%
-        );
-    }
-</style>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1080,11 +1080,14 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
         orig_comfort_score = 0.0
         orig_comfort_label = "⚠️ Unknown"
         
-    # 2. Run the full list through your updated pitch-class deduplicator.
-    # This guarantees exactly 12 items max, sorted strictly descending by final_score.
+# 2. Run the full matrix through your pitch-class deduplicator (sorted by final_score descending)
     deduped_keys = deduplicate_by_key(all_keys_analysis)
 
-    # 3. The highest-scoring key is your recommendation
+    # 3. Stamp an absolute recommendation rank (1 to 12) based on the balanced final_score
+    for index, k in enumerate(deduped_keys):
+        k['recommendation_rank'] = index + 1
+
+    # 4. Establish the top recommended choice
     recommended = deduped_keys[0] if deduped_keys else None
     
     if recommended:
@@ -1093,13 +1096,11 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
         recommended['low_color'] = get_note_comfort_color(recommended['low'])
         recommended['high_color'] = get_note_comfort_color(recommended['high'])
 
-    # 4. Filter the recommended key out of other_keys so it doesn't print twice.
-    # This leaves exactly 11 distinct items in other_keys.
+    # 5. Keep all remaining 11 options for the lower categories
     other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]
 
-    # 5. Build your clean summary payload for the database
     summary["recommended"] = recommended
-    summary["other_keys"] = other_keys          # Holds exactly 11 secondary options
+    summary["other_keys"] = other_keys          
     summary["original_key_info"] = {
         "name": original_key_name,
         "range_low": low,
@@ -1108,7 +1109,7 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
         "high_comfort": original_high_comfort,
         "low_color": original_low_color,
         "high_color": original_high_color,
-        "comfort_score": orig_comfort_score,
+        "comfort_score": orig_comfort_score,  # Raw vocal comfort score
         "comfort_label": orig_comfort_label
     }
     summary["skipped"] = skipped
