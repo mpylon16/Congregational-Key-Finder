@@ -50,13 +50,6 @@
             font-family: monospace; 
             padding: 0 5px; 
         }
-        .category-header { 
-            font-size: 1.15rem; 
-            font-weight: bold; 
-            padding: 8px 12px; 
-            border-radius: 6px; 
-            margin-top: 20px; 
-        }
     </style>
 </head>
 <body>
@@ -132,10 +125,7 @@
                     {% endif %}
 
                     <div class="d-flex justify-content-between align-items-end mt-5 mb-2">
-                        <h5 class="fw-bold text-dark m-0">All Other Options by Category</h5>
-                        <div class="text-muted small fw-semibold text-end" style="max-width: 320px; line-height: 1.3;">
-                            * Within each group, keys are ranked top-to-bottom by best overall recommendation for the band.
-                        </div>
+                        <h5 class="fw-bold text-dark m-0">All Other Options Grouped by Singability</h5>
                     </div>
                     
                     {% for limit in thresholds %}
@@ -151,25 +141,33 @@
                         {% if category_keys|length > 0 %}
                             {% set sorted_category_keys = category_keys | sort(attribute='final_score', reverse=true) %}
 
-                            <div class="category-header mt-3 px-3 py-2 rounded fw-bold fs-6
-                                {% if limit.slug == 'perfect' %}bg-dark-green text-white
-                                {% elif limit.slug == 'very-singable' %}bg-light-green text-white
-                                {% elif limit.slug == 'challenging' %}bg-yellow text-dark
-                                {% elif limit.slug == 'uncomfortable' %}bg-orange text-white
-                                {% else %}bg-danger text-white{% endif %}">
-                                {{ limit.label }} <span class="fw-normal fs-6 opacity-90">— {{ limit.desc }}</span>
+                            <div class="d-flex align-items-baseline mt-4 px-3 py-2 bg-light border-start border-4 rounded-top border-bottom-0
+                                {% if limit.slug == 'perfect' %}border-dark-green
+                                {% elif limit.slug == 'very-singable' %}border-light-green
+                                {% elif limit.slug == 'challenging' %}border-yellow
+                                {% elif limit.slug == 'uncomfortable' %}border-orange
+                                {% else %}border-red{% endif %}">
+                                <span class="fw-bold fs-6 text-dark">{{ limit.label }}</span>
+                                <span class="text-muted fw-normal small ms-2">— {{ limit.desc }}</span>
                             </div>
                             
-                            <div class="table-responsive">
-                                <table class="table table-hover align-middle mb-0 border border-top-0">
-                                    <tbody class="bg-white">
+                            <div class="table-responsive rounded-bottom border border-top-0 mb-3">
+                                <table class="table table-hover align-middle mb-0">
+                                    <thead class="bg-white text-muted small text-uppercase" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+                                        <tr>
+                                            <th class="ps-3 py-2 border-bottom-0" style="width: 25%;">Key</th>
+                                            <th class="py-2 border-bottom-0" style="width: 45%;">Singability</th>
+                                            <th class="text-end pe-3 py-2 border-bottom-0" style="width: 30%;">Vocal Range</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white border-top">
                                         {% for k in sorted_category_keys %}
                                         <tr>
-                                            <td class="fw-bold text-dark fs-5 ps-3" style="width: 25%;">
+                                            <td class="fw-bold text-dark fs-5 ps-3">
                                                 {{ k.key | replace('-', '♭') }}
                                             </td>
                                             
-                                            <td style="width: 45%;">
+                                            <td>
                                                 <div class="d-flex align-items-center pe-4">
                                                     <div class="progress flex-grow-1 bg-light border" style="height: 10px;">
                                                         <div class="progress-bar 
@@ -182,7 +180,7 @@
                                                 </div>
                                             </td>
 
-                                            <td class="text-end pe-3" style="width: 30%;">
+                                            <td class="text-end pe-3">
                                                 <span class="badge text-white px-2 py-1" style="background-color: {{ k.low_color }}">{{ k.range_low | replace('-', '♭') }}</span>
                                                 <span class="text-muted px-1">→</span>
                                                 <span class="badge text-white px-2 py-1" style="background-color: {{ k.high_color }}">{{ k.range_high | replace('-', '♭') }}</span>
@@ -199,11 +197,11 @@
 
             <div class="card border-0 mt-4">
                 <div class="card-header bg-secondary text-white py-2">
-                    <h5 class="m-0 fw-bold small">💡 About the Congregational Comfort Analysis Scale</h5>
+                    <h5 class="m-0 fw-bold small">💡 How Options are Evaluated & Ranked</h5>
                 </div>
                 <div class="card-body bg-light border border-top-0 rounded-bottom p-4">
                     <p class="small text-muted mb-4">
-                        Singing suitability is evaluated based on standard amateur community vocal brackets. Long, sustained notes resting near extreme boundary thresholds apply scaling penalties to prevent crowd vocal fatigue.
+                        Singing suitability is evaluated based on vocal brackets for standard untrained congregations. The further away from the ideal range and the more sustained a note is, the harder it is to sing.
                     </p>
 
                     <div class="scale-container mb-4">
@@ -248,12 +246,8 @@
                             </div>
                             <div class="text-muted small ps-3">Below G3 / Above E5</div>
                         </div>
-                    </div>
-
-                    <div class="ranking-explainer">
-                        <h6 class="fw-bold text-dark mb-2">📋 How Options are Evaluated & Ranked</h6>
                         <p class="small text-muted m-0">
-                            Keys are indexed by balancing <strong>Vocal Comfort</strong> against exactly how much of a pain it is to play for the band. Points are subtracted from the vocal score if a key uses difficult accidentals (like 5 sharps) or awkward fretboard/valve positions for typical worship instruments. <br><br><i>(Note: Instrument team-makeup selection controls will be added to the search/upload page soon to further customize these results).</i>
+                            Singability is averaged across the whole song, giving a percentage from 0 (totally unsingable) to 100 (all notes within the ideal range). After separating into categories, keys are then sorted by balancing <strong>singability</strong> (vocal comfort) against <strong>playability</strong> (how much of a pain it is to play for the band). Points are subtracted from the vocal score if a key uses difficult accidentals (like 5 sharps) or awkward fretboard/valve positions for typical worship instruments. <br><br><i>(Note: Instrument team-makeup selection controls will be added to the search/upload page soon to further customize these results).</i>
                         </p>
                     </div>
                 </div>
@@ -268,12 +262,20 @@
 </div>
 
 <style>
+    /* Background Colors */
     .bg-dark-green { background-color: #146c43 !important; }
     .bg-light-green { background-color: #2ecc71 !important; }
     .bg-yellow { background-color: #ffc107 !important; }
     .bg-orange { background-color: #e67e22 !important; }
     .bg-red { background-color: #dc3545 !important; }
     
+    /* Border Colors for Category Headers */
+    .border-dark-green { border-color: #146c43 !important; }
+    .border-light-green { border-color: #2ecc71 !important; }
+    .border-yellow { border-color: #ffc107 !important; }
+    .border-orange { border-color: #e67e22 !important; }
+    .border-red { border-color: #dc3545 !important; }
+
     .scale-container {
         background: #f8f9fa;
         padding: 15px;
@@ -284,24 +286,4 @@
         display: flex;
         justify-content: space-between;
         font-family: monospace;
-        font-size: 0.75rem;
-        padding: 0 4px;
-    }
-    .tessitura-bar {
-        height: 16px;
-        border-radius: 8px;
-        background: linear-gradient(to right, 
-            #dc3545 0%, #dc3545 10%, 
-            #e67e22 10%, #e67e22 25%, 
-            #2ecc71 25%, #2ecc71 40%, 
-            #146c43 40%, #146c43 60%, 
-            #2ecc71 60%, #2ecc71 75%, 
-            #e67e22 75%, #e67e22 90%, 
-            #dc3545 90%, #dc3545 100%
-        );
-    }
-</style>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        font-size: 0.7
