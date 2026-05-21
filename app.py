@@ -1056,14 +1056,20 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     original_key_info = next((k for k in all_keys_analysis if k['shift'] == 0), None)
     
     if original_key_info:
-        original_low = original_key_info["low"]
-        original_high = original_key_info["high"]
-        low = original_key_info["range_low"]
-        high = original_key_info["range_high"]
-        original_low_comfort = original_key_info["low_comfort"]
-        original_high_comfort = original_key_info["high_comfort"]
-        original_low_color = original_key_info["low_color"]
-        original_high_color = original_key_info["high_color"]
+        # 1. Pull the note strings from the dictionary
+        low = original_key_info["range_low"]   # e.g., "Ab3"
+        high = original_key_info["range_high"] # e.g., "Eb5"
+
+        # 2. Convert those strings back into raw MIDI integers so your comfort tools work
+        from music21 import pitch
+        original_low = pitch.Pitch(low).midi
+        original_high = pitch.Pitch(high).midi
+
+        # 3. Pull everything else normally
+        original_low_comfort = original_key_info.get("low_comfort") or get_note_comfort_category(original_low)
+        original_high_comfort = original_key_info.get("high_comfort") or get_note_comfort_category(original_high)
+        original_low_color = original_key_info.get("low_color") or get_note_comfort_color(original_low)
+        original_high_color = original_key_info.get("high_color") or get_note_comfort_color(original_high)
         orig_comfort_score = original_key_info["comfort_score"]
         orig_comfort_label = original_key_info["comfort_label"]
     else:
@@ -1091,10 +1097,14 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     recommended = deduped_keys[0] if deduped_keys else None
     
     if recommended:
-        recommended['low_comfort'] = get_note_comfort_category(recommended['low'])
-        recommended['high_comfort'] = get_note_comfort_category(recommended['high'])
-        recommended['low_color'] = get_note_comfort_color(recommended['low'])
-        recommended['high_color'] = get_note_comfort_color(recommended['high'])
+        from music21 import pitch
+        rec_low_midi = pitch.Pitch(recommended['range_low']).midi
+        rec_high_midi = pitch.Pitch(recommended['range_high']).midi
+
+        recommended['low_comfort'] = get_note_comfort_category(rec_low_midi)
+        recommended['high_comfort'] = get_note_comfort_category(rec_high_midi)
+        recommended['low_color'] = get_note_comfort_color(rec_low_midi)
+        recommended['high_color'] = get_note_comfort_color(rec_high_midi)
 
     # 5. Keep all remaining 11 options for the lower categories
     other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]

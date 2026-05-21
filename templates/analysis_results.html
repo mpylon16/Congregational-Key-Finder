@@ -31,24 +31,37 @@
         }
         .tessitura-bar { 
             height: 24px; 
-            border-radius: 12px; 
+            border-radius: 0px; 
             background: linear-gradient(to right, 
-                #dc3545 0%, #dc3545 10%,    /* Out of Range (Below G3) */
-                #ff8503 10%, #ff8503 25%,   /* Stretch Zone (G3 to A3) */
-                #2ecc71 25%, #2ecc71 40%,   /* Comfortable Range (A3 to C4) */
-                #198754 40%, #146c43 60%,   /* Ideal Range (C4 to C5) */
-                #2ecc71 60%, #2ecc71 75%,   /* Comfortable Range (C5 to D5) */
-                #ff8503 75%, #ff8503 90%,   /* Stretch Zone (D5 to E5) */
-                #dc3545 90%, #dc3545 100%   /* Out of Range (Above E5) */
+                #dc3545 0%, #dc3545 10%,    /* Out of Range (< G3) */
+                #ff8503 12%, #ff8503 20%,   /* Stretch Zone (G3 to A3) */
+                #2ecc71 22%, #2ecc71 30%,   /* Comfortable Range (A3 to C4) */
+                #198754 32%, #146c43 68%,   /* Ideal Range (C4 to C5) */
+                #2ecc71 70%, #2ecc71 78%,   /* Comfortable Range (C5 to D5) */
+                #ff8503 80%, #ff8503 88%,   /* Stretch Zone (D5 to E5) */
+                #dc3545 90%, #dc3545 100%   /* Out of Range (> E5) */
             ); 
             margin: 10px 0; 
+        /* 2. Shape the container into double-ended arrows using coordinates */
+            clip-path: polygon(
+                0% 50%,     /* Left-most center point (the tip of the left arrow) */
+                2% 0%,      /* Top-left corner step */
+                98% 0%,    /* Top-right corner step */
+                100% 50%,    /* Right-most center point (the tip of the right arrow) */
+                98% 100%,  /* Bottom-right corner */
+                2% 100%     /* Bottom-left corner */
+            );
+        
+            /* 3. Shift the transparency mask to begin right after the arrow tips */
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
         }
+        
         .scale-labels { 
-            display: flex; 
-            justify-content: space-between; 
+            /* display: flex; is now handled by the Bootstrap 'd-flex' class in the HTML */
             font-weight: bold; 
             font-family: monospace; 
-            padding: 0 5px; 
+            padding: 0; /* Removed horizontal padding so the 10% edges perfectly match the gradient edges */
         }
     </style>
 </head>
@@ -205,46 +218,40 @@
                     </p>
 
                     <div class="scale-container mb-4">
-                        <div class="scale-labels text-muted small mb-1">
-                            <span>Below G3</span>
-                            <span>G3</span>
-                            <span>A3</span>
-                            <span class="text-success fw-bold">C4 → C5</span>
-                            <span>D5</span>
-                            <span>E5</span>
-                            <span>Above E5</span>
+                        <div class="position-relative text-muted small mb-1" style="height: 20px; font-family: monospace; font-weight: bold;">
+                            
+                            <div class="position-absolute" style="left: 11%; transform: translateX(-50%);">G3</div>
+                            <div class="position-absolute" style="left: 21%; transform: translateX(-50%);">A3</div>
+                            
+                            <div class="position-absolute" style="left: 31%; transform: translateX(-50%);">C4</div>
+                            
+                            <div class="position-absolute" style="left: 69%; transform: translateX(-50%);">C5</div>
+                            
+                            <div class="position-absolute" style="left: 79%; transform: translateX(-50%);">D5</div>
+                            <div class="position-absolute" style="left: 89%; transform: translateX(-50%);">E5</div>
                         </div>
+                        
                         <div class="tessitura-bar"></div>
                     </div>
 
                     <div class="row g-3 border-bottom pb-4 mb-4">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="d-flex align-items-center gap-2 mb-1">
+                        <div class="d-flex flex-wrap gap-4 border-bottom pb-4 mb-4">
+                            <div class="d-flex align-items-center gap-2">
                                 <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#146c43;"></span>
                                 <strong class="small" style="color: #146c43;">Ideal Range</strong>
                             </div>
-                            <div class="text-muted small ps-3">C4 to C5 (Sweet Spot)</div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="d-flex align-items-center gap-2 mb-1">
+                            <div class="d-flex align-items-center gap-2">
                                 <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#2ecc71;"></span>
                                 <strong class="small" style="color: #2ecc71;">Comfortable</strong>
                             </div>
-                            <div class="text-muted small ps-3">A3 to D5</div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="d-flex align-items-center gap-2 mb-1">
-                                <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#ffc107;"></span>
-                                <strong class="small text-warning">Stretch</strong>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#ff8503;"></span>
+                                <strong class="small" style="color: #ff8503;" >Stretch</strong>
                             </div>
-                            <div class="text-muted small ps-3">G3 to E5</div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="d-flex align-items-center gap-2 mb-1">
+                            <div class="d-flex align-items-center gap-2">
                                 <span class="d-inline-block rounded-circle" style="width:12px; height:12px; background:#dc3545;"></span>
                                 <strong class="small text-danger">Out of Range</strong>
                             </div>
-                            <div class="text-muted small ps-3">Below G3 / Above E5</div>
                         </div>
                         <p></p>
                         <p class="small text-muted m-0">
