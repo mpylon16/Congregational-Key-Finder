@@ -87,13 +87,13 @@
             <div class="card p-3 mb-4 border-start border-4 border-primary bg-white">
                 <div class="d-flex align-items-center justify-content-between">
                     <span class="fs-5 fw-semibold text-secondary">
-                        Uploaded Key ({{ original_key.name }}): 
+                        Uploaded Key ({{ original_key.name | replace('-', '♭') }}): 
                         <span class="text-dark fw-bold ms-2">{{ original_key.comfort_label }}</span>
                     </span>
                     <div>
-                        <span class="badge badge-note text-white" style="background-color: {{ original_key.low_color or 'green' }}">{{ original_key.range_low }}</span>
+                        <span class="badge badge-note text-white" style="background-color: {{ original_key.low_color or 'green' }}">{{ original_key.range_low | replace('-', '♭') }}</span>
                         <span class="text-muted mx-1">to</span>
-                        <span class="badge badge-note text-white" style="background-color: {{ original_key.high_color or 'green' }}">{{ original_key.range_high }}</span>
+                        <span class="badge badge-note text-white" style="background-color: {{ original_key.high_color or 'green' }}">{{ original_key.range_high | replace('-', '♭') }}</span>
                     </div>
                 </div>
             </div>
