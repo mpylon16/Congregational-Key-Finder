@@ -81,20 +81,20 @@
                 <div class="row text-center">
                     <div class="col-md-4 border-end">
                         <span class="text-muted d-block small uppercase fw-bold">Original Key</span>
-                        <span class="fs-4 fw-bold text-dark">{{ original_key_info.name }}</span>
+                        <span class="fs-4 fw-bold text-dark">{{ original_key.name }}</span>
                     </div>
                     <div class="col-md-4 border-end">
                         <span class="text-muted d-block small uppercase fw-bold">Vocal Range Extents</span>
                         <div class="mt-1">
-                            <span class="badge bg-secondary badge-note me-1">{{ original_key_info.range_low }}</span>
+                            <span class="badge bg-secondary badge-note me-1">{{ original_key.range_low }}</span>
                             <span class="text-muted">to</span>
-                            <span class="badge bg-secondary badge-note ms-1">{{ original_key_info.range_high }}</span>
+                            <span class="badge bg-secondary badge-note ms-1">{{ original_key.range_high }}</span>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <span class="text-muted d-block small uppercase fw-bold">Singability Score</span>
-                        <span class="fs-4 fw-bold badge {% if original_key_info.comfort_score >= 85 %}bg-dark-green{% elif original_key_info.comfort_score >= 70 %}bg-light-green{% elif original_key_info.comfort_score >= 50 %}bg-yellow text-dark{% elif original_key_info.comfort_score >= 30 %}bg-orange{% else %}bg-red{% endif %} mt-1">
-                            {{ original_key_info.comfort_score }} / 100 ({{ original_key_info.comfort_label }})
+                        <span class="fs-4 fw-bold badge {% if original_key.comfort_score >= 85 %}bg-dark-green{% elif original_key.comfort_score >= 70 %}bg-light-green{% elif original_key.comfort_score >= 50 %}bg-yellow text-dark{% elif original_key.comfort_score >= 30 %}bg-orange{% else %}bg-red{% endif %} mt-1">
+                            {{ original_key.comfort_score }} / 100 ({{ original_key.comfort_label }})
                         </span>
                     </div>
                 </div>

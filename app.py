@@ -697,6 +697,7 @@ def upload_file():
                 return render_template("analysis_results.html",
                     pdf_hash=pdf_hash,                                       
                     original_key=summary["original_key_info"],
+                    mxl_url=mxl_url if 'mxl_url' in locals() else None, # <--- FIX 2: Enables download button
                     recommended=summary["recommended"],
                     other_keys=summary["other_keys"],
                     skipped=summary["skipped"],
@@ -769,6 +770,7 @@ def get_song(pdf_hash):
         is_database_pull=True, # <--- Tells the HTML to hide the top original key block
         pdf_hash=song['pdf_hash'],
         original_key=summary["original_key_info"],
+        mxl_url=song.get("mxl_url"), # <--- FIX 2: Enables download button
         recommended=summary["recommended"],
         other_keys=summary["other_keys"],
         skipped=summary["skipped"],
