@@ -1251,7 +1251,109 @@ def download_file(folder, filename):
         abort(404, description="File not found.")
     return send_from_directory(directory=full_dir, path=filename, as_attachment=True)
 
+@app.route('/api/reanalyze-score', methods=['POST'])
+def reanalyze_score():
+    if 'file' not in request.files or 'pdf_hash' not in request.form:
+        return jsonify({"error": "Missing file or song identifier"}), 400
 
+    file = request.files['file']
+    pdf_hash = request.form['pdf_hash']
+    
+    if file.filename == '':
+        return jsonify({"error": "No file selected"}), 400
+
+    # 1. Save the newly edited file locally to a temp directory
+    temp_dir = tempfile.mkdtemp()
+    temp_path = os.path.join(temp_dir, file.filename)
+    file.save(temp_path)
+
+    try:
+        # 2. Extract and parse using your bulletproof bypass
+        if file.filename.endswith('.mxl'):
+            raw_xml_string = extract_xml_from_mxl(temp_path)
+            score = converter.parse(raw_xml_string, format='musicxml')
+        else:
+            score = converter.parse(temp_path)
+
+        # 3. Extract vocal notes
+        notes, _, _ = extract_vocal_note_info(score, source_name=file.filename)
+        if not notes:
+            return jsonify({"error": "Could not extract vocal notes from this file."}), 400
+
+        # 4. Standard App Analysis Logic
+        ks_objects = score.parts[0].recurse().getElementsByClass(key.KeySignature)
+        detected_key = ks_objects[0].asKey() if ks_objects else score.analyze('key')
+        detected_key = simplify_enharmonic(ensure_music21_key(detected_key))
+        
+        all_keys_analysis = get_key_analysis_info(detected_key, notes, prefer_transpose_keys=False)
+        original_key_info = next((k for k in all_keys_analysis if k['shift'] == 0), None)
+
+        midi_values = [n['midi'] for n in notes]
+        low_midi = min(midi_values) if midi_values else 60
+        high_midi = max(midi_values) if midi_values else 72
+        
+        comfort_score = original_key_info["comfort_score"] if original_key_info else calculate_comfort_score(notes)
+
+        # Deduplicate and rank
+        deduped_keys = deduplicate_by_key(all_keys_analysis)
+        for index, k in enumerate(deduped_keys):
+            k['recommendation_rank'] = index + 1
+            
+        recommended = deduped_keys[0] if deduped_keys else None
+        if recommended:
+            rec_low_midi = pitch.Pitch(recommended['range_low']).midi
+            rec_high_midi = pitch.Pitch(recommended['range_high']).midi
+            recommended['low_comfort'] = get_note_comfort_category(rec_low_midi)
+            recommended['high_comfort'] = get_note_comfort_category(rec_high_midi)
+            recommended['low_color'] = get_note_comfort_color(rec_low_midi)
+            recommended['high_color'] = get_note_comfort_color(rec_high_midi)
+
+        other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']] if recommended else []
+
+        # 5. Package summary payload
+        summary = {
+            "title": file.filename, 
+            "all_keys_analysis": all_keys_analysis,
+            "recommended": recommended,
+            "other_keys": other_keys,
+            "original_key_info": {
+                "name": f"{detected_key.tonic.name} {detected_key.mode}",
+                "range_low": pitch.Pitch(low_midi).nameWithOctave,
+                "range_high": pitch.Pitch(high_midi).nameWithOctave,
+                "comfort_score": comfort_score,
+                "comfort_label": comfort_category(comfort_score)
+            }
+        }
+        db_summary = make_json_safe(summary)
+
+        # 6. OVERWRITE THE MXL IN THE STORAGE BUCKET
+        # This keeps the cloud storage file matched with your edits
+        storage_path = f"{pdf_hash}.mxl"
+        with open(temp_path, 'rb') as f:
+            supabase.storage.from_('mxl-library').upload(
+                path=storage_path, 
+                file=f, 
+                file_options={
+                    "upsert": "true",
+                    "content-type": "application/vnd.recordare.musicxml+xml"
+                }
+            )
+
+        # 7. UPDATE THE DATABASE MATRIX
+        supabase.table('songs').update({
+            "analysis_results": db_summary,
+            "original_key": summary["original_key_info"]["name"],
+            "lowest_note": summary["original_key_info"]["range_low"],
+            "highest_note": summary["original_key_info"]["range_high"]
+        }).eq("pdf_hash", pdf_hash).execute()
+
+        return jsonify({"message": "Successfully updated cloud storage and re-analyzed score data!"}), 200
+
+    except Exception as e:
+        print(f"❌ Re-analysis route failure: {e}")
+        return jsonify({"error": str(e)}), 500
+    finally:
+        shutil.rmtree(temp_dir)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=False)
