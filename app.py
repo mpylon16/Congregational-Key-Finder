@@ -1056,14 +1056,20 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     original_key_info = next((k for k in all_keys_analysis if k['shift'] == 0), None)
     
     if original_key_info:
-        original_low = original_key_info["low"]
-        original_high = original_key_info["high"]
-        low = original_key_info["range_low"]
-        high = original_key_info["range_high"]
-        original_low_comfort = original_key_info["low_comfort"]
-        original_high_comfort = original_key_info["high_comfort"]
-        original_low_color = original_key_info["low_color"]
-        original_high_color = original_key_info["high_color"]
+        # 1. Pull the note strings from the dictionary
+        low = original_key_info["range_low"]   # e.g., "Ab3"
+        high = original_key_info["range_high"] # e.g., "Eb5"
+
+        # 2. Convert those strings back into raw MIDI integers so your comfort tools work
+        from music21 import pitch
+        original_low = pitch.Pitch(low).midi
+        original_high = pitch.Pitch(high).midi
+
+        # 3. Pull everything else normally
+        original_low_comfort = original_key_info.get("low_comfort") or get_note_comfort_category(original_low)
+        original_high_comfort = original_key_info.get("high_comfort") or get_note_comfort_category(original_high)
+        original_low_color = original_key_info.get("low_color") or get_note_comfort_color(original_low)
+        original_high_color = original_key_info.get("high_color") or get_note_comfort_color(original_high)
         orig_comfort_score = original_key_info["comfort_score"]
         orig_comfort_label = original_key_info["comfort_label"]
     else:
@@ -1080,26 +1086,31 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
         orig_comfort_score = 0.0
         orig_comfort_label = "⚠️ Unknown"
         
-    # 2. Run the full list through your updated pitch-class deduplicator.
-    # This guarantees exactly 12 items max, sorted strictly descending by final_score.
+# 2. Run the full matrix through your pitch-class deduplicator (sorted by final_score descending)
     deduped_keys = deduplicate_by_key(all_keys_analysis)
 
-    # 3. The highest-scoring key is your recommendation
+    # 3. Stamp an absolute recommendation rank (1 to 12) based on the balanced final_score
+    for index, k in enumerate(deduped_keys):
+        k['recommendation_rank'] = index + 1
+
+    # 4. Establish the top recommended choice
     recommended = deduped_keys[0] if deduped_keys else None
     
     if recommended:
-        recommended['low_comfort'] = get_note_comfort_category(recommended['low'])
-        recommended['high_comfort'] = get_note_comfort_category(recommended['high'])
-        recommended['low_color'] = get_note_comfort_color(recommended['low'])
-        recommended['high_color'] = get_note_comfort_color(recommended['high'])
+        from music21 import pitch
+        rec_low_midi = pitch.Pitch(recommended['range_low']).midi
+        rec_high_midi = pitch.Pitch(recommended['range_high']).midi
 
-    # 4. Filter the recommended key out of other_keys so it doesn't print twice.
-    # This leaves exactly 11 distinct items in other_keys.
+        recommended['low_comfort'] = get_note_comfort_category(rec_low_midi)
+        recommended['high_comfort'] = get_note_comfort_category(rec_high_midi)
+        recommended['low_color'] = get_note_comfort_color(rec_low_midi)
+        recommended['high_color'] = get_note_comfort_color(rec_high_midi)
+
+    # 5. Keep all remaining 11 options for the lower categories
     other_keys = [k for k in deduped_keys if k['shift'] != recommended['shift']]
 
-    # 5. Build your clean summary payload for the database
     summary["recommended"] = recommended
-    summary["other_keys"] = other_keys          # Holds exactly 11 secondary options
+    summary["other_keys"] = other_keys          
     summary["original_key_info"] = {
         "name": original_key_name,
         "range_low": low,
@@ -1108,7 +1119,7 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
         "high_comfort": original_high_comfort,
         "low_color": original_low_color,
         "high_color": original_high_color,
-        "comfort_score": orig_comfort_score,
+        "comfort_score": orig_comfort_score,  # Raw vocal comfort score
         "comfort_label": orig_comfort_label
     }
     summary["skipped"] = skipped
