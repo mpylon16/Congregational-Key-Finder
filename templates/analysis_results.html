@@ -105,13 +105,13 @@
             <div class="card p-3 mb-4 border-start border-4 border-primary bg-white">
                 <div class="d-flex align-items-center justify-content-between">
                     <span class="fs-5 fw-semibold text-secondary">
-                        Uploaded Key ({{ original_key.name | replace('-', '♭') }}): 
+                        Uploaded Key ({{ original_key.name | replace('-', '♭') | replace('#', '♯') }}): 
                         <span class="text-dark fw-bold ms-2">{{ original_key.comfort_label }}</span>
                     </span>
                     <div>
-                        <span class="badge badge-note text-white" style="background-color: {{ original_key.low_color or 'green' }}">{{ original_key.range_low | replace('-', '♭') }}</span>
+                        <span class="badge badge-note text-white" style="background-color: {{ original_key.low_color or 'green' }}">{{ original_key.range_low | replace('-', '♭') | replace('#', '♯') }}</span>
                         <span class="text-muted mx-1">to</span>
-                        <span class="badge badge-note text-white" style="background-color: {{ original_key.high_color or 'green' }}">{{ original_key.range_high | replace('-', '♭') }}</span>
+                        <span class="badge badge-note text-white" style="background-color: {{ original_key.high_color or 'green' }}">{{ original_key.range_high | replace('-', '♭') | replace('#', '♯') }}</span>
                     </div>
                 </div>
             </div>
@@ -142,7 +142,7 @@
                         
                         <div class="row align-items-center mt-3">
                             <div class="col-sm-4 d-flex align-items-center gap-2">
-                                <span class="display-6 fw-bold text-dark">{{ recommended.key | replace('-', '♭') }}</span>
+                                <span class="display-6 fw-bold text-dark">{{ recommended.key | replace('-', '♭') | replace('#', '♯') }}</span>
                                 {% if not is_database_pull and recommended.shift is defined %}
                                 <span class="badge bg-secondary text-white font-monospace fs-6" title="Transposition Shift">
                                     {% if recommended.shift > 0 %}+{{ recommended.shift }}{% elif recommended.shift < 0 %}{{ recommended.shift }}{% else %}Original{% endif %}
@@ -154,9 +154,9 @@
                                 <span class="fs-4 fw-bold text-dark">{{ recommended.comfort_label }}</span>
                             </div>
                             <div class="col-sm-4 text-sm-end">
-                                <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.low_color }}">{{ recommended.range_low | replace('-', '♭') }}</span>
+                                <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.low_color }}">{{ recommended.range_low | replace('-', '♭') | replace('#', '♯') }}</span>
                                 <span class="text-muted mx-1">to</span>
-                                <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.high_color }}">{{ recommended.range_high | replace('-', '♭') }}</span>
+                                <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.high_color }}">{{ recommended.range_high | replace('-', '♭') | replace('#', '♯') }}</span>
                             </div>
                         </div>
 
@@ -216,7 +216,7 @@
                                         {% for k in sorted_category_keys %}
                                         <tr>
                                             <td class="fw-bold text-dark fs-5 ps-3">
-                                                {{ k.key | replace('-', '♭') }}
+                                                {{ k.key | replace('-', '♭') | replace('#', '♯') }}
                                             </td>
                                             
                                             {% if not is_database_pull %}
@@ -241,9 +241,9 @@
                                             </td>
 
                                             <td class="text-end pe-3">
-                                                <span class="badge text-white px-2 py-1" style="background-color: {{ k.low_color }}">{{ k.range_low | replace('-', '♭') }}</span>
+                                                <span class="badge text-white px-2 py-1" style="background-color: {{ k.low_color }}">{{ k.range_low | replace('-', '♭') | replace('#', '♯') }}</span>
                                                 <span class="text-muted px-1">→</span>
-                                                <span class="badge text-white px-2 py-1" style="background-color: {{ k.high_color }}">{{ k.range_high | replace('-', '♭') }}</span>
+                                                <span class="badge text-white px-2 py-1" style="background-color: {{ k.high_color }}">{{ k.range_high | replace('-', '♭') | replace('#', '♯') }}</span>
                                             </td>
                                         </tr>
                                         {% endfor %}
