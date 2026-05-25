@@ -143,9 +143,9 @@
                         <div class="row align-items-center mt-3">
                             <div class="col-sm-4 d-flex align-items-center gap-2">
                                 <span class="display-6 fw-bold text-dark">{{ recommended.key | replace('-', '♭') }}</span>
-                                {% if not is_database_pull and recommended.transposition %}
-                                <span class="badge bg-secondary text-white font-monospace fs-6" title="Transposition Interval">
-                                    {{ recommended.transposition }}
+                                {% if not is_database_pull and recommended.shift is defined %}
+                                <span class="badge bg-secondary text-white font-monospace fs-6" title="Transposition Shift">
+                                    {% if recommended.shift > 0 %}+{{ recommended.shift }}{% elif recommended.shift < 0 %}{{ recommended.shift }}{% else %}Original{% endif %}
                                 </span>
                                 {% endif %}
                             </div>
@@ -222,7 +222,7 @@
                                             {% if not is_database_pull %}
                                             <td>
                                                 <span class="badge bg-light text-dark border font-monospace">
-                                                    {{ k.transposition if k.transposition else '0' }}
+                                                    {% if k.shift > 0 %}+{{ k.shift }}{% elif k.shift < 0 %}{{ k.shift }}{% else %}Original{% endif %}
                                                 </span>
                                             </td>
                                             {% endif %}
