@@ -449,7 +449,7 @@ def calculate_band_friction(target_key, team_profile=None):
     if not team_profile:
         team_profile = {'guitar': True, 'keyboard': True} # Default band setup
 
-    clean_tonic = target_key.tonic.name.replace('-', '♭')
+    clean_tonic = target_key.tonic.name.replace('-', '♭').replace('#', '♯')
     mode = target_key.mode 
 
     instrument_friction = {
@@ -488,7 +488,7 @@ def calculate_band_friction(target_key, team_profile=None):
                 friction = max(0, base_friction - 2) # Minor open chords are a bit easier
             else:
                 try:
-                    relative_major = target_key.relative.tonic.name.replace('-', '♭')
+                    relative_major = target_key.relative.tonic.name.replace('-', '♭').replace('#', '♯')
                     friction = instrument_friction[instrument].get(relative_major, 5)
                 except Exception:
                     friction = 5
@@ -525,9 +525,9 @@ def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=Fa
             # Gather and Clean Metadata (Fixing the Flat symbols here!)
             lowest = min(n['midi'] for n in shifted_notes_info)
             highest = max(n['midi'] for n in shifted_notes_info)
-            clean_low = pitch.Pitch(lowest).nameWithOctave.replace('-', '♭')
-            clean_high = pitch.Pitch(highest).nameWithOctave.replace('-', '♭')
-            clean_key_name = f"{transposed_key.tonic.name.replace('-', '♭')} {transposed_key.mode}"
+            clean_low = pitch.Pitch(lowest).nameWithOctave.replace('-', '♭').replace('#', '♯')
+            clean_high = pitch.Pitch(highest).nameWithOctave.replace('-', '♭').replace('#', '♯')
+            clean_key_name = f"{transposed_key.tonic.name.replace('-', '♭').replace('#', '♯')} {transposed_key.mode}"
 
             key_analysis_info.append({
                 'shift': i,
@@ -1062,10 +1062,9 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
         low = original_key_info["range_low"]   # e.g., "Ab3"
         high = original_key_info["range_high"] # e.g., "Eb5"
 
-        # 2. Convert those strings back into raw MIDI integers so your comfort tools work
-        from music21 import pitch
-        original_low = pitch.Pitch(low).midi
-        original_high = pitch.Pitch(high).midi
+        # 2. Pull raw MIDI integers directly from the data structure, bypassing string parsing entirely
+        original_low = original_key_info["low_midi"]
+        original_high = original_key_info["high_midi"]
 
         # 3. Pull everything else normally
         original_low_comfort = original_key_info.get("low_comfort") or get_note_comfort_category(original_low)
@@ -1233,7 +1232,7 @@ def deduplicate_by_key(all_keys_analysis):
             # Convert to a standardized music21 Key object if needed
             key_obj = k['key']
         else:
-            clean_str = " ".join(str(k['key']).split()).replace('♭', '-')
+            clean_str = " ".join(str(k['key']).split()).replace('♭', '-').replace('♯', '#')
             try:
                 key_obj = music21.key.Key(clean_str)
             except Exception:
