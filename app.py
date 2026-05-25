@@ -1098,9 +1098,8 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     recommended = deduped_keys[0] if deduped_keys else None
     
     if recommended:
-        from music21 import pitch
-        rec_low_midi = pitch.Pitch(recommended['range_low']).midi
-        rec_high_midi = pitch.Pitch(recommended['range_high']).midi
+        rec_low_midi = recommended['low_midi']
+        rec_high_midi = recommended['high_midi']
 
         recommended['low_comfort'] = get_note_comfort_category(rec_low_midi)
         recommended['high_comfort'] = get_note_comfort_category(rec_high_midi)
