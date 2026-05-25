@@ -92,16 +92,44 @@ def extract_metadata_from_pdf(pdf_path):
                 metadata["year"] = year_match.group(1)
 
             # 3. Author Extraction
-            words_by = re.search(r'Words (?:and Music )?by\s*(.*?)(?=\n|Music by|©|CCLI|$)', header_text, re.IGNORECASE)
-            music_by = re.search(r'Music by\s*(.*?)(?=\n|Words by|©|CCLI|$)', header_text, re.IGNORECASE)
+            # Clean up SongSelect's stacked layout lines before parsing
+            cleaned_header = []
+            for line in header_text.splitlines():
+                normalized = line.strip()
+                # If a line is just a structural label with no actual names attached, skip it
+                if normalized.lower() in ["words and music by", "words by", "music by"]:
+                    continue
+                cleaned_header.append(line)
+            header_text_processing = "\n".join(cleaned_header)
+
+            # Extract names using refined regex patterns that capture multi-line elements gracefully
+            words_by = re.search(r'Words (?:and Music )?by\s*(.*?)(?=\n\s*\n|\n\s*Music by|\n\s*Words by|©|CCLI|$)', header_text_processing, re.IGNORECASE | re.DOTALL)
+            music_by = re.search(r'Music by\s*(.*?)(?=\n\s*\n|\n\s*Words by|\n\s*Music by|©|CCLI|$)', header_text_processing, re.IGNORECASE | re.DOTALL)
             
+            def clean_field(val):
+                if not val:
+                    return ""
+                # Strip leading/trailing spaces, commas, slashes, or layout fragments
+                val = re.sub(r'^(?i)(?:words\s+and\s+music\s+by|words\s+by|music\s+by|and|/|,|\s)+', '', val)
+                val = re.sub(r'(?i)(?:words\s+and\s+music\s+by|words\s+by|music\s+by|and|/|,|\s)+$', '', val)
+                return val.strip()
+
             if words_by and music_by:
-                w, m = words_by.group(1).strip().strip(','), music_by.group(1).strip().strip(',')
-                metadata["author"] = w if w == m else f"Words: {w} / Music: {m}"
+                w = clean_field(words_by.group(1))
+                m = clean_field(music_by.group(1))
+                
+                if not w and m:
+                    metadata["author"] = m
+                elif not m and w:
+                    metadata["author"] = w
+                elif w == m:
+                    metadata["author"] = w
+                else:
+                    metadata["author"] = f"Words: {w} / Music: {m}"
             elif words_by:
-                metadata["author"] = words_by.group(1).strip()
+                metadata["author"] = clean_field(words_by.group(1))
             elif music_by:
-                metadata["author"] = music_by.group(1).strip()
+                metadata["author"] = clean_field(music_by.group(1))
             elif "Public Domain" in header_text:
                 metadata["author"] = "Public Domain"
 
