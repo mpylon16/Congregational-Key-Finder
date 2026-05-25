@@ -130,12 +130,15 @@
                         {% elif 'challenging' in lbl %}border-warning
                         {% else %}border-danger{% endif %}">
                         
-                        <h5 class="fw-bold small mb-2 
-                            {% if 'perfect' in lbl or 'very' in lbl %}text-success
-                            {% elif 'challenging' in lbl %}text-warning
-                            {% else %}text-danger{% endif %}">
-                            ⭐ {% if is_database_pull %}TOP RECOMMENDED KEY{% else %}TOP RECOMMENDED TRANSPOSITION{% endif %}
-                        </h5>
+                        <div class="mb-3">
+                            <h5 class="fw-bold small mb-1 
+                                {% if 'perfect' in lbl or 'very' in lbl %}text-success
+                                {% elif 'challenging' in lbl %}text-warning
+                                {% else %}text-danger{% endif %}">
+                                ⭐ {% if is_database_pull %}TOP RECOMMENDED KEY{% else %}TOP RECOMMENDED TRANSPOSITION{% endif %}
+                            </h5>
+                            <p class="small text-muted m-0">Ranked Best Overall for Band & Voices</p>
+                        </div>
                         
                         <div class="row align-items-center mt-3">
                             <div class="col-sm-4">
@@ -144,12 +147,22 @@
                             <div class="col-sm-4 text-center border-start border-end">
                                 <div class="text-uppercase small text-muted mb-1 fw-bold" style="letter-spacing: 1px;">Singability</div>
                                 <span class="fs-4 fw-bold text-dark">{{ recommended.comfort_label }}</span>
-                                <div class="small text-muted mt-2">Ranked Best Overall for Band & Voices</div>
                             </div>
                             <div class="col-sm-4 text-sm-end">
                                 <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.low_color }}">{{ recommended.range_low | replace('-', '♭') }}</span>
                                 <span class="text-muted mx-1">to</span>
                                 <span class="badge text-white px-2 py-1" style="background-color: {{ recommended.high_color }}">{{ recommended.range_high | replace('-', '♭') }}</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="progress bg-white border" style="height: 12px;">
+                                <div class="progress-bar 
+                                    {% if 'perfect' in lbl or 'very' in lbl %}bg-dark-green
+                                    {% elif 'challenging' in lbl %}bg-yellow
+                                    {% else %}bg-danger{% endif %}" 
+                                    style="width: {{ recommended.comfort_score }}%">
+                                </div>
                             </div>
                         </div>
                     </div>
