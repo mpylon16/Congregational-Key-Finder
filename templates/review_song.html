@@ -1,59 +1,41 @@
-{% extends "base.html" %} {% block content %}
-<div class="container mt-5 max-w-lg">
-    <div class="card shadow-sm">
-        <div class="card-header bg-primary text-white">
-            <h4 class="mb-0">Review Song Details</h4>
-        </div>
-        <div class="card-body">
-            <p class="text-muted small mb-4">Please review the extracted data. Adjust the bounding notes to ignore cue notes or rogue instrument lines.</p>
-            
-            <form action="{{ url_for('commit_song') }}" method="POST">
-                <input type="hidden" name="pdf_hash" value="{{ pdf_hash }}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review Song Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="review-container">
+        <h1>Review Song Data</h1>
+        <p>Please confirm the extracted details before analyzing.</p>
 
-                <div class="mb-3">
-                    <label class="form-label fw-bold">Song Title</label>
-                    <input type="text" class="form-control" name="title" value="{{ metadata.title }}" required>
-                </div>
+        <form action="/commit_song" method="POST">
+            <input type="hidden" name="pdf_hash" value="{{ pdf_hash }}">
+            <input type="hidden" name="name" value="{{ name }}">
+            <input type="hidden" name="prefer_transpose_keys" value="{{ prefer_transpose_keys }}">
 
-                <div class="mb-3">
-                    <label class="form-label fw-bold">Author(s)</label>
-                    <input type="text" class="form-control" name="author" value="{{ metadata.author }}">
-                </div>
+            <label>Title:</label>
+            <input type="text" name="title" value="{{ metadata.get('title', name) if metadata else name }}"><br><br>
 
-                <div class="mb-3">
-                    <label class="form-label fw-bold">CCLI Number</label>
-                    <input type="text" class="form-control" name="ccli_number" value="{{ metadata.ccli_number }}">
-                </div>
+            <label>Author:</label>
+            <input type="text" name="author" value="{{ metadata.get('author', '') if metadata else '' }}"><br><br>
 
-                <hr class="my-4">
-                
-                <h5 class="fw-bold text-dark mb-3">Vocal Range Limits (Crop Data)</h5>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label class="form-label text-muted">Ignore notes below:</label>
-                        <select class="form-select" name="min_note">
-                            <option value="none">No limit</option>
-                            <option value="53">F3 (Common Low)</option>
-                            <option value="55">G3</option>
-                            <option value="57">A3</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label class="form-label text-muted">Ignore notes above:</label>
-                        <select class="form-select" name="max_note">
-                            <option value="none">No limit</option>
-                            <option value="76">E5</option>
-                            <option value="77">F5 (Common High)</option>
-                            <option value="79">G5</option>
-                        </select>
-                    </div>
-                </div>
+            <label>CCLI Number:</label>
+            <input type="text" name="ccli_number" value="{{ metadata.get('ccli_number', '') if metadata else '' }}"><br><br>
 
-                <div class="d-grid mt-4">
-                    <button type="submit" class="btn btn-success btn-lg">Analyze & Save to Database</button>
-                </div>
-            </form>
-        </div>
+            <label>Year:</label>
+            <input type="text" name="year" value="{{ metadata.get('year', '') if metadata else '' }}"><br><br>
+
+            <h3>Crop Limits (Optional)</h3>
+            <label>Min Note (MIDI):</label>
+            <input type="number" name="min_note"><br><br>
+
+            <label>Max Note (MIDI):</label>
+            <input type="number" name="max_note"><br><br>
+
+            <button type="submit">Confirm & Analyze</button>
+        </form>
     </div>
-</div>
-{% endblock %}
+</body>
+</html>
