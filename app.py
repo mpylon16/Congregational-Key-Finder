@@ -52,6 +52,26 @@ def temporarily_set_cwd(path):
     finally:
         os.chdir(prev)
 
+def cleanup_stale_cache(output_folder, max_age_hours=1):
+    """Deletes temporary MXL folders that have been abandoned by users."""
+    if not os.path.exists(output_folder):
+        return
+        
+    current_time = time.time()
+    for item in os.listdir(output_folder):
+        item_path = os.path.join(output_folder, item)
+        
+        # Only check directories
+        if os.path.isdir(item_path):
+            folder_age = current_time - os.path.getmtime(item_path)
+            
+            if folder_age > (max_age_hours * 3600):
+                try:
+                    shutil.rmtree(item_path)
+                    print(f"🧹 Garbage Collector: Removed abandoned cache {item}")
+                except Exception as e:
+                    print(f"⚠️ Failed to remove stale cache {item}: {e}")
+
 def make_json_safe(data):
     """Recursively converts all music21 objects in a dict/list to strings."""
     if isinstance(data, dict):
@@ -392,6 +412,39 @@ def get_note_comfort_color(midi_note):
     else: # out_of_range
         return "red"
 
+def crop_and_clean_stream(parsed_score, min_midi, max_midi):
+    """
+    Permanently removes out-of-bounds notes from a music21 stream.
+    Replaces them with rests to maintain measure timing integrity.
+    """
+    # .notes filters for both Note and Chord objects
+    for el in parsed_score.recurse().notes:
+        
+        # Handle Single Notes
+        if isinstance(el, note.Note):
+            if el.pitch.midi < min_midi or el.pitch.midi > max_midi:
+                # Create a rest of the exact same length
+                r = note.Rest()
+                r.duration = el.duration
+                # Safely swap the note for the rest in the score
+                el.activeSite.replace(el, r)
+                
+        # Handle Chords
+        elif isinstance(el, chord.Chord):
+            # Figure out which pitches are actually valid
+            valid_pitches = [p for p in el.pitches if min_midi <= p.midi <= max_midi]
+            
+            if not valid_pitches:
+                # Every note in the chord was out of bounds; replace with a rest
+                r = note.Rest()
+                r.duration = el.duration
+                el.activeSite.replace(el, r)
+            elif len(valid_pitches) < len(el.pitches):
+                # Some notes were valid, some were not. Rebuild the chord.
+                el.pitches = valid_pitches
+                
+    return parsed_score
+
 # --- 2. LOGIC FUNCTIONS ---
 def get_comfort_metadata(score):
     for threshold in COMFORT_THRESHOLDS:
@@ -581,8 +634,12 @@ def get_key_analysis_info(original_key, all_notes_info, prefer_transpose_keys=Fa
 
 # --- Flask Routes ---
 
+# --- MAIN UPLOAD ROUTE ---
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
+    # 1. Run the Garbage Collector to keep your Railway disk clean
+    cleanup_stale_cache(app.config.get('OUTPUT_FOLDER', '/app/output'))
+
     if request.method == 'POST':
         file = request.files['file']
         prefer_transpose_keys = 'transpose_keys' in request.form
@@ -591,14 +648,52 @@ def upload_file():
             filename = secure_filename(file.filename)
             filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(filepath)
+            
+            # 2. Extract raw text from PDF
             pdf_metadata = extract_metadata_from_pdf(filepath)
             name, _ = os.path.splitext(filename)
-
             pdf_hash = get_file_hash(filepath)
 
+            # ---------------------------------------------------------
+            # 3. SUPABASE DEDUPLICATION CHECK (Save Railway Credits!)
+            # ---------------------------------------------------------
+            if supabase:
+                try:
+                    ccli = pdf_metadata.get("ccli_number")
+                    existing_song = None
+
+                    # Check A: Match by CCLI (The gold standard)
+                    if ccli and ccli != "Unknown":
+                        response = supabase.table('songs').select('pdf_hash').eq('ccli_number', ccli).limit(1).execute()
+                        if response.data:
+                            existing_song = response.data[0]
+
+                    # Check B: Match by exact PDF Hash (Fallback if CCLI was missing)
+                    if not existing_song:
+                        response = supabase.table('songs').select('pdf_hash').eq('pdf_hash', pdf_hash).limit(1).execute()
+                        if response.data:
+                            existing_song = response.data[0]
+
+                    # If we found it, skip Audiveris completely!
+                    if existing_song:
+                        print(f"♻️ Song already exists in DB! Redirecting to hash: {existing_song['pdf_hash']}")
+                        
+                        # Clean up the PDF we just saved to the upload folder since we don't need it
+                        if os.path.exists(filepath):
+                            os.remove(filepath)
+                            
+                        # Redirect instantly to the results page using the EXISTING hash
+                        return redirect(url_for('view_results', hash=existing_song['pdf_hash']))
+
+                except Exception as db_err:
+                    print(f"⚠️ Supabase check failed, continuing with upload pipeline: {db_err}")
+            # ---------------------------------------------------------
+
+            # 4. If no match was found, proceed to Staging Area
             cached_output_dir = os.path.join(app.config['OUTPUT_FOLDER'], pdf_hash)
             os.makedirs(cached_output_dir, exist_ok=True)
 
+            # 5. Run Audiveris
             if not any(fname.endswith('.mxl') for fname in os.listdir(cached_output_dir)):
                 try:
                     print(f"⏱️ Starting Audiveris for hash: {pdf_hash}")
@@ -662,107 +757,138 @@ def upload_file():
                     print(f"✅ Audiveris finished in {duration:.2f} seconds")
                     time.sleep(1.0) # Give Linux a full second to finalize the file writes
                     print("📂 Contents of output directory:", os.listdir(cached_output_dir))
-
+                    pass
                 except Exception as e:
                     return f"<p>Unexpected error during Audiveris processing: {e}</p>", 500
             else:
                 print(f"✅ Using cached MXL files for {filename} (hash: {pdf_hash})")
 
-            try:
-                summary = analyse_musicxml_summary(
-                    output_dir=cached_output_dir,
-                    name=name,
-                    prefer_transpose_keys=prefer_transpose_keys,
-                    pdf_metadata=pdf_metadata
-                )
-
-                if supabase: # Only try if the client was actually created
-                    try:
-                        # Debug: List all buckets to see what the app actually sees
-                        buckets = supabase.storage.list_buckets()
-                        print(f"DEBUG: Visible buckets: {[b.name for b in buckets]}")
-
-                        mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
-                        if mxl_files:
-                            mxl_filename = mxl_files[0]
-                            local_mxl_path = os.path.join(cached_output_dir, mxl_filename)
-                            storage_path = f"{pdf_hash}.mxl"
-
-                            with open(local_mxl_path, 'rb') as f:
-                                supabase.storage.from_('mxl-library').upload(
-                                    path=storage_path, 
-                                    file=f, 
-                                    file_options={
-                                        "upsert": "true",
-                                        "content-type": "application/vnd.recordare.musicxml+xml" # The official MXL type
-                                    }
-                                )
-                            
-                            mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
-                            # Fix: Create a "database-friendly" copy of the summary
-                            db_summary = make_json_safe(summary)
-
-                            # Flatten analysis for easy searching/filtering
-                            orig_info = summary.get("original_key_info", {})
-                                                      
-                            supabase.table('songs').upsert({
-                                "pdf_hash": pdf_hash,
-                                "title": summary.get("title", "Unknown Title"),
-                                "ccli_number": pdf_metadata.get("ccli_number", "Unknown"), # From the NEW pdf_metadata
-                                "author": pdf_metadata.get("author", "Unknown"),           # NEW COLUMN
-                                "year": pdf_metadata.get("year", "Unknown"),               # NEW COLUMN
-                                "original_key": orig_info.get("name", "Unknown"),          # NEW COLUMN
-                                "lowest_note": orig_info.get("range_low", "Unknown"),      # NEW COLUMN
-                                "highest_note": orig_info.get("range_high", "Unknown"),
-                                "mxl_url": mxl_url,
-                                "analysis_results": db_summary 
-                            }, on_conflict="pdf_hash").execute()  # <--- Added on_conflict="pdf_hash"
-                            print(f"🚀 Cloud Save Successful for {pdf_hash}")
-                    except Exception as cloud_err:
-                        # This prints to the Railway logs but DOES NOT trigger a 500 error for the user                     
-                        print(f"⚠️ Cloud Save background error: {cloud_err}")
-                        
-                return render_template("analysis_results.html",
-                    pdf_hash=pdf_hash,                                       
-                    original_key=summary["original_key_info"],
-                    mxl_url=mxl_url if 'mxl_url' in locals() else None, # <--- FIX 2: Enables download button
-                    recommended=summary["recommended"],
-                    other_keys=summary["other_keys"],
-                    skipped=summary["skipped"],
-                    warnings=summary["warnings"],
-                    ccli_link=summary.get("ccli_url"),
-                    title=summary.get("title"),
-                    author=pdf_metadata.get("author"),
-                    year=pdf_metadata.get("year"),
-                    ccli_no=summary["ccli_number"],
-                    meta=get_comfort_metadata(summary["original_key_info"]["comfort_score"]),
-                    thresholds=COMFORT_THRESHOLDS
-                )
-
-            except Exception as e:
-                logging.error("--- FATAL ERROR DURING MUSICXML ANALYSIS ---")
-                logging.error(f"Exception Type: {type(e)}")
-                logging.error(f"Exception Message: {e}")
-                logging.exception("Full Traceback Details:")
-                logging.error("--- END FATAL ERROR ---")
-
-                print("Error:", e)
-
-                if 'cached_output_dir' in locals() and os.path.exists(cached_output_dir):
-                    try:
-                        # We use ignore_errors=True so that if a single temp file 
-                        # is 'locked', the whole app doesn't crash.
-                        shutil.rmtree(cached_output_dir, ignore_errors=True)
-                        print(f"🧹 Cleaned up failed directory: {cached_output_dir}")
-                    except Exception as cleanup_error:
-                        # Log it, but don't stop the user from seeing the original error
-                        logging.warning(f"Cleanup failed for {cached_output_dir}: {cleanup_error}")
-
-                return f"<p>MusicXML analysis failed: {e}</p>", 500
+            # 6. Render the Review Form (Stage 1 of the Two-Step Pipeline)
+            return render_template(
+                'review_song.html',
+                metadata=pdf_metadata,
+                pdf_hash=pdf_hash,
+                name=name,
+                prefer_transpose_keys=prefer_transpose_keys
+            )
 
         return f"<p>Please upload a valid PDF file.</p><p><a href='{url_for('upload_file')}'>Try Again</a></p>"
 
     return render_template('upload.html')
+
+@app.route('/commit_song', methods=['POST'])
+def commit_song():
+    # 1. Grab data passed from the review_song.html form
+    pdf_hash = request.form.get('pdf_hash')
+    name = request.form.get('name')
+    prefer_transpose_keys = request.form.get('prefer_transpose_keys') == 'True'
+    
+    cached_output_dir = os.path.join(app.config['OUTPUT_FOLDER'], pdf_hash)
+    
+    # Rebuild metadata dictionary with the user's manual corrections!
+    user_metadata = {
+        "title": request.form.get('title'),
+        "author": request.form.get('author'),
+        "ccli_number": request.form.get('ccli_number'),
+        "year": request.form.get('year', 'Unknown')
+    }
+
+    # 2. Handle the Cropping Limits
+    min_note_val = request.form.get('min_note')
+    max_note_val = request.form.get('max_note')
+    min_midi = int(min_note_val) if min_note_val and min_note_val != 'none' else 0
+    max_midi = int(max_note_val) if max_note_val and max_note_val != 'none' else 127
+
+    mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
+    if not mxl_files:
+        return "Error: MXL file lost from cache.", 500
+    
+    local_mxl_path = os.path.join(cached_output_dir, mxl_files[0])
+
+    try:
+        # 3. Permanently crop the MXL file if limits were set
+        if min_midi > 0 or max_midi < 127:
+            print(f"✂️ Cropping MXL file to range {min_midi} - {max_midi}")
+            score = converter.parse(local_mxl_path)
+            cleaned_score = crop_and_clean_stream(score, min_midi, max_midi)
+            cleaned_score.write('musicxml', fp=local_mxl_path)
+
+        # 4. Run the Analysis on the clean file
+        summary = analyse_musicxml_summary(
+            output_dir=cached_output_dir,
+            name=name,
+            prefer_transpose_keys=prefer_transpose_keys,
+            pdf_metadata=user_metadata # Pass the clean form data, NOT the raw PDF text
+        )
+
+        # 5. Database Save (Your exact Supabase logic)
+        if supabase:
+            storage_path = f"{pdf_hash}.mxl"
+            with open(local_mxl_path, 'rb') as f:
+                supabase.storage.from_('mxl-library').upload(
+                    path=storage_path, 
+                    file=f, 
+                    file_options={"upsert": "true", "content-type": "application/vnd.recordare.musicxml+xml"}
+                )
+            
+            mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
+            db_summary = make_json_safe(summary)
+            orig_info = summary.get("original_key_info", {})
+                                        
+            supabase.table('songs').upsert({
+                "pdf_hash": pdf_hash,
+                "title": user_metadata.get("title", "Unknown Title"),
+                "ccli_number": user_metadata.get("ccli_number", "Unknown"),
+                "author": user_metadata.get("author", "Unknown"),
+                "year": user_metadata.get("year", "Unknown"),
+                "original_key": orig_info.get("name", "Unknown"),
+                "lowest_note": orig_info.get("range_low", "Unknown"),
+                "highest_note": orig_info.get("range_high", "Unknown"),
+                "mxl_url": mxl_url,
+                "analysis_results": db_summary 
+            }, on_conflict="pdf_hash").execute()
+            print(f"🚀 Cloud Save Successful for {pdf_hash}")
+
+        # 6. Render the final result
+        return render_template("analysis_results.html",
+            pdf_hash=pdf_hash,                                       
+            original_key=summary["original_key_info"],
+            mxl_url=mxl_url if 'mxl_url' in locals() else None,
+            recommended=summary["recommended"],
+            other_keys=summary["other_keys"],
+            skipped=summary["skipped"],
+            warnings=summary["warnings"],
+            ccli_link=summary.get("ccli_url"),
+            title=user_metadata.get("title"),
+            author=user_metadata.get("author"),
+            year=user_metadata.get("year"),
+            ccli_no=user_metadata.get("ccli_number"),
+            meta=get_comfort_metadata(summary["original_key_info"]["comfort_score"]),
+            thresholds=COMFORT_THRESHOLDS
+        )
+
+    except Exception as e:
+        # Include your existing crash reporting / cleanup logic here
+        logging.error("--- FATAL ERROR DURING MUSICXML ANALYSIS ---")
+        logging.error(f"Exception Type: {type(e)}")
+        logging.error(f"Exception Message: {e}")
+        logging.exception("Full Traceback Details:")
+        logging.error("--- END FATAL ERROR ---")
+
+        print("Error:", e)
+
+        if 'cached_output_dir' in locals() and os.path.exists(cached_output_dir):
+            try:
+                # We use ignore_errors=True so that if a single temp file 
+                # is 'locked', the whole app doesn't crash.
+                shutil.rmtree(cached_output_dir, ignore_errors=True)
+                print(f"🧹 Cleaned up failed directory: {cached_output_dir}")
+            except Exception as cleanup_error:
+                # Log it, but don't stop the user from seeing the original error
+                logging.warning(f"Cleanup failed for {cached_output_dir}: {cleanup_error}")
+
+        return f"<p>Analysis failed during commit: {e}</p>", 500
+                
 
 @app.route('/search_songs', methods=['GET'])
 def search_songs():
@@ -893,7 +1019,7 @@ def extract_written_chords(score):
 
 def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_metadata=None):
     print("🎬 Running analyse_musicxml_summary()")
-    from music21 import converter, pitch, stream, note
+#    from music21 import converter, pitch, stream, note
 
     pattern = os.path.join(output_dir, f"{name}*.mxl")
     mxl_files = sorted(glob.glob(pattern))
