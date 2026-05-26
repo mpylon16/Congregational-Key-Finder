@@ -161,7 +161,7 @@
         
         <div class="search-box">
             <h3>Find a Song</h3>
-            <p>Search our library of analyzed songs for instant results.</p>
+            <p>Search our library of analysed songs for instant results.</p>
             <input type="text" id="songSearch" placeholder="Type song title, author, or CCLI number..." autocomplete="off">
             <div id="searchResults"></div>
         </div>
@@ -243,5 +243,44 @@
         }
     </script>
 
+<script>
+    let debounceTimer;
+    const searchInput = document.getElementById('songSearch');
+    const resultsDiv = document.getElementById('searchResults');
+
+    searchInput.addEventListener('input', function(event) {
+        // .trim() ignores accidental spaces before/after the search
+        const query = event.target.value.trim();
+        
+        // 1. Clear the previous timer on every keystroke
+        clearTimeout(debounceTimer);
+        
+        // 2. If the user deletes everything, empty the results and stop
+        if (query.length === 0) {
+            resultsDiv.innerHTML = '';
+            return;
+        }
+        
+        // 3. Set a new timer. It only fires if they stop typing for 300ms.
+        debounceTimer = setTimeout(() => {
+            
+            // Call your Flask route
+            fetch(`/search_songs?q=${encodeURIComponent(query)}`)
+                .then(response => {
+                    if (!response.ok) throw new Error("Network response was not ok");
+                    return response.text();
+                })
+                .then(html => {
+                    // Inject the HTML returned by Flask into the div
+                    resultsDiv.innerHTML = html;
+                })
+                .catch(error => {
+                    console.error("Search error:", error);
+                    resultsDiv.innerHTML = '<p style="color: red;">Error loading results.</p>';
+                });
+                
+        }, 300);
+    });
+</script>
 </body>
 </html>
