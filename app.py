@@ -683,7 +683,7 @@ def upload_file():
                             os.remove(filepath)
                             
                         # Redirect instantly to the results page using the EXISTING hash
-                        return redirect(url_for('view_results', hash=existing_song['pdf_hash']))
+                        return redirect(url_for('get_song', pdf_hash=existing_song['pdf_hash']))
 
                 except Exception as db_err:
                     print(f"⚠️ Supabase check failed, continuing with upload pipeline: {db_err}")
