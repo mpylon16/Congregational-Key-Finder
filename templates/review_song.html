@@ -2,150 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Review Song Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Key Analysis: {{ title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
-        /* Modernized Styles */
         body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            margin: 0; 
-            line-height: 1.6; 
-            background-color: #f4f7f6;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            background-color: #f8f9fa; 
+            padding: 30px 0; 
+        }
+        .card { 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+            margin-bottom: 25px; 
+            border-radius: 8px; 
+        }
+        .badge-note { 
+            font-size: 1rem; 
+            padding: 0.4em 0.6em; 
+            font-family: monospace; 
         }
         
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        /* Fixed Symmetrical Pitch Comfort Scale Visualizer */
+        .scale-container { 
+            background: #fff; 
+            border: 1px solid #dee2e6; 
+            border-radius: 6px; 
+            padding: 20px; 
+            margin: 15px 0; 
         }
-
-        .container {
-            flex: 1;
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            width: 100%;
-            box-sizing: border-box;
+        .tessitura-bar { 
+            height: 24px; 
+            border-radius: 0px; 
+            background: linear-gradient(to right, 
+                #dc3545 0%, #dc3545 10%,    /* Out of Range (< G3) */
+                #ff8503 12%, #ff8503 20%,   /* Stretch Zone (G3 to A3) */
+                #2ecc71 22%, #2ecc71 30%,   /* Comfortable Range (A3 to C4) */
+                #198754 32%, #146c43 68%,   /* Ideal Range (C4 to C5) */
+                #2ecc71 70%, #2ecc71 78%,   /* Comfortable Range (C5 to D5) */
+                #ff8503 80%, #ff8503 88%,   /* Stretch Zone (D5 to E5) */
+                #dc3545 90%, #dc3545 100%   /* Out of Range (> E5) */
+            ); 
+            margin: 10px 0; 
+        /* 2. Shape the container into double-ended arrows using coordinates */
+            clip-path: polygon(
+                0% 50%,     /* Left-most center point (the tip of the left arrow) */
+                2% 0%,      /* Top-left corner step */
+                98% 0%,    /* Top-right corner step */
+                100% 50%,    /* Right-most center point (the tip of the right arrow) */
+                98% 100%,  /* Bottom-right corner */
+                2% 100%     /* Bottom-left corner */
+            );
+        
+            /* 3. Shift the transparency mask to begin right after the arrow tips */
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
         }
-
-        .logo-placeholder { font-size: 3rem; margin-bottom: 0.5rem; }
-        h1 { margin: 0; font-weight: 300; letter-spacing: 1px; }
-
-        /* Search Section */
-        .search-box {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        #songSearch {
-            width: 100%;
-            padding: 1rem;
-            font-size: 1.2rem;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            box-sizing: border-box;
-            transition: border-color 0.3s;
-        }
-
-        #songSearch:focus {
-            outline: none;
-            border-color: #3498db;
-        }
-
-        /* Search Results */
-        .song-result {
-            background: #fff;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-top: 10px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .song-result:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            border-color: #3498db;
-        }
-
-        .result-info { text-align: left; }
-        .result-title { font-weight: bold; font-size: 1.1rem; color: #2c3e50; }
-        .result-meta { font-size: 0.9rem; color: #7f8c8d; }
-        .result-badge { 
-            background: #e8f5e9; 
-            color: #2e7d32; 
-            padding: 4px 8px; 
-            border-radius: 4px; 
-            font-size: 0.8rem; 
+        
+        .scale-labels { 
+            /* display: flex; is now handled by the Bootstrap 'd-flex' class in the HTML */
             font-weight: bold; 
+            font-family: monospace; 
+            padding: 0; /* Removed horizontal padding so the 10% edges perfectly match the gradient edges */
         }
-
-        /* Upload Section */
-        #upload-section { margin-top: 3rem; opacity: 0.7; transition: opacity 0.3s; }
-        #upload-section:hover { opacity: 1; }
-
-        #upload-container, #loading-screen { 
-            background: white;
-            padding: 2.5rem; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        .instruction-box {
-            background: #eef2f3;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            font-size: 0.9rem;
-        }
-
-        input[type="file"] {
-            display: block;
-            margin: 1rem 0;
-            padding: 0.5rem;
-            width: 100%;
-            border: 1px dashed #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] { 
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            width: 100%;
-        }
-
-        /* Spinner */
-        .spinner {
-            margin: 20px auto;
-            width: 40px;
-            height: 40px;
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #3498db;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-
-        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #7f8c8d; }
     </style>
 </head>
 <body>

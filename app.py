@@ -87,111 +87,75 @@ def make_json_safe(data):
     return data
 
 def extract_metadata_from_pdf(pdf_path):
+   
     metadata = {
-        "title": "Unknown",
-        "ccli_number": "Unknown",
+        "title": "Unknown Title",
         "author": "Unknown",
+        "ccli_number": "Unknown",
         "year": "Unknown"
     }
-    try:
-        with pdfplumber.open(pdf_path) as pdf:
-            first_page = pdf.pages[0]
-            width, height = first_page.width, first_page.height
-            
-            # --- 1. TITLE EXTRACTION (Spatially Constrained to Top-Middle) ---
-            words = first_page.extract_words(extra_attrs=["size"])
-            
-            candidate_words = []
-            for word in words:
-                # Rule A: Must be in the top 20% of the page height
-                if word["bottom"] > height * 0.20:
-                    continue
-                
-                # Rule B: Must be horizontally centered 
-                # (Word midpoint must sit between 20% and 80% of total page width)
-                word_midpoint = (word["x0"] + word["x1"]) / 2
-                if not (width * 0.20 < word_midpoint < width * 0.80):
-                    continue
-                    
-                candidate_words.append(word)
-
-            if candidate_words:
-                # Find the maximum font size *only* within this top-middle zone
-                max_size = max(w["size"] for w in candidate_words)
-                
-                # Safety check: Standard sheet music titles are significantly larger than body text.
-                # If the max_size found is tiny (e.g., under 14pt), it's probably not a standard CCLI header layout.
-                if max_size >= 14.0:
-                    # Gather words matching the max size (with a 0.5px tolerance)
-                    title_words = [w for w in candidate_words if w["size"] >= max_size - 0.5]
-                    
-                    # Sort left-to-right, top-to-bottom to preserve reading order for multi-word titles
-                    title_words.sort(key=lambda w: (w["top"], w["x0"]))
-                    
-                    metadata["title"] = " ".join([w["text"] for w in title_words])
-                else:
-                    # Fallback if no layout-appropriate large text is found
-                    print("⚠️ Max font size in top-middle zone is too small to be a title. Falling back.")
-            
-            # Extract header text (top 30%) for Year and Author
-            header_box = (0, 0, width, height * 0.3)
-            header_text = first_page.within_bbox(header_box).extract_text() or ""
-            
-            # Extract full page text for CCLI (usually at the bottom)
-            full_text = first_page.extract_text() or ""
-
-            # --- 2. CCLI EXTRACTION ---
-            ccli_match = re.search(r'CCLI\s+Song\s+#?\s*(\d{5,8})', full_text, re.IGNORECASE)
-            if ccli_match:
-                metadata["ccli_number"] = ccli_match.group(1)
-
-            # --- 3. YEAR EXTRACTION ---
-            year_match = re.search(r'(?:©|Words:|Music:)\s*.*?(\d{4})', header_text)
-            if year_match:
-                metadata["year"] = year_match.group(1)
-
-            # --- 4. AUTHOR EXTRACTION ---
-            cleaned_header = []
-            for line in header_text.splitlines():
-                normalized = line.strip()
-                if normalized.lower() in ["words and music by", "words by", "music by"]:
-                    continue
-                cleaned_header.append(line)
-            header_text_processing = "\n".join(cleaned_header)
-
-            words_by = re.search(r'Words (?:and Music )?by\s*(.*?)(?=\n\s*\n|\n\s*Music by|\n\s*Words by|©|CCLI|$)', header_text_processing, re.IGNORECASE | re.DOTALL)
-            music_by = re.search(r'Music by\s*(.*?)(?=\n\s*\n|\n\s*Words by|\n\s*Music by|©|CCLI|$)', header_text_processing, re.IGNORECASE | re.DOTALL)
-            
-            def clean_field(val):
-                if not val:
-                    return ""
-                val = re.sub(r'^(?i)(?:words\s+and\s+music\s+by|words\s+by|music\s+by|and|/|,|\s)+', '', val)
-                val = re.sub(r'(?i)(?:words\s+and\s+music\s+by|words\s+by|music\s+by|and|/|,|\s)+$', '', val)
-                return val.strip()
-
-            if words_by and music_by:
-                w = clean_field(words_by.group(1))
-                m = clean_field(music_by.group(1))
-                
-                if not w and m:
-                    metadata["author"] = m
-                elif not m and w:
-                    metadata["author"] = w
-                elif w == m:
-                    metadata["author"] = w
-                else:
-                    metadata["author"] = f"Words: {w} / Music: {m}"
-            elif words_by:
-                metadata["author"] = clean_field(words_by.group(1))
-            elif music_by:
-                metadata["author"] = clean_field(music_by.group(1))
-            elif "Public Domain" in header_text:
-                metadata["author"] = "Public Domain"
-
+    
+    with pdfplumber.open(pdf_path) as pdf:
+        if not pdf.pages:
             return metadata
-    except Exception as e:
-        print(f"⚠️ Metadata extraction failed: {e}")
-        return metadata
+            
+        first_page = pdf.pages[0]
+        width = first_page.width
+        height = first_page.height
+        
+        # Pull all words on page 1 for wide searches
+        all_words = first_page.extract_words(extra_attrs=["size"])
+        
+        # --- 1. FIXED TITLE EXTRACTION ---
+        # Target the top 25% of the page, middle region horizontally
+        title_box = (width * 0.15, 0, width * 0.85, height * 0.25)
+        candidate_words = first_page.within_bbox(title_box).extract_words(extra_attrs=["size"])
+        
+        # FILTER OUT MUSICAL GLYPHS: Keep only standard alphanumeric/text characters
+        # (Musical symbols often land in the PUA Unicode range E000-F8FF)
+        clean_candidates = [
+            w for w in candidate_words 
+            if not any(0xE000 <= ord(char) <= 0xF8FF for char in w["text"])
+        ]
+        
+        if clean_candidates:
+            # Now the maximum size will accurately be the real text title!
+            max_size = max(w["size"] for w in clean_candidates)
+            
+            # Gather words matching the true max text size (with 0.5pt tolerance)
+            title_words = [w for w in clean_candidates if w["size"] >= max_size - 0.5]
+            title_words.sort(key=lambda w: (w["top"], w["x0"]))
+            
+            metadata["title"] = " ".join([w["text"] for w in title_words])
+
+        # --- 2. AUTHOR EXTRACTION ---
+        # Look for "Words and Music by" or text right below the title area
+        author_words = [w for w in clean_candidates if w["size"] < max_size - 2.0]
+        # Filter for text near the right-hand side or center top where credits usually live
+        credits_words = [w for w in author_words if w["x0"] > width * 0.40 and w["top"] < height * 0.20]
+        
+        if credits_words:
+            credits_words.sort(key=lambda w: (w["top"], w["x0"]))
+            full_credits = " ".join([w["text"] for w in credits_words])
+            # Strip out layout filler phrases if present
+            clean_author = re.sub(r'^(Words\s+and\s+Music\s+by|Words\s+by|Music\s+by)\s*', '', full_credits, flags=re.IGNORECASE)
+            metadata["author"] = clean_author if clean_author.strip() else "Unknown"
+
+        # --- 3. GLOBAL CCLI & YEAR BACKEND SEARCH ---
+        # Since copyright details live in the footers, scan the page's entire text block
+        full_page_text = first_page.extract_text() or ""
+        
+        # Look for CCLI Number anywhere on the page
+        ccli_match = re.search(r'(?:CCLI\s*(?:Song)?\s*(?:#|No\.?)?\s*)(\d+)', full_page_text, re.IGNORECASE)
+        if ccli_match:
+            metadata["ccli_number"] = ccli_match.group(1)
+            
+        # Look for a 4-digit year near a copyright symbol or phrase
+        year_match = re.search(r'(?:©|copyright|kbd\s+)\s*([12]\d{3})', full_page_text, re.IGNORECASE)
+        if year_match:
+            metadata["year"] = year_match.group(1)
+            
+    return metadata
        
 def extract_metadata_from_musicxml(xml_text):
     """
