@@ -3,12 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <title>Review Song Data</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Modernized Styles */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            line-height: 1.6; 
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            flex: 1;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .logo-placeholder { font-size: 3rem; margin-bottom: 0.5rem; }
+        h1 { margin: 0; font-weight: 300; letter-spacing: 1px; }
+
+        /* Search Section */
+        .search-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        #songSearch {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.2rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        #songSearch:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        /* Search Results */
+        .song-result {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .song-result:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+
+        .result-info { text-align: left; }
+        .result-title { font-weight: bold; font-size: 1.1rem; color: #2c3e50; }
+        .result-meta { font-size: 0.9rem; color: #7f8c8d; }
+        .result-badge { 
+            background: #e8f5e9; 
+            color: #2e7d32; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 0.8rem; 
+            font-weight: bold; 
+        }
+
+        /* Upload Section */
+        #upload-section { margin-top: 3rem; opacity: 0.7; transition: opacity 0.3s; }
+        #upload-section:hover { opacity: 1; }
+
+        #upload-container, #loading-screen { 
+            background: white;
+            padding: 2.5rem; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .instruction-box {
+            background: #eef2f3;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 1rem 0;
+            padding: 0.5rem;
+            width: 100%;
+            border: 1px dashed #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] { 
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        /* Spinner */
+        .spinner {
+            margin: 20px auto;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #7f8c8d; }
+    </style>
 </head>
 <body>
     <div class="review-container">
         <h1>Review Song Data</h1>
-        <p>Please confirm the extracted details before analyzing.</p>
+        <p>Please confirm the extracted details before analysing.</p>
 
         <form action="/commit_song" method="POST">
             <input type="hidden" name="pdf_hash" value="{{ pdf_hash }}">
@@ -16,25 +159,31 @@
             <input type="hidden" name="prefer_transpose_keys" value="{{ prefer_transpose_keys }}">
 
             <label>Title:</label>
-            <input type="text" name="title" value="{{ metadata.get('title', name) if metadata else name }}"><br><br>
+            <input type="text" name="title" value="{{ title }}"><br><br>
 
             <label>Author:</label>
-            <input type="text" name="author" value="{{ metadata.get('author', '') if metadata else '' }}"><br><br>
+            <input type="text" name="author" value="{{ author }}"><br><br>
 
             <label>CCLI Number:</label>
-            <input type="text" name="ccli_number" value="{{ metadata.get('ccli_number', '') if metadata else '' }}"><br><br>
+            <input type="text" name="ccli_number" value="{{ ccli }}"><br><br>
 
             <label>Year:</label>
-            <input type="text" name="year" value="{{ metadata.get('year', '') if metadata else '' }}"><br><br>
+            <input type="text" name="year" value="{{ year }}"><br><br>
+
+            <label>First Line of Lyrics:</label>
+            <input type="text" name="first_line" value="{{ first_line }}" style="width: 100%; max-width: 400px;"><br><br>
 
             <h3>Crop Limits (Optional)</h3>
-            <label>Min Note (MIDI):</label>
-            <input type="number" name="min_note"><br><br>
+            <label>Lowest Note:</label>
+            <input type="text" name="min_note" placeholder="e.g. G4"><br><br>
 
-            <label>Max Note (MIDI):</label>
-            <input type="number" name="max_note"><br><br>
+            <label>Highest Note:</label>
+            <input type="text" name="max_note" placeholder="e.g. E5"><br><br>
 
-            <button type="submit">Confirm & Analyze</button>
+            <div class="button-group">
+                <button type="submit">Confirm & Analyse</button>
+                <button type="button" onclick="window.location.href='/'">Cancel</button>
+            </div>
         </form>
     </div>
 </body>

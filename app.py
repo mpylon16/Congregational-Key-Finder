@@ -23,6 +23,9 @@ import logging
 import pdfplumber
 import shutil
 import json
+import requests
+from bs4 import BeautifulSoup
+import re
 
 # This forces every error to show up in your Railway Deploy Logs
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
@@ -85,6 +88,7 @@ def make_json_safe(data):
 
 def extract_metadata_from_pdf(pdf_path):
     metadata = {
+        "title": "Unknown",
         "ccli_number": "Unknown",
         "author": "Unknown",
         "year": "Unknown"
@@ -94,6 +98,41 @@ def extract_metadata_from_pdf(pdf_path):
             first_page = pdf.pages[0]
             width, height = first_page.width, first_page.height
             
+            # --- 1. TITLE EXTRACTION (Spatially Constrained to Top-Middle) ---
+            words = first_page.extract_words(extra_attrs=["size"])
+            
+            candidate_words = []
+            for word in words:
+                # Rule A: Must be in the top 20% of the page height
+                if word["bottom"] > height * 0.20:
+                    continue
+                
+                # Rule B: Must be horizontally centered 
+                # (Word midpoint must sit between 20% and 80% of total page width)
+                word_midpoint = (word["x0"] + word["x1"]) / 2
+                if not (width * 0.20 < word_midpoint < width * 0.80):
+                    continue
+                    
+                candidate_words.append(word)
+
+            if candidate_words:
+                # Find the maximum font size *only* within this top-middle zone
+                max_size = max(w["size"] for w in candidate_words)
+                
+                # Safety check: Standard sheet music titles are significantly larger than body text.
+                # If the max_size found is tiny (e.g., under 14pt), it's probably not a standard CCLI header layout.
+                if max_size >= 14.0:
+                    # Gather words matching the max size (with a 0.5px tolerance)
+                    title_words = [w for w in candidate_words if w["size"] >= max_size - 0.5]
+                    
+                    # Sort left-to-right, top-to-bottom to preserve reading order for multi-word titles
+                    title_words.sort(key=lambda w: (w["top"], w["x0"]))
+                    
+                    metadata["title"] = " ".join([w["text"] for w in title_words])
+                else:
+                    # Fallback if no layout-appropriate large text is found
+                    print("⚠️ Max font size in top-middle zone is too small to be a title. Falling back.")
+            
             # Extract header text (top 30%) for Year and Author
             header_box = (0, 0, width, height * 0.3)
             header_text = first_page.within_bbox(header_box).extract_text() or ""
@@ -101,35 +140,31 @@ def extract_metadata_from_pdf(pdf_path):
             # Extract full page text for CCLI (usually at the bottom)
             full_text = first_page.extract_text() or ""
 
-            # 1. CCLI Extraction
+            # --- 2. CCLI EXTRACTION ---
             ccli_match = re.search(r'CCLI\s+Song\s+#?\s*(\d{5,8})', full_text, re.IGNORECASE)
             if ccli_match:
                 metadata["ccli_number"] = ccli_match.group(1)
 
-            # 2. Year Extraction
+            # --- 3. YEAR EXTRACTION ---
             year_match = re.search(r'(?:©|Words:|Music:)\s*.*?(\d{4})', header_text)
             if year_match:
                 metadata["year"] = year_match.group(1)
 
-            # 3. Author Extraction
-            # Clean up SongSelect's stacked layout lines before parsing
+            # --- 4. AUTHOR EXTRACTION ---
             cleaned_header = []
             for line in header_text.splitlines():
                 normalized = line.strip()
-                # If a line is just a structural label with no actual names attached, skip it
                 if normalized.lower() in ["words and music by", "words by", "music by"]:
                     continue
                 cleaned_header.append(line)
             header_text_processing = "\n".join(cleaned_header)
 
-            # Extract names using refined regex patterns that capture multi-line elements gracefully
             words_by = re.search(r'Words (?:and Music )?by\s*(.*?)(?=\n\s*\n|\n\s*Music by|\n\s*Words by|©|CCLI|$)', header_text_processing, re.IGNORECASE | re.DOTALL)
             music_by = re.search(r'Music by\s*(.*?)(?=\n\s*\n|\n\s*Words by|\n\s*Music by|©|CCLI|$)', header_text_processing, re.IGNORECASE | re.DOTALL)
             
             def clean_field(val):
                 if not val:
                     return ""
-                # Strip leading/trailing spaces, commas, slashes, or layout fragments
                 val = re.sub(r'^(?i)(?:words\s+and\s+music\s+by|words\s+by|music\s+by|and|/|,|\s)+', '', val)
                 val = re.sub(r'(?i)(?:words\s+and\s+music\s+by|words\s+by|music\s+by|and|/|,|\s)+$', '', val)
                 return val.strip()
@@ -246,6 +281,50 @@ def extract_metadata_from_musicxml(xml_text):
         'ccli_number': ccli_number,
         'title': title
     }
+
+def fetch_first_line_by_ccli(ccli_number):
+    if not ccli_number or str(ccli_number).strip().lower() == "unknown":
+        return "Unknown"
+        
+    # Strip any spaces from the CCLI number
+    ccli_clean = str(ccli_number).replace(" ", "").strip()
+    
+    # Query Word to Worship's search view directly using the CCLI engine parameter
+    search_url = f"https://wordtoworship.com/search/songs?search_api_views_fulltext={ccli_clean}"
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+    
+    try:
+        response = requests.get(search_url, headers=headers, timeout=5)
+        if response.status_code != 200:
+            print(f"⚠️ Web lookup returned status code: {response.status_code}")
+            return "Unknown"
+            
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Locate the specific column div containing the lyrics snippet
+        lyrics_div = soup.find('div', class_='views-field-field-lyrics')
+        
+        if lyrics_div:
+            # Extract text and strip out structure tags or trailing placeholder flags
+            raw_text = lyrics_div.get_text()
+            
+            # Clean off structural dividers or markers (e.g., 'Chorus.', 'Verse 1.')
+            clean_text = re.sub(r'^(?:chorus|verse\s*\d*|bridge|intro|lyrics)\s*[\.\-:]*\s*', '', raw_text, flags=re.IGNORECASE)
+            
+            # Remove the '[Not all lyrics displayed.]' string if present
+            clean_text = clean_text.replace('[Not all lyrics displayed.]', '').strip()
+            
+            # Break sentences cleanly and pull the actual opening line
+            lines = [line.strip() for line in clean_text.split('.') if line.strip()]
+            if lines:
+                return lines[0].strip()
+                
+    except Exception as e:
+        print(f"⚠️ Web scraping error: {e}")
+        
+    return "Unknown"
 
 def get_file_hash(pdf_path):
     with open(pdf_path, 'rb') as f:
@@ -763,10 +842,21 @@ def upload_file():
             else:
                 print(f"✅ Using cached MXL files for {filename} (hash: {pdf_hash})")
 
-            # 6. Render the Review Form (Stage 1 of the Two-Step Pipeline)
+            # ---------------------------------------------------------
+            # 6. FETCH FIRST LINE FROM WEB & RENDER FORM
+            # ---------------------------------------------------------
+            ccli_number = pdf_metadata.get("ccli_number", "Unknown")
+            first_line_candidate = fetch_first_line_by_ccli(ccli_number)
+
+            # We pass explicit elements rather than the raw dictionary to match our 
+            # new standalone template setup and clear out old `metadata.get()` dependencies
             return render_template(
                 'review_song.html',
-                metadata=pdf_metadata,
+                title=pdf_metadata.get('title') or name,
+                author=pdf_metadata.get('author') or 'Unknown',
+                ccli=ccli_number,
+                year=pdf_metadata.get('year') or 'Unknown',
+                first_line=first_line_candidate,  # Injected directly into the form
                 pdf_hash=pdf_hash,
                 name=name,
                 prefer_transpose_keys=prefer_transpose_keys
@@ -790,7 +880,8 @@ def commit_song():
         "title": request.form.get('title'),
         "author": request.form.get('author'),
         "ccli_number": request.form.get('ccli_number'),
-        "year": request.form.get('year', 'Unknown')
+        "year": request.form.get('year', 'Unknown'),
+        "first_line": request.form.get('first_line', 'Unknown') # <-- ADDED HERE
     }
 
     # 2. Handle the Cropping Limits
@@ -821,7 +912,7 @@ def commit_song():
             pdf_metadata=user_metadata # Pass the clean form data, NOT the raw PDF text
         )
 
-        # 5. Database Save (Your exact Supabase logic)
+        # 5. Database Save
         if supabase:
             storage_path = f"{pdf_hash}.mxl"
             with open(local_mxl_path, 'rb') as f:
@@ -834,13 +925,14 @@ def commit_song():
             mxl_url = supabase.storage.from_('mxl-library').get_public_url(storage_path)
             db_summary = make_json_safe(summary)
             orig_info = summary.get("original_key_info", {})
-                                        
+                                                    
             supabase.table('songs').upsert({
                 "pdf_hash": pdf_hash,
                 "title": user_metadata.get("title", "Unknown Title"),
                 "ccli_number": user_metadata.get("ccli_number", "Unknown"),
                 "author": user_metadata.get("author", "Unknown"),
                 "year": user_metadata.get("year", "Unknown"),
+                "first_line": user_metadata.get("first_line", "Unknown"), # <-- ADDED HERE
                 "original_key": orig_info.get("name", "Unknown"),
                 "lowest_note": orig_info.get("range_low", "Unknown"),
                 "highest_note": orig_info.get("range_high", "Unknown"),
@@ -863,31 +955,6 @@ def commit_song():
             author=user_metadata.get("author"),
             year=user_metadata.get("year"),
             ccli_no=user_metadata.get("ccli_number"),
-            meta=get_comfort_metadata(summary["original_key_info"]["comfort_score"]),
-            thresholds=COMFORT_THRESHOLDS
-        )
-
-    except Exception as e:
-        # Include your existing crash reporting / cleanup logic here
-        logging.error("--- FATAL ERROR DURING MUSICXML ANALYSIS ---")
-        logging.error(f"Exception Type: {type(e)}")
-        logging.error(f"Exception Message: {e}")
-        logging.exception("Full Traceback Details:")
-        logging.error("--- END FATAL ERROR ---")
-
-        print("Error:", e)
-
-        if 'cached_output_dir' in locals() and os.path.exists(cached_output_dir):
-            try:
-                # We use ignore_errors=True so that if a single temp file 
-                # is 'locked', the whole app doesn't crash.
-                shutil.rmtree(cached_output_dir, ignore_errors=True)
-                print(f"🧹 Cleaned up failed directory: {cached_output_dir}")
-            except Exception as cleanup_error:
-                # Log it, but don't stop the user from seeing the original error
-                logging.warning(f"Cleanup failed for {cached_output_dir}: {cleanup_error}")
-
-        return f"<p>Analysis failed during commit: {e}</p>", 500
                 
 
 @app.route('/search_songs', methods=['GET'])
