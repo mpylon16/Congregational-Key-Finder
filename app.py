@@ -941,11 +941,14 @@ def commit_song():
             }, on_conflict="pdf_hash").execute()
             print(f"🚀 Cloud Save Successful for {pdf_hash}")
 
+        # Define the fallback clearly on its own line to prevent unclosed parenthesis issues
+        final_mxl_url = mxl_url if 'mxl_url' in locals() else None
+
         # 6. Render the final result
         return render_template("analysis_results.html",
             pdf_hash=pdf_hash,                                       
             original_key=summary["original_key_info"],
-            mxl_url=mxl_url if 'mxl_url' in locals() else None,
+            mxl_url=final_mxl_url,
             recommended=summary["recommended"],
             other_keys=summary["other_keys"],
             skipped=summary["skipped"],
@@ -955,6 +958,29 @@ def commit_song():
             author=user_metadata.get("author"),
             year=user_metadata.get("year"),
             ccli_no=user_metadata.get("ccli_number"),
+            first_line=user_metadata.get("first_line"), # <-- ADDED HERE
+            meta=get_comfort_metadata(summary["original_key_info"]["comfort_score"]),
+            thresholds=COMFORT_THRESHOLDS
+        )
+
+    except Exception as e:
+        # Crash reporting / cleanup logic
+        logging.error("--- FATAL ERROR DURING MUSICXML ANALYSIS ---")
+        logging.error(f"Exception Type: {type(e)}")
+        logging.error(f"Exception Message: {e}")
+        logging.exception("Full Traceback Details:")
+        logging.error("--- END FATAL ERROR ---")
+
+        print("Error:", e)
+
+        if 'cached_output_dir' in locals() and os.path.exists(cached_output_dir):
+            try:
+                shutil.rmtree(cached_output_dir, ignore_errors=True)
+                print(f"🧹 Cleaned up failed directory: {cached_output_dir}")
+            except Exception as cleanup_error:
+                logging.warning(f"Cleanup failed for {cached_output_dir}: {cleanup_error}")
+
+        return f"<p>Analysis failed during commit: {e}</p>", 500
                 
 
 @app.route('/search_songs', methods=['GET'])
@@ -967,7 +993,7 @@ def search_songs():
         # Search title, author, or CCLI number
         # ILIKE is case-insensitive search
         res = supabase.table('songs').select("*").or_(
-            f"title.ilike.%{query}%,author.ilike.%{query}%,ccli_number.ilike.%{query}%"
+            f"title.ilike.%{query}%,author.ilike.%{query}%,ccli_number.ilike.%{query}%,first_line.ilike.%{query}%"
         ).limit(10).execute()
         
         return jsonify(res.data)
