@@ -358,6 +358,19 @@ def fetch_first_line_by_ccli(ccli_number):
         
     return "Unknown"
 
+def get_raw_mxl_range(mxl_path):
+    """Quickly scans an MXL file to find the absolute highest and lowest MIDI pitches."""
+    try:
+        score = converter.parse(mxl_path)
+        pitches = [p.midi for p in score.pitches if p.midi is not None]
+        if not pitches:
+            return 48, 72 # Fallback: C3 to C5 if parsing fails
+            
+        return min(pitches), max(pitches)
+    except Exception as e:
+        print(f"⚠️ Quick peek failed: {e}")
+        return 48, 72 # Fallback
+
 def get_file_hash(pdf_path):
     with open(pdf_path, 'rb') as f:
         return hashlib.md5(f.read()).hexdigest()
@@ -880,6 +893,17 @@ def upload_file():
             ccli_number = pdf_metadata.get("ccli_number", "Unknown")
             first_line_candidate = fetch_first_line_by_ccli(ccli_number)
 
+            # ---------------------------------------------------------
+            # 7. QUICK PEEK & RENDER FORM
+            # ---------------------------------------------------------
+            # Find the MXL file Audiveris just created (or the cached one)
+            mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
+            if mxl_files:
+                local_mxl_path = os.path.join(cached_output_dir, mxl_files[0])
+                raw_min_midi, raw_max_midi = get_raw_mxl_range(local_mxl_path)
+            else:
+                raw_min_midi, raw_max_midi = 48, 72 # Safe fallback
+
             # We pass explicit elements rather than the raw dictionary to match our 
             # new standalone template setup and clear out old `metadata.get()` dependencies
             return render_template(
@@ -889,6 +913,8 @@ def upload_file():
                 ccli=ccli_number,
                 year=pdf_metadata.get('year') or 'Unknown',
                 first_line=first_line_candidate,  # Injected directly into the form
+                raw_min_midi=raw_min_midi, # <-- Pass the true lowest note
+                raw_max_midi=raw_max_midi, # <-- Pass the true highest note
                 pdf_hash=pdf_hash,
                 name=name,
                 prefer_transpose_keys=prefer_transpose_keys
@@ -916,11 +942,13 @@ def commit_song():
         "first_line": request.form.get('first_line', 'Unknown') # <-- ADDED HERE
     }
 
-    # 2. Handle the Cropping Limits
-    min_note_val = request.form.get('min_note')
-    max_note_val = request.form.get('max_note')
-    min_midi = int(min_note_val) if min_note_val and min_note_val != 'none' else 0
-    max_midi = int(max_note_val) if max_note_val and max_note_val != 'none' else 127
+    # 2. Handle the Cropping Limits (Updated for Dual Slider)
+    min_midi_val = request.form.get('min_midi')
+    max_midi_val = request.form.get('max_midi')
+    
+    # Safely cast to integer, defaulting to wide bounds if empty
+    min_midi = int(min_midi_val) if min_midi_val else 0
+    max_midi = int(max_midi_val) if max_midi_val else 127
 
     mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
     if not mxl_files:
@@ -1261,66 +1289,59 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
         dummy_stream.append(n_obj)
 
     chords = extract_written_chords(score)
-    first_chord = chords[0] if chords else None
-    print(f"First chord:{first_chord}")
-    last_chord = chords[-1] if chords else None
-    print(f"last chord:{last_chord}")
     ks_objects = score.parts[0].recurse().getElementsByClass(key.KeySignature)
-    for ks in ks_objects:
-        print(f"Found KeySignature: {ks.sharps} sharps — {ks.asKey().name}")
-    try:
-        songname_part, _, file_key = name.split("-")
-        file_key = ensure_music21_key(file_key) if file_key else None
-        print(f"songname is {songname_part}, file_key is {file_key}")
-        print(f"file_key key type: {type(file_key)} | Value: {file_key}")
+    
+    # Declare fallbacks
+    declared_key = ks_objects[0].asKey() if ks_objects else None
+    estimated_key = dummy_stream.analyze('key')
+    
+    # 1. FIXED: Clean filename parsing to isolate the key safely from extensions
+    file_key = None
+    if "-" in name:
+        try:
+            parts = name.split("-")
+            raw_key_part = parts[-1] # Grabs the last segment, e.g., "C.pdf"
+            clean_key_string = os.path.splitext(raw_key_part)[0].strip() # Strips ".pdf" to leave "C"
+            file_key = ensure_music21_key(clean_key_string)
+        except Exception as e:
+            print(f"⚠️ Filename key parsing skipped: {e}")
+
+    # 2. PRIORITY LOGIC LADDER
+    if file_key:
+        # Trust the filename explicit value first
+        final_key = file_key
+        print(f"🔑 Using Key designated by Filename: {final_key}")
+    elif declared_key:
+        # Fall back to structural key signatures on the stave lines
+        final_key = declared_key
+        
+        # Check if the weight analysis suggests a relative minor shift
+        relative_minor = declared_key.relative
+        if estimated_key == relative_minor and chords:
+            first_chord = chords[0] if len(chords) > 0 else None
+            last_chord = chords[-1] if len(chords) > 0 else None
             
-        declared_key = ks_objects[0].asKey() if ks_objects else None
-        print(f"Declared key type: {type(declared_key)} | Value: {declared_key}")
+            # Only switch to relative minor if it strictly starts or ends on that minor root
+            if (first_chord and first_chord.root().name == relative_minor.tonic.name and first_chord.quality == 'minor') or \
+               (last_chord and last_chord.root().name == relative_minor.tonic.name and last_chord.quality == 'minor'):
+                final_key = relative_minor
+                print(f"🎼 Switched to structural Relative Minor based on layout: {final_key}")
+    else:
+        # Ultimate fallback when working with open-ended pitch collections
+        final_key = estimated_key
+        print(f"📊 Using mathematical estimated pitch key: {final_key}")
 
-        estimated_key = dummy_stream.analyze('key')
-        print(f"Estimated key:{estimated_key}")
+    # Generate warnings if structural dissonance exists between estimates
+    key_warning = ""
+    if declared_key and estimated_key.tonic.name != declared_key.tonic.name:
+        if not file_key: # Only warn if we didn't explicitly clear it via filename
+            key_warning = f"⚠️ Estimated key from notes ({estimated_key.tonic.name} {estimated_key.mode}) differs from stave key signature ({declared_key.tonic.name} {declared_key.mode})."
 
-        key_warning = ""
-        if file_key:
-            final_key = file_key
-        elif declared_key:
-            final_key = declared_key
-            relative_minor = declared_key.relative
-            print(f"Relative minor:{relative_minor}")
-
-            if estimated_key == relative_minor:
-                if chords:
-                    first_chord = chords[0] if len(chords) > 0 else None
-                    last_chord = chords[-1] if len(chords) > 0 else None
-
-                    try:
-                        if (
-                            (first_chord and first_chord.root().name == relative_minor.tonic.name and first_chord.quality == 'minor') or
-                            (last_chord and last_chord.root().name == relative_minor.tonic.name and last_chord.quality == 'minor')
-                        ):
-                            final_key = relative_minor
-                            final_key = ensure_music21_key(final_key)
-                    except Exception as e:
-                        warnings.append(f"Chord comparison failed: {e}")
-
-            elif (
-                estimated_key.tonic.name != declared_key.tonic.name or 
-                estimated_key.mode != declared_key.mode
-            ):
-                key_warning = (
-                    f"⚠️ Estimated key from notes ({estimated_key.tonic.name} {estimated_key.mode}) disagrees with declared key signature ({declared_key.tonic.name} {declared_key.mode})."
-                )
-            print(f"final_key:{final_key}")
-            final_key = ensure_music21_key(final_key)
-        else:
-            final_key = estimated_key
-            final_key = ensure_music21_key(final_key)
-            key_warning = "⚠️ No key signature found on the stave; using estimated key."
-
-        if final_key:
-            final_key = simplify_enharmonic(final_key)
-
-        original_key_name = f"{final_key.tonic.name} {final_key.mode}" if final_key else "Unknown"
+    if final_key:
+        final_key = simplify_enharmonic(final_key)
+        original_key_name = f"{final_key.tonic.name} {final_key.mode}"
+    else:
+        original_key_name = "Unknown"
 
     except Exception as e:
         final_key = None

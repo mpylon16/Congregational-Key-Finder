@@ -90,12 +90,99 @@
             <label>First Line of Lyrics:</label>
             <input type="text" name="first_line" value="{{ first_line }}" style="width: 100%; max-width: 400px;"><br><br>
 
-            <h3>Crop Limits (Optional)</h3>
-            <label>Lowest Note:</label>
-            <input type="text" name="min_note" placeholder="e.g. G4"><br><br>
+            <h3>Crop Range (To Remove Spurious Notes)</h3>
+            <p style="color: #666; font-size: 0.9em;">
+                The slider shows the absolute highest and lowest notes found in the sheet music. 
+                Drag the ends to crop out stray instrumental lines (like a low bass intro).
+            </p>
 
-            <label>Highest Note:</label>
-            <input type="text" name="max_note" placeholder="e.g. E5"><br><br>
+            <div style="font-weight: bold; font-size: 1.2em; text-align: center; margin-bottom: 10px;">
+                Selected Range: <span id="minNoteDisplay" style="color: #007bff;"></span> - <span id="maxNoteDisplay" style="color: #dc3545;"></span>
+            </div>
+
+            <div class="slider-container" style="position: relative; width: 100%; max-width: 500px; height: 40px; margin: 0 auto;">
+                
+                <div class="slider-track" style="position: absolute; top: 15px; bottom: 15px; width: 100%; background: #e9ecef; border-radius: 5px;"></div>
+                <div id="activeTrack" style="position: absolute; top: 15px; bottom: 15px; background: linear-gradient(90deg, #007bff, #dc3545); border-radius: 5px;"></div>
+
+                <input type="range" id="minRange" name="min_midi" min="36" max="84" value="{{ raw_min_midi }}" 
+                    style="position: absolute; width: 100%; top: 10px; pointer-events: none; -webkit-appearance: none; background: transparent; z-index: 3;">
+                    
+                <input type="range" id="maxRange" name="max_midi" min="36" max="84" value="{{ raw_max_midi }}" 
+                    style="position: absolute; width: 100%; top: 10px; pointer-events: none; -webkit-appearance: none; background: transparent; z-index: 4;">
+            </div>
+
+            <br><br>
+
+            <style>
+                input[type=range]::-webkit-slider-thumb {
+                    pointer-events: all;
+                    width: 20px;
+                    height: 20px;
+                    -webkit-appearance: none;
+                    background: #fff;
+                    border: 2px solid #333;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                input[type=range]::-moz-range-thumb {
+                    pointer-events: all;
+                    width: 20px;
+                    height: 20px;
+                    background: #fff;
+                    border: 2px solid #333;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            </style>
+
+            <script>
+                const minRange = document.getElementById('minRange');
+                const maxRange = document.getElementById('maxRange');
+                const activeTrack = document.getElementById('activeTrack');
+                const minDisplay = document.getElementById('minNoteDisplay');
+                const maxDisplay = document.getElementById('maxNoteDisplay');
+
+                const notes = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+
+                function midiToNoteName(midi) {
+                    const octave = Math.floor(midi / 12) - 1;
+                    const noteName = notes[midi % 12];
+                    return `${noteName}${octave}`;
+                }
+
+                function updateSlider() {
+                    let minVal = parseInt(minRange.value);
+                    let maxVal = parseInt(maxRange.value);
+
+                    // Prevent thumbs from crossing over each other
+                    if (minVal > maxVal - 1) {
+                        if (this === minRange) minRange.value = maxVal - 1;
+                        else maxRange.value = minVal + 1;
+                        minVal = parseInt(minRange.value);
+                        maxVal = parseInt(maxRange.value);
+                    }
+
+                    // Update Text Readout
+                    minDisplay.textContent = midiToNoteName(minVal);
+                    maxDisplay.textContent = midiToNoteName(maxVal);
+
+                    // Calculate visual track width and position
+                    const sliderMin = parseInt(minRange.min);
+                    const sliderMax = parseInt(minRange.max);
+                    const percent1 = ((minVal - sliderMin) / (sliderMax - sliderMin)) * 100;
+                    const percent2 = ((maxVal - sliderMin) / (sliderMax - sliderMin)) * 100;
+
+                    activeTrack.style.left = `${percent1}%`;
+                    activeTrack.style.width = `${percent2 - percent1}%`;
+                }
+
+                minRange.addEventListener('input', updateSlider);
+                maxRange.addEventListener('input', updateSlider);
+                
+                // Initialize on load
+                updateSlider();
+            </script>
 
             <div class="button-group">
                 <button type="submit">Confirm & Analyse</button>
