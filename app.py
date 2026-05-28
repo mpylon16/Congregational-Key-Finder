@@ -314,45 +314,81 @@ def extract_metadata_from_musicxml(xml_text):
         'title': title
     }
 
+# --- 2. UPGRADED WEB SCRAPER ---
 def fetch_first_line_by_ccli(ccli_number):
     if not ccli_number or str(ccli_number).strip().lower() == "unknown":
         return "Unknown"
         
-    # Strip any spaces from the CCLI number
     ccli_clean = str(ccli_number).replace(" ", "").strip()
+    search_url = f"https://wordtoworship.com/search/node/{ccli_clean}"
     
-    # Query Word to Worship's search view directly using the CCLI engine parameter
-    search_url = f"https://wordtoworship.com/search/songs?search_api_views_fulltext={ccli_clean}"
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-    }
+    session = requests.Session()
+    session.headers.update({
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Referer': 'https://wordtoworship.com/search/songs',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1'
+    })
     
     try:
-        response = requests.get(search_url, headers=headers, timeout=5)
-        if response.status_code != 200:
-            print(f"⚠️ Web lookup returned status code: {response.status_code}")
-            return "Unknown"
-            
+        response = session.get(search_url, timeout=10)
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Locate the specific column div containing the lyrics snippet
-        lyrics_div = soup.find('div', class_='views-field-field-lyrics')
+        # DEBUG: Print the title of the page to see if we landed where we think we did
+        print(f"DEBUG: Page Title: {soup.title.string if soup.title else 'No Title'}")
         
-        if lyrics_div:
-            # Extract text and strip out structure tags or trailing placeholder flags
-            raw_text = lyrics_div.get_text()
+        # DEBUG: Print the first 500 characters of the page to see what's on it
+        print(f"DEBUG: Page Snippet: {response.text[:500]}")
+
+        # DEBUG: Print the first 5 links on the page to help us identify the correct one
+        # This will show up in your terminal and tell us exactly how to find the song link
+        links = soup.find_all('a')
+        print(f"DEBUG: Found {len(links)} links on the page. Checking for /song/ links...")
+        
+        # Look for the link more broadly
+        song_link = None
+        for link in links:
+            if link.get('href') and '/song/' in link.get('href'):
+                song_link = link
+                print(f"DEBUG: Found song link: {song_link['href']}")
+                break
+        
+        if not song_link:
+            print(f"DEBUG: No link containing '/song/' found in search results.")
+            return "Unknown"
+
+        if song_link['href'].startswith('http'):
+            song_url = song_link['href']
+        else:
+            song_url = "https://wordtoworship.com" + song_link['href']
+        # Step 3: Fetch the song page
+        print(f"DEBUG: Navigating to {song_url}")
+        song_resp = session.get(song_url, timeout=10)
+        song_soup = BeautifulSoup(song_resp.text, 'html.parser')
+        
+        # Step 4: Robust Lyric Extraction
+        lyrics_text = None
+        
+        # The lyrics are inside a field named 'field-name-body'
+        # We target that specific class, then grab the 'field-item' inside it.
+        lyrics_container = song_soup.find('div', class_='field-name-body')
+        
+        if lyrics_container:
+            # Get the text content, preserving line breaks
+            lyrics_text = lyrics_container.get_text(separator='\n')
             
-            # Clean off structural dividers or markers (e.g., 'Chorus.', 'Verse 1.')
-            clean_text = re.sub(r'^(?:chorus|verse\s*\d*|bridge|intro|lyrics)\s*[\.\-:]*\s*', '', raw_text, flags=re.IGNORECASE)
+            # Split into lines and filter
+            lines = [l.strip() for l in lyrics_text.split('\n') if l.strip()]
             
-            # Remove the '[Not all lyrics displayed.]' string if present
-            clean_text = clean_text.replace('[Not all lyrics displayed.]', '').strip()
+            for line in lines:
+                # Ignore the "Lyrics:" label and structural headers
+                if not re.match(r'^(Lyrics:|Verse|Chorus|Bridge|Ending)\s*\d*', line, re.IGNORECASE):
+                    return line
+        else:
+            print("DEBUG: Could not locate 'field-name-body' class.")
             
-            # Break sentences cleanly and pull the actual opening line
-            lines = [line.strip() for line in clean_text.split('.') if line.strip()]
-            if lines:
-                return lines[0].strip()
-                
     except Exception as e:
         print(f"⚠️ Web scraping error: {e}")
         
@@ -1296,7 +1332,7 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     print(f"Declared key type: {type(declared_key)} | Value: {declared_key}")
     estimated_key = dummy_stream.analyze('key')
     print(f"Estimated key:{estimated_key}")
-    
+
     try:        
         # 1. FIXED: Clean filename parsing to isolate the key safely from extensions
         file_key = None
