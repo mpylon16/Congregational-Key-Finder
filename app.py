@@ -1293,55 +1293,58 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
     
     # Declare fallbacks
     declared_key = ks_objects[0].asKey() if ks_objects else None
+    print(f"Declared key type: {type(declared_key)} | Value: {declared_key}")
     estimated_key = dummy_stream.analyze('key')
+    print(f"Estimated key:{estimated_key}")
     
-    # 1. FIXED: Clean filename parsing to isolate the key safely from extensions
-    file_key = None
-    if "-" in name:
-        try:
-            parts = name.split("-")
-            raw_key_part = parts[-1] # Grabs the last segment, e.g., "C.pdf"
-            clean_key_string = os.path.splitext(raw_key_part)[0].strip() # Strips ".pdf" to leave "C"
-            file_key = ensure_music21_key(clean_key_string)
-        except Exception as e:
-            print(f"⚠️ Filename key parsing skipped: {e}")
+    try:        
+        # 1. FIXED: Clean filename parsing to isolate the key safely from extensions
+        file_key = None
+        if "-" in name:
+            try:
+                parts = name.split("-")
+                raw_key_part = parts[-1] # Grabs the last segment, e.g., "C.pdf"
+                clean_key_string = os.path.splitext(raw_key_part)[0].strip() # Strips ".pdf" to leave "C"
+                file_key = ensure_music21_key(clean_key_string)
+            except Exception as e:
+                print(f"⚠️ Filename key parsing skipped: {e}")
 
-    # 2. PRIORITY LOGIC LADDER
-    if file_key:
-        # Trust the filename explicit value first
-        final_key = file_key
-        print(f"🔑 Using Key designated by Filename: {final_key}")
-    elif declared_key:
-        # Fall back to structural key signatures on the stave lines
-        final_key = declared_key
-        
-        # Check if the weight analysis suggests a relative minor shift
-        relative_minor = declared_key.relative
-        if estimated_key == relative_minor and chords:
-            first_chord = chords[0] if len(chords) > 0 else None
-            last_chord = chords[-1] if len(chords) > 0 else None
+        # 2. PRIORITY LOGIC LADDER
+        if file_key:
+            # Trust the filename explicit value first
+            final_key = file_key
+            print(f"🔑 Using Key designated by Filename: {final_key}")
+        elif declared_key:
+            # Fall back to structural key signatures on the stave lines
+            final_key = declared_key
             
-            # Only switch to relative minor if it strictly starts or ends on that minor root
-            if (first_chord and first_chord.root().name == relative_minor.tonic.name and first_chord.quality == 'minor') or \
-               (last_chord and last_chord.root().name == relative_minor.tonic.name and last_chord.quality == 'minor'):
-                final_key = relative_minor
-                print(f"🎼 Switched to structural Relative Minor based on layout: {final_key}")
-    else:
-        # Ultimate fallback when working with open-ended pitch collections
-        final_key = estimated_key
-        print(f"📊 Using mathematical estimated pitch key: {final_key}")
+            # Check if the weight analysis suggests a relative minor shift
+            relative_minor = declared_key.relative
+            if estimated_key == relative_minor and chords:
+                first_chord = chords[0] if len(chords) > 0 else None
+                last_chord = chords[-1] if len(chords) > 0 else None
+                
+                # Only switch to relative minor if it strictly starts or ends on that minor root
+                if (first_chord and first_chord.root().name == relative_minor.tonic.name and first_chord.quality == 'minor') or \
+                (last_chord and last_chord.root().name == relative_minor.tonic.name and last_chord.quality == 'minor'):
+                    final_key = relative_minor
+                    print(f"🎼 Switched to structural Relative Minor based on layout: {final_key}")
+        else:
+            # Ultimate fallback when working with open-ended pitch collections
+            final_key = estimated_key
+            print(f"📊 Using mathematical estimated pitch key: {final_key}")
 
-    # Generate warnings if structural dissonance exists between estimates
-    key_warning = ""
-    if declared_key and estimated_key.tonic.name != declared_key.tonic.name:
-        if not file_key: # Only warn if we didn't explicitly clear it via filename
-            key_warning = f"⚠️ Estimated key from notes ({estimated_key.tonic.name} {estimated_key.mode}) differs from stave key signature ({declared_key.tonic.name} {declared_key.mode})."
+        # Generate warnings if structural dissonance exists between estimates
+        key_warning = ""
+        if declared_key and estimated_key.tonic.name != declared_key.tonic.name:
+            if not file_key: # Only warn if we didn't explicitly clear it via filename
+                key_warning = f"⚠️ Estimated key from notes ({estimated_key.tonic.name} {estimated_key.mode}) differs from stave key signature ({declared_key.tonic.name} {declared_key.mode})."
 
-    if final_key:
-        final_key = simplify_enharmonic(final_key)
-        original_key_name = f"{final_key.tonic.name} {final_key.mode}"
-    else:
-        original_key_name = "Unknown"
+        if final_key:
+            final_key = simplify_enharmonic(final_key)
+            original_key_name = f"{final_key.tonic.name} {final_key.mode}"
+        else:
+            original_key_name = "Unknown"
 
     except Exception as e:
         final_key = None
