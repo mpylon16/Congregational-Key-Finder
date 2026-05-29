@@ -1154,7 +1154,9 @@ def extract_xml_from_mxl(path):
     with zipfile.ZipFile(path, 'r') as z:
         # Find the first .xml file inside the .mxl archive that ISN'T metadata
         for name in z.namelist():
-            if name.endswith('.xml') and "container.xml" not in name and "META-INF" not in name:
+            name_lower = name.lower()
+            # Match either extension while ignoring the container/metadata files
+            if name_lower.endswith(('.xml', '.musicxml')) and "container.xml" not in name_lower and "meta-inf" not in name_lower:
                 return z.read(name).decode("utf-8")
     raise ValueError(f"No valid music .xml file found inside {path}")
 
