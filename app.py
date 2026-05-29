@@ -1267,16 +1267,19 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
             else:
                 parse_target = current_path
 
+            # --- FIX START: Bypassing music21 container.xml bug ---
             try:
-                if str(parse_target).endswith('.mxl'):
-                    print(f"📦 Extracting raw XML for analysis using extract_xml_from_mxl: {parse_target}")
-                    raw_xml_string = extract_xml_from_mxl(parse_target)
+                target_str = str(parse_target)
+                if target_str.lower().endswith('.mxl'):
+                    print(f"📦 Extracting raw XML for analysis using extract_xml_from_mxl: {target_str}")
+                    raw_xml_string = extract_xml_from_mxl(target_str)
                     score = converter.parse(raw_xml_string, format='musicxml')
                 else:
-                    score = converter.parse(parse_target)
+                    score = converter.parse(target_str)
             except Exception as parse_error:
                 logging.error(f"❌ Failed to parse score in analysis: {parse_error}")
                 raise parse_error
+            # --- FIX END ---
             print(f"🔍 Parsing MXL file: {os.path.basename(parse_target)}")
             print(f"🔍 Score has {len(score.parts)} parts")
                         
