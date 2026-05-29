@@ -125,10 +125,10 @@ def clean_author_metadata(text):
 
 def extract_metadata_from_pdf(pdf_path):
     metadata = {
-        "title": "Unknown Title",
-        "author": "Unknown",
-        "ccli_number": "Unknown",
-        "year": "Unknown"
+        "title": None,
+        "author": None,
+        "ccli_number": None,
+        "year": None
     }
     
     with pdfplumber.open(pdf_path) as pdf:
@@ -218,7 +218,7 @@ def extract_metadata_from_pdf(pdf_path):
         if ccli_match:
             metadata["ccli_number"] = ccli_match.group(1)
             
-        if metadata["year"] == "Unknown":
+        if metadata["year"] == None:
             fallback_year = re.search(r'(?:©|copyright|kbd\s+)\s*([12]\d{3})', full_page_text, re.IGNORECASE)
             if fallback_year:
                 metadata["year"] = fallback_year.group(1)
@@ -316,10 +316,14 @@ def extract_metadata_from_musicxml(xml_text):
 
 # --- 2. UPGRADED WEB SCRAPER ---
 def fetch_first_line_by_ccli(ccli_number):
-    if not ccli_number or str(ccli_number).strip().lower() == "unknown":
-        return "Unknown"
+    # Normalize the input: convert to string, remove whitespace, and lowercase
+    ccli_str = str(ccli_number).strip().lower() if ccli_number is not None else ""
+    
+    # Check for invalid inputs: empty, "unknown", or "none"
+    if not ccli_str or ccli_str in ["unknown", "none"]:
+        return None
         
-    ccli_clean = str(ccli_number).replace(" ", "").strip()
+    ccli_clean = ccli_str
     search_url = f"https://wordtoworship.com/search/node/{ccli_clean}"
     
     session = requests.Session()
@@ -357,7 +361,7 @@ def fetch_first_line_by_ccli(ccli_number):
         
         if not song_link:
             print(f"DEBUG: No link containing '/song/' found in search results.")
-            return "Unknown"
+            return None
 
         if song_link['href'].startswith('http'):
             song_url = song_link['href']
@@ -392,7 +396,7 @@ def fetch_first_line_by_ccli(ccli_number):
     except Exception as e:
         print(f"⚠️ Web scraping error: {e}")
         
-    return "Unknown"
+    return None
 
 def get_raw_mxl_range(mxl_path):
     """Quickly scans an MXL file to find the absolute highest and lowest MIDI pitches."""
@@ -823,7 +827,7 @@ def upload_file():
                     existing_song = None
 
                     # Check A: Match by CCLI (The gold standard)
-                    if ccli and ccli != "Unknown":
+                    if ccli:
                         response = supabase.table('songs').select('pdf_hash').eq('ccli_number', ccli).limit(1).execute()
                         if response.data:
                             existing_song = response.data[0]
@@ -926,7 +930,7 @@ def upload_file():
             # ---------------------------------------------------------
             # 6. FETCH FIRST LINE FROM WEB & RENDER FORM
             # ---------------------------------------------------------
-            ccli_number = pdf_metadata.get("ccli_number", "Unknown")
+            ccli_number = pdf_metadata.get("ccli_number")
             first_line_candidate = fetch_first_line_by_ccli(ccli_number)
 
             # ---------------------------------------------------------
@@ -945,9 +949,9 @@ def upload_file():
             return render_template(
                 'review_song.html',
                 title=pdf_metadata.get('title') or name,
-                author=pdf_metadata.get('author') or 'Unknown',
+                author=pdf_metadata.get('author'),
                 ccli=ccli_number,
-                year=pdf_metadata.get('year') or 'Unknown',
+                year=pdf_metadata.get('year'),
                 first_line=first_line_candidate,  # Injected directly into the form
                 raw_min_midi=raw_min_midi, # <-- Pass the true lowest note
                 raw_max_midi=raw_max_midi, # <-- Pass the true highest note
@@ -971,11 +975,11 @@ def commit_song():
     
     # Rebuild metadata dictionary with the user's manual corrections!
     user_metadata = {
-        "title": request.form.get('title'),
-        "author": request.form.get('author'),
-        "ccli_number": request.form.get('ccli_number'),
-        "year": request.form.get('year', 'Unknown'),
-        "first_line": request.form.get('first_line', 'Unknown') # <-- ADDED HERE
+        "title": request.form.get('title') or None,
+        "author": request.form.get('author') or None,
+        "ccli_number": request.form.get('ccli_number') or None,
+        "year": request.form.get('year') or None,
+        "first_line": request.form.get('first_line') or None
     }
 
     # 2. Handle the Cropping Limits (Updated for Dual Slider)
@@ -996,7 +1000,11 @@ def commit_song():
         # 3. Permanently crop the MXL file if limits were set
         if min_midi > 0 or max_midi < 127:
             print(f"✂️ Cropping MXL file to range {min_midi} - {max_midi}")
-            score = converter.parse(local_mxl_path)
+            if str(local_mxl_path).endswith('.mxl'):
+                raw_xml_string = extract_xml_from_mxl(local_mxl_path)
+                score = converter.parse(raw_xml_string, format='musicxml')
+            else:
+                score = converter.parse(local_mxl_path)
             cleaned_score = crop_and_clean_stream(score, min_midi, max_midi)
             cleaned_score.write('musicxml', fp=local_mxl_path)
 
@@ -1008,6 +1016,11 @@ def commit_song():
             pdf_metadata=user_metadata # Pass the clean form data, NOT the raw PDF text
         )
 
+        # 🛑 SAFETY GATE: Verify the analysis actually succeeded
+        if not summary or "original_key_info" not in summary or "comfort_score" not in summary["original_key_info"]:
+            logging.error(f"Analysis payload is invalid or incomplete for hash {pdf_hash}.")
+            return f"<p>Analysis failed: The MusicXML file generated by Audiveris was malformed or could not be parsed by music21.</p>", 422
+        
         # 5. Database Save
         if supabase:
             storage_path = f"{pdf_hash}.mxl"
@@ -1025,10 +1038,10 @@ def commit_song():
             supabase.table('songs').upsert({
                 "pdf_hash": pdf_hash,
                 "title": user_metadata.get("title", "Unknown Title"),
-                "ccli_number": user_metadata.get("ccli_number", "Unknown"),
-                "author": user_metadata.get("author", "Unknown"),
-                "year": user_metadata.get("year", "Unknown"),
-                "first_line": user_metadata.get("first_line", "Unknown"), # <-- ADDED HERE
+                "ccli_number": user_metadata.get("ccli_number"),
+                "author": user_metadata.get("author"),
+                "year": user_metadata.get("year"),
+                "first_line": user_metadata.get("first_line"),
                 "original_key": orig_info.get("name", "Unknown"),
                 "lowest_note": orig_info.get("range_low", "Unknown"),
                 "highest_note": orig_info.get("range_high", "Unknown"),
@@ -1244,7 +1257,16 @@ def analyse_musicxml_summary(output_dir, name, prefer_transpose_keys=False, pdf_
             else:
                 parse_target = current_path
 
-            score = converter.parse(parse_target)
+            try:
+                if str(parse_target).endswith('.mxl'):
+                    print(f"📦 Extracting raw XML for analysis using extract_xml_from_mxl: {parse_target}")
+                    raw_xml_string = extract_xml_from_mxl(parse_target)
+                    score = converter.parse(raw_xml_string, format='musicxml')
+                else:
+                    score = converter.parse(parse_target)
+            except Exception as parse_error:
+                logging.error(f"❌ Failed to parse score in analysis: {parse_error}")
+                raise parse_error
             print(f"🔍 Parsing MXL file: {os.path.basename(parse_target)}")
             print(f"🔍 Score has {len(score.parts)} parts")
                         

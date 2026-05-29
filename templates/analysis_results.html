@@ -74,8 +74,8 @@
                 <div>
                     <h1 class="display-5 fw-bold text-dark m-0">{{ title }}</h1>
                     <p class="text-muted fs-5 m-0">
-                        {% if author and author != 'Unknown' %}{{ author }}{% endif %}
-                        {% if year and year != 'Unknown' %} ({{ year }}){% endif %}
+                        {% if author %}{{ author }}{% endif %}
+                        {% if year %} ({{ year }}){% endif %}
                     </p>
                 </div>
                 

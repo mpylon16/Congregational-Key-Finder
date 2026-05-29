@@ -76,19 +76,19 @@
             <input type="hidden" name="prefer_transpose_keys" value="{{ prefer_transpose_keys }}">
 
             <label>Title:</label>
-            <input type="text" name="title" value="{{ title }}"><br><br>
+            <input type="text" name="title" value="{{ title|default('') }}"><br><br>
 
             <label>Author:</label>
-            <input type="text" name="author" value="{{ author }}"><br><br>
+            <input type="text" name="author" value="{{ author|default('') }}"><br><br>
 
             <label>CCLI Number:</label>
-            <input type="text" name="ccli_number" value="{{ ccli }}"><br><br>
+            <input type="text" name="ccli_number" value="{{ ccli|default('') }}"><br><br>
 
             <label>Year:</label>
-            <input type="text" name="year" value="{{ year }}"><br><br>
+            <input type="text" name="year" value="{{ year|default('') }}"><br><br>
 
             <label>First Line of Lyrics:</label>
-            <input type="text" name="first_line" value="{{ first_line }}" style="width: 100%; max-width: 400px;"><br><br>
+            <input type="text" name="first_line" value="{{ first_line|default('') }}" style="width: 100%; max-width: 400px;"><br><br>
 
             <h3>Crop Range (To Remove Spurious Notes)</h3>
             <p style="color: #666; font-size: 0.9em;">
