@@ -1119,24 +1119,34 @@ def get_song(pdf_hash):
     if not song:
         return "Song not found", 404
         
-    summary = song['analysis_results']
+    # Safely pull the analysis dictionary, fallback to an empty dict if NULL
+    summary = song.get('analysis_results') or {}
+    
+    # Safely fetch original_key_info block or fallback to an empty dict
+    original_key_info = summary.get("original_key_info") or {}
+    
+    # Safely pull the comfort score
+    comfort_score = original_key_info.get("comfort_score")
+    
+    # Only try to fetch metadata if comfort_score is actually present
+    meta = get_comfort_metadata(comfort_score) if comfort_score is not None else None
     
     # Return the same analysis template we use for new uploads
     return render_template("analysis_results.html",
-        is_database_pull=True, # <--- Tells the HTML to hide the top original key block
-        pdf_hash=song['pdf_hash'],
-        original_key=summary["original_key_info"],
-        mxl_url=song.get("mxl_url"), # <--- FIX 2: Enables download button
-        recommended=summary["recommended"],
-        other_keys=summary["other_keys"],
-        skipped=summary["skipped"],
-        warnings=summary["warnings"],
+        is_database_pull=True, # Tells the HTML to hide the top original key block
+        pdf_hash=song.get('pdf_hash'),
+        original_key=original_key_info,
+        mxl_url=song.get("mxl_url"), # Enables download button
+        recommended=summary.get("recommended", []),
+        other_keys=summary.get("other_keys", []),
+        skipped=summary.get("skipped", []),
+        warnings=summary.get("warnings", []),
         ccli_link=summary.get("ccli_url"),
         title=song.get("title"),
         author=song.get("author"),
         year=song.get("year"),
         ccli_no=song.get("ccli_number"),
-        meta=get_comfort_metadata(summary["original_key_info"]["comfort_score"]),
+        meta=meta, # Safely computed above
         thresholds=COMFORT_THRESHOLDS
     )
 
