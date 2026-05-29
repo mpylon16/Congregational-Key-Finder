@@ -1152,11 +1152,11 @@ def get_song(pdf_hash):
 
 def extract_xml_from_mxl(path):
     with zipfile.ZipFile(path, 'r') as z:
-        # Find the first .xml file inside the .mxl archive
+        # Find the first .xml file inside the .mxl archive that ISN'T metadata
         for name in z.namelist():
-            if name.endswith('.xml'):
+            if name.endswith('.xml') and "container.xml" not in name and "META-INF" not in name:
                 return z.read(name).decode("utf-8")
-    raise ValueError(f"No .xml file found inside {path}")
+    raise ValueError(f"No valid music .xml file found inside {path}")
 
 def inject_divisions_and_time_if_missing(current_path, previous_path=None):
     # Load the XML content
