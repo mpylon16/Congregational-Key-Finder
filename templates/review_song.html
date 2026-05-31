@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Song Key Analysis: {{ title }}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Review & Verify Song Metadata</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <style>
         body { 
             background-color: #f8f9fa; 
@@ -15,180 +15,256 @@
             margin-bottom: 25px; 
             border-radius: 8px; 
         }
-        .badge-note { 
-            font-size: 1rem; 
-            padding: 0.4em 0.6em; 
-            font-family: monospace; 
-        }
         
-        /* Fixed Symmetrical Pitch Comfort Scale Visualizer */
-        .scale-container { 
-            background: #fff; 
-            border: 1px solid #dee2e6; 
-            border-radius: 6px; 
-            padding: 20px; 
-            margin: 15px 0; 
-        }
-        .tessitura-bar { 
-            height: 24px; 
-            border-radius: 0px; 
+        /* Linear Symmetrical Pitch Comfort Scale Track for Cropping */
+        .dual-range-track-wrapper {
+            position: relative;
+            width: 100%;
+            height: 24px;
+            border-radius: 4px;
+            margin: 12px 0 6px 0;
             background: linear-gradient(to right, 
-                #dc3545 0%, #dc3545 10%,    /* Out of Range (< G3) */
-                #ff8503 12%, #ff8503 20%,   /* Stretch Zone (G3 to A3) */
-                #2ecc71 22%, #2ecc71 30%,   /* Comfortable Range (A3 to C4) */
-                #198754 32%, #146c43 68%,   /* Ideal Range (C4 to C5) */
-                #2ecc71 70%, #2ecc71 78%,   /* Comfortable Range (C5 to D5) */
-                #ff8503 80%, #ff8503 88%,   /* Stretch Zone (D5 to E5) */
-                #dc3545 90%, #dc3545 100%   /* Out of Range (> E5) */
-            ); 
-            margin: 10px 0; 
-        /* 2. Shape the container into double-ended arrows using coordinates */
-            clip-path: polygon(
-                0% 50%,     /* Left-most center point (the tip of the left arrow) */
-                2% 0%,      /* Top-left corner step */
-                98% 0%,    /* Top-right corner step */
-                100% 50%,    /* Right-most center point (the tip of the right arrow) */
-                98% 100%,  /* Bottom-right corner */
-                2% 100%     /* Bottom-left corner */
+                #dc3545 0%,   #dc3545 19.4%,  /* Out of Range (< G3 / MIDI 55) */
+                #ff8503 19.4%, #ff8503 25.0%, /* Stretch Zone (G3 to A3 / MIDI 55-57) */
+                #2ecc71 25.0%, #2ecc71 33.3%, /* Comfortable Range (A3 to C4 / MIDI 57-60) */
+                #198754 33.3%, #146c43 66.6%, /* Ideal Range (C4 to C5 / MIDI 60-72) */
+                #2ecc71 66.6%, #2ecc71 72.2%, /* Comfortable Range (C5 to D5 / MIDI 72-74) */
+                #ff8503 72.2%, #ff8503 77.7%, /* Stretch Zone (D5 to E5 / MIDI 74-76) */
+                #dc3545 77.7%, #dc3545 100%   /* Out of Range (> E5 / MIDI 76+) */
             );
-        
-            /* 3. Shift the transparency mask to begin right after the arrow tips */
-            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
-            mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
         }
-        
-        .scale-labels { 
-            /* display: flex; is now handled by the Bootstrap 'd-flex' class in the HTML */
-            font-weight: bold; 
-            font-family: monospace; 
-            padding: 0; /* Removed horizontal padding so the 10% edges perfectly match the gradient edges */
+
+        /* Standardize multi-range overlapping controls */
+        .dual-range-track-wrapper input[type="range"] {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            pointer-events: none; 
+            appearance: none;
+            -webkit-appearance: none;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+        }
+
+        .dual-range-track-wrapper input[type="range"]:focus {
+            outline: none;
+        }
+
+        /* Slider handles (Thumbs) */
+        .dual-range-track-wrapper input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            -webkit-appearance: none;
+            height: 28px;
+            width: 14px;
+            border-radius: 3px;
+            background: #2c3e50;
+            border: 2px solid #ffffff;
+            cursor: pointer;
+            pointer-events: auto; 
+            box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+        }
+
+        .dual-range-track-wrapper input[type="range"]::-moz-range-thumb {
+            height: 28px;
+            width: 14px;
+            border-radius: 3px;
+            background: #2c3e50;
+            border: 2px solid #ffffff;
+            cursor: pointer;
+            pointer-events: auto;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.4);
         }
     </style>
 </head>
 <body>
-    <div class="review-container">
-        <h1>Review Song Data</h1>
-        <p>Please confirm the extracted details before analysing.</p>
 
-        <form action="/commit_song" method="POST">
+<div class="container col-md-8 col-lg-6">
+    <div class="card p-4">
+        <h3 class="mb-4 text-center">Verify & Edit Data</h3>
+        
+        <form action="/commit_song" method="POST" id="reviewForm">
             <input type="hidden" name="pdf_hash" value="{{ pdf_hash }}">
             <input type="hidden" name="name" value="{{ name }}">
             <input type="hidden" name="prefer_transpose_keys" value="{{ prefer_transpose_keys }}">
 
-            <label>Title:</label>
-            <input type="text" name="title" value="{{ title|default('') }}"><br><br>
-
-            <label>Author:</label>
-            <input type="text" name="author" value="{{ author|default('') }}"><br><br>
-
-            <label>CCLI Number:</label>
-            <input type="text" name="ccli_number" value="{{ ccli|default('') }}"><br><br>
-
-            <label>Year:</label>
-            <input type="text" name="year" value="{{ year|default('') }}"><br><br>
-
-            <label>First Line of Lyrics:</label>
-            <input type="text" name="first_line" value="{{ first_line|default('') }}" style="width: 100%; max-width: 400px;"><br><br>
-
-            <h3>Crop Range (To Remove Spurious Notes)</h3>
-            <p style="color: #666; font-size: 0.9em;">
-                The slider shows the absolute highest and lowest notes found in the sheet music. 
-                Drag the ends to crop out stray instrumental lines (like a low bass intro).
-            </p>
-
-            <div style="font-weight: bold; font-size: 1.2em; text-align: center; margin-bottom: 10px;">
-                Selected Range: <span id="minNoteDisplay" style="color: #007bff;"></span> - <span id="maxNoteDisplay" style="color: #dc3545;"></span>
+            <div class="mb-3">
+                <label for="title" class="form-label fw-bold">Song Title</label>
+                <input type="text" class="form-control" id="title" name="title" value="{{ title }}">
             </div>
 
-            <div class="slider-container" style="position: relative; width: 100%; max-width: 500px; height: 40px; margin: 0 auto;">
-                
-                <div class="slider-track" style="position: absolute; top: 15px; bottom: 15px; width: 100%; background: #e9ecef; border-radius: 5px;"></div>
-                <div id="activeTrack" style="position: absolute; top: 15px; bottom: 15px; background: linear-gradient(90deg, #007bff, #dc3545); border-radius: 5px;"></div>
-
-                <input type="range" id="minRange" name="min_midi" min="36" max="84" value="{{ raw_min_midi }}" 
-                    style="position: absolute; width: 100%; top: 10px; pointer-events: none; -webkit-appearance: none; background: transparent; z-index: 3;">
-                    
-                <input type="range" id="maxRange" name="max_midi" min="36" max="84" value="{{ raw_max_midi }}" 
-                    style="position: absolute; width: 100%; top: 10px; pointer-events: none; -webkit-appearance: none; background: transparent; z-index: 4;">
+            <div class="mb-3">
+                <label for="author" class="form-label fw-bold">Author / Artist</label>
+                <input type="text" class="form-control" id="author" name="author" value="{{ author }}">
             </div>
 
-            <br><br>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="ccli_number" class="form-label fw-bold">CCLI Number</label>
+                    <input type="text" class="form-control" id="ccli_number" name="ccli_number" value="{{ ccli }}">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="year" class="form-label fw-bold">Copyright Year</label>
+                    <input type="text" class="form-control" id="year" name="year" value="{{ year }}">
+                </div>
+            </div>
 
-            <style>
-                input[type=range]::-webkit-slider-thumb {
-                    pointer-events: all;
-                    width: 20px;
-                    height: 20px;
-                    -webkit-appearance: none;
-                    background: #fff;
-                    border: 2px solid #333;
-                    border-radius: 50%;
-                    cursor: pointer;
-                }
-                input[type=range]::-moz-range-thumb {
-                    pointer-events: all;
-                    width: 20px;
-                    height: 20px;
-                    background: #fff;
-                    border: 2px solid #333;
-                    border-radius: 50%;
-                    cursor: pointer;
-                }
-            </style>
+            <div class="mb-4">
+                <label for="first_line" class="form-label fw-bold">First Line Text</label>
+                <input type="text" class="form-control" id="first_line" name="first_line" value="{{ first_line }}">
+            </div>
 
-            <script>
-                const minRange = document.getElementById('minRange');
-                const maxRange = document.getElementById('maxRange');
-                const activeTrack = document.getElementById('activeTrack');
-                const minDisplay = document.getElementById('minNoteDisplay');
-                const maxDisplay = document.getElementById('maxNoteDisplay');
-
-                const notes = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
-
-                function midiToNoteName(midi) {
-                    const octave = Math.floor(midi / 12) - 1;
-                    const noteName = notes[midi % 12];
-                    return `${noteName}${octave}`;
-                }
-
-                function updateSlider() {
-                    let minVal = parseInt(minRange.value);
-                    let maxVal = parseInt(maxRange.value);
-
-                    // Prevent thumbs from crossing over each other
-                    if (minVal > maxVal - 1) {
-                        if (this === minRange) minRange.value = maxVal - 1;
-                        else maxRange.value = minVal + 1;
-                        minVal = parseInt(minRange.value);
-                        maxVal = parseInt(maxRange.value);
-                    }
-
-                    // Update Text Readout
-                    minDisplay.textContent = midiToNoteName(minVal);
-                    maxDisplay.textContent = midiToNoteName(maxVal);
-
-                    // Calculate visual track width and position
-                    const sliderMin = parseInt(minRange.min);
-                    const sliderMax = parseInt(minRange.max);
-                    const percent1 = ((minVal - sliderMin) / (sliderMax - sliderMin)) * 100;
-                    const percent2 = ((maxVal - sliderMin) / (sliderMax - sliderMin)) * 100;
-
-                    activeTrack.style.left = `${percent1}%`;
-                    activeTrack.style.width = `${percent2 - percent1}%`;
-                }
-
-                minRange.addEventListener('input', updateSlider);
-                maxRange.addEventListener('input', updateSlider);
+            <div class="border rounded p-3 bg-light mb-4">
+                <h5 class="form-label fw-bold mb-1 text-secondary">Vocal Range</h5>
+                <p class="text-muted small mb-3">Check range and if necessary adjust sliders inward to exclude unwanted high or low notes (like accidental spoken cues or instrument cues) from the vocal analysis.</p>              
                 
-                // Initialize on load
-                updateSlider();
-            </script>
+                <div class="d-flex justify-content-between font-monospace fw-bold mb-2">
+                    <span>Low Crop: <span id="lblMin" class="badge bg-dark">--</span></span>
+                    <span>High Crop: <span id="lblMax" class="badge bg-dark">--</span></span>
+                </div>
 
-            <div class="button-group">
-                <button type="submit">Confirm & Analyse</button>
-                <button type="button" onclick="window.location.href='/'">Cancel</button>
+                {% if has_warnings %}
+                <div class="alert alert-warning border-warning d-flex align-items-center mb-3 shadow-sm" role="alert">
+                    <div class="me-2 fs-4">⚠️</div>
+                    <div>
+                        <strong>Notice:</strong> The initial scan detected extreme notes outside the standard congregational window 
+                        (Lowest: <code>{{ raw_min_midi }}</code>, Highest: <code>{{ raw_max_midi }}</code>). 
+                        The sliders have been safely snapped inward to preserve analytical accuracy. Please check your source PDF score if this seems unexpected.
+                    </div>
+                </div>
+                {% endif %}
+
+                <div style="position: relative; width: 100%; padding-bottom: 30px; margin-top: 5px;">
+                    <div class="dual-range-track-wrapper">
+                        <input type="range" id="min_midi" name="min_midi" min="48" max="84" value="{{ slider_min_start }}">
+                        <input type="range" id="max_midi" name="max_midi" min="48" max="84" value="{{ slider_max_start }}">
+                    </div>
+
+                    <div style="position: relative; width: 100%; font-family: monospace; font-size: 11px; font-weight: bold; color: #6c757d; margin-top: 6px;">
+                        <span style="position: absolute; left: 0%; transform: translateX(0%); text-align: left;">C3<br><small style="color:#adb5bd">(48)</small></span>
+                        <span style="position: absolute; left: 19.4%; transform: translateX(-50%); text-align: center;">G3<br><small style="color:#adb5bd">(55)</small></span>
+                        <span style="position: absolute; left: 33.3%; transform: translateX(-50%); text-align: center;">C4<br><small style="color:#adb5bd">(60)</small></span>
+                        <span style="position: absolute; left: 66.6%; transform: translateX(-50%); text-align: center;">C5<br><small style="color:#adb5bd">(72)</small></span>
+                        <span style="position: absolute; left: 77.7%; transform: translateX(-50%); text-align: center;">E5<br><small style="color:#adb5bd">(76)</small></span>
+                        <span style="position: absolute; left: 100%; transform: translateX(-100%); text-align: right;">C6<br><small style="color:#adb5bd">(84)</small></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex gap-2 mb-4">
+                <button type="button" class="btn btn-outline-secondary btn-sm flex-fill" onclick="resetCropSlider()">
+                    ↺ Reset Range
+                </button>
+                <button type="button" class="btn btn-outline-secondary btn-sm flex-fill" onclick="resetMetadataFields()">
+                    ↺ Reset Text Fields
+                </button>
+            </div>
+
+            <hr>
+
+            <div class="d-grid mt-2">
+                <button type="submit" class="btn btn-success btn-lg">Save & Show Results</button>
             </div>
         </form>
     </div>
+</div>
+
+<script>
+    const NOTE_NAMES = {
+    48:"C3", 49:"C#3", 50:"D3", 51:"D#3", 52:"E3", 53:"F3", 54:"F#3", 55:"G3", 56:"G#3", 57:"A3", 58:"A#3", 59:"B3",
+    60:"C4", 61:"C#4", 62:"D4", 63:"D#4", 64:"E4", 65:"F4", 66:"F#4", 67:"G4", 68:"G#4", 69:"A4", 70:"A#4", 71:"B4",
+    72:"C5", 73:"C#5", 74:"D5", 75:"D#5", 76:"E5", 77:"F5", 78:"F#5", 79:"G5", 80:"G#5", 81:"A5", 82:"A#5", 83:"B5", 84:"C6"
+};
+
+// Tracking variables for dynamic inward enforcement limits
+let originalSongMinBoundary = 48;
+let originalSongMaxBoundary = 84;
+
+document.addEventListener("DOMContentLoaded", function() {
+    const minInput = document.getElementById('min_midi');
+    const maxInput = document.getElementById('max_midi');
+    
+    // Parse values. If they contain unparsed Jinja text, parseInt returns NaN, triggering the fallbacks (55 and 76)
+    let initialMin = parseInt(minInput.value);
+    let initialMax = parseInt(maxInput.value);
+
+    if (isNaN(initialMin)) initialMin = 55; // G3 Default for offline viewing
+    if (isNaN(initialMax)) initialMax = 76; // E5 Default for offline viewing
+
+    // Write the clean numbers back to the elements
+    minInput.value = initialMin;
+    maxInput.value = initialMax;
+
+    // Cache initial loaded state values as baselines
+    minInput.setAttribute('data-baseline', initialMin);
+    maxInput.setAttribute('data-baseline', initialMax);
+
+    // Lock these values into operational limits memory
+    originalSongMinBoundary = initialMin;
+    originalSongMaxBoundary = initialMax;
+
+    const textFields = ['title', 'author', 'ccli_number', 'year', 'first_line'];
+    textFields.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.setAttribute('data-baseline', el.value);
+    });
+
+    minInput.addEventListener('input', updateUIElements);
+    maxInput.addEventListener('input', updateUIElements);
+
+    updateUIElements();
+});
+
+function updateUIElements() {
+    const minInput = document.getElementById('min_midi');
+    const maxInput = document.getElementById('max_midi');
+    const lblMin = document.getElementById('lblMin');
+    const lblMax = document.getElementById('lblMax');
+
+    let minVal = parseInt(minInput.value);
+    let maxVal = parseInt(maxInput.value);
+
+    // ENFORCEMENT: Physically block moving handles outward past their initial database positions
+    if (minVal < originalSongMinBoundary) {
+        minInput.value = originalSongMinBoundary;
+        minVal = originalSongMinBoundary;
+    }
+    if (maxVal > originalSongMaxBoundary) {
+        maxInput.value = originalSongMaxBoundary;
+        maxVal = originalSongMaxBoundary;
+    }
+
+    // Standard thumb-collision safeguard
+    if (minVal >= maxVal) {
+        minInput.value = maxVal - 1;
+        minVal = maxVal - 1;
+    }
+
+    lblMin.textContent = `${NOTE_NAMES[minVal] || minVal} (${minVal})`;
+    lblMax.textContent = `${NOTE_NAMES[maxVal] || maxVal} (${maxVal})`;
+}
+
+function resetCropSlider() {
+    const minInput = document.getElementById('min_midi');
+    const maxInput = document.getElementById('max_midi');
+
+    minInput.value = minInput.getAttribute('data-baseline');
+    maxInput.value = maxInput.getAttribute('data-baseline');
+    updateUIElements();
+}
+
+function resetMetadataFields() {
+    const textFields = ['title', 'author', 'ccli_number', 'year', 'first_line'];
+    textFields.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.hasAttribute('data-baseline')) {
+            el.value = el.getAttribute('data-baseline');
+        }
+    });
+}
+</script>
 </body>
 </html>
