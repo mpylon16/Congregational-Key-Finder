@@ -877,7 +877,7 @@ def upload_file():
                     # and bypass the problematic bash start-script.
                     subprocess_args = [
                         'java',
-                        '-Xmx400m',                          # High memory for OCR
+                        '-Xmx3g',                          # High memory for OCR
                         '-Duser.home=/app/audiveris_home',  # Fix for the config path
                         '-cp', cp_value, # Load code AND resources
                         'Audiveris',                       # The Main Class name
