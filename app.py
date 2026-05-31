@@ -877,7 +877,7 @@ def upload_file():
                     # and bypass the problematic bash start-script.
                     subprocess_args = [
                         'java',
-                        '-Xmx4g',                          # High memory for OCR
+                        '-Xmx400m',                          # High memory for OCR
                         '-Duser.home=/app/audiveris_home',  # Fix for the config path
                         '-cp', cp_value, # Load code AND resources
                         'Audiveris',                       # The Main Class name
@@ -944,6 +944,13 @@ def upload_file():
             else:
                 raw_min_midi, raw_max_midi = 48, 72 # Safe fallback
 
+            # Determine if the file naturally overflows the standard 48-84 workspace
+            has_out_of_bounds_notes = (raw_min_midi < 48 or raw_max_midi > 84)
+
+            # Calculate the smart default position for the sliders on page-load
+            default_slider_min = max(48, raw_min_midi)
+            default_slider_max = min(84, raw_max_midi)
+
             # We pass explicit elements rather than the raw dictionary to match our 
             # new standalone template setup and clear out old `metadata.get()` dependencies
             return render_template(
@@ -955,6 +962,8 @@ def upload_file():
                 first_line=first_line_candidate,  # Injected directly into the form
                 raw_min_midi=raw_min_midi, # <-- Pass the true lowest note
                 raw_max_midi=raw_max_midi, # <-- Pass the true highest note
+                slider_min_start=default_slider_min, # <-- Injected starting low slider position
+                slider_max_start=default_slider_max, # <-- Injected starting high slider position
                 pdf_hash=pdf_hash,
                 name=name,
                 prefer_transpose_keys=prefer_transpose_keys
