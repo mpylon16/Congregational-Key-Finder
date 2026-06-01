@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.6 149.55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2d3178;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: SegoeUI-Semibold, 'Segoe UI';
+        font-size: 115.22px;
+        font-weight: 600;
+      }
+
+      .cls-4 {
+        fill: #b3b3b3;
+      }
+
+      .cls-5 {
+        fill: #2ecc71;
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        font-family: SegoeUISymbol, 'Segoe UI Symbol';
+        font-size: 45px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-2" d="M77,22.76h112.83"/>
+    <path class="cls-2" d="M60.83,40.5h129"/>
+    <path class="cls-2" d="M47.81,58.25h142.02"/>
+    <path class="cls-2" d="M60.83,75.99h129"/>
+    <text class="cls-6" transform="translate(79.9 38.25) scale(1.44 1)"><tspan class="cls-4" x="0" y="0" xml:space="preserve">    </tspan><tspan class="cls-5" x="49.31" y="0">♯</tspan><tspan class="cls-4" x="0" y="27" xml:space="preserve">  </tspan><tspan class="cls-4" x="24.65" y="27">♮</tspan><tspan class="cls-1" x="43.18" y="27"> </tspan><tspan class="cls-4"><tspan x="0" y="54">♭</tspan></tspan></text>
+    <text class="cls-3" transform="translate(0 100.38)"><tspan x="0" y="0">K</tspan></text>
+    <path class="cls-2" d="M77,93.73h112.83"/>
+  </g>
+</svg>

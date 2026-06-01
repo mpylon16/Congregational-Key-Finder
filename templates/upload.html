@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Import Inter Font (Weights: Light 300 & Extra Bold 800) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeySelect | Find & Analyze Songs</title>
@@ -23,6 +27,48 @@
             padding: 2rem;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Flexbox container to align the SVG icon and text horizontally */
+        .brand-container {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px; /* Space between the K-staff and the text */
+            margin-bottom: 0.5rem;
+        }
+
+        .brand-icon {
+            height: 75px; /* Adjust based on your preferred scale */
+            width: auto;
+            display: block;
+        }
+
+        .brand-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4rem; /* Large, modern SaaS sizing */
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -0.02em; /* The pro-designer tracking trick */
+        }
+
+        .brand-key {
+            font-weight: 800; /* Heavy and anchored */
+            color: #ffffff;
+        }
+
+        .brand-select {
+            font-weight: 300; /* Light and elegant */
+            color: #198754; /* App native emerald green */
+        }
+
+        header p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            color: #cbd5e1; /* Muted silver/slate to let the main logo pop */
+            margin: 0;
+            font-size: 1.1rem;
+            letter-spacing: -0.00em;
         }
 
         .container {
@@ -152,8 +198,13 @@
 <body>
 
     <header>
-        <div class="logo-placeholder">🎹</div>
-        <h1>KeySelect</h1>
+        <div class="brand-container">
+            <!-- Asset 1.svg is the dark theme version, perfect for this header -->
+            <img src="{{ url_for('static', filename='LogoDark.svg') }}" alt="KeySelect Icon" class="brand-icon">
+            <h1 class="brand-name">
+                <span class="brand-key">Key</span><span class="brand-select">Select</span>
+            </h1>
+        </div>
         <p>Advanced Song Analysis for Worship Leaders</p>
     </header>
 
