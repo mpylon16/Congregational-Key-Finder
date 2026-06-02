@@ -194,6 +194,30 @@
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
         footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #7f8c8d; }
+
+        /* 📱 MOBILE RESPONSIVE OVERRIDES (For screens 600px wide or smaller) */
+        @media (max-width: 600px) {
+            header {
+                padding: 1.5rem 1rem; /* Reclaims precious horizontal screen space */
+            }
+
+            .brand-container {
+                gap: 12px; /* Pulls the icon and text slightly closer */
+            }
+
+            .brand-icon {
+                height: 50px; /* Scales down the musical staff icon fluidly */
+            }
+
+            .brand-name {
+                font-size: 2.2rem; /* Drops the typography size so it stays neatly on one line */
+                transform: translateY(-2px); /* Corrects vertical alignment for smaller scale */
+            }
+
+            header p {
+                font-size: 0.95rem; /* Prevents the tagline from wrapping aggressively */
+            }
+        }
     </style>
 </head>
 <body>
