@@ -401,7 +401,13 @@ def fetch_first_line_by_ccli(ccli_number):
 def get_raw_mxl_range(mxl_path):
     """Quickly scans an MXL file to find the absolute highest and lowest MIDI pitches."""
     try:
-        score = converter.parse(mxl_path)
+        # 💡 FIX: Route the file through your sanitization function first
+        if str(mxl_path).endswith('.mxl'):
+            raw_xml_string = inject_divisions_and_time_if_missing(mxl_path)
+            score = converter.parse(raw_xml_string, format='musicxml')
+        else:
+            score = converter.parse(mxl_path)
+            
         pitches = [p.midi for p in score.pitches if p.midi is not None]
         if not pitches:
             return 48, 72 # Fallback: C3 to C5 if parsing fails
