@@ -33,23 +33,23 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 20px; /* Slightly widened the gap for breathing room */
+            gap: 20px; 
             margin-bottom: 0.75rem;
         }
 
         .brand-icon {
-            height: 85px; /* Increased from 75px to balance the text scale */
+            height: 85px; 
             width: auto;
             display: block;
         }
 
         .brand-name {
             font-family: 'Poppins', sans-serif;
-            font-size: 3.5rem; /* Brought down from 4rem to perfectly match the icon height */
+            font-size: 3.5rem; 
             margin: 0;
             line-height: 1;
             letter-spacing: -0.03em;
-            transform: translateY(-4px); /* Optical adjustment to counteract the 'y' descender drop */
+            transform: translateY(-4px); 
         }
 
         .brand-key {
@@ -59,7 +59,7 @@
 
         .brand-select {
             font-weight: 300;
-            color: #10b981; /* A slightly brighter, high-contrast UI green for dark mode readability */
+            color: #10b981; 
         }
 
         header p {
@@ -68,7 +68,7 @@
             color: #cbd5e1;
             margin: 0;
             font-size: 1.1rem;
-            letter-spacing: 0.02em; /* Slightly opened up the tagline tracking for readability */
+            letter-spacing: 0.02em; 
         }
 
         .container {
@@ -93,16 +93,14 @@
             text-align: center;
         }
 
-        /* Relative wrapper to allow position:absolute styling for the X button */
-        .search-input-wrapper {
+        .search-wrapper {
             position: relative;
             width: 100%;
-            margin: 0 auto;
         }
 
         #songSearch {
             width: 100%;
-            padding: 1rem 3rem 1rem 1rem; /* Added padding-right to protect long text from clipping behind the X */
+            padding: 1rem 3rem 1rem 1rem; /* Extra right padding so text doesn't overlap clear button */
             font-size: 1.2rem;
             border: 2px solid #ddd;
             border-radius: 8px;
@@ -115,7 +113,7 @@
             border-color: #3498db;
         }
 
-        /* Styling for the new Clear 'X' Field Button */
+        /* Clear Input Button */
         #clearSearch {
             position: absolute;
             right: 14px;
@@ -126,14 +124,13 @@
             font-size: 1.6rem;
             color: #95a5a6;
             cursor: pointer;
-            display: none; /* Hidden via JS until text entry begins */
+            display: none; /* Controlled dynamically by JS */
             padding: 0;
             line-height: 1;
-            transition: color 0.2s;
         }
 
         #clearSearch:hover {
-            color: #7f8c8d;
+            color: #2c3e50;
         }
 
         /* Search Results */
@@ -222,27 +219,27 @@
 
         footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #7f8c8d; }
 
-        /* MOBILE RESPONSIVE OVERRIDES (For screens 600px wide or smaller) */
+        /* MOBILE RESPONSIVE OVERRIDES */
         @media (max-width: 600px) {
             header {
-                padding: 1.5rem 1rem; /* Reclaims precious horizontal screen space */
+                padding: 1.5rem 1rem;
             }
 
             .brand-container {
-                gap: 12px; /* Pulls the icon and text slightly closer */
+                gap: 12px;
             }
 
             .brand-icon {
-                height: 50px; /* Scales down the musical staff icon fluidly */
+                height: 50px;
             }
 
             .brand-name {
-                font-size: 2.2rem; /* Drops the typography size so it stays neatly on one line */
-                transform: translateY(-2px); /* Corrects vertical alignment for smaller scale */
+                font-size: 2.2rem;
+                transform: translateY(-2px);
             }
 
             header p {
-                font-size: 0.95rem; /* Prevents the tagline from wrapping aggressively */
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -263,10 +260,10 @@
         
         <div class="search-box">
             <h3>Find a Song</h3>
-            <p>Search our library by title, author, CCLI #, or <strong>first line</strong> for instant results.</p>
-            <div class="search-input-wrapper">
+            <p>Search our library of analysed songs for instant results.</p>
+            <div class="search-wrapper">
                 <input type="text" id="songSearch" placeholder="Type song title, first line, author, or CCLI number..." autocomplete="off">
-                <button type="button" id="clearSearch" aria-label="Clear search text">&times;</button>
+                <button type="button" id="clearSearch" title="Clear search">&times;</button>
             </div>
             <div id="searchResults"></div>
         </div>
@@ -307,26 +304,85 @@
     <script>
         let debounceTimer;
         const searchInput = document.getElementById('songSearch');
-        const clearSearchBtn = document.getElementById('clearSearch');
         const resultsDiv = document.getElementById('searchResults');
-        const uploadSection = document.getElementById('upload-section');
+        const clearBtn = document.getElementById('clearSearch');
 
-        // Combined Input Event Listener (Handles UI elements & Debounced Server Searches)
-        searchInput.addEventListener('input', function(event) {
-            const query = event.target.value.trim();
+        // Combined Real-time Search and Clear Toggle Logic
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.trim();
             
-            // 1. Instantly manage the clear 'X' button visibility state
+            // Toggle clear button visibility based on input length
             if (query.length > 0) {
-                clearSearchBtn.style.display = 'block';
+                clearBtn.style.display = 'block';
             } else {
-                clearSearchBtn.style.display = 'none';
-            }
-            
-            // 2. Clear the previous execution window on every single keystroke
-            clearTimeout(debounceTimer);
-            
-            // 3. Immediately wipe DOM nodes if the user clears the input manually
-            if (query.length === 0) {
+                clearBtn.style.display = 'none';
                 resultsDiv.innerHTML = '';
+                clearTimeout(debounceTimer);
                 return;
             }
+
+            // Stop execution if string length is below 2 characters
+            if (query.length < 2) {
+                resultsDiv.innerHTML = '';
+                clearTimeout(debounceTimer);
+                return;
+            }
+
+            // Debounce the live search fetch by 300ms
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(async () => {
+                try {
+                    const response = await fetch(`/search_songs?q=${encodeURIComponent(query)}`);
+                    if (!response.ok) throw new Error("Network search response was not ok");
+                    
+                    // Match the original working application format parsing JSON
+                    const songs = await response.json();
+
+                    if (songs.length > 0) {
+                        resultsDiv.innerHTML = songs.map(song => `
+                            <div class="song-result" onclick="window.location.href='/get_song/${song.pdf_hash}'">
+                                <div class="result-info">
+                                    <div class="result-title">${song.title}</div>
+                                    <div class="result-meta">${song.author || 'Unknown'} • ${song.year || 'Unknown'}</div>
+                                </div>
+                                <div class="result-badge">INSTANT</div>
+                            </div>
+                        `).join('');
+                    } else {
+                        resultsDiv.innerHTML = '<p style="margin-top:15px; color:#e67e22;">Not found in library. Use the upload form below.</p>';
+                    }
+                } catch (err) {
+                    console.error("Search failed", err);
+                    resultsDiv.innerHTML = '<p style="color: red; margin-top: 15px;">Error loading results.</p>';
+                }
+            }, 300);
+        });
+
+        // Clear Button Interaction
+        clearBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            clearBtn.style.display = 'none';
+            resultsDiv.innerHTML = '';
+            clearTimeout(debounceTimer);
+            searchInput.focus();
+        });
+
+        // Form Submit Loading Toggle
+        function showLoading() {
+            document.getElementById('upload-container').style.display = 'none';
+            document.getElementById('loading-screen').style.display = 'block';
+            document.getElementById('loading-screen').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw('mpylon', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support me',
+        'floating-chat.donateButton.background-color': '#00b9fe',
+        'floating-chat.donateButton.text-color': '#fff'
+      });
+    </script>
+</body>
+</html>
