@@ -1006,16 +1006,24 @@ def commit_song():
     local_mxl_path = os.path.join(cached_output_dir, mxl_files[0])
 
     try:
-        # 3. Permanently crop the MXL file if limits were set
+        # 1. Unconditionally sanitize and parse the file to handle OMR errors
+        if str(local_mxl_path).endswith('.mxl'):
+            raw_xml_string = inject_divisions_and_time_if_missing(local_mxl_path)
+            score = converter.parse(raw_xml_string, format='musicxml')
+        else:
+            score = converter.parse(local_mxl_path)
+
+        # 2. Apply optional pitch range cropping if limits are set
         if min_midi > 0 or max_midi < 127:
             print(f"✂️ Cropping MXL file to range {min_midi} - {max_midi}")
-            if str(local_mxl_path).endswith('.mxl'):
-                raw_xml_string = extract_xml_from_mxl(local_mxl_path)
-                score = converter.parse(raw_xml_string, format='musicxml')
-            else:
-                score = converter.parse(local_mxl_path)
-            cleaned_score = crop_and_clean_stream(score, min_midi, max_midi)
-            cleaned_score.write('musicxml', fp=local_mxl_path)
+            score = crop_and_clean_stream(score, min_midi, max_midi)
+
+        # 3. Always overwrite the disk cache with a clean, validated version
+        # Use 'mxl' for compressed archives to keep file extensions aligned
+        if str(local_mxl_path).endswith('.mxl'):
+            score.write('mxl', fp=local_mxl_path)
+        else:
+            score.write('musicxml', fp=local_mxl_path)
 
         # 4. Run the Analysis on the clean file
         summary = analyse_musicxml_summary(
@@ -1175,8 +1183,8 @@ def inject_divisions_and_time_if_missing(current_path, previous_path=None):
     xml = xml_data.decode("utf-8") if isinstance(xml_data, bytes) else xml_data
 
     # --- FIX 1: Zero/Missing Divisions ---
-    if "<divisions>0</divisions>" in xml:
-        xml = xml.replace("<divisions>0</divisions>", "<divisions>1</divisions>")
+    if re.search(r'<divisions>\s*0\s*</divisions>', xml):
+        xml = re.sub(r'<divisions>\s*0\s*</divisions>', '<divisions>1</divisions>', xml)
     elif "<divisions>" not in xml:
         xml = re.sub(r"<attributes>", "<attributes><divisions>1</divisions>", xml, count=1)
 

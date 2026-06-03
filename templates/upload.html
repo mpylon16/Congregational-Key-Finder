@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Import Inter Font (Weights: Light 300 & Extra Bold 800) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
@@ -39,18 +38,18 @@
         }
 
         .brand-icon {
-            height: 85px; /* 💡 Increased from 75px to balance the text scale */
+            height: 85px; /* Increased from 75px to balance the text scale */
             width: auto;
             display: block;
         }
 
         .brand-name {
             font-family: 'Poppins', sans-serif;
-            font-size: 3.5rem; /* 💡 Brought down from 4rem to perfectly match the icon height */
+            font-size: 3.5rem; /* Brought down from 4rem to perfectly match the icon height */
             margin: 0;
             line-height: 1;
             letter-spacing: -0.03em;
-            transform: translateY(-4px); /* 💡 Optical adjustment to counteract the 'y' descender drop */
+            transform: translateY(-4px); /* Optical adjustment to counteract the 'y' descender drop */
         }
 
         .brand-key {
@@ -60,7 +59,7 @@
 
         .brand-select {
             font-weight: 300;
-            color: #10b981; /* 💡 A slightly brighter, high-contrast UI green for dark mode readability */
+            color: #10b981; /* A slightly brighter, high-contrast UI green for dark mode readability */
         }
 
         header p {
@@ -94,9 +93,16 @@
             text-align: center;
         }
 
+        /* Relative wrapper to allow position:absolute styling for the X button */
+        .search-input-wrapper {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+
         #songSearch {
             width: 100%;
-            padding: 1rem;
+            padding: 1rem 3rem 1rem 1rem; /* Added padding-right to protect long text from clipping behind the X */
             font-size: 1.2rem;
             border: 2px solid #ddd;
             border-radius: 8px;
@@ -107,6 +113,27 @@
         #songSearch:focus {
             outline: none;
             border-color: #3498db;
+        }
+
+        /* Styling for the new Clear 'X' Field Button */
+        #clearSearch {
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            color: #95a5a6;
+            cursor: pointer;
+            display: none; /* Hidden via JS until text entry begins */
+            padding: 0;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+
+        #clearSearch:hover {
+            color: #7f8c8d;
         }
 
         /* Search Results */
@@ -195,7 +222,7 @@
 
         footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #7f8c8d; }
 
-        /* 📱 MOBILE RESPONSIVE OVERRIDES (For screens 600px wide or smaller) */
+        /* MOBILE RESPONSIVE OVERRIDES (For screens 600px wide or smaller) */
         @media (max-width: 600px) {
             header {
                 padding: 1.5rem 1rem; /* Reclaims precious horizontal screen space */
@@ -224,7 +251,6 @@
 
     <header>
         <div class="brand-container">
-            <!-- Asset 1.svg is the dark theme version, perfect for this header -->
             <img src="{{ url_for('static', filename='LogoDark.svg') }}" alt="KeySelect Icon" class="brand-icon">
             <h1 class="brand-name">
                 <span class="brand-key">Key</span><span class="brand-select">Select</span>
@@ -237,8 +263,11 @@
         
         <div class="search-box">
             <h3>Find a Song</h3>
-            <p>Search our library of analysed songs for instant results.</p>
-            <input type="text" id="songSearch" placeholder="Type song title, author, or CCLI number..." autocomplete="off">
+            <p>Search our library by title, author, CCLI #, or <strong>first line</strong> for instant results.</p>
+            <div class="search-input-wrapper">
+                <input type="text" id="songSearch" placeholder="Type song title, first line, author, or CCLI number..." autocomplete="off">
+                <button type="button" id="clearSearch" aria-label="Clear search text">&times;</button>
+            </div>
             <div id="searchResults"></div>
         </div>
 
@@ -276,96 +305,28 @@
     </footer>
 
     <script>
+        let debounceTimer;
         const searchInput = document.getElementById('songSearch');
+        const clearSearchBtn = document.getElementById('clearSearch');
         const resultsDiv = document.getElementById('searchResults');
         const uploadSection = document.getElementById('upload-section');
 
-        // Real-time Search Logic
-        searchInput.addEventListener('input', async (e) => {
-            const query = e.target.value.trim();
+        // Combined Input Event Listener (Handles UI elements & Debounced Server Searches)
+        searchInput.addEventListener('input', function(event) {
+            const query = event.target.value.trim();
             
-            if (query.length < 2) {
+            // 1. Instantly manage the clear 'X' button visibility state
+            if (query.length > 0) {
+                clearSearchBtn.style.display = 'block';
+            } else {
+                clearSearchBtn.style.display = 'none';
+            }
+            
+            // 2. Clear the previous execution window on every single keystroke
+            clearTimeout(debounceTimer);
+            
+            // 3. Immediately wipe DOM nodes if the user clears the input manually
+            if (query.length === 0) {
                 resultsDiv.innerHTML = '';
                 return;
             }
-
-            try {
-                const response = await fetch(`/search_songs?q=${encodeURIComponent(query)}`);
-                const songs = await response.json();
-
-                if (songs.length > 0) {
-                    resultsDiv.innerHTML = songs.map(song => `
-                        <div class="song-result" onclick="window.location.href='/get_song/${song.pdf_hash}'">
-                            <div class="result-info">
-                                <div class="result-title">${song.title}</div>
-                                <div class="result-meta">${song.author || 'Unknown'} • ${song.year || 'Unknown'}</div>
-                            </div>
-                            <div class="result-badge">INSTANT</div>
-                        </div>
-                    `).join('');
-                } else {
-                    resultsDiv.innerHTML = '<p style="margin-top:15px; color:#e67e22;">Not found in library. Use the upload form below.</p>';
-                }
-            } catch (err) {
-                console.error("Search failed", err);
-            }
-        });
-
-        function showLoading() {
-            document.getElementById('upload-container').style.display = 'none';
-            document.getElementById('loading-screen').style.display = 'block';
-            // Scroll to the loading screen so the user sees the spinner
-            document.getElementById('loading-screen').scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
-
-<script>
-    let debounceTimer;
-    const searchInput = document.getElementById('songSearch');
-    const resultsDiv = document.getElementById('searchResults');
-
-    searchInput.addEventListener('input', function(event) {
-        // .trim() ignores accidental spaces before/after the search
-        const query = event.target.value.trim();
-        
-        // 1. Clear the previous timer on every keystroke
-        clearTimeout(debounceTimer);
-        
-        // 2. If the user deletes everything, empty the results and stop
-        if (query.length === 0) {
-            resultsDiv.innerHTML = '';
-            return;
-        }
-        
-        // 3. Set a new timer. It only fires if they stop typing for 300ms.
-        debounceTimer = setTimeout(() => {
-            
-            // Call your Flask route
-            fetch(`/search_songs?q=${encodeURIComponent(query)}`)
-                .then(response => {
-                    if (!response.ok) throw new Error("Network response was not ok");
-                    return response.text();
-                })
-                .then(html => {
-                    // Inject the HTML returned by Flask into the div
-                    resultsDiv.innerHTML = html;
-                })
-                .catch(error => {
-                    console.error("Search error:", error);
-                    resultsDiv.innerHTML = '<p style="color: red;">Error loading results.</p>';
-                });
-                
-        }, 300);
-    });
-</script>
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('mpylon', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#00b9fe',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>
-</body>
-</html>
