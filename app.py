@@ -1056,24 +1056,22 @@ def commit_song():
         else:
             score = converter.parse(local_mxl_path)
 
+        # 💡 THE NEW SURGICAL BYPASS:
+        # Before we crop or notate, we force the score to collapse all voices 
+        # into one. This deletes the "Voice 3" artifacts that trigger the KeyError
+        # and simplifies the rhythmic structure for the exporter.
+        score = score.flatten().makeVoices() 
+        # OR, if makeVoices() is still too aggressive:
+        # score = score.stripTies(inPlace=False).flatten()
+
         # 2. Crop
         if min_midi > 0 or max_midi < 127:
             score = crop_and_clean_stream(score, min_midi, max_midi)
 
-        # 💡 THE ULTIMATE FIX: 
-        # Manually normalize durations into standard MusicXML-compliant tied notes.
-        # This resolves the 'complex durations' error, but we do it MANUALLY
-        # before the write() call, so we don't trigger the automatic,
-        # buggy Voice 3 logic that happens inside the write() function.
-        score = score.makeNotation()
-
         # 3. Save
-        # Now that score is already 'notated' (tied), we don't need 
-        # to ask write() to do it.
-        if str(local_mxl_path).endswith('.mxl'):
-            score.write('mxl', fp=local_mxl_path)
-        else:
-            score.write('musicxml', fp=local_mxl_path)
+        # Because we flattened the score, it is now much simpler for 
+        # the exporter to handle without needing heavy makeNotation logic.
+        score.write('mxl', fp=local_mxl_path)
 
         # 4. Run the Analysis on the clean file
         summary = analyse_musicxml_summary(
