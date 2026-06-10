@@ -1056,21 +1056,27 @@ def commit_song():
         else:
             score = converter.parse(local_mxl_path)
 
-        # 💡 THE NEW SURGICAL BYPASS:
-        # Before we crop or notate, we force the score to collapse all voices 
-        # into one. This deletes the "Voice 3" artifacts that trigger the KeyError
-        # and simplifies the rhythmic structure for the exporter.
-        score = score.flatten().makeVoices() 
-        # OR, if makeVoices() is still too aggressive:
-        # score = score.stripTies(inPlace=False).flatten()
+        # 💡 TARGETED VOICE REPAIR:
+        # Instead of flattening, we iterate through every part and measure.
+        # If a measure has a "Voice 3" (or any voice) that is essentially empty 
+        # or broken, we remove it. This stops makeNotation from crashing.
+        for part in score.parts:
+            for measure in part.measures():
+                # Get all voices in this measure
+                voices = measure.voices
+                for v in voices:
+                    # If the voice has no notes, it's just an artifact. Remove it.
+                    if len(v.notes) == 0:
+                        measure.remove(v)
 
         # 2. Crop
         if min_midi > 0 or max_midi < 127:
             score = crop_and_clean_stream(score, min_midi, max_midi)
 
         # 3. Save
-        # Because we flattened the score, it is now much simpler for 
-        # the exporter to handle without needing heavy makeNotation logic.
+        # Now that we've removed the empty "Voice 3" remnants, 
+        # makeNotation can finish its job safely.
+        score = score.makeNotation()
         score.write('mxl', fp=local_mxl_path)
 
         # 4. Run the Analysis on the clean file
