@@ -1056,17 +1056,19 @@ def commit_song():
         else:
             score = converter.parse(local_mxl_path)
 
-        # 💡 TARGETED VOICE REPAIR:
-        # Instead of flattening, we iterate through every part and measure.
-        # If a measure has a "Voice 3" (or any voice) that is essentially empty 
-        # or broken, we remove it. This stops makeNotation from crashing.
+        # 💡 CORRECTED SURGICAL REPAIR:
+        # We consolidate all voices into the first voice to ensure a clean 
+        # single-melody line, preventing Voice 3 KeyError crashes.
         for part in score.parts:
-            for measure in part.measures():
-                # Get all voices in this measure
+            # Use getElementsByClass('Measure') to get all measures safely
+            for measure in part.getElementsByClass('Measure'):
                 voices = measure.voices
-                for v in voices:
-                    # If the voice has no notes, it's just an artifact. Remove it.
-                    if len(v.notes) == 0:
+                if len(voices) > 1:
+                    target_voice = voices[0]
+                    for v in voices[1:]:
+                        # Move all notes/chords from secondary voices to the main voice
+                        for el in v.notes:
+                            target_voice.insert(el.offset, el)
                         measure.remove(v)
 
         # 2. Crop
