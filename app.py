@@ -1027,9 +1027,9 @@ def commit_song():
         # 3. Always overwrite the disk cache with a clean, validated version
         # Use 'mxl' for compressed archives to keep file extensions aligned
         if str(local_mxl_path).endswith('.mxl'):
-            score.write('mxl', fp=local_mxl_path)
+            score.write('mxl', fp=local_mxl_path, makeNotation=False)
         else:
-            score.write('musicxml', fp=local_mxl_path)
+            score.write('musicxml', fp=local_mxl_path, makeNotation=False)
 
         # 4. Run the Analysis on the clean file
         summary = analyse_musicxml_summary(
