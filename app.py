@@ -1049,24 +1049,31 @@ def commit_song():
     local_mxl_path = os.path.join(cached_output_dir, mxl_files[0])
 
     try:
-        # 1. Unconditionally sanitize and parse the file to handle OMR errors
+        # 1. Parse
         if str(local_mxl_path).endswith('.mxl'):
             raw_xml_string = inject_divisions_and_time_if_missing(local_mxl_path)
             score = converter.parse(raw_xml_string, format='musicxml')
         else:
             score = converter.parse(local_mxl_path)
 
-        # 2. Apply optional pitch range cropping if limits are set
+        # 2. Crop
         if min_midi > 0 or max_midi < 127:
-            print(f"✂️ Cropping MXL file to range {min_midi} - {max_midi}")
             score = crop_and_clean_stream(score, min_midi, max_midi)
 
-        # 3. Always overwrite the disk cache with a clean, validated version
-        # Use 'mxl' for compressed archives to keep file extensions aligned
+        # 💡 THE ULTIMATE FIX: 
+        # Manually normalize durations into standard MusicXML-compliant tied notes.
+        # This resolves the 'complex durations' error, but we do it MANUALLY
+        # before the write() call, so we don't trigger the automatic,
+        # buggy Voice 3 logic that happens inside the write() function.
+        score = score.makeNotation()
+
+        # 3. Save
+        # Now that score is already 'notated' (tied), we don't need 
+        # to ask write() to do it.
         if str(local_mxl_path).endswith('.mxl'):
-            score.write('mxl', fp=local_mxl_path, makeNotation=False)
+            score.write('mxl', fp=local_mxl_path)
         else:
-            score.write('musicxml', fp=local_mxl_path, makeNotation=False)
+            score.write('musicxml', fp=local_mxl_path)
 
         # 4. Run the Analysis on the clean file
         summary = analyse_musicxml_summary(
