@@ -587,32 +587,47 @@ def crop_and_clean_stream(parsed_score, min_midi, max_midi):
     Permanently removes out-of-bounds notes from a music21 stream.
     Replaces them with rests to maintain measure timing integrity.
     """
-    # .notes filters for both Note and Chord objects
+    notes_inspected = 0
+    notes_cropped = 0
+    
     for el in parsed_score.recurse().notes:
-        
+        notes_inspected += 1
+        measure_num = el.measureNumber if el.measureNumber else "?"
+
         # Handle Single Notes
         if isinstance(el, note.Note):
             if el.pitch.midi < min_midi or el.pitch.midi > max_midi:
-                # Create a rest of the exact same length
+                print(f"✂️ DEBUG CROP: Single Note {el.pitch.nameWithOctave} (MIDI {el.pitch.midi}) in Measure {measure_num}")
+                notes_cropped += 1
                 r = note.Rest()
                 r.duration = el.duration
-                # Safely swap the note for the rest in the score
                 el.activeSite.replace(el, r)
                 
         # Handle Chords
         elif isinstance(el, chord.Chord):
-            # Figure out which pitches are actually valid
-            valid_pitches = [p for p in el.pitches if min_midi <= p.midi <= max_midi]
+            valid_pitches = []
+            removed_pitches = []
             
-            if not valid_pitches:
-                # Every note in the chord was out of bounds; replace with a rest
-                r = note.Rest()
-                r.duration = el.duration
-                el.activeSite.replace(el, r)
-            elif len(valid_pitches) < len(el.pitches):
-                # Some notes were valid, some were not. Rebuild the chord.
-                el.pitches = valid_pitches
+            for p in el.pitches:
+                if min_midi <= p.midi <= max_midi:
+                    valid_pitches.append(p)
+                else:
+                    removed_pitches.append(p)
+            
+            if removed_pitches:
+                notes_cropped += 1
+                removed_names = ", ".join([f"{p.nameWithOctave} ({p.midi})" for p in removed_pitches])
                 
+                if not valid_pitches:
+                    print(f"✂️ DEBUG CROP: Entire Chord [{removed_names}] in Measure {measure_num}")
+                    r = note.Rest()
+                    r.duration = el.duration
+                    el.activeSite.replace(el, r)
+                else:
+                    print(f"✂️ DEBUG CROP: Partial Chord Removed [{removed_names}] in Measure {measure_num}")
+                    el.pitches = valid_pitches
+                
+    print(f"\n📊 CROPPING SUMMARY: Inspected {notes_inspected} note elements. Actively altered/removed {notes_cropped} elements.\n")
     return parsed_score
 
 # --- 2. LOGIC FUNCTIONS ---
@@ -957,6 +972,17 @@ def upload_file():
             default_slider_min = max(48, raw_min_midi)
             default_slider_max = min(84, raw_max_midi)
 
+            # ---------------------------------------------------------
+            # 🔍 DIAGNOSTIC DEBUGGING: Upload Route
+            # ---------------------------------------------------------
+            print("\n🔍 === UPLOAD ROUTE PITCH DIAGNOSTICS ===")
+            print(f"   Raw MXL Path: {local_mxl_path}")
+            print(f"   Extracted raw_min_midi: {raw_min_midi}")
+            print(f"   Extracted raw_max_midi: {raw_max_midi}")
+            print(f"   Calculated default_slider_min (max(48, raw)): {default_slider_min}")
+            print(f"   Calculated default_slider_max (min(84, raw)): {default_slider_max}")
+            print("===========================================\n")
+
             # We pass explicit elements rather than the raw dictionary to match our 
             # new standalone template setup and clear out old `metadata.get()` dependencies
             return render_template(
@@ -1004,6 +1030,17 @@ def commit_song():
     # Safely cast to integer, defaulting to wide bounds if empty
     min_midi = int(min_midi_val) if min_midi_val else 0
     max_midi = int(max_midi_val) if max_midi_val else 127
+
+    # ---------------------------------------------------------
+    # 🔍 DIAGNOSTIC DEBUGGING: Commit Route
+    # ---------------------------------------------------------
+    print("\n🔍 === COMMIT_SONG ROUTE RECEIVE DIAGNOSTICS ===")
+    print(f"   Raw POST min_midi string: {repr(min_midi_val)}")
+    print(f"   Raw POST max_midi string: {repr(max_midi_val)}")
+    print(f"   Casted Integer min_midi: {min_midi}")
+    print(f"   Casted Integer max_midi: {max_midi}")
+    print(f"   Gatekeeper condition (min_midi > 0 or max_midi < 127): {min_midi > 0 or max_midi < 127}")
+    print("================================================\n")
 
     mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
     if not mxl_files:
