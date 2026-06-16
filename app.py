@@ -1251,6 +1251,44 @@ def get_song(pdf_hash):
 def admin_page():
     return render_template('admin.html')
 
+@app.route('/admin/pending', methods=['GET'])
+def view_pending():
+    """Fetches all songs from Supabase that are currently set to 'pending'."""
+    admin_secret = os.environ.get("ADMIN_SECRET")
+    
+    # Check if the secret sent by the browser matches your .env file
+    if request.args.get('secret') != admin_secret:
+        abort(403) # Access Denied if it doesn't match
+        
+    try:
+        # Query Supabase for rows where moderation_status is 'pending'
+        res = supabase.table('songs').select("pdf_hash, title, author").eq("moderation_status", "pending").execute()
+        return jsonify(res.data)
+    except Exception as e:
+        print(f"❌ Admin fetch error: {e}")
+        return jsonify([]), 500
+
+
+@app.route('/admin/moderate', methods=['POST'])
+def moderate_song():
+    """Updates a song's status to 'approved' or 'rejected'."""
+    data = request.json or {}
+    admin_secret = os.environ.get("ADMIN_SECRET")
+    
+    if data.get('secret') != admin_secret:
+        return jsonify({"error": "Unauthorized"}), 403
+        
+    pdf_hash = data.get('pdf_hash')
+    action = data.get('action') # 'approved' or 'rejected'
+    
+    try:
+        # Update the database column to your chosen action
+        supabase.table('songs').update({"moderation_status": action}).eq("pdf_hash", pdf_hash).execute()
+        return jsonify({"status": "success"})
+    except Exception as e:
+        print(f"❌ Moderation action error: {e}")
+        return jsonify({"error": str(e)}), 500
+
 def extract_xml_from_mxl(path):
     with zipfile.ZipFile(path, 'r') as z:
         # Find the first .xml file inside the .mxl archive that ISN'T metadata
