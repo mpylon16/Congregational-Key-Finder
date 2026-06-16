@@ -1127,8 +1127,8 @@ def commit_song():
                 "lowest_note": orig_info.get("range_low", "Unknown"),
                 "highest_note": orig_info.get("range_high", "Unknown"),
                 "mxl_url": mxl_url,
-                "analysis_results": db_summary 
-                "moderation_status": "pending"  # Force new uploads into the moderation queue
+                "analysis_results": db_summary,
+                "moderation_status": "pending",  # Force new uploads into the moderation queue
             }, on_conflict="pdf_hash").execute()
             print(f"🚀 Cloud Save Successful for {pdf_hash}")
 
