@@ -1254,7 +1254,7 @@ def admin_page():
 @app.route('/admin/pending', methods=['GET'])
 def view_pending():
     """Fetches all songs from Supabase that are currently set to 'pending'."""
-    admin_secret = os.environ.get("ADMIN_SECRET")
+    admin_secret = os.environ.get("ADMIN_SECRET","").strip()
     
     # Check if the secret sent by the browser matches your .env file
     if request.args.get('secret') != admin_secret:
@@ -1273,7 +1273,7 @@ def view_pending():
 def moderate_song():
     """Updates a song's status to 'approved' or 'rejected'."""
     data = request.json or {}
-    admin_secret = os.environ.get("ADMIN_SECRET")
+    admin_secret = os.environ.get("ADMIN_SECRET","").strip()
     
     if data.get('secret') != admin_secret:
         return jsonify({"error": "Unauthorized"}), 403
