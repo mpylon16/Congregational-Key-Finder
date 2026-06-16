@@ -1196,7 +1196,7 @@ def search_songs():
         res = (
             supabase.table('songs')
             .select("*")
-            .eq("moderation_status", "approved")
+            #.eq("moderation_status", "approved")
             .or_(f"title.ilike.%{query}%,author.ilike.%{query}%,ccli_number.ilike.%{query}%,first_line.ilike.%{query}%")
             .limit(10)
             .execute()
