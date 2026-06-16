@@ -1193,10 +1193,14 @@ def search_songs():
     try:
         # Search title, author, or CCLI number
         # ILIKE is case-insensitive search
-        res = supabase.table('songs').select("*") \
-        .eq("moderation_status", "approved") \    
-        .or_(f"title.ilike.%{query}%,author.ilike.%{query}%,ccli_number.ilike.%{query}%,first_line.ilike.%{query}%" \
-        ).limit(10).execute()
+        res = (
+            supabase.table('songs')
+            .select("*")
+            .eq("moderation_status", "approved")
+            .or_(f"title.ilike.%{query}%,author.ilike.%{query}%,ccli_number.ilike.%{query}%,first_line.ilike.%{query}%")
+            .limit(10)
+            .execute()
+        )
         
         return jsonify(res.data)
     except Exception as e:
