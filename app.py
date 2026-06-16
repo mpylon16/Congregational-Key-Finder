@@ -7,7 +7,7 @@ import tempfile
 import os
 import time
 import subprocess
-from flask import Flask, request, render_template, send_from_directory, abort, url_for, redirect, jsonify
+from flask import Flask, request, render_template, send_from_directory, abort, url_for, redirect, jsonify, flash
 from werkzeug.utils import secure_filename
 import glob
 import math # For math.inf
@@ -441,6 +441,13 @@ def get_safe_scratch_dir():
         os.makedirs(fallback, exist_ok=True)
         return fallback
 
+def send_developer_alert(subject, body):
+    """Sends a basic log or external webhook when a critical failure occurs."""
+    # For now, we print it loudly to the Railway logs. 
+    # Later, you can drop a Discord webhook URL or email API here!
+    print(f"\n🚨 {subject}\n{body}\n")
+    logging.error(f"ALERT: {subject} - {body}")
+
 # Set music21's scratch directory
 safe_working_dir = get_safe_scratch_dir()
 us = environment.UserSettings()
@@ -457,6 +464,7 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # --- Flask App Initialization ---
 app = Flask(__name__)
+app.secret_key = os.environ.get("FLASK_SECRET_KEY", "john10-7") # Required for flash()
 
 # Supabase Configuration
 SUPABASE_URL = os.environ.get("SUPABASE_URL")
@@ -1120,6 +1128,7 @@ def commit_song():
                 "highest_note": orig_info.get("range_high", "Unknown"),
                 "mxl_url": mxl_url,
                 "analysis_results": db_summary 
+                "moderation_status": "pending"  # Force new uploads into the moderation queue
             }, on_conflict="pdf_hash").execute()
             print(f"🚀 Cloud Save Successful for {pdf_hash}")
 
@@ -1146,15 +1155,12 @@ def commit_song():
         )
 
     except Exception as e:
-        # Crash reporting / cleanup logic
-        logging.error("--- FATAL ERROR DURING MUSICXML ANALYSIS ---")
-        logging.error(f"Exception Type: {type(e)}")
-        logging.error(f"Exception Message: {e}")
-        logging.exception("Full Traceback Details:")
-        logging.error("--- END FATAL ERROR ---")
-
-        print("Error:", e)
-
+        # 1. Capture the exact error signature
+        error_type = type(e).__name__
+        error_msg = str(e)
+        tb_details = traceback.format_exc()
+        
+        # 2. Cleanup the broken folder
         if 'cached_output_dir' in locals() and os.path.exists(cached_output_dir):
             try:
                 shutil.rmtree(cached_output_dir, ignore_errors=True)
@@ -1162,7 +1168,20 @@ def commit_song():
             except Exception as cleanup_error:
                 logging.warning(f"Cleanup failed for {cached_output_dir}: {cleanup_error}")
 
-        return f"<p>Analysis failed during commit: {e}</p>", 500
+        # 3. Alert the Developer
+        send_developer_alert(
+            subject=f"Production Crash: {error_type} on {name}",
+            body=f"File Hash: {pdf_hash}\nError: {error_msg}\n\nTraceback:\n{tb_details}"
+        )
+        
+        # 4. Graceful User Redirect
+        flash(
+            "Something went wrong while finalising your sheet music analysis. "
+            "Our engineering team (Pete) has been automatically notified of the issue. "
+            "Please try re-uploading in a different key or check back shortly to see if it's been fixed and added to the database.", 
+            "error" # If using bootstrap in your HTML, you might change this to "danger"
+        )
+        return redirect(url_for('upload_file'))
                 
 
 @app.route('/search_songs', methods=['GET'])
@@ -1174,8 +1193,9 @@ def search_songs():
     try:
         # Search title, author, or CCLI number
         # ILIKE is case-insensitive search
-        res = supabase.table('songs').select("*").or_(
-            f"title.ilike.%{query}%,author.ilike.%{query}%,ccli_number.ilike.%{query}%,first_line.ilike.%{query}%"
+        res = supabase.table('songs').select("*") \
+        .eq("moderation_status", "approved") \    
+        .or_(f"title.ilike.%{query}%,author.ilike.%{query}%,ccli_number.ilike.%{query}%,first_line.ilike.%{query}%" \
         ).limit(10).execute()
         
         return jsonify(res.data)
@@ -1223,6 +1243,10 @@ def get_song(pdf_hash):
         thresholds=COMFORT_THRESHOLDS
     )
 
+@app.route('/admin')
+def admin_page():
+    return render_template('admin.html')
+
 def extract_xml_from_mxl(path):
     with zipfile.ZipFile(path, 'r') as z:
         # Find the first .xml file inside the .mxl archive that ISN'T metadata
@@ -1236,7 +1260,6 @@ def extract_xml_from_mxl(path):
 def inject_divisions_and_time_if_missing(current_path, previous_path=None):
     # Load the XML content
     xml_data = extract_xml_from_mxl(current_path)
-    xml = xml_data.decode("utf-8") if isinstance(xml_data, bytes) else xml_data
 
     # --- FIX 1: Zero/Missing Divisions ---
     if re.search(r'<divisions>\s*0\s*</divisions>', xml):

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Moderation</title>
+    <style>
+        .song-item { border: 1px solid #ccc; padding: 10px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Pending Approvals</h1>
+    <div id="song-list">Loading...</div>
+
+    <script>
+        const secret = prompt("Enter Admin Secret:");
+        
+        async function loadSongs() {
+            const response = await fetch(`/admin/pending?secret=${secret}`);
+            const songs = await response.json();
+            const container = document.getElementById('song-list');
+            container.innerHTML = songs.map(s => `
+                <div class="song-item">
+                    <h3>${s.title}</h3>
+                    <p>${s.author}</p>
+                    <button onclick="moderate('${s.pdf_hash}', 'approved')">Approve</button>
+                    <button onclick="moderate('${s.pdf_hash}', 'rejected')">Reject</button>
+                </div>
+            `).join('');
+        }
+
+        async function moderate(hash, action) {
+            await fetch('/admin/moderate', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ secret, pdf_hash: hash, action })
+            });
+            loadSongs();
+        }
+        loadSongs();
+    </script>
+</body>
+</html>
