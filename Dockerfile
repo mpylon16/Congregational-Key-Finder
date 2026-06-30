@@ -56,6 +56,10 @@ RUN mkdir -p /app/audiveris_home && \
 # --- OPTIMIZED PYTHON LAYER CACHING ---
 # Copy ONLY requirements first so package installation stays cached
 COPY requirements.txt .
+RUN apt-get update && apt-get install -y \
+    g++ \
+    python3-dev \
+    && rm -rf /var/lib/apt/lists/*
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of your Python application code (invalidates cache only from this line down)
