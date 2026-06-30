@@ -973,7 +973,7 @@ def upload_file():
                 raw_min_midi, raw_max_midi = get_raw_mxl_range(local_mxl_path)
             else:
                 # 🛡️ THE FIX: Stop here if no MXL exists. 
-                # This prevents the app from crashing later!
+                # This prevents the app from crashing later! 
                 print(f"❌ Error: No MXL file found in {cached_output_dir}")
                 return "Error: Could not extract music from this PDF. Please upload a lead sheet.", 400
 
