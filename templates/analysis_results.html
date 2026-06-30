@@ -101,15 +101,13 @@
                     </div>
                 </div>
             </div>
-            
+
             {% if song_status == 'pending' %}
             <div class="alert alert-info border-start border-4 border-info shadow-sm mb-4">
                 <strong>Pending Approval:</strong> Your analysis has been submitted and is currently awaiting moderation. It will be fully searchable once approved.
             </div>
             {% endif %}
 
-            {% if not is_database_pull %}
-...
             {% if not is_database_pull %}
             <div class="card p-3 mb-4 border-start border-4 border-primary bg-white">
                 <div class="d-flex align-items-center justify-content-between">
