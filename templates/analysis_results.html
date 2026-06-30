@@ -71,6 +71,7 @@
         <div class="col-md-10">
             
             <div class="d-flex justify-content-between align-items-center mb-4">
+                <a href="/" class="btn btn-outline-secondary btn-sm me-3">← Return to Search & Upload</a>
                 <div>
                     <h1 class="display-5 fw-bold text-dark m-0">{{ title }}</h1>
                     <p class="text-muted fs-5 m-0">
@@ -99,8 +100,16 @@
                         </button>
                     </div>
                 </div>
-                </div>
+            </div>
+            
+            {% if song_status == 'pending' %}
+            <div class="alert alert-info border-start border-4 border-info shadow-sm mb-4">
+                <strong>Pending Approval:</strong> Your analysis has been submitted and is currently awaiting moderation. It will be fully searchable once approved.
+            </div>
+            {% endif %}
 
+            {% if not is_database_pull %}
+...
             {% if not is_database_pull %}
             <div class="card p-3 mb-4 border-start border-4 border-primary bg-white">
                 <div class="d-flex align-items-center justify-content-between">
@@ -306,10 +315,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-
-            <div class="text-center my-4">
-                <a href="/" class="btn btn-secondary px-4">← Return to Search & Upload</a>
             </div>
 
         </div>
