@@ -967,12 +967,18 @@ def upload_file():
             # ---------------------------------------------------------
             # Find the MXL file Audiveris just created (or the cached one)
             mxl_files = [f for f in os.listdir(cached_output_dir) if f.endswith('.mxl')]
+
             if mxl_files:
                 local_mxl_path = os.path.join(cached_output_dir, mxl_files[0])
                 raw_min_midi, raw_max_midi = get_raw_mxl_range(local_mxl_path)
             else:
-                raw_min_midi, raw_max_midi = 48, 72 # Safe fallback
+                # 🛡️ THE FIX: Stop here if no MXL exists. 
+                # This prevents the app from crashing later!
+                print(f"❌ Error: No MXL file found in {cached_output_dir}")
+                return "Error: Could not extract music from this PDF. Please upload a lead sheet.", 400
 
+            # Now the app can safely proceed, knowing local_mxl_path exists.
+            
             # Determine if the file naturally overflows the standard 48-84 workspace
             has_out_of_bounds_notes = (raw_min_midi < 48 or raw_max_midi > 84)
 
@@ -1301,7 +1307,7 @@ def extract_xml_from_mxl(path):
 
 def inject_divisions_and_time_if_missing(current_path, previous_path=None):
     # Load the XML content
-    xml_data = extract_xml_from_mxl(current_path)
+    xml = extract_xml_from_mxl(current_path)
 
     # --- FIX 1: Zero/Missing Divisions ---
     if re.search(r'<divisions>\s*0\s*</divisions>', xml):
