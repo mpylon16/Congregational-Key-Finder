@@ -1094,10 +1094,15 @@ def commit_song():
         # makeNotation can finish its job safely.
         score = score.makeNotation()
         
-        # 🛠️ DURATION TYPE REPAIR: Fix missing duration types before MusicXML export
+        # 🛡️ BULLETPROOF REPAIR: Ensure all notes, chords, and rests have a valid duration type
         for el in score.recurse().notesAndRests:
-            if el.duration and not el.duration.type:
-                el.duration.type = el.duration.getDurationType()
+            if el.duration:
+                if not el.duration.type:
+                    try:
+                        el.duration.type = el.duration.getDurationType()
+                    except Exception:
+                        # Fallback if getDurationType fails on malformed durations
+                        el.duration.type = 'quarter'
         score.write('mxl', fp=local_mxl_path)
 
         # 4. Run the Analysis on the clean file
