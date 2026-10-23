@@ -3,6 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches: [ main, develop ] # <-- Added develop here
+  workflow_dispatch: # Allows manual triggers
 
 permissions:
   contents: read
